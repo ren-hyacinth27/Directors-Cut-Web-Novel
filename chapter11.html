@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 11 - The Antagonist (Self) | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        /* Drop Cap */
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Scene Header Style */
+        .scene-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--pencil-black);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Role Tag for Modes */
+        .role-tag { 
+            font-family: 'Patrick Hand', cursive; 
+            background: #ffebee; /* Light red/pink for alert/mode */
+            padding: 2px 10px; 
+            border-left: 5px solid #c62828;
+            font-size: 1rem; 
+            color: #c62828; 
+            font-weight: 700; 
+            letter-spacing: 1px;
+        }
+
+        /* Sticky Note for Antagonist Voice */
+        .text-insert { 
+            font-family: 'Patrick Hand', cursive; 
+            background: #eceff1; /* Greyish for doubt */
+            color: #333;
+            padding: 15px 20px; 
+            border: 1px solid #cfd8dc;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+            transform: rotate(1deg);
+            display: block;
+            margin: 30px auto;
+            text-align: center;
+            max-width: 90%;
+            font-size: 1.1rem;
+        }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 11</span>
+                    <h1 class="chap-title">The Antagonist (Self)</h1>
+                </div>
+
+                <div class="story-text">
+                    <p>Sa bawat kwento, kailangan ng kontrabida.</p>
+
+                    <p>Sa action movies, sila yung may hawak ng baril at naka-leather jacket. Sa drama, sila yung evil stepmother o kaya yung kabit.</p>
+
+                    <p>Pero sa pelikulang ito… walang baril si Cent. Wala siyang masamang balak. Sa katunayan, siya pa nga ang number one supporter ko noong nakaraang inuman.</p>
+
+                    <p>So sino ang kalaban?</p>
+
+                    <div class="scene-header">EXT. GRANDSTAND - DAY</div>
+
+                    <p>Nakaupo ako sa grandstand. Walang tao. Tapos na ang Intrams. Back to regular programming na ang buong university. Ang mga props na pinaghirapan namin, nasa basurahan na. Ang confetti sa oval, winalis na ng mga janitor.</p>
+
+                    <p>Ang naiwan na lang ay katahimikan.</p>
+
+                    <p>At sa katahimikan na 'to, naririnig ko ang boses na pinaka-ayaw kong marinig.</p>
+
+                    <p><span class="thought">Worth it ba 'to, Gio?</span></p>
+
+                    <p>Hawak ko ang cellphone ko. Tinititigan ko ang litrato namin ni Lia sa grandstand nung nakaraan. Yung selfie namin. Ang saya ng mga mata niya. Ang saya ng mga mata ko.</p>
+
+                    <p>Pero sa halip na kiligin ako, bigla akong nilamig.</p>
+
+                    <p><strong>Post-Production Blues.</strong> Yan ang tawag namin dito. Yung lungkot pagkatapos ng event. Yung crash pagkatapos ng adrenaline.</p>
+
+                    <p>Bigla kong naalala ang future.</p>
+
+                    <p>Paano kung… kahit anong gawin ko, bad ending pa rin?</p>
+
+                    <p>Paano kung pasayahin ko lang siya ngayon, tapos sa huli, iiwan din niya ako?</p>
+
+                    <p>Paano kung mas masakit pala 'to?</p>
+
+                    <p>Dati, sa original timeline, safe ako. Nasa malayo ako. Masakit manood, pero at least, hindi ako ang directly na nasasaktan. Observer lang ako ng sakit ng iba. Pero ngayon… nasa gitna na ako ng arena. Kapag tinamaan ako, bullseye.</p>
+
+                    <p>"Cut," bulong ko sa sarili. "Ang nega mo naman."</p>
+
+                    <p>Sinubukan kong itago ang cellphone ko. Sinubukan kong tumayo para umalis.</p>
+
+                    <p>"Alam mo, ang problema sa mga baguhang director, masyado silang takot sa critics."</p>
+
+                    <p>Napahinto ako.</p>
+
+                    <p>Sa row sa itaas ko, may nakaupong lalaki. Naka-shades kahit makulimlim. Naka-polo barong na parang galing sa meeting. Hawak niya ang isang tasa ng taho.</p>
+
+                    <p>Si Sir Vren.</p>
+
+                    <p>"Sir Vren," bati ko, medyo gulat. "Akala ko tapos na shift mo as OJT?"</p>
+
+                    <p>"Lunch break," sabi niya, humihigop ng taho. "At binibisita ko ang investment ko."</p>
+
+                    <p>Bumaba siya ng hagdan at tumabi sa akin.</p>
+
+                    <p>"So," panimula niya. "Balita ko nag-enjoy ka nung Fair ah. Nabalitaan ko sa mga source ko na nag-mosh pit ka daw? Very un-Gio behavior."</p>
+
+                    <p>"Sinusubukan ko lang mag-enjoy," sagot ko. "Gaya ng sabi mo."</p>
+
+                    <p>"Good," tango niya. "Pero bakit ka nakasimangot ngayon? Diba dapat inspired ka?"</p>
+
+                    <p>Huminga ako nang malalim. Tumingin ako sa oval track. Walang laman.</p>
+
+                    <p>"Natatakot ako, Sir," pag-amin ko.</p>
+
+                    <p>"Saan?"</p>
+
+                    <p>"Sa lahat," sabi ko. "Sa future. Sa sarili ko. Paano kung… paano kung nag-iilusyon lang ako? Paano kung temporary lang 'to? Sa future kasi, sira na ako eh. Sira ang utak ko, sira ang puso ko. Baka… baka madamay ko lang si Lia sa pagkasira ko."</p>
+
+                    <p>Ito ang totoong <strong>Antagonist</strong>.</p>
+
+                    <p>Ang Self-Doubt. Ang Trauma ng future na bumubulong sa akin na damaged goods na ako at hindi ako karapat-dapat sa happy ending.</p>
+
+                    <p>Tumawa si Sir Vren. Yung tawang medyo nakakainis.</p>
+
+                    <p>"Alam mo, Gio," sabi niya, tinatanggal ang shades niya. Seryoso ang mga mata niya. "Ang tawag dyan, Imposter Syndrome."</p>
+
+                    <p>"Imposter?"</p>
+
+                    <p>"Oo. Feeling mo peke ka. Feeling mo hindi mo deserve ang spotlight. Kasi sanay kang maging extra. Sanay kang nasa dilim."</p>
+
+                    <p>May kinuha siya sa bulsa niya. Isang lens cap.</p>
+
+                    <p>Inikot-ikot niya ito sa mga daliri niya.</p>
+
+                    <p>"Tignan mo 'to," sabi niya. "Ang trabaho ng lens cap, protektahan ang lens. Para hindi magasgasan. Para hindi madumihan."</p>
+
+                    <p>Itinaas niya ang lens cap sa tapat ng mata ko. Tinakpan ang paningin ko.</p>
+
+                    <p>Dumilim ang mundo.</p>
+
+                    <p>"Safe ang lens kapag may takip," bulong niya. "Pero Gio… hindi makakakuha ng picture ang camera na may takip."</p>
+
+                    <p>Binaba niya ang kamay niya. Lumiwanag ulit ang paningin ko.</p>
+
+                    <p>"Ang tanong ko sa'yo," tuloy niya. "Gusto mo bang maging safe? O gusto mong makakuha ng shot?"</p>
+
+                    <p>Natigilan ako.</p>
+
+                    <p>"Kung takot kang masaktan, ibalik mo na lang ang takip," sabi ni Vren. Tumayo siya at inayos ang polo barong niya. "Pwede kitang ibalik sa 2026 ngayon din. Walang sakit. Walang risk. Pero babalik ka sa condo mo, mag-isa, habang pinapanood mo ang wedding video nila."</p>
+
+                    <p>Nanlamig ako sa imagination. Ang condo. Ang gamot. Ang dilim.</p>
+
+                    <p>"Ayoko," mabilis kong sagot.</p>
+
+                    <p>"Edi wag kang umarte na parang talo ka na," mariing sabi niya. "Kalahati pa lang ng sem, Gio. Wag kang mag-cut bago pa matapos ang eksena."</p>
+
+                    <p>Tumingin siya sa relo niya.</p>
+
+                    <p>"Time is running out. Midterms na next week. Pagkatapos nun, sembreak. Then Finals. Ang bilis ng oras kapag masaya ka, pero mas mabilis kapag nagdadalawang-isip ka."</p>
+
+                    <p>Tinapik niya ako sa balikat.</p>
+
+                    <p>"Make it count, Direk."</p>
+
+                    <p>Naglakad siya palayo. Nawala siya sa likod ng grandstand pillars.</p>
+
+                    <p>Naiwan akong nakaupo, hawak ang lens cap na iniwan niya sa tabi ko.</p>
+
+                    <p>Safe o Shot?</p>
+
+                    <p>Tumayo ako. Kailangan kong makita si Lia. Kailangan kong siguraduhin na totoo pa rin kami.</p>
+
+                    <div class="scene-header">INT. LIBRARY - DAY</div>
+
+                    <p>Naglakad ako papunta sa library. Alam kong dun siya tumatambay kapag vacant.</p>
+
+                    <p>Pagpasok ko, ang tahimik. Amoy lumang papel at floor wax.</p>
+
+                    <p>Nakita ko siya agad. Nasa dulo, sa may Fiction section.</p>
+
+                    <p>Pero hindi siya nag-iisa.</p>
+
+                    <p>Kausap niya si Cent.</p>
+
+                    <p>Nakatayo silang dalawa sa pagitan ng shelves. May hawak na libro si Cent. Tumatawa si Lia. Hinampas niya si Cent sa braso—yung classic move niya kapag kinikilig o natutuwa.</p>
+
+                    <p>Huminto ako. Nagtago ako sa likod ng isang shelf.</p>
+
+                    <p><span class="role-tag">Observer Mode: Activated.</span></p>
+
+                    <p>Bumalik ang old habit.</p>
+
+                    <p>Tinitignan ko sila mula sa malayo. Ang tangkad ni Cent. Ang liit ni Lia. Bagay sila. Visually pleasing silang tignan. Parang poster ng romantic comedy.</p>
+
+                    <p>Ako? Ano ba ako? Isang time traveler na may dalang bagahe ng depression at anxiety.</p>
+
+                    <p>Biglang bumulong ang Antagonist sa utak ko:</p>
+
+                    <div class="text-insert">
+                        <em>Tignan mo. Mas bagay sila. Ginugulo mo lang ang timeline. Masaya naman siya kay Cent sa original timeline ah? Sino ka para baguhin 'yun?</em>
+                    </div>
+
+                    <p>Ang sakit.</p>
+
+                    <p>Nakita kong inabot ni Cent ang libro kay Lia. Nagngitian sila.</p>
+
+                    <p>Dati, sa original timeline, ito yung moment na aalis ako nang tahimik. Uuwi ako, magpapatugtog ng malungkot na kanta, at iisiping talo na ako.</p>
+
+                    <p>Akmang tatalikod na sana ako. Akmang aalis na ako gaya ng dati.</p>
+
+                    <p>Pero naalala ko ang lens cap.</p>
+
+                    <p>Hindi makakakuha ng picture ang camera na may takip. Kung aalis ako ngayon, tinatakpan ko ulit ang lens ko.</p>
+
+                    <p>Huminga ako nang malalim.</p>
+
+                    <p><span class="thought">Fuck it.</span></p>
+
+                    <p>Lumabas ako sa pinagtataguan ko.</p>
+
+                    <p>"Hoy!" bati ko, medyo malakas kaya napalingon ang librarian at sinaway ako. <span class="sound-effect">"Ssshh!"</span></p>
+
+                    <p>"Sorry po," bulong ko.</p>
+
+                    <p>Lumapit ako kina Cent at Lia.</p>
+
+                    <p>Gulat na tumingin si Cent. "O, Gio! Andyan ka pala."</p>
+
+                    <p>Si Lia, ngumiti nung makita ako. "Uy, Gio! Hinahanap kita kanina! Sabi ko sa'yo sabay tayo mag-lunch eh."</p>
+
+                    <p>Yung ngiti niya. Sa akin nakadirekta.</p>
+
+                    <p>Nawala ang bigat sa dibdib ko.</p>
+
+                    <p>"Sorry," sabi ko, sumiksik sa gitna nila. Literal na pumagitna ako. "May inasikaso lang kay Sir Vren. Ano 'yan?"</p>
+
+                    <p>Tinuro ko ang libro.</p>
+
+                    <p>"Ah, eto? Reviewer sa Physics," sabi ni Cent. "Pinapahiram ko kay Lia, bobo daw kasi siya sa vectors."</p>
+
+                    <p>"Grabe makabobo!" reklamo ni Lia.</p>
+
+                    <p>"Ako na magtuturo sa'yo," prisinta ko agad. Wala nang hiya-hiya. "Mas magaling ako sa Physics kaysa kay Cent. Puro basketball lang alam niyan eh. Projectile motion lang alam niyan."</p>
+
+                    <p>Tumawa si Cent. "Yabang! Sige nga, ikaw na magturo. Tinatamad din naman ako eh."</p>
+
+                    <p>Inakbayan ako ni Cent. "O paano, una na ako? May training pa. Kayo na bahala dyan. Love birds."</p>
+
+                    <p>Kumindat si Cent bago umalis.</p>
+
+                    <p><span class="thought">Love birds.</span></p>
+
+                    <p>Iniwan niya kaming dalawa. Sinadya niya 'yun. Alam kong sinadya niya.</p>
+
+                    <p>Tumingin ako kay Lia. Nakatingin din siya sa akin.</p>
+
+                    <p>"So," sabi niya, yakap ang libro. "Tutor mo ako?"</p>
+
+                    <p>"Oo," sagot ko. "Mahal TF ko. Isang siomai rice."</p>
+
+                    <p>"Ang cheap mo naman!" tawa niya.</p>
+
+                    <p>Naglakad kami palabas ng library.</p>
+
+                    <p>Pero habang naglalakad kami, ramdam ko pa rin ang anino ng Antagonist sa likod ko. Nandiyan pa rin ang takot. Nandiyan pa rin ang doubt.</p>
+
+                    <p>Pero sa ngayon, tinanggal ko muna ang lens cap.</p>
+
+                    <p>Hayaan mong magasgasan. Hayaan mong masaktan.</p>
+
+                    <p>Basta makakuha lang ako ng shot na kasama ka.</p>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter10.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="chapter12.html" class="btn-sketch primary nav-btn">
+                        Next Chapter &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

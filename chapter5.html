@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 5 - Focus Pulling | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Scene Header Style */
+        .scene-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--pencil-black);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Sticky Note for Diagrams */
+        .text-insert { 
+            font-family: 'Patrick Hand', cursive; 
+            background: #fff9c4; /* Yellow sticky note */
+            color: #333;
+            padding: 15px 20px; 
+            border: 1px solid #e0e0e0;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+            transform: rotate(-1deg);
+            display: block;
+            margin: 30px auto;
+            text-align: center;
+            max-width: 90%;
+            font-size: 1.1rem;
+        }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 5</span>
+                    <h1 class="chap-title">Focus Pulling</h1>
+                </div>
+
+                <div class="story-text">
+                    <p>Sa photography, may tinatawag kaming Depth of Field.</p>
+
+                    <p>Ito yung area sa image na "sharp" o malinaw. Kapag mababaw ang depth of field mo (naka-f/1.8 ka, halimbawa), yung subject lang ang malinaw. Ang background, blurred. Bokeh. Hindi mahalaga.</p>
+
+                    <p>Sa loob ng walong taon, ang depth of field ng buhay ko ay naka-set sa infinity.</p>
+
+                    <p>Gusto ko kasi na lahat malinaw. Gusto kong makita ang buong barkada. Gusto kong makita ang context. Gusto kong safe ang composition.</p>
+
+                    <p>Ang problema, kapag lahat malinaw… walang special. Walang bida. Pantay-pantay lang ang lahat sa frame.</p>
+
+                    <p>Kaya ngayon, babaguhin ko ang settings.</p>
+
+                    <p>Pipikit ako sa background. Lalabuin ko ang ingay ng paligid. At ililipat ko ang focus sa kaisa-isang subject na gusto kong maging malinaw.</p>
+
+                    <p><span class="sound-effect">Rack focus.</span></p>
+
+                    <div class="scene-header">Tanghali. Grandstand.</div>
+
+                    <p>Mainit ang sikat ng araw, pero masarap ang hangin dahil September na. Ang mga estudyante, nagkalat sa bleachers. May mga nagpapahinga galing practice, may mga nagde-date nang patago, at may mga kumakain ng packed lunch.</p>
+
+                    <p>Kami ng barkada, nakapwesto sa paborito naming spot—sa taas, malapit sa bubong, kung saan kita ang buong oval.</p>
+
+                    <p>Dala ko ang tupperware ko. Adobong manok na luto ni Mama. (Isa pang bagay na namiss ko: lutong bahay. Sa future, puro 7-Eleven microwave meals lang ang diet ko.)</p>
+
+                    <p>Paakyat pa lang kami ng hagdan. Nauuna si Lia at Trina, nagtatawanan. Nasa likod nila si Cent at Keanu. Ako, nasa pinakahuli. Ang sweeper.</p>
+
+                    <p>Sa original script, ganito ang seating arrangement namin:</p>
+
+                    <div class="text-insert">
+                        Lia | Cent | Keanu | Trina | (Space) | Gio
+                    </div>
+
+                    <p>Laging may gap. Laging nasa dulo si Gio. Laging katabi ni Lia si Cent.</p>
+
+                    <p>Automatic 'yun. Unspoken rule ng universe. Si Cent ang leading man, kaya siya ang dapat katabi ng leading lady. Ako ang supporting character na nasa gilid, taga-abot ng tubig o taga-tawa sa jokes nila.</p>
+
+                    <p>Pero hindi na ngayon.</p>
+
+                    <p>Binilisan ko ang lakad ko. Nilampasan ko si Keanu. Nilampasan ko si Cent.</p>
+
+                    <p>"Uy, pre, nagmamadali?" biro ni Cent.</p>
+
+                    <p>Hindi ako sumagot. <span class="thought">Eyes on the prize.</span></p>
+
+                    <p>Pagdating namin sa row na uupuan namin, huminto si Lia. Inapag niya ang bag niya sa semento.</p>
+
+                    <p>Dati, hihintayin kong umupo si Cent sa tabi niya bago ako humanap ng pwesto sa dulo.</p>
+
+                    <p>Pero bago pa makalapit si Cent, ibinagsak ko na ang bag ko sa tabi ng bag ni Lia. At umupo ako agad.</p>
+
+                    <p><span class="sound-effect">Thud.</span></p>
+
+                    <p>Umupo ako sa pwestong nakalaan kay Cent sa nakalipas na walong taon.</p>
+
+                    <p>Saglit na tumahimik ang mundo.</p>
+
+                    <p>Tumingin si Lia sa akin. Gulat. "O? Dyan ka?"</p>
+
+                    <p>Ngumiti ako, binubuksan ang tupperware ko na parang wala lang nangyari. "Mas mahangin dito eh. Ayos lang?"</p>
+
+                    <p>"Ah… oo naman," sagot niya, pero halatang naninibago. Usually kasi, si Cent ang katabi niya para mag-share sila ng ulam.</p>
+
+                    <p>Dumating si Cent. Nakita niyang nakaupo na ako sa "trono" niya.</p>
+
+                    <p>Saglit siyang natigilan. Isang micro-expression ng confusion ang dumaan sa mukha niya. Pero dahil mabait si Cent at bros kami, hindi siya nag-reklamo.</p>
+
+                    <p>"Sige, dyan ako sa kabila," sabi ni Cent, umupo sa tabi ni Trina.</p>
+
+                    <p>Ang bagong arrangement:</p>
+
+                    <div class="text-insert" style="background:#e0f7fa; transform: rotate(1deg);">
+                        Cent | Trina | Keanu | Lia | Gio
+                    </div>
+
+                    <p>Napalitan ang geometry. Nasira ang pattern.</p>
+
+                    <p>Kinakabahan ako. Ang bilis ng tibok ng puso ko. Para akong nagnakaw ng bangko. Ito na yata ang pinaka-rebeldeng ginawa ko simula nang bumalik ako sa 2018.</p>
+
+                    <p>"Ano ulam mo?" tanong ni Lia, sumisilip sa tupperware ko.</p>
+
+                    <p>Ang lapit ng mukha niya. Amoy Baby Bench cologne.</p>
+
+                    <p>"Adobo," sabi ko. "Gusto mo?"</p>
+
+                    <p>Dati, nahihiya akong mag-alok. Iniisip ko, baka ayaw niya, baka may baon siya, baka mas masarap ulam ni Cent.</p>
+
+                    <p>"Hala! Pahingi!" sabi niya agad, hindi na naghintay ng permiso. Tusok agad ng tinidor sa manok ko.</p>
+
+                    <p>Natawa ako. "Takaw ah."</p>
+
+                    <p>"Che! Favorite ko luto ng Mama mo eh," sabi niya habang ngumunguya. </p>
+
+                    <p>"Ikaw, wala kang ulam?" question ko.</p>
+
+                    <p>Tinignan ko ang baon niya. Hotdog at itlog. Classic student meal.</p>
+
+                    <p>"Pahingi ng hotdog," sabi ko.</p>
+
+                    <p>"Ayoko nga, isa lang 'to!" pagdadamot niya, niyakap ang tupperware niya nang mahigpit.</p>
+
+                    <p>"Damot. Binigyan kita ng adobo ah."</p>
+
+                    <p>"Joke lang! 'to naman-" Tumawa siya at hiniwa ang hotdog. "O, hati tayo."</p>
+
+                    <p>Kinuha niya ang kalahati ng hotdog gamit ang tinidor niya at… sinubo sa akin.</p>
+
+                    <p>Nanlaki ang mata ko.</p>
+
+                    <p><span class="thought">Wait.</span></p>
+
+                    <p>Hindi ko inexpect 'yun. Akala ko ilalagay niya sa kanin ko. Pero heto, ang tinidor niya, nasa tapat ng bibig ko, hinihintay akong sumubo.</p>
+
+                    <p><span class="thought">Indirect kiss?</span></p>
+
+                    <p>Napatingin ako kay Cent sa peripheral vision ko. Busy siya makipag-usap kay Trina at Keanu tungkol sa NBA. Hindi sila nakatingin.</p>
+
+                    <p>Nasa sarili kaming mundo ni Lia. Shallow Depth of Field. Kami lang ang sharp. Sila, blurred.</p>
+
+                    <p>Binuka ko ang bibig ko at kinain ang hotdog.</p>
+
+                    <p>"Sarap?" tanong niya, nakangiti.</p>
+
+                    <p>"Pwede na," asar ko, kahit sa totoo lang, lasang langit yung Tender Juicy hotdog dahil siya ang nagsubo.</p>
+
+                    <p>Habang kumakain kami, na-realize ko ang isang malaking katotohanan.</p>
+
+                    <p>Sa original timeline, akala ko kaya ako nasa gilid ay dahil ayaw nila ako sa gitna. Akala ko outcast ako. Akala ko third wheel ako.</p>
+
+                    <p>Pero mali pala.</p>
+
+                    <p>Kaya ako nasa gilid noon… ay dahil ako mismo ang lumalayo.</p>
+
+                    <p>Ako ang nag-a-assume na dapat magkatabi si Cent at Lia. Ako ang nagbibigay ng space. Ako ang kusang umaatras para sa kanila. Self-fulfilling prophecy. Inisip kong extra lang ako, kaya kumilos ako bilang extra, at trinato nila akong extra.</p>
+
+                    <p>Pero ngayong inangkin ko ang space… ngayong pinilit kong pumasok sa frame…</p>
+
+                    <p>Welcome naman pala ako.</p>
+
+                    <p>Hindi nagalit si Lia. Hindi nagalit si Cent.</p>
+
+                    <p>Tangina. Walong taon kong dinala yung insecurity na 'yun. Walong taon kong iniyakan na "hindi ako pwede". Yun pala, kailangan ko lang umupo sa tabi niya.</p>
+
+                    <hr class="divider">
+
+                    <p>"Gio," tawag ni Lia habang umiinom ng tubig.</p>
+
+                    <p>"Bakit?"</p>
+
+                    <p>"Napapansin ko lang," sabi niya, medyo humina ang boses. "Ang… confident mo na ngayon."</p>
+
+                    <p>"Paanong confident?"</p>
+
+                    <p>"Ewan," nagkibit-balikat siya. "Dati kasi, parang laging takot kang magsalita. Laging naghihintay ng permiso. Ngayon… parang alam mo na yung gusto mo."</p>
+
+                    <p>Tinignan niya ako sa mata.</p>
+
+                    <p>"May… may nangyari ba nung summer? Bakit parang nag-iba ka?"</p>
+
+                    <p>Kinabahan ako. Masyado ba akong mabilis? Masyado ba akong aggressive? Baka mahalata niyang hindi ako ang real Gio ng 2018.</p>
+
+                    <p>Kailangan kong mag-ingat.</p>
+
+                    <p>"Wala naman," sagot ko, pinunasan ang bibig ko. "Na-realize ko lang… life is short."</p>
+
+                    <p>"Luh? Ang dark naman nun!" tawa niya. "Life is short ka dyan, 20 pa lang tayo!"</p>
+
+                    <p><span class="thought">Kung alam mo lang, bulong ko sa isip ko. Kung alam mo lang na sa future, iiyak ka dahil sa heartbreak. Na mawawala si Mama ko. Na magkaka-pandemya. Na ang bilis-bilis ng panahon.</span></p>
+
+                    <p>"Basta," sabi ko. "Gusto ko lang sulitin. Ayaw kong magkaroon ng regrets."</p>
+
+                    <p>Tumahimik siya. Mukhang tinatablan siya sa sinabi ko.</p>
+
+                    <p>Biglang sumigaw si Keanu mula sa kabilang dulo.</p>
+
+                    <p>"Hoy! Love birds! May practice pa tayo! Tara na!"</p>
+
+                    <p><span class="thought">Love birds.</span></p>
+
+                    <p>Natigilan kaming lahat.</p>
+
+                    <p>Si Cent, napalingon. Si Trina, napangisi.</p>
+
+                    <p>Ako at si Lia, nagkatinginan.</p>
+
+                    <p>Sa original timeline, kung tinukso kaming ganyan, mamumula ako, magde-deny to death, at lalayo ako agad. Sasabihin ko, "Gago, hindi ah! Friends lang kami!" para hindi ma-awkward si Cent.</p>
+
+                    <p>Pero ngayon?</p>
+
+                    <p>Nginitian ko lang si Keanu.</p>
+
+                    <p>"Inggit ka lang, wala kang ka-share sa hotdog," sagot ko.</p>
+
+                    <p>Naghiyawan ang barkada. "Yieeee! Lumalaban si Gio!"</p>
+
+                    <p>Si Lia, namula ang pisngi. Hinampas niya ako sa braso. "Baliw ka talaga!"</p>
+
+                    <p>Pero… hindi siya lumayo. Hindi siya umusog. Nanatili siya sa tabi ko.</p>
+
+                    <p>Pagbaba namin ng grandstand, sabay kaming naglakad. Dikit ang balikat namin.</p>
+
+                    <p>Sa gilid ng paningin ko, nakita ko si Cent. Nakatingin siya sa amin. Hindi galit, pero may halong… pagtataka.</p>
+
+                    <p>Nararamdaman na niya.</p>
+
+                    <p>Nararamdaman na niyang nag-iiba ang ihip ng hangin. Nararamdaman na niyang may competitor na siya.</p>
+
+                    <p><span class="thought">Sorry, Cent. Bros tayo sa future. Ninong pa nga ako sa kasal mo (sa ibang babae--sorry spoiler). Pero sa timeline na 'to? All is fair in love and war.</span></p>
+
+                    <p>Pagdating sa oval, kinuha ko ulit ang camera ko.</p>
+
+                    <p>Pero this time, hindi ko na itinutok sa kanila habang nasa malayo ako. Lumapit ako kay Lia habang nag-iinat siya.</p>
+
+                    <p>"Picture tayo," sabi ko.</p>
+
+                    <p>"Ha? Haggard ako!" reklamo niya.</p>
+
+                    <p>"Hindi ah. Ang ganda nga ng ilaw eh," sabi ko.</p>
+
+                    <p>Itinaas ko ang camera, hinarap sa amin, at kinilick ang shutter.</p>
+
+                    <p><span class="sound-effect">Click.</span></p>
+
+                    <p>Tinignan ko ang preview.</p>
+
+                    <p>Isang selfie. Close up. Ang mukha niya, nakangiti, medyo pawis pero glowing. Ang mukha ko, nasa tabi niya, hindi putol, hindi blurred.</p>
+
+                    <p>Sharp. Focused.</p>
+
+                    <p>Kasama na ako sa frame.</p>
+
+                    <p>Ito ang unang litrato namin na kaming dalawa lang. Sa future ko, wala akong ganitong copy. Lahat ng pictures namin, group shot. O kaya picture niya na ako ang kumuha.</p>
+
+                    <p>Pero ito… ito ang ebidensya.</p>
+
+                    <p>"Patingin!" agaw niya sa camera. Tinignan niya ang photo. Napangiti siya. "In fairness," sabi niya. "Ang ganda ko dyan. Send mo sakin ha? Bluetooth."</p>
+
+                    <p>"Sige," sabi ko. "Basta… wallpaper mo."</p>
+
+                    <p>"Kapal!" tawa niya. "Pag-iisipan ko."</p>
+
+                    <p>Tumakbo na siya papunta sa formation nila.</p>
+
+                    <p>Naiwan akong nakatayo, hawak ang camera, habang pinapanood siyang tumakbo palayo.</p>
+
+                    <p>Biglang bumulong ang boses sa isip ko. Yung boses ni Sir Vren.</p>
+
+                    <p><span class="thought">Focus pulled successfully. Subject acquired.</span></p>
+
+                    <p>Pero alam ko na hindi pa tapos ang laban. Nakuha ko ang atensyon niya ngayon. Nakuha ko ang pwesto sa tabi niya. Pero ang tanong… hanggang kailan ko kayang panindigan ang role na 'to bago bumigay ang script?</p>
+
+                    <p>Kasi sa likod ng kilig, ramdam ko ang pagod. Ang mental exhaustion ng pagiging ibang tao. Ang takot na baka isang araw, magising ako at 28 years old na ulit ako, at panaginip lang ang lahat ng 'to.</p>
+
+                    <p>Kailangan kong bilisan. One semester.</p>
+
+                    <p>Kailangan kong baguhin ang ending bago maubos ang rolyo ng film.</p>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter4.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="chapter6.html" class="btn-sketch primary nav-btn">
+                        Next Chapter &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

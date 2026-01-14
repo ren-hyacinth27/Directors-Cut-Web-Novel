@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Director's Cut | An Original Web Novel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* --- LOCKED CHAPTER STYLES --- */
+        .chapter-card.locked {
+            opacity: 0.7;
+            filter: grayscale(100%);
+            cursor: not-allowed;
+            position: relative;
+            pointer-events: none; /* Prevents clicking */
+            border-style: dashed;
+            background-color: #f0f0f0;
+        }
+
+        .chapter-card.locked::after {
+            content: "\f023"; /* FontAwesome Padlock */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-10deg);
+            font-size: 4rem;
+            color: rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .card-content { z-index: 2; position: relative; }
+
+        /* --- COUNTDOWN TIMER STYLES --- */
+        .timer-container {
+            margin-top: 10px;
+            padding: 10px;
+            background: var(--pencil-black);
+            color: white;
+            border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+            display: inline-block;
+            transform: rotate(-2deg);
+        }
+        
+        .timer-label {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 5px;
+            color: var(--sunset-yellow);
+        }
+
+        .timer-digits {
+            font-family: 'Courier Prime', monospace;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        /* Hero Button Update */
+        .btn-sketch.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="brand">Director's Cut<span class="dot">.</span></div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#synopsis">Synopsis</a></li>
+                <li><a href="#chapters">Chapters</a></li>
+                <li><a href="#subscribe" class="btn-subscribe">Subscribe</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="handwritten-tag">Slice of Life / Romance / Time Travel</span>
+                <h1>Director's<br>Cut</h1>
+                <h2 class="subtitle">115 Million Kilometers of Film</h2>
+                
+                <p class="hook-text">
+                    "If you could edit your life like a movie, would you cut the parts that hurt?"
+                </p>
+
+                <div class="cta-group">
+                <a href="chapter1.html" class="btn btn-sketch primary">Start Reading (Ch. 1)</a>
+                <a href="chapter6.html" class="btn btn-sketch secondary">Read Latest (Ch. 6) &rarr;</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="sketch-frame">
+                    <img src="cover.png" alt="Director's Cut Cover" class="main-cover">
+                    <div class="tape-corner top-left"></div>
+                    <div class="tape-corner bottom-right"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="synopsis" class="section-paper">
+    <div class="container slim-container">
+        <div class="torn-paper-sheet">
+            <h3>Synopsis</h3>
+            
+            <p class="synopsis-body">
+                <em>"The cameraman is never part of the scene."</em>
+            </p>
+
+            <p class="synopsis-body">
+                Gio knows this rule by heart. At 28, he is a wedding videographer who captures everyone else's happy endings while his own remains a blur of regrets. He has mastered the art of being invisible—an extra in his own life, hiding behind a lens to avoid the pain of living.
+            </p>
+
+            <p class="synopsis-body">
+                But life rarely offers a second take.
+            </p>
+
+            <p class="synopsis-body">
+                When a mysterious encounter sends him eight years into the past, Gio is given a chance to "reshoot" his college days. The setting: 2018. The target: Lia, the one who got away.
+            </p>
+
+            <p class="synopsis-body">
+                Armed with the memories of a lonely future, he has one semester to rewrite the script. But he soon realizes that knowing the future doesn't make the present any easier. To change the ending, Gio must face his greatest fear: putting down the camera and finally stepping into the frame.
+            </p>
+
+            <hr class="pencil-divider">
+            <p class="handwritten-note">Status: Ongoing • Updates Every Tuesdays and Thursdays</p>
+        </div>
+    </div>
+</section>
+
+    <section id="chapters" class="section-sketchbook">
+        <div class="container">
+            <div class="section-header">
+                <h2>Table of Contents</h2>
+                <span class="header-sub">The Reel</span>
+            </div>
+
+            <div class="chapter-list">
+                
+                <a href="chapter1.html" class="chapter-card">
+                    <div class="card-number">01</div>
+                    <div class="card-content">
+                        <h4>The Closing Credits</h4>
+                        <p class="chapter-desc">The Morning Dread and a strange offer at a bar.</p>
+                        <span class="handwritten-date">Jan 1</span>
+                    </div>
+                    <div class="card-arrow">&rarr;</div>
+                </a>
+
+                <a href="chapter2.html" class="chapter-card">
+                    <div class="card-number">02</div>
+                    <div class="card-content">
+                        <h4>Action! (Again)</h4>
+                        <p class="chapter-desc">Waking up in 2018. The phone call.</p>
+                        <span class="handwritten-date">Jan 8</span>
+                    </div>
+                    <div class="card-arrow">&rarr;</div>
+                </a>
+
+                <a href="chapter3.html" class="chapter-card">
+                    <div class="card-number">03</div>
+                    <div class="card-content">
+                        <h4>The Script Reading</h4>
+                        <p class="chapter-desc">First day back at school. Facing the cast.</p>
+                        <span class="handwritten-date">Jan 10</span>
+                    </div>
+                    <div class="card-arrow">&rarr;</div>
+                </a>
+
+                <a href="chapter4.html" class="chapter-card">
+                    <div class="card-number">04</div>
+                    <div class="card-content">
+                        <h4>The Props Man</h4>
+                        <p class="chapter-desc">Gio trades the safety of the lens for the mess of production.</p>
+                        <span class="handwritten-date">Jan 13</span>
+                    </div>
+                    <div class="card-arrow">&rarr;</div>
+                </a>
+
+                <a href="chapter5.html" class="chapter-card">
+                    <div class="card-number">05</div>
+                    <div class="card-content">
+                        <h4>Focus Pulling</h4>
+                        <p class="chapter-desc">Old habits dictate the seating chart, but Gio is done following the original blocking.</p>
+                        <span class="handwritten-date">Jan 13</span>
+                    </div>
+                    <div class="card-arrow">&rarr;</div>
+                </a>
+
+                <a href="chapter6.html" class="chapter-card new-release">
+                    <div class="new-sticker">NEW</div>
+                    <div class="card-number">06</div>
+                    <div class="card-content">
+                        <h4>The Bus Ride (Take 2)</h4>
+                        <p class="chapter-desc">Under the glow of an orange sunset, Gio seizes the chance to rewrite a lonely journey into a shared memory.</p> 
+                        <span class="handwritten-date">Jan 13</span>
+                    </div>
+                    <div class="card-arrow">&rarr;</div>
+                </a>
+
+                <div class="chapter-card locked">
+                    <div class="card-number">07</div>
+                    <div class="card-content">
+                        <h4>Technical Difficulties</h4>
+                        <p class="chapter-desc">Locked.</p>
+                        <span class="handwritten-date">Jan 15 (Thu)</span>
+                        
+                        <div class="timer-container">
+                            <span class="timer-label">Releasing In:</span>
+                            <span id="countdown" class="timer-digits">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="card-arrow"><i class="fas fa-lock"></i></div>
+                </div>
+
+                <div class="chapter-card locked">
+                    <div class="card-number">08</div>
+                    <div class="card-content">
+                        <h4>The Supporting Cast</h4>
+                        <p class="chapter-desc">Locked.</p>
+                        <span class="handwritten-date">Jan 20 (Tue)</span>
+                    </div>
+                    <div class="card-arrow"><i class="fas fa-lock"></i></div>
+                </div>
+
+                <div class="chapter-card locked">
+                    <div class="card-number">09</div>
+                    <div class="card-content">
+                        <h4>Off-Script</h4>
+                        <p class="chapter-desc">Locked.</p>
+                        <span class="handwritten-date">Jan 22 (Thu)</span>
+                    </div>
+                    <div class="card-arrow"><i class="fas fa-lock"></i></div>
+                </div>
+
+                <div class="chapter-card locked">
+                    <div class="card-number">10</div>
+                    <div class="card-content">
+                        <h4>B-Roll</h4>
+                        <p class="chapter-desc">Locked.</p>
+                        <span class="handwritten-date">Jan 27 (Tue)</span>
+                    </div>
+                    <div class="card-arrow"><i class="fas fa-lock"></i></div>
+                </div>
+
+                <div class="chapter-card locked">
+                    <div class="card-number">11</div>
+                    <div class="card-content">
+                        <h4>The Antagonist</h4>
+                        <p class="chapter-desc">Locked.</p>
+                        <span class="handwritten-date">Jan 29 (Thu)</span>
+                    </div>
+                    <div class="card-arrow"><i class="fas fa-lock"></i></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="subscribe" class="section-newsletter">
+        <div class="container slim-container">
+            <div class="newsletter-box">
+                <h3>Don't Miss the Next Take</h3>
+                <p>Get notified immediately when Chapter 7 goes live.</p>
+                <form class="email-form" action="https://formspree.io/f/mwvpggkq" method="POST">                        
+                <input type="hidden" name="_next" value="https://directorscutnovel.netlify.app/">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit" class="btn-sketch primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <div class="container">
+        <p class="handwritten-note large">&copy; 2026 Director's Cut Web Novel.</p>
+        
+        <p style="font-size: 0.75rem; opacity: 0.6; margin: 15px 0; line-height: 1.4; font-family: sans-serif;">
+            This is a work of fiction. Names, characters, places, and incidents are either the products of the author’s imagination or used in a fictitious manner. Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
+        </p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Mobile Menu
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // COUNTDOWN TIMER LOGIC
+        // Updated Target Date: Jan 15, 2026 (Thursday)
+        // I set this to midnight (00:00:00). 
+        const targetDate = new Date("Jan 15, 2026 00:00:00").getTime();
+
+        const timerInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            // Calculations
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            const display = document.getElementById("countdown");
+            
+            if (display) { // Check if element exists to prevent errors
+                if (distance < 0) {
+                    clearInterval(timerInterval);
+                    display.innerHTML = "NOW SHOWING";
+                } else {
+                    // Added seconds for more excitement as it gets closer
+                    display.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                }
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

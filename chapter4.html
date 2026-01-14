@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 4 - The Props Man | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Updated: Washi Tape Label */
+        .role-tag { 
+            font-family: 'Patrick Hand', cursive; 
+            background: rgba(44, 62, 80, 0.1); 
+            padding: 2px 10px; 
+            border-left: 5px solid var(--pencil-blue);
+            font-size: 1rem; 
+            color: var(--pencil-blue); 
+            font-weight: 700; 
+            letter-spacing: 1px;
+        }
+
+        /* Updated: Hand-drawn ID Card */
+        .id-card { 
+            border: 2px solid var(--pencil-black); 
+            /* Wobbly border */
+            border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+            padding: 20px; 
+            margin: 30px auto; 
+            max-width: 320px; 
+            text-align: center; 
+            font-family: 'Inter', sans-serif; 
+            background: #fff; 
+            box-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+            transform: rotate(1deg);
+        }
+        .id-card strong { display: block; font-size: 1.2em; margin-bottom: 5px; text-transform: uppercase; font-family: 'Patrick Hand', cursive; letter-spacing: 1px; }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 4</span>
+                    <h1 class="chap-title">The Props Man</h1>
+                </div>
+
+                <div class="story-text">
+                    <p>Laging sinasabi sa pelikula na ang bida ang pinaka-busy. Sila yung takbo nang takbo, iyak nang iyak, o nakikipagpatayan sa mga villains habang umuulan.</p>
+
+                    <p>Pero kalokohan 'yun.</p>
+
+                    <p>Ang totoong pinaka-busy sa production ay ang Art Department. Ang mga tao sa likod ng set na nagpipintura ng pader, naghahanap ng tamang kulay ng kurtina, at nagsisigurong hindi babagsak ang props sa ulo ng mga artista.</p>
+
+                    <p>At sa pelikulang ito na tinatawag na "College Life," ako ang Head of Art Department.</p>
+
+                    <p>"Gio! Yung styro! Baka mabali!"</p>
+
+                    <p>Napabuntong-hininga ako. Hawak-hawak ko ang isang malaking styrofoam na hugis letrang "U". Bahagi ito ng higanteng "UPANG" sign na gagamitin para sa Opening Ceremony ng Intramurals.</p>
+
+                    <p>"Oo, hawak ko," sagot ko nang walang gana.</p>
+
+                    <p>Nasa loob kami ng covered court. Magulo. Maingay. Amoy thinner, pintura, at pinaghalong pawis ng limang daang estudyante. Intrams Week na next week, kaya cramming season na ng props making.</p>
+
+                    <p>Ang kamay ko, puro blue paint. Ang t-shirt ko, may mantsa ng rugby.</p>
+
+                    <p>Sa original timeline, ganitong-ganito rin ang eksena. Habang ang ibang lalaki sa batch namin (tulad nina Cent at Keanu) ay nasa court nagpa-practice ng basketball o nagpapagwapo sa mga muse, ako… heto. Nakaupo sa sahig, nagka-cut ng lettering.</p>
+
+                    <p><span class="role-tag">PROPS MAN.</span></p>
+
+                    <p>Yan ang role ko. Taga-bigay ng gamit para maging maganda ang eksena ng iba.</p>
+
+                    <p>"Gio, okay na ba 'yan?" tanong ni Trina, ang SC President na laging high blood.</p>
+
+                    <p>"Patuyo na," sagot ko. "Wag niyo lang hawakan."</p>
+
+                    <p>Tumayo ako para mag-inat. Masakit ang likod ko. Kahit 20 years old na ulit ang katawan ko, parang dala-dala ko pa rin ang phantom back pain ng 28-year-old self ko. Mental torture ata 'to.</p>
+
+                    <p>"CR lang ako," paalam ko kay Trina.</p>
+
+                    <p>Naglakad ako palabas ng gym. Kailangan ko ng hangin. Kailangan ko ng yosi—ay, wala pala akong yosi.</p>
+
+                    <p>Nagpunta ako sa likod ng Guidance Office. May maliit na garden dun na bihira puntahan ng mga estudyante kasi takot silang makita ng Guidance Counselor. Ito ang secret smoking area (kahit bawal) ng mga "cool kids" noon. Pero ako, tambayan ko lang 'to para mag-emote.</p>
+
+                    <p>Umupo ako sa isang bench sa ilalim ng mangga. Pumikit ako.</p>
+
+                    <p><span class="thought">Day 3. Tatlong araw na akong nasa 2018.</span></p>
+
+                    <p>So far, anong nabago ko? Nakapasa si Lia sa quiz (check). Hindi ako naging awkward sa first meeting (check). Naging close kami ng onti sa canteen (check).</p>
+
+                    <p>Pero sapat na ba 'yun? Parang ang bagal ng pacing. Sa mga pelikula, dapat sa Chapter 4, may malupit nang plot twist. Dapat may montage na kung saan nagiging gwapo na ako at nagugustuhan na ako ng bida.</p>
+
+                    <p>Pero heto ako, may pintura sa mukha.</p>
+
+                    <p>"Cut! Masyadong madrama ang monologue. Walang budget para sa violin background music."</p>
+
+                    <p>Napadilat ako.</p>
+
+                    <p>Sa kabilang dulo ng bench, may nakaupong lalaki. Nakasuot siya ng polo shirt na kulay itim, slacks, at shiny leather shoes. May suot siyang salamin na makapal ang frame. Hawak niya ang isang clipboard.</p>
+
+                    <p>Kilala ko siya.</p>
+
+                    <p>Kahit medyo iba ang itsura niya (mas mukha siyang disente ngayon kaysa sa bar noong 2026), hindi ko makakalimutan ang mukha ng lalaking nagbigay sa akin ng memory card.</p>
+
+                    <p>"Sir Vren?" bulong ko.</p>
+
+                    <p>Tumingin siya sa akin at ngumiti. Yung ngiting parang alam niya ang lahat ng sikreto mo, pati browser history mo.</p>
+
+                    <p>"Mr. Gio," bati niya. "Or should I say… Direk?"</p>
+
+                    <p>Agad akong lumingon sa paligid. Baka may makarinig. "Anong ginagawa mo dito? Diba nasa future ka?"</p>
+
+                    <p>Tumawa siya nang mahina. Inayos niya ang salamin niya. "Nakalimutan mo na ba ang mechanics? Mental Time Travel, Gio. Pero kailangan mo ng handler. Sa Director's Cut, may support staff. Dito, ako ang Producer mo."</p>
+
+                    <p>Itinaas niya ang ID na nakasabit sa leeg niya.</p>
+
+                    <div class="id-card">
+                        <strong>VREN G.</strong>
+                        <p>STUDENT AFFAIRS ASSISTANT (OJT)</p>
+                    </div>
+
+                    <p>"OJT?" basa ko. "Student Affairs?"</p>
+
+                    <p>"Cover story," kindat niya. "Mas madaling magmanman kapag admin staff ka. Walang pumapansin sa amin. Invisible kami… parang cameraman."</p>
+
+                    <p>Natamaan ako dun.</p>
+
+                    <p>"So," panimula niya, binuksan ang clipboard na parang nagche-check ng attendance. "Kumusta ang production? Three days in. Base sa observation ko, medyo… boring ang script mo."</p>
+
+                    <p>Sumama ang mukha ko. "Boring? Hoy, binago ko yung quiz result ni Lia! Malaking bagay 'yun! Butterfly effect!"</p>
+
+                    <p>"Small potatoes," counter sakin ni Vren. Kumuha siya ng ballpen at nag-drawing ng sad face sa papel. "Ang goal mo ay baguhin ang ending, Gio. Hindi lang ang grades ni Lia. Ang connection niyo. Ang role mo sa buhay niya."</p>
+
+                    <p>Tinuro niya ako gamit ang ballpen.</p>
+
+                    <p>"Tignan mo ang sarili mo. Nasaan ka ngayon? Nasa gym, nagpipintura ng styro. Props Man ka pa rin. Nasa background ka pa rin habang sina Cent at Lia, nasa center stage."</p>
+
+                    <p>"E anong gusto mong gawin ko?" depensa ko. "Bigla na lang akong mag-basketball player? Hindi naman ako varsity! Kailangan realistic ang character development."</p>
+
+                    <p>"Hindi mo kailangang maging varsity," sabi ni Vren. Tumayo siya at naglakad palapit sa akin. "Ang kailangan mo, lumabas sa frame. Wag kang maging taga-abot lang ng props. Maging reason ka kung bakit maganda ang eksena."</p>
+
+                    <p>May kinuha siya sa bulsa niya. Inabot niya sa akin. Isang lumang film roll. Kodak Gold 200.</p>
+
+                    <p>"Ano 'to?" tanong ko.</p>
+
+                    <p>"Symbolism," sagot niya. "Props. Gamitin mo. Or itapon mo. Bahala ka. Basta ang paalala ko lang: <em>The camera eats first, but the director eats last.</em> Kung puro ka dokumento, mamamatay kang gutom sa pagmamahal."</p>
+
+                    <p>Biglang tumunog ang bell.</p>
+
+                    <p><span class="sound-effect">Krrriiiiinnnggg!</span></p>
+
+                    <p>Napakurap ako. Pagtingin ko sa bench… wala na siya.</p>
+
+                    <p>Nawala si Sir Vren. Ang naiwan na lang ay ang amoy ng mamahaling coffee beans at ang film roll sa kamay ko. Takte. Multo ba siya o time traveler talaga?</p>
+
+                    <hr class="divider">
+
+                    <p>Bumalik ako sa gym na lutang. Pagpasok ko sa court, sinalubong ako ng gulo.</p>
+
+                    <p>"Nasaan na yung photographer?!" sigaw ni Ma'am Cruz.</p>
+
+                    <p>"Absent po Ma'am! May sakit daw!" sagot ni Trina.</p>
+
+                    <p>Nagkatinginan ang lahat. At gaya ng inaasahan sa bad script writing, dahan-dahan silang lumingon sa direksyon ko.</p>
+
+                    <p>Ako. Si Gio. Ang laging may dalang camera.</p>
+
+                    <p>"Gio!" tawag ni Trina. "Dala mo ba camera mo?"</p>
+
+                    <p>Napahawak ako sa bag ko. Nasa loob ang Canon 700D. Mabigat.</p>
+
+                    <p>Sa original timeline, ito ang moment na tumango ako agad. <em>Yes Ma'am! Ako na po bahala!</em> Tuwang-tuwa pa ako noon kasi feeling ko useful ako. Pero ang totoo, ginawa lang nila akong free labor. Habang sila nagpa-party, ako nag-eedit.</p>
+
+                    <p>Tumingin ako sa kamay ko. May mantsa pa rin ng blue paint.</p>
+
+                    <p><span class="thought">Props Man. Or Camera Man. Dalawang role na parehong nasa likod ng spotlight.</span></p>
+
+                    <p>"Gio, sige na please?" pakiusap ni Ma'am Cruz.</p>
+
+                    <p>Nakita ko si Vren sa isip ko, umiiling. <em>Wag kang pumayag. Babalik ka lang sa dati.</em></p>
+
+                    <p>Huminga ako nang malalim.</p>
+
+                    <p>"Ma'am," simula ko. Medyo garalgal ang boses. "Kasi po… busy ako sa props. Hindi ko po kaya pagsabayin."</p>
+
+                    <p>Katahimikan. First time humindi ni Gio. Character breaking moment.</p>
+
+                    <p>Nanlaki ang mata ni Trina. "Ha? E sino gagawa ng props? Kami na bahala dyan! Mag-picture ka na lang!"</p>
+
+                    <p>Pinilit nilang kunin ang atensyon ko. Pero nanindigan ako.</p>
+
+                    <p>"Hindi, Trina. Tinatapos ko yung 'UPANG' sign. Kung magpi-picture ako, hindi matutuyo 'yun."</p>
+
+                    <p>"Pero Gio—"</p>
+
+                    <p>"Si Keanu," biglang sabi ko.</p>
+
+                    <p>Napatingin silang lahat kay Keanu na nasa gilid, umiinom ng tubig.</p>
+
+                    <p>"Ha? Ako?" gulat na tanong ni Keanu.</p>
+
+                    <p>"Oo," sabi ko, tinuturo siya. "May digicam ka diba? Yung Sony? Magaling ka kumuha ng candid shots. Nakita ko sa Facebook mo."</p>
+
+                    <p>"Luh, hindi ako marunong sa settings!" reklamo ni Keanu.</p>
+
+                    <p>"Auto-mode lang, pre," ngiti ko. "Kaya mo 'yan. Ang kailangan lang naman masaya yung photos eh. Hindi kailangan cinematic."</p>
+
+                    <p>Napaisip si Ma'am Cruz. "Pwede na 'yan! Sige, Keanu, ikaw na muna. Gio, tapusin mo na yang props."</p>
+
+                    <p>Tumango ako at bumalik sa pwesto ko sa sahig.</p>
+
+                    <p>Nakahinga ako nang maluwag.</p>
+
+                    <p><span class="thought">I said No. Isang maliit na tagumpay. Tinanggihan ko ang camera.</span></p>
+
+                    <p>Pinagpatuloy ko ang paggupit ng styro. Pero habang busy ako, naramdaman kong may umupo sa tabi ko.</p>
+
+                    <p>Amoy Downy. Amoy Sunsilk.</p>
+
+                    <p><strong>Lia.</strong></p>
+
+                    <p>Naka-PE uniform siya. Pawis na pawis, pero mukha pa ring fresh. May hawak siyang paintbrush.</p>
+
+                    <p>"Tulungan na kita," sabi niya.</p>
+
+                    <p>Napatingin ako sa kanya. "Ha? Wag na. Madudumihan ka. Practice niyo diba?"</p>
+
+                    <p>"Break time naman," sabi niya, sinawsaw ang brush sa blue paint. "Tsaka kawawa ka naman, mag-isa ka dito. Si Trina kasi eh, utos nang utos."</p>
+
+                    <p>Nagsimula siyang magpintura sa gilid ng styro.</p>
+
+                    <p>Tahimik kami sandali. Yung ingay ng gym, parang naging background noise na lang. Kaming dalawa lang sa maliit na bubble na 'to.</p>
+
+                    <p>"Ang pangit mo magpintura," biro ko.</p>
+
+                    <p>"Hoy grabe siya!" hampas niya sa akin (gamit ang malinis na kamay). "Nagvo-volunteer na nga eh!"</p>
+
+                    <p>Tumawa ako. "Joke lang. Salamat."</p>
+
+                    <p>Tumingin siya sa akin habang nagpipintura. "Bakit mo tinanggihan yung photo assignment? Diba passion mo 'yun?"</p>
+
+                    <p>Natigilan ako. Passion? Oo, passion ko ang pelikula. Pero ang maging official documenter ng buhay ng iba habang wala akong sariling buhay? Hindi passion 'yun. Martyrdom 'yun.</p>
+
+                    <p>"Gusto ko lang ma-try maging… present," sagot ko. Binitawan ko ang cutter at tumingin sa kanya. "Kapag kasi nasa likod ako ng camera, parang… parang nanonood lang ako ng TV. Hindi ko ramdam."</p>
+
+                    <p>Kumunot ang noo ni Lia, parang ina-analyze ang sinabi ko. "Ang lalim mo talaga lately, Gio. Epekto ba 'yan ng Chem?"</p>
+
+                    <p>"Baka," ngiti ko.</p>
+
+                    <p>Biglang may tumalsik na pintura.</p>
+
+                    <p>"Ay shet!" sigaw ni Lia.</p>
+
+                    <p>Dahil sa daldal niya, napadiin ang brush niya at tumalsik ang blue paint sa pisngi ko. Sa right cheek.</p>
+
+                    <p>"Hala! Sorry! Sorry Gio!" panic niya. Kumuha siya agad ng tissue sa bulsa niya.</p>
+
+                    <p>Lumapit siya sa akin. Sobrang lapit. Hinawakan niya ang mukha ko gamit ang kaliwang kamay niya para punasan ang pintura sa pisngi ko.</p>
+
+                    <p>Nanigas ako. Ang lambot ng kamay niya. Ang init ng hininga niya. Nakikita ko ang sarili ko sa repleksyon ng mga mata niya.</p>
+
+                    <p>Wala akong camera sa pagitan namin. Walang lens. Walang barrier.</p>
+
+                    <p><span class="thought">Skin to skin.</span></p>
+
+                    <p>Sa original timeline, nasa malayo ako, kinukunan siya ng picture habang pinupunasan niya si Cent. Pero ngayon… ako ang pinupunasan niya.</p>
+
+                    <p>The Director eats last. Pero sa moment na 'to, busog na busog ako.</p>
+
+                    <p>"Ayan," bulong niya, tinatapon ang tissue na may blue paint. "Gwapo na ulit. I mean… malinis na."</p>
+
+                    <p>Namula siya. Namula rin ako.</p>
+
+                    <p>"S-salamat," utal ko.</p>
+
+                    <p>Biglang dumating si Cent. "Lia! Game na daw sabi ni Coach! Practice na ulit!"</p>
+
+                    <p>"O-oo! Andyan na!" sagot ni Lia. Tumayo siya agad, parang nakuryente. "Alis na ako, Gio! Good luck sa props!"</p>
+
+                    <p>Tumakbo siya pabalik sa court. Naiwan ako sa sahig. Hawak ko ang pisngi ko kung saan lumanding ang kamay niya. May mantsa pa rin ng konting pintura, pero ayaw ko nang burahin.</p>
+
+                    <p>Kinuha ko ang film roll na binigay ni Sir Vren mula sa bulsa ko.</p>
+
+                    <p><span class="role-tag">PROPS MAN.</span></p>
+
+                    <p>Okay lang pala maging props man paminsan-minsan. Basta ba… kasama mo ang bida sa behind the scenes.</p>
+
+                    <p>Tinignan ko si Keanu na hirap na hirap kumuha ng pictures sa court. Blurred siguro lahat yun. Bahala na sila.</p>
+
+                    <p>Ngumiti ako at pinagpatuloy ang pagpipintura.</p>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter3.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="chapter5.html" class="btn-sketch primary nav-btn disabled">
+                        Next Chapter &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

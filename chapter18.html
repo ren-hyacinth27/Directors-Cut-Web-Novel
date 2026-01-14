@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 18 - The Confession Scene | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        /* Drop Cap */
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Scene Header Style */
+        .scene-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--pencil-black);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* The Love Letter Style */
+        .love-letter {
+            font-family: 'Patrick Hand', cursive; 
+            background: #f3e5f5; /* Lavender tint */
+            color: #4a148c;
+            padding: 30px;
+            border: 1px dashed #ce93d8;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
+            transform: rotate(-1deg);
+            margin: 40px auto;
+            font-size: 1.25rem;
+            line-height: 1.6;
+            position: relative;
+        }
+        .love-letter::before {
+            content: "\f004"; /* FontAwesome Heart */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ab47bc;
+            font-size: 2rem;
+            background: #f3e5f5;
+            padding: 0 10px;
+        }
+
+        /* Script Direction Note (Small) */
+        .script-direction {
+            font-family: 'Courier Prime', monospace;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 5px 0;
+            margin: 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 18</span>
+                    <h1 class="chap-title">The Confession Scene</h1>
+                </div>
+
+                <div class="story-text">
+                    <p>Sa scriptwriting, may tinatawag na <strong>The Grand Gesture</strong>.</p>
+
+                    <p>Ito yung tatakbo ang bida sa airport para pigilan ang flight. O kaya haharanahin niya ang babae sa harap ng maraming tao. Malaki. Maingay. Public.</p>
+
+                    <p>Pero sa totoong buhay, ang pinakamalakas na eksena ay yung… <strong>tahimik.</strong></p>
+
+                    <p>Yung moment na ang maririnig mo lang ay ang tibok ng sarili mong puso at ang paghinga ng taong kaharap mo.</p>
+
+                    <div class="scene-header">EXT. ROOFTOP (OLD BUILDING) - NIGHT</div>
+                    <p style="text-align: center; font-family: 'Patrick Hand', cursive; color: var(--text-light);">8:30 PM.</p>
+
+                    <p>Ang rooftop ng Old Building ay hindi naman talaga "romantic spot." May mga lumang sirang desk sa gilid. May tangke ng tubig na kinakalawang. Ang sahig, maalikabok.</p>
+
+                    <p>Pero dito kami tumatakas noon kapag ayaw naming pumasok sa Calculus. Dito kami nag-she-share ng Stick-O. Dito ko siya unang kinuhanan ng litrato nang patago.</p>
+
+                    <p>Nakaupo kami sa ledge. Tanaw namin ang city lights ng Dagupan. Sa baba, rinig pa rin ang muffled na ingay ng celebration, pero dito sa taas, parang nasa ibang planeta kami.</p>
+
+                    <p>Tahimik si Lia. Nakayuko, nilalaro ang laylayan ng skirt niya.</p>
+
+                    <p>Ako naman, nakatingin sa kanya. Pinapakiramdaman ang hangin.</p>
+
+                    <p>"Gio," basag niya sa katahimikan.</p>
+
+                    <p>"Hmm?"</p>
+
+                    <p>Kinuha niya ang isang envelope mula sa bag niya. Kulay blue. (Paborito kong kulay).</p>
+
+                    <p>"Para sa'yo," abot niya.</p>
+
+                    <p>Nanginginig ang kamay niya.</p>
+
+                    <p>Kinuha ko ang envelope. Ang bigat. Parang may lamang bomba.</p>
+
+                    <p>"Ano 'to?" tanong ko, kahit may hinala na ako.</p>
+
+                    <p>"Basahin mo," bulong niya. "Kasi… baka hindi ko masabi nang diretso. Nauutal ako eh."</p>
+
+                    <p>Binuksan ko ang envelope. Naglabas ako ng isang piraso ng papel. Stationery. Amoy lavender. Sulat kamay.</p>
+
+                    <p>Binasa ko.</p>
+
+                    <div class="love-letter">
+                        <p><strong>Dear Gio,</strong></p>
+                        <p>Naalala mo nung 1st Year? Nung Intrams din? Ikaw yung photographer ng org namin nun. Ang payat mo pa, tapos ang laki ng shirt mo. Pawisan ka kakatakbo para lang makakuha ng picture namin.</p>
+                        <p>Sabi ni Trina, ang weird mo daw kasi hindi ka nagsasalita. Pero sabi ko… ang cool mo. Kasi habang lahat ng lalaki nagpapapogi para mapansin, ikaw… busy ka sa pagpapaganda ng iba.</p>
+                        <p>Simula nun, hinahanap na kita palagi. Sa canteen. Sa hallway. Sa library. Gusto kong lumapit, pero lagi kang may hawak na camera. O kaya kasama mo si Cent. Naisip ko, baka masyado kang busy para sa isang katulad ko.</p>
+                        <p>Pero nitong sem… nag-iba ka. Binaba mo yung camera. Tumabi ka sa akin. Tinuruan mo akong sumigaw.</p>
+                        <p>Gio, sa lahat ng lenses na meron ka… sana ako lang ang makita mo. Kasi ako? Matagal na kitang nakikita. Kahit nasa dilim ka pa.</p>
+                        <p style="text-align: right;"><strong>— Lia</strong></p>
+                    </div>
+
+                    <p>Natapos kong basahin ang sulat.</p>
+
+                    <p>Nanlabo ang mata ko. Hindi dahil sa luha (okay, konting luha), kundi sa shock. Binaliktad ko ang papel. Wala nang ibang nakasulat.</p>
+
+                    <p>Tumingin ako kay Lia. Nakatakip siya ng mukha gamit ang dalawang palad niya. Hiyang-hiya.</p>
+
+                    <p>"Lia," tawag ko. Garalgal ang boses ko.</p>
+
+                    <p>"Wag kang tumingin!" sabi niya, muffled sa kamay niya. "Nakakahiya! Ang baduy ng letter ko!"</p>
+
+                    <p>Hinawakan ko ang pulso niya at dahan-dahang inalis ang mga kamay niya sa mukha niya. Namumula siya. Sobra.</p>
+
+                    <p>"Teka," sabi ko, kailangan ng clarification. "Akala ko… akala ko si Cent?"</p>
+
+                    <p>Kumunot ang noo niya. "Si Cent? Bakit si Cent?"</p>
+
+                    <p>"Diba sabi mo… crush mo since 1st Year? Diba narinig ko kayo ni Trina?"</p>
+
+                    <p>Tumawa siya. Yung tawang may halong disbelief.</p>
+
+                    <p>"Gio! Si Cent ang bridge! Siya yung tinatanungan ko kung anong gusto mo! Siya yung nagkukuwento sa akin na loner ka daw!"</p>
+
+                    <p>Napanganga ako.</p>
+
+                    <p>So, sa loob ng walong taon sa original timeline… akala ko ako ang extra. Yun pala, <strong>ako ang Bida.</strong></p>
+
+                    <p>Ako lang ang hindi nakakaalam kasi masyado akong busy sa pagiging insecure. Masyado akong busy sa pagtago sa likod ng camera kaya hindi ko nakitang nakatingin din pala siya sa akin.</p>
+
+                    <p>"Ang tanga ko," bulong ko. "Ang tanga, tanga ko."</p>
+
+                    <p>"Medyo," sang-ayon niya, nakangiti na ngayon. "Pero cute ka naman."</p>
+
+                    <p>Hinawakan niya ang kamay ko.</p>
+
+                    <p>"So?" tanong niya. "Ano na? Nabasa mo na. Ano sagot mo, Direk?"</p>
+
+                    <p>Tinitigan ko siya. Sa ilalim ng buwan, ang ganda niya. Mas maganda kaysa sa anumang litrato na nakuha ko. Wala nang script. Wala nang plano.</p>
+
+                    <p>Hinawakan ko ang mukha niya.</p>
+
+                    <p>"Lia," sabi ko. "Wala akong dalang letter. Pero may dala akong… spoiler."</p>
+
+                    <p>"Spoiler?"</p>
+
+                    <p>"Galing ako sa future," sabi ko. (Medyo risky, pero idadaan ko sa "joke" tone para hindi siya matakot). "At sa future… puro regrets ako. Kasi hindi ko nasabi sa'yo 'to."</p>
+
+                    <p>Lumapit ako lalo.</p>
+
+                    <p>"Mahal kita, Lia. Since Day 1. Since nung unang beses kitang nakita sa viewfinder ko. Ikaw lang. Walang iba."</p>
+
+                    <p>Nanlaki ang mga mata niya. Nangingilid ang luha.</p>
+
+                    <p>"Talaga?" bulong niya.</p>
+
+                    <p>"Oo. At ayoko nang maging cameraman lang. Gusto ko… ako na ang Leading Man mo."</p>
+
+                    <p>Ngumiti siya. Yung ngiting abot hanggang tenga.</p>
+
+                    <p>"Matagal na kitang Leading Man, Gio," sabi niya. "Ikaw lang ang mabagal sa pickup."</p>
+
+                    <p>Tumawa kami pareho. Tawa ng relief. Tawa ng saya. At dahan-dahan, nawala ang distansya sa pagitan namin.</p>
+
+                    <p>Yumuko ako. Tumunganga siya.</p>
+
+                    <p><span class="thought">Closing the gap.</span></p>
+
+                    <p>Ramdam ko ang hininga niya sa labi ko. Amoy strawberry candy.</p>
+
+                    <p>Pumikit ako.</p>
+
+                    <div class="script-direction">
+                        Wait. Cut. Lighting check. OK. Audio check. OK.<br>
+                        ACTION.
+                    </div>
+
+                    <p>Hinalikan ko siya.</p>
+
+                    <p>Malambot. Matamis. Maingat. Hindi ito yung halik sa pelikula na aggressive. Ito yung halik ng pag-uwi.</p>
+
+                    <p>Parang sinasabi ng mga labi namin ang lahat ng salitang hindi namin nasabi sa loob ng walong taon.</p>
+
+                    <p><span class="thought">Sorry, natagalan ako. Andito na ako. Hindi na ako aalis.</span></p>
+
+                    <p>Tumagal ang halik ng ilang segundo. O baka ilang minuto. Nawalan ako ng concept ng oras.</p>
+
+                    <p>Nung humiwalay kami, pareho kaming habol ang hininga. Nakasandal ang noo ko sa noo niya.</p>
+
+                    <p>"Okay na ba 'yun?" tanong ko, nakapikit pa rin.</p>
+
+                    <p>"Hmm," ungol niya. "Pwede na. Pero parang kailangan ng Take Two."</p>
+
+                    <p>Napamulat ako. Nakangiti siya nang nakakaloko.</p>
+
+                    <p>"Take Two?" tanong ko.</p>
+
+                    <p>"Oo. Para sure. Para sharp ang focus."</p>
+
+                    <p>Natawa ako. Hinawakan ko siya sa bewang at hinila palapit.</p>
+
+                    <p>"Okay. Take Two. Rolling."</p>
+
+                    <p>Hinalikan ko siya ulit. Mas malalim. Mas sigurado.</p>
+
+                    <p>Sa moment na 'yun, naramdaman ko ang pagbabago ng timeline. Yung Future Gio na mag-isa sa condo? Naglalaho na siya. Napapalitan na siya ng memorya ng gabing ito.</p>
+
+                    <p>Yung Morning Dread? Wala na. Kasi hawak ko na ang gamot ko.</p>
+
+                    <p>Nung humiwalay kami ulit, niyakap niya ako nang mahigpit. Isiniksik niya ang mukha niya sa leeg ko.</p>
+
+                    <p>"Tayo na?" tanong niya.</p>
+
+                    <p>"Tayo na," sagot ko. "Wala nang bawian. Nasa kontrata na 'to."</p>
+
+                    <p>"Good," sabi niya. "Kasi pag iniwan mo ako, ipapabugbog kita kay Cent."</p>
+
+                    <p>"Di mangyayari 'yun," bulong ko. Hinalikan ko ang tuktok ng ulo niya.</p>
+
+                    <p>Tumingin ako sa langit.</p>
+
+                    <p><strong>115 Million Kilometers.</strong></p>
+
+                    <p>Ganun kalayo ang nilakbay ng liwanag bago makarating sa amin. Pero worth it ang byahe.</p>
+
+                    <p>Dahil sa wakas… nasa frame na ako. At hindi na ako aalis.</p>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter17.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="chapter19.html" class="btn-sketch primary nav-btn">
+                        Next Chapter &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

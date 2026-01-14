@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 19 - The Empty Gallery | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Scene Header Style */
+        .scene-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--pencil-black);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Gallery Grid for the Laptop Files */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .gallery-item {
+            background: white;
+            padding: 10px 10px 30px 10px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 0.9rem;
+            transform: rotate(var(--rot));
+        }
+        .gallery-icon { font-size: 2rem; color: #aaa; margin-bottom: 10px; display: block; }
+
+        /* Blue Memory Card Style */
+        .sd-card {
+            background: #1976d2; /* Blue */
+            width: 120px;
+            height: 160px;
+            border-radius: 10px 10px 0 10px; /* SD card notch */
+            margin: 30px auto;
+            position: relative;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+        }
+        .sd-contacts {
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            width: 60px;
+            height: 20px;
+            background: repeating-linear-gradient(90deg, #fdd835, #fdd835 8px, #1976d2 8px, #1976d2 12px);
+        }
+
+        /* Phone Message */
+        .phone-msg {
+            background: #e1f5fe;
+            border-radius: 15px;
+            padding: 15px;
+            max-width: 300px;
+            margin: 20px auto;
+            border: 2px solid #b3e5fc;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        /* Export Bar */
+        .export-box {
+            font-family: 'Courier Prime', monospace;
+            background: #222;
+            color: #0f0;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 5px;
+        }
+        .progress-bar {
+            height: 10px;
+            background: #444;
+            margin-top: 10px;
+            position: relative;
+        }
+        .progress-fill {
+            height: 100%;
+            background: #0f0;
+            width: 99%; /* Simulating almost done */
+        }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 19</span>
+                    <h1 class="chap-title">The Empty Gallery</h1>
+                </div>
+
+                <div class="story-text">
+                    <p><strong>It’s a wrap.</strong></p>
+
+                    <p>Dalawang salita na masarap pakinggan, pero masakit sa damdamin.</p>
+
+                    <p>Sa filmmaking, ito yung oras na tinatanggal na ang mga gaffer tape sa sahig. Binabaklas na ang mga ilaw. Inililigpit na ang mga kable. Nagpapaalam na sa mga katrabaho na naging pamilya mo sa loob ng ilang buwan.</p>
+
+                    <p>May halong lungkot, pero alam mong kailangan nang umuwi. Tapos na ang kwento.</p>
+
+                    <div class="scene-header">INT. BOARDING HOUSE - NIGHT</div>
+                    <p style="text-align: center; font-family: 'Patrick Hand', cursive; color: var(--text-light);">October 2018. Sembreak.</p>
+
+                    <p>Nasa kwarto ako. Tahimik.</p>
+
+                    <p>Naka-box na ang mga gamit ko dahil "lilipat" daw ako ng boarding house next sem (iyon ang paalam ko sa parents ko sa timeline na 'to, pero ang totoo, alam kong aalis na ako sa taong ito).</p>
+
+                    <p>Naka-open ang laptop ko. Naglilinis ako ng files.</p>
+
+                    <p style="font-family: 'Courier Prime', monospace; text-align: center;">Folder: Intrams 2018. <br> Size: 15 GB.</p>
+
+                    <p>Binuksan ko ang folder.</p>
+
+                    <p>Dati, sa original timeline, ang laman ng folder na ito ay puro "Solo Shots ni Lia." Isang gallery ng pagmamahal na hindi nasuklian. Isang museo ng isang stalker na masyadong duwag lumapit.</p>
+
+                    <p>Pero ngayon, habang ini-scroll ko ang thumbnails… iba na ang nakikita ko.</p>
+
+                    <div class="gallery-grid">
+                        <div class="gallery-item" style="--rot: -2deg;">
+                            <span class="gallery-icon"><i class="fas fa-image"></i></span>
+                            <strong>IMG_0452.JPG</strong><br>
+                            Kami ni Lia sa oval, nagtatawanan habang kumakain ng hotdog.
+                        </div>
+                        <div class="gallery-item" style="--rot: 2deg;">
+                            <span class="gallery-icon"><i class="fas fa-image"></i></span>
+                            <strong>IMG_0589.JPG</strong><br>
+                            Selfie namin sa bus habang tulog siya sa balikat ko.
+                        </div>
+                        <div class="gallery-item" style="--rot: -1deg;">
+                            <span class="gallery-icon"><i class="fas fa-star"></i></span>
+                            <strong>IMG_0999.JPG</strong><br>
+                            The Winning Shot. Wacky kami. Puno na ang frame.
+                        </div>
+                    </div>
+
+                    <p>Wala nang Empty Space. Wala nang Gap.</p>
+
+                    <p><strong>Puno na ang frame.</strong></p>
+
+                    <p>Napangiti ako habang tinititigan ang screen. <span class="thought">Mission Accomplished.</span></p>
+
+                    <p>Nabago ko na. Hindi na ako cameraman lang. Nasa loob na ako ng kwento.</p>
+
+                    <p>Pero habang tinitignan ko ang mga litrato, naramdaman ko ang pamilyar na hila. Hindi ito sakit. Hindi ito morning dread.</p>
+
+                    <p>Para itong antok. Isang mabigat at malalim na antok na humihila sa talukap ng mata ko. Ang gravity ng future, hinihila na ako pabalik.</p>
+
+                    <p>Ang Time Travel… may expiration date.</p>
+
+                    <p>Isang sem lang ang kontrata. Natapos ko na ang midterms (pumasa kami ni Lia, highest siya). Nakuha ko na ang loob niya (kami na, official). Naging tropa ko na sina Cent at Keanu nang totoo.</p>
+
+                    <p>Tapos na ang eksena.</p>
+
+                    <p>"Ganda ng shots, 'no?"</p>
+
+                    <p>Napalingon ako.</p>
+
+                    <p>Sa may bintana ng kwarto ko, nakaupo si Sir Vren. Naka-itim na suit. Mukhang Agent na talaga. Wala na ang Student Affairs ID niya.</p>
+
+                    <p>"Sir," bati ko. Hindi na ako nagulat. Inaasahan ko na ang pagdating niya. "Tapos na ba?"</p>
+
+                    <p>Tumango si Vren. Pumasok siya sa kwarto at tinignan ang laptop screen ko.</p>
+
+                    <p>"Good job, Direk," sabi niya, tinuturo ang picture namin ni Lia. "Magandang composition. Balanced. Happy."</p>
+
+                    <p>"Ano nang mangyayari?" tanong ko. Medyo kinakabahan. "Pag gising ko ba… kami pa rin? O panaginip lang lahat 'to?"</p>
+
+                    <p>Tumingin sa akin si Vren. Seryoso.</p>
+
+                    <p>"Ang past ay pundasyon ng future, Gio. Kung binago mo ang pundasyon, magbabago ang istruktura."</p>
+
+                    <p>May inabot siya sa akin. Yung Blue Memory Card na binigay niya sa akin sa bar noong Chapter 1.</p>
+
+                    <p>"Kunin mo 'to," sabi niya.</p>
+
+                    <div class="sd-card">
+                        <div>
+                            32TB<br>
+                            <span style="font-size: 0.7em; font-weight: normal;">CORE MEMORY</span>
+                        </div>
+                        <div class="sd-contacts"></div>
+                    </div>
+
+                    <p>"Para saan?"</p>
+
+                    <p>"Souvenir," ngiti niya. "Lahat ng memories mo sa timeline na 'to… naka-save dyan. Pag gising mo sa 2026, isalpak mo 'yan sa utak mo. Para hindi mo makalimutan kung paano ka naging masaya."</p>
+
+                    <p>Kinuha ko ang memory card. Ang liit. Pero ang bigat ng laman.</p>
+
+                    <p>"Sir," sabi ko. "Salamat."</p>
+
+                    <p>"Wag ka sa akin magpasalamat," sabi niya, naglalakad pabalik sa bintana. "Magpasalamat ka sa sarili mo. Kasi ikaw ang sumugal. Binigyan lang kita ng camera, pero ikaw ang kumuha ng shot."</p>
+
+                    <p>Huminto siya bago tumalon palabas.</p>
+
+                    <p>"Matulog ka na, Gio. Hinihintay ka na ng Premiere Night sa future."</p>
+
+                    <p>At nawala siya. Parang bula.</p>
+
+                    <p>Naiwan akong hawak ang memory card. Bumigat lalo ang mata ko. <em>Premiere Night.</em></p>
+
+                    <p>Humiga ako sa kama. Yung kama na saksi sa mga gabing umiyak ako noon. Pero ngayon, amoy lavender na (dahil sa perfume na niregalo ni Lia).</p>
+
+                    <p>Kinuha ko ang cellphone ko. Isang huling text.</p>
+
+                    <div class="phone-msg">
+                        <strong>To: Lia (My Muse)</strong><br><br>
+                        Goodnight. Mahal kita. Kita tayo bukas. <br>
+                        <span style="font-size: 0.8em; color: #888; float: right;">Sent.</span>
+                    </div>
+
+                    <p>Kita tayo bukas. Sa 2018 ba? O sa 2026? Hindi ko alam.</p>
+
+                    <p>Pero hindi na ako takot.</p>
+
+                    <p>Dahan-dahang pumikit ang mata ko.</p>
+
+                    <p>Ang ingay ng mga tricycle sa labas ay unti-unting humina. Ang liwanag ng araw sa bintana ay nag-fade to black.</p>
+
+                    <p>Naramdaman ko ang pag-ikot ng mundo. Mabilis. Pabalik. Pasulong.</p>
+
+                    <p><strong>Rewind. Fast Forward.</strong></p>
+
+                    <p>Ang mga alaala ay dumaan sa isip ko na parang montage. Ang tawa ni Cent. Ang abs ni Keanu (ew). Ang sigaw namin sa grandstand. Ang halik sa rooftop.</p>
+
+                    <p>Lahat 'yun, na-compress. Na-render.</p>
+
+                    <div class="export-box">
+                        Exporting Project...<br>
+                        10%... 50%... 99%...
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <br>
+                        > EXPORT COMPLETE.
+                    </div>
+
+                    <p>Wala nang natira kundi dilim.</p>
+
+                    <p>At katahimikan.</p>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter18.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="chapter20.html" class="btn-sketch primary nav-btn">
+                        chapter 20 &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 9 - Off-Script | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        /* Drop Cap */
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Scene Header Style */
+        .scene-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--pencil-black);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Camera Settings Note */
+        .camera-note {
+            font-family: 'Courier Prime', monospace;
+            background: #2c2c2c;
+            color: #0f0; /* Retro green terminal text */
+            padding: 15px;
+            border-radius: 5px;
+            margin: 30px auto;
+            max-width: 350px;
+            text-align: left;
+            font-size: 0.9rem;
+            box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+        }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 9</span>
+                    <h1 class="chap-title">Off-Script</h1>
+                </div>
+
+                <div class="story-text">
+                    <p>May kasabihan sa photography: “The best camera is the one that’s with you.”</p>
+
+                    <p>Pero paano kung ayaw mo nang magdala ng camera?</p>
+
+                    <div class="scene-header">INT. GIO'S ROOM - MORNING</div>
+
+                    <p>Lunes. Opening ng Intramurals.</p>
+
+                    <p>Nakatayo ako sa harap ng mesa ko.</p>
+
+                    <p>Nandoon ang Canon 700D. Nakaupo sa tabi ng lens cap at extra batteries. Mukha siyang sundalo na handa nang sumabak sa gera. Sa loob ng walong taon, ito ang extension ng katawan ko. Hindi ako lumalabas ng bahay tuwing event nang wala ito.</p>
+
+                    <p>Para itong security blanket. Kapag may hawak akong camera, may purpose ako. May dahilan kung bakit ako nandoon.</p>
+
+                    <p>“Gio, yung official photographer.”</p>
+
+                    <p>Yan ang identity ko.</p>
+
+                    <p>Pero ngayong araw…</p>
+
+                    <p>Kinuha ko ang backpack ko. Nilagyan ko ng tubig, extra t-shirt, towel, at wallet.</p>
+
+                    <p>Tinignan ko ulit ang camera.</p>
+
+                    <p>"Stay," bulong ko.</p>
+
+                    <p>Isinara ko ang zipper ng bag. Tinalikuran ko ang mesa.</p>
+
+                    <p>Lumabas ako ng kwarto nang magaan ang leeg, pero mabigat ang dibdib.</p>
+
+                    <p><span class="thought">Tama ba 'to? Paano kung may mangyaring once-in-a-lifetime moment? Paano kung manalo si Cent sa buzzer beater? Paano kung sumayaw si Lia? Wala akong copy. Mawawala sa hangin.</span></p>
+
+                    <p><em>Experience over documentation,</em> paalala ni Sir Vren.</p>
+
+                    <p>Lumabas ako ng bahay. Wala nang atrasan.</p>
+
+                    <div class="scene-header">EXT. UNIVERSITY GROUNDS - DAY</div>
+
+                    <p>Pagdating sa school, chaos. Ang init. Ang ingay.</p>
+
+                    <p>Nakita ko ang barkada sa assembly area. Naka-color coding kami ng shirts. Yellow Team kami (Engineering/Architecture).</p>
+
+                    <p>Si Lia, nasa gitna, nag-aayos ng sash. Muse siya ng department namin. Ang ganda niya sa suot niyang improvised gown na gawa sa katsa at dyaryo. Kahit basura ang material, mukha siyang dyosa.</p>
+
+                    <p>Lumapit ako.</p>
+
+                    <p>"Uy! Andyan na pala si Gio!" bati ni Cent, na naka-jersey. Kumindat siya sa akin. Alam na niya ang plano. <span class="thought">Supportive Lead Actor.</span></p>
+
+                    <p>Lumingon si Lia. Ngumiti siya nang malapad. "Gio! Buti dumating ka na! Kukunan mo ba ako? Ang hirap ng gown ko, baka masira agad, sayang kung walang pic!"</p>
+
+                    <p>Awtomatiko siyang pumostura. Kamay sa bewang, chin up. Ready for the shot.</p>
+
+                    <p>Napahinto ako.</p>
+
+                    <p>Dito na magsisimula ang conflict.</p>
+
+                    <p>"Ah… Lia," simula ko, kinakamot ang batok. "Wala akong dalang camera."</p>
+
+                    <p>Nawala ang ngiti niya. Bumaba ang kilay niya. "Ha? Anong wala? Low batt?"</p>
+
+                    <p>"Hindi," sagot ko. "Iniwan ko sa bahay."</p>
+
+                    <p>Katahimikan. Pati si Trina na nagre-retouch ng make-up, napahinto.</p>
+
+                    <p>"Iniwan mo?" pag-uulit ni Lia, parang hindi maproseso ng utak niya. "Bakit? Intrams ngayon, Gio! Parade ngayon! Diba trabaho mo 'to?"</p>
+
+                    <p>Medyo tumaas ang boses niya. Stress na rin siguro sa preparations.</p>
+
+                    <p>"Gusto ko lang kasing… sumali," paliwanag ko. "Yung maglakad sa parade. Yung sumigaw sa cheering. Hindi yung tatakbo-takbo sa gilid para kumuha ng angle."</p>
+
+                    <p>"Pero sayang!" giit ni Lia. Lumapit siya sa akin, hinawakan ang braso ko. "Gio, minsan lang 'to! Muse ako ngayon! Si Cent maglalaro! Sino kukuha ng pictures namin? Yung phone lang ni Keanu? Ang labo nun!"</p>
+
+                    <p>"Hoy grabe ka naman!" sigaw ni Keanu sa gilid, pero hindi pinansin ni Lia.</p>
+
+                    <p>Nakatingin lang si Lia sa akin. May halong disappointment.</p>
+
+                    <p>"Akala ko ba supportive ka?" sabi niya. "Diba passion mo yan? Bakit parang… parang tinatamad ka na?"</p>
+
+                    <p><strong>Tinatamad.</strong></p>
+
+                    <p>Sumikip ang dibdib ko.</p>
+
+                    <p>Hindi niya alam kung gaano kabigat ang camera na 'yun. Hindi niya alam na sa future, yung "passion" na sinasabi niya ang naging kulungan ko. Na kaya ako nag-iisa sa buhay ay dahil mas inuna kong panoorin ang buhay nila kaysa mabuhay ako.</p>
+
+                    <p>Huminga ako nang malalim. Tumingin ako sa mata niya.</p>
+
+                    <p>"Hindi ako tinatamad, Lia," seryoso kong sabi. Nawala ang playful tone ko. "Gusto ko lang ma-experience yung moment kasama niyo. Yung nandun ako. Yung nakatingin ako sa'yo gamit ang mata ko, hindi sa viewfinder."</p>
+
+                    <p>Natigilan siya.</p>
+
+                    <p>"Kasi Lia," dagdag ko, medyo humina ang boses ko. "Pag nakatutok ako sa camera… hindi ko nakikita yung kabuuan. Puro frame lang. Gusto kong makita yung… lahat."</p>
+
+                    <p>Hindi siya nakasagot agad. Nakatitig lang siya sa akin.</p>
+
+                    <p>Biglang pumito ang organizer. <span class="sound-effect">Prrrt!</span></p>
+
+                    <p>"Assembly! Parade will start in 5 minutes! Lines na kayo!"</p>
+
+                    <p>Nagkagulo ang mga tao. Tulakan. Sigawan.</p>
+
+                    <p>"Tara na, Lia!" tawag ni Ma'am Cruz. "Doon ka sa harap ng float!"</p>
+
+                    <p>Tumingin ulit si Lia sa akin. "Bahala ka," sabi niya, medyo masungit. "Sayang talaga. Ang ganda pa naman ng ayos ko."</p>
+
+                    <p>Tumalikod siya at naglakad papunta sa unahan ng pila.</p>
+
+                    <p>Naiwan akong nakatayo.</p>
+
+                    <p>"Ouch," bulong ni Keanu, sumulpot sa tabi ko. "First lovers' quarrel? Agad-agad?"</p>
+
+                    <p>"Gago," sabi ko, pero masakit.</p>
+
+                    <p>"Hayaan mo na," sabi ni Cent, tinapik ako sa likod. "Masanay din yan. Naninibago lang kasi reliable ka masyado dati. Ngayon, nagde-demand ka na ng space mo. Growing pains, pre."</p>
+
+                    <p>Growing pains. Sana nga.</p>
+
+                    <hr class="divider">
+
+                    <p>Nagsimula ang parade.</p>
+
+                    <p>Umugong ang drums. <span class="sound-effect">Boom-tish-boom-tish.</span></p>
+
+                    <p>Sa original timeline, nasa gilid ako ng kalsada. Tumatakbo, pawisan, nakikipagsiksikan sa ibang photographers para makakuha ng clear shot kay Lia. Wala akong naririnig kundi ang shutter click. Wala akong nararamdaman kundi ang bigat ng lens.</p>
+
+                    <p>Pero ngayon…</p>
+
+                    <p>Nasa loob ako ng pila.</p>
+
+                    <p>Katabi ko si Keanu at Cent. Nakasuot ako ng yellow headband.</p>
+
+                    <p>Naglalakad kami sa gitna ng kalsada ng Dagupan. Ang daming tao sa sidewalk na nanonood.</p>
+
+                    <p>"Yellow Team! Yellow Team!" sigaw namin.</p>
+
+                    <p>Sumigaw din ako. "YELLOW TEAM!"</p>
+
+                    <p>Ang sarap sa lalamunan. Ang sarap sumigaw nang walang iniintinding audio levels.</p>
+
+                    <p>Tumingin ako sa unahan. Nakita ko si Lia.</p>
+
+                    <p>Kumakaway siya sa crowd. Ang ganda ng ngiti niya. Kumikinang ang pawis niya sa araw.</p>
+
+                    <p>Wala akong camera para i-zoom in ang mukha niya. Malayo siya. Maliit lang siya sa paningin ko.</p>
+
+                    <p>Pero nararamdaman ko ang init ng aspalto. Naaamoy ko ang usok ng tricycle at fishball. Naririnig ko ang tawa ni Keanu. Nararamdaman ko ang sakit ng paa ko sa paglalakad.</p>
+
+                    <div class="camera-note">
+                        > REC: OFF<br>
+                        > LENS CAP: ON<br>
+                        > MEMORY: CORE<br>
+                        > STATUS: LIVE
+                    </div>
+
+                    <p>Ito ang reality. Hindi ito 1080p video. Ito ay buhay.</p>
+
+                    <p>Habang naglalakad, biglang huminto ang parade dahil sa traffic.</p>
+
+                    <p>Lumingon si Lia sa likod. Hinahanap niya siguro ang barkada.</p>
+
+                    <p>Nagtama ang paningin namin.</p>
+
+                    <p>Nasa malayo ako, nasa gitna ng dagat ng yellow shirts.</p>
+
+                    <p>Tinaas ko ang kamay ko at kumaway.</p>
+
+                    <p>Hindi ako nakatago sa likod ng camera. Kitang-kita niya ang mukha ko. Kitang-kita niya na nandito ako.</p>
+
+                    <p>Sandali siyang sumimangot (tampo pa rin), pero maya-maya… ngumiti rin siya nang tipid. At kumaway pabalik.</p>
+
+                    <p>Napangiti ako.</p>
+
+                    <p>Okay lang kahit walang picture.</p>
+
+                    <p>Yung image niya na kumakaway sa gitna ng parada, habang lumilipad ang confetti at tumutugtog ang drums… nakaukit na 'yun sa utak ko.</p>
+
+                    <p>Mas malinaw pa sa 4K.</p>
+
+                    <p>"Pre, tubig," abot ni Cent ng bottled water.</p>
+
+                    <p>"Salamat," ininom ko.</p>
+
+                    <p>"Ano, nagsisi ka ba na wala kang dalang cam?" tanong ni Cent.</p>
+
+                    <p>Tumingin ako sa paligid. Nakita ko ang mga kaklase kong nagtatawanan, nagse-selfie, nag-aasaran. At ako, kasama nila. Hindi observer. Participant.</p>
+
+                    <p>Umiling ako.</p>
+
+                    <p>"Hindi," sagot ko. "Mas maganda pala ang view kapag hindi ka nakasilip sa butas."</p>
+
+                    <p>Nagpatuloy ang parada.</p>
+
+                    <p>Naglakad ako.</p>
+
+                    <p>Sa bawat hakbang, pakiramdam ko ay naglalakad ako palayo sa Old Gio—ang cameraman na takot mabuhay.</p>
+
+                    <p>At naglalakad ako palapit kay Lia. Hindi bilang taga-hanga, kundi bilang kapantay.</p>
+
+                    <p>Kahit magalit siya ngayon. Kahit manghinayang siya sa pictures. Maiintindihan din niya.</p>
+
+                    <p>Na kaya ko binitawan ang camera… ay para mahawakan ko ang kamay niya sa susunod.</p>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter8.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="chapter10.html" class="btn-sketch primary nav-btn">
+                        Next Chapter &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

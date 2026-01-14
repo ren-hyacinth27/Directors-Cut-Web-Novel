@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 17 - Developing The Film | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        /* Drop Cap */
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Technical Note (Darkroom Process) */
+        .tech-note { 
+            font-family: 'Patrick Hand', cursive; 
+            background: #e0e0e0; /* Neutral grey for chemicals */
+            color: #333;
+            padding: 20px; 
+            border: 1px solid #999;
+            box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+            transform: rotate(-1deg);
+            display: block;
+            margin: 30px auto;
+            text-align: left;
+            max-width: 90%;
+            font-size: 1.1rem;
+        }
+        .tech-note strong { color: var(--pencil-blue); text-transform: uppercase; }
+
+        /* Photo Description Card */
+        .photo-card {
+            background: white;
+            padding: 15px 15px 40px 15px; /* Polaroid style */
+            border: 1px solid #ddd;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transform: rotate(2deg);
+            margin: 40px auto;
+            max-width: 400px;
+            font-family: 'Patrick Hand', cursive;
+            text-align: center;
+            color: #555;
+        }
+        .photo-placeholder {
+            background: #f0f0f0;
+            height: 200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            border: 1px dashed #ccc;
+            font-size: 2rem;
+            color: #ccc;
+        }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+        
+        .highlight-scream { font-size: 1.4em; font-weight: bold; color: var(--pencil-black); display: block; text-align: center; margin: 20px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 17</span>
+                    <h1 class="chap-title">Developing The Film</h1>
+                </div>
+
+                <div class="story-text">
+                    <p>Sa darkroom ng photography (yung luma, yung gumagamit pa ng chemicals), may proseso bago lumabas ang litrato.</p>
+
+                    <div class="tech-note">
+                        <p><strong>1. Developer:</strong> Dito unti-unting lilitaw ang image mula sa puting papel. Magic 'to. Makikita mo ang mga anino, ang mga ngiti, ang mga detalye.</p>
+                        <p><strong>2. Stop Bath:</strong> Para tumigil ang chemical reaction. Para hindi masunog ang picture.</p>
+                        <p><strong>3. Fixer:</strong> Para maging permanente ang image. Para hindi mag-fade kahit ilabas mo sa araw.</p>
+                    </div>
+
+                    <p>Sa loob ng walong taon, ang buhay ko ay na-stuck sa <strong>Developer</strong>. Paulit-ulit lumilitaw ang mga alaala, pero hindi nifi-fix. Hindi nagiging permanente. Laging nagfa-fade. Laging nawawala.</p>
+
+                    <p>Pero ngayong gabi… gagamitan natin ng Fixer.</p>
+
+                    <p>"AND THE CHAMPION… FOR THIS YEAR'S CHEERDANCE COMPETITION…"</p>
+
+                    <p><span class="sound-effect">Drum roll.</span></p>
+
+                    <p>Nakatutok ang camera ko sa Yellow Team na nakahawak-kamay sa gitna ng stage. Nakayuko silang lahat. Nagdarasal. Si Lia, nakapikit nang mariin, nanginginig ang mga balikat. Si Cent, mahigpit ang hawak sa kamay ni Lia at Keanu.</p>
+
+                    <p>Ang buong amphitheater, tahimik. Suspense.</p>
+
+                    <p>Nasa baba ako. Nanginginig din ang kamay ko. <span class="thought">Please. Please.</span></p>
+
+                    <span class="highlight-scream">"…IS THE YELLOW TEAM!!!!"</span>
+
+                    <p><span class="sound-effect">BOOOOOGSH!</span></p>
+
+                    <p>Sabog. Hindi confetti, kundi sabog ng emosyon.</p>
+
+                    <p>Tumalon si Cent. Napaluhod si Lia at umiyak. Nagyakapan ang buong team. Nagkagulo sa stage.</p>
+
+                    <p>"WOOOOOOOOH!" sigaw ko.</p>
+
+                    <p>Nakalimutan kong photographer ako. Ibinaba ko ang camera at tinaas ko ang dalawang kamay ko.</p>
+
+                    <p>"PANALO TAYO! PANALO!"</p>
+
+                    <p>Nagtalunan ang mga tao sa paligid ko. Ang sarap ng feeling. Yung validation. Yung lahat ng pagod, lahat ng sigaw sa bench, lahat ng technical difficulties—worth it.</p>
+
+                    <p>Bumalik ako sa pagkuha ng pictures. Ito ang trabaho ko.</p>
+
+                    <p><em>Click.</em> Si Lia na umiiyak habang yakap ni Trina.<br>
+                    <em>Click.</em> Si Cent na buhat ang trophy na parang Simba sa Lion King.<br>
+                    <em>Click.</em> Si Keanu na… teka, bakit hinuhubad na naman ni Keanu ang shirt niya at iwinawagayway?</p>
+
+                    <p>Ang saya nila. Ang ganda nilang tignan.</p>
+
+                    <p>Pero habang kumukuha ako ng litrato, naramdaman ko ulit yung pamilyar na pader. Yung <strong>The Gap</strong>.</p>
+
+                    <p>Sila, nasa stage. May hawak na trophy. Bida. Ako, nasa baba. May hawak na camera. Taga-dokumentaryo.</p>
+
+                    <p>Sa original timeline, ito ang nangyari: Kukumaway ako sa kanila. Magtathumbs-up si Cent. Tapos, aalis na ako para i-upload ang photos sa Facebook Page ng Student Council. Habang sila, didiretso sa Victory Party. Hindi ako sasama kasi iisipin ko, <em>"Moment nila 'yan. Extra lang ako."</em></p>
+
+                    <p>Dahan-dahan, ibinaba ko ang camera. Nakita ko silang bumababa ng stage. Papunta sila sa crowd para makipag-celebrate sa mga kaklase namin.</p>
+
+                    <p><span class="thought">Atras, Gio. Bigyan mo sila ng space.</span></p>
+
+                    <p>Humakbang ako paatras. Palayo sa crowd. Palayo sa liwanag. Nasanay na ako sa dilim ng editing room. Dito ako komportable.</p>
+
+                    <p>"GIO!"</p>
+
+                    <p>Isang sigaw ang bumasag sa plano kong pagtakas. Napahinto ako.</p>
+
+                    <p>Mula sa dagat ng mga dilaw na shirts, may humawi. Si Cent. Bitbit ang malaking trophy. Pawisan. Gusot ang uniform. Dire-direcho siya sa akin.</p>
+
+                    <p>"Saan ka pupunta?!" sigaw niya.</p>
+
+                    <p>"Ah… mag-a-upload? Para ma-post agad?" palusot ko.</p>
+
+                    <p>"Gago!" tawa ni Cent. "Upload mamaya! Celebration ngayon!"</p>
+
+                    <p>Inakbayan niya ako. Yung akbay na mabigat, basa ng pawis, at amoy tagumpay.</p>
+
+                    <p>"Pero Cent, yung pictures—"</p>
+
+                    <p>"Teka lang!" sigaw ni Keanu, sumulpot sa likod ni Cent. (Naka-shirt na siya ulit, salamat naman). Tinignan ako ni Keanu. Seryoso.</p>
+
+                    <p>"Pre," sabi ni Keanu. "Patingin nga ng camera mo."</p>
+
+                    <p>"Ha? Bakit?"</p>
+
+                    <p>"Basta, akin na."</p>
+
+                    <p>Inabot ko ang Canon 700D. Akala ko titignan niya lang ang preview. Pero isinukbit niya ito sa sarili niyang leeg.</p>
+
+                    <p>"O," sabi ni Keanu, inaayos ang strap. "Ako muna ang Official Photographer."</p>
+
+                    <p>Nanlaki ang mata ko. "Keanu, hindi ka marunong mag-manual mode! Baka blurred 'yan!"</p>
+
+                    <p>"Auto-mode lang, sapat na!" kindat niya. "Tsaka pre… sawang-sawa na akong makita mukha ni Cent sa pictures. Gusto ko naman makita yung Director."</p>
+
+                    <p>Tinulak niya ako palapit kay Cent. "Sali ka dun! Dali! Group picture!"</p>
+
+                    <p>Sa original timeline, walang nagtulak sa akin. Walang kumuha ng camera ko. Hawak-hawak ko 'yun hanggang sa makauwi ako, parang shield na nagpoprotekta sa akin sa rejection. Pero kinuha ni Keanu ang shield ko. Ngayon, exposed ako. Wala akong hawak. Wala akong matataguan.</p>
+
+                    <p>"Gio!"</p>
+
+                    <p><strong>Si Lia.</strong></p>
+
+                    <p>Nasa gitna siya ng grupo. Mugto ang mata kakaiyak, pero ang lapad ng ngiti. Hawak niya ang isang handle ng trophy. Nakatingin siya sa akin. Hinihintay ako.</p>
+
+                    <p>"Dito!" turo niya sa tabi niya.</p>
+
+                    <p>Hindi sa gilid. Hindi sa likod. Sa tabi niya mismo.</p>
+
+                    <p>Lumapit ako. Medyo nahihiya pa. "Sure kayo? Team lang dapat—"</p>
+
+                    <p>"Team ka naman ah!" hila ni Trina sa akin. "Ikaw kaya nagturo sa amin sumigaw!"</p>
+
+                    <p>Hinila nila ako papasok sa circle. Naramdaman ko ang init ng mga katawan nila. Ang amoy ng pawis at cheap perfume. Ang energy.</p>
+
+                    <p>Tumabi ako kay Lia. "Congrats," bulong ko sa kanya.</p>
+
+                    <p>Tumingin siya sa akin. Ang lapit ng mukha namin.</p>
+
+                    <p>"Salamat," bulong niya pabalik. "Salamat sa pagtuturo sa akin tumingin sa lens. Pero mas okay pala kapag… katabi na kita."</p>
+
+                    <p><span class="sound-effect">Dug-dug. Dug-dug.</span></p>
+
+                    <p>Hinawakan niya ang braso ko at ipinalupot sa bewang niya.</p>
+
+                    <p><span class="thought">Wait. Bewang.</span></p>
+
+                    <p>Sa original timeline, hover hand lang ang kaya kong gawin. Yung kamay na nakalutang kasi takot akong dumikit. Pero hinila niya ang kamay ko at dinikit sa bewang niya. Firmly.</p>
+
+                    <p>"Okay! Ready!" sigaw ni Keanu, hawak ang camera ko. Medyo tabingi ang hawak niya. "Say CHEESE!"</p>
+
+                    <p>"CHEEEESE!" sigaw naming lahat.</p>
+
+                    <p><span class="sound-effect">CLICK!</span></p>
+
+                    <p>Nag-flash ang camera. Nasulyapan ko ang puting liwanag. Nakakabulag. Pero nung nag-fade ang liwanag, nandoon pa rin ako.</p>
+
+                    <p>Hindi ako naglaho. Hindi ako naging multo. Nasa gitna ako ng litrato. Katabi ang muse. Katabi ang captain.</p>
+
+                    <p>"Isa pa! Wacky naman!" sigaw ni Keanu.</p>
+
+                    <p>Nag-wacky silang lahat. Si Cent, dumila. Si Trina, nag-peace sign. Ako? Tumingin ako kay Lia. Si Lia, nakatingin din sa akin.</p>
+
+                    <p>Ngumiti siya at… dinilaan ako sa pisngi. (Playful sticking out of tongue, hindi yung bastos). Natawa ako. Yung tawang totoo.</p>
+
+                    <p><span class="sound-effect">CLICK!</span></p>
+
+                    <p>Nakuha ni Keanu ang shot. Candid. Ako na tumatawa habang nagpapa-cute si Lia sa tabi ko.</p>
+
+                    <p>Ito ang <strong>Developing The Film</strong>. Naging permanente na ang image. Naging totoo na.</p>
+
+                    <hr class="divider">
+
+                    <p>Pagkatapos ng picture taking, binalik sa akin ni Keanu ang camera. "O, ayan. Check mo kung blurred," sabi niya.</p>
+
+                    <p>Tinignan ko ang preview.</p>
+
+                    <div class="photo-card">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <p><strong>Shot 1:</strong> Group picture. Horizon tilted. Ako nasa gitna. Nakangiti. Kamay sa bewang ni Lia. <br><em>Mukha kaming couple.</em></p>
+                    </div>
+
+                    <div class="photo-card" style="transform: rotate(-1deg);">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-smile-wink"></i>
+                        </div>
+                        <p><strong>Shot 2:</strong> Wacky. Nakatingin kami sa isa't isa. Blur ang background. Kami lang ang malinaw.</p>
+                    </div>
+
+                    <p>Ang ganda. Hindi ito perfect composition. Hindi Rule of Thirds. Hindi Golden Ratio. Pero ito ang pinakamagandang litrato na nakita ko sa buong buhay ko.</p>
+
+                    <p>"Salamat, Keanu," sabi ko, tinapik siya sa balikat. "Best Photographer ka na."</p>
+
+                    <p>"Suss! Maliit na bagay!" tawa niya. "Basta ninong ako ha!"</p>
+
+                    <p>Napatingin ako kay Lia. Busy siya makipag-usap sa ibang friends.</p>
+
+                    <p><span class="thought">Ninong?</span></p>
+
+                    <p>Oo nga pala. Chapter 18 na bukas. Or mamaya. Ang <strong>The Confession Scene</strong>. Ang Plot Twist na narinig ko kahapon. Yung sulat. Yung aaminan. Kinabahan ako bigla.</p>
+
+                    <p>"Gio," tawag ni Cent.</p>
+
+                    <p>Lumapit siya sa akin. Seryoso ang mukha, pero may ningning sa mata.</p>
+
+                    <p>"Ano 'yun, pre?"</p>
+
+                    <p>"May lakad kami ng team papuntang Gerry's Grill. Sagot ni Coach. Pero…" tumingin siya kay Lia, tapos tumingin sa akin. "…baka may ibang plano si Lia."</p>
+
+                    <p>"Ha?"</p>
+
+                    <p>"Sabi niya kanina, mauna na daw kami," bulong ni Cent. "May kakausapin daw siya."</p>
+
+                    <p>Nanlamig ang sikmura ko. May kakausapin. Ito na.</p>
+
+                    <p>"Sino daw?" tanong ko, kahit alam ko na ang sagot (o akala ko alam ko na).</p>
+
+                    <p>Tinapik ako ni Cent sa dibdib. Sa tapat ng puso.</p>
+
+                    <p>"Good luck, pre. Wag mong sayangin ang assist ko."</p>
+
+                    <p>At umalis si Cent. Sumama sa team. Naiwan kami ni Lia sa gitna ng oval habang nag-aalsabalutan na ang mga tao.</p>
+
+                    <p>Lumapit siya sa akin. Hawak niya pa rin ang isang maliit na bag.</p>
+
+                    <p>"Gio," sabi niya. Medyo nahihiya. Nawala ang fierce aura niya kanina sa stage. Bumalik ang sweet na Lia.</p>
+
+                    <p>"Congrats ulit," sabi ko. "Saan tayo? Gerry's?"</p>
+
+                    <p>Umiling siya. "Pwede bang… pwede bang samahan mo muna ako?"</p>
+
+                    <p>"Saan?"</p>
+
+                    <p>Tumingin siya sa langit. Madilim na. Pero may isang bituin na nakasilip.</p>
+
+                    <p>"Sa rooftop," sabi niya. "Doon sa tambayan natin dati."</p>
+
+                    <p>"Bakit?" tanong ko.</p>
+
+                    <p>"May… may ibibigay ako sa'yo."</p>
+
+                    <p>Hinawakan niya ang bag niya nang mahigpit. <strong>Ang Letter.</strong></p>
+
+                    <p>Kumabog ang dibdib ko. Ito na ang climax ng puso ko.</p>
+
+                    <p><span class="thought">Cent said "Good luck." Trina said "Kinikilig ako." So… ako nga? Pero paano kung pamamaalam pala 'to? Paano kung closure?</span></p>
+
+                    <p>"Sige," sabi ko. "Tara."</p>
+
+                    <p>Naglakad kami papunta sa old building. Ang bawat hakbang ay parang countdown.</p>
+
+                    <p><span class="sound-effect">Developing... Developing...</span></p>
+
+                    <p>Malapit na lumabas ang final image. At sana… sana hindi ito negative.</p>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter16.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="chapter18.html" class="btn-sketch primary nav-btn">
+                        Next Chapter &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

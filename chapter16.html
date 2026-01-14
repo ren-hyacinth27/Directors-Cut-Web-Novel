@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 16 - The Amphitheater | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        /* Drop Cap */
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Scene Header Style */
+        .scene-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--pencil-black);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Camera/Tech Note (Dark Box) */
+        .camera-note {
+            font-family: 'Courier Prime', monospace;
+            background: #2c2c2c;
+            color: #0f0; /* Retro green terminal text */
+            padding: 15px;
+            border-radius: 5px;
+            margin: 30px auto;
+            max-width: 350px;
+            text-align: left;
+            font-size: 0.9rem;
+            box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+            transform: rotate(-1deg);
+        }
+
+        /* Sticky Note for Shot List */
+        .text-insert { 
+            font-family: 'Patrick Hand', cursive; 
+            background: #fff9c4; 
+            color: #333;
+            padding: 15px 20px; 
+            border: 1px solid #e0e0e0;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+            transform: rotate(1deg);
+            display: block;
+            margin: 30px auto;
+            text-align: left;
+            max-width: 90%;
+            font-size: 1.1rem;
+        }
+
+        /* Scream Style */
+        .scream {
+            font-size: 1.5rem;
+            text-align: center;
+            display: block;
+            margin: 30px 0;
+            transform: rotate(-1deg);
+            color: #d32f2f;
+            font-weight: bold;
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 16</span>
+                    <h1 class="chap-title">The Amphitheater</h1>
+                </div>
+
+                <div class="story-text">
+                    <div class="camera-note">
+                        > ROLL SOUND.<br>
+                        > ROLL CAMERA.<br>
+                        > MARKER.
+                    </div>
+
+                    <p><span class="sound-effect">Boooooom!</span></p>
+
+                    <p>Ang unang beat ng drums ay parang suntok sa dibdib.</p>
+
+                    <p>Sabay-sabay na tumalon ang Yellow Team. Ang kulay ng uniform nila—itim at dilaw—ay parang kidlat sa gitna ng green na oval.</p>
+
+                    <p>Nasa Media Box ako. Nakaluhod. Ang kanang tuhod ko, nakadikit sa mainit na semento. Ang kaliwang paa, naka-brace para sa balance. Hawak ko ang camera nang mahigpit, parang baril sa gera.</p>
+
+                    <p><span class="sound-effect">Click. Click. Click. Click.</span></p>
+
+                    <p>Continuous Shooting Mode. 5 frames per second.</p>
+
+                    <p>Sa bawat frame, nakikita ko ang kwento.</p>
+
+                    <div class="text-insert">
+                        <strong>Frame 1:</strong> Si Cent, seryoso ang mukha, buhat ang banner. Lead Actor material talaga.<br>
+                        <strong>Frame 2:</strong> Si Trina, todo ngiti kahit alam kong masakit ang paa niya. Professionalism.<br>
+                        <strong>Frame 3:</strong> Si Lia.
+                    </div>
+
+                    <p>Naka-zoom ang lens ko sa kanya. 55mm.</p>
+
+                    <p>Nasa harap siya. Center stage.</p>
+
+                    <p>Ang galaw niya, matalim. Sharp. Bawat hampas ng kamay, bawat kembot, on beat.</p>
+
+                    <p>Sa original timeline, ang nakita ko lang ay ang "performance." Nakita ko lang na magaling sila sumayaw. Pero dahil Director na ako ngayon, nakikita ko ang subtext.</p>
+
+                    <p>Nakikita ko ang pawis na tumutulo sa gilid ng noo niya. Nakikita ko ang paghingal niya sa pagitan ng transitions. Nakikita ko ang kaba sa mata niya na pilit niyang tinatago sa likod ng malapad na ngiti.</p>
+
+                    <p><span class="thought">Kaya mo yan, Lia,</span> bulong ko sa likod ng camera.</p>
+
+                    <p>Nag-transition ang music. Mula sa upbeat drums, naging dramatic strings.</p>
+
+                    <p>Naghiwalay ang formation. Si Lia ang naiwan sa gitna. Solo part.</p>
+
+                    <p>Ito yung delikadong part. Maraming turns. Maraming jumps.</p>
+
+                    <p>Umikot siya. Pirouette. Isa. Dalawa. Tatlo.</p>
+
+                    <p>Sa pangatlong ikot, medyo nawalan siya ng balance. Nakita ko sa viewfinder. Gumewang nang konti ang sakong niya.</p>
+
+                    <p><strong>Shit.</strong></p>
+
+                    <p>Napigil ko ang hininga ko.</p>
+
+                    <p>Sa original timeline, hindi ko napansin 'to. Pero ngayon, dahil nakatutok ako sa kanya—dahil siya lang ang subject ko—ramdam ko ang bawat wobble.</p>
+
+                    <p><span class="thought">Hanapin mo ako, Lia.</span></p>
+
+                    <p>Yun ang sabi ko sa kanya kanina. Hanapin mo yung lens ko.</p>
+
+                    <p>At sa gitna ng pagkahilo niya sa pag-ikot… lumingon siya.</p>
+
+                    <p>Hindi sa judges. Hindi sa crowd. Diretso sa Media Box. Diretso sa akin.</p>
+
+                    <p>Kahit nakatakip ang camera sa mukha ko, alam kong nakikita niya ako. Alam kong nararamdaman niya ang presence ko.</p>
+
+                    <p>Para kaming nag-usap sa loob ng split second.</p>
+
+                    <p><span class="thought">Gio, andyan ka ba?</span></p>
+                    <p><span class="thought">Andito ako. Di ako aalis. Ituloy mo.</span></p>
+
+                    <p>Parang magic. Bigla siyang tumatag. Nakuha niya ang balance niya. Nag-landing siya nang perfect.</p>
+
+                    <p><span class="sound-effect">Click!</span></p>
+
+                    <p>Nakuha ko ang shot. Ang mukha niya pagkatapos ng landing—fierce, matapang, buhay na buhay.</p>
+
+                    <p>Naghiyawan ang crowd. "GO YELLOW TEAM! GO LIA!"</p>
+
+                    <p>Bumilis ulit ang tugtog. Remix ng <em>Run the World</em> ni Beyoncé.</p>
+
+                    <p>Takbuhan. Formation change.</p>
+
+                    <p>Ito na. Ang <strong>Yell</strong>.</p>
+
+                    <p>Sa Chapter 13, sa madilim na grandstand, sumigaw kami ng Putangina. Nilabas namin ang frustration. Ngayon, sa harap ng libo-libong tao, iba ang isisigaw nila.</p>
+
+                    <p>Pumunta sila sa harap. Yumuko. Humarap sa crowd.</p>
+
+                    <p>"RABBITS! RABBITS! ARE YOU READY?!" sigaw ni Cent.</p>
+
+                    <p>"YES! WE ARE READY!" sagot ng team.</p>
+
+                    <p>Huminga si Lia nang malalim. Nakita ko ang dibdib niya na umalsa. Ito na. Yung diaphragm technique na tinuro ko.</p>
+
+                    <p>Tumingin siya sa akin habang bumubwelo.</p>
+
+                    <p>At sumigaw siya.</p>
+
+                    <span class="scream">"ONE! TWO! FIGHT! WIN! YELLOOOOOOW!"</span>
+
+                    <p>Ang lakas.</p>
+
+                    <p>Basag ang audio levels ng mic ng video team sa tabi ko.</p>
+
+                    <p>Ang boses ni Lia, hindi matinis na pabebe. Buo. Galing sa bituka. Galing sa lahat ng pagod, sa lahat ng expectations, sa lahat ng takot na tinago niya simula 1st Year.</p>
+
+                    <p>Sumigaw din ako sa isip ko. Sinabayan ko siya.</p>
+
+                    <p><span class="thought">ILABAS MO LIA! SIGAW!</span></p>
+
+                    <p>Pagkatapos ng yell, nakita ko ang ngiti niya. Iba ito. Hindi ito ngiti para sa judges. Ngiti ito ng relief. Ngiti ng kalayaan.</p>
+
+                    <p><strong>Mission Accomplished: The Voice is Unlocked.</strong></p>
+
+                    <p>Pero hindi pa tapos.</p>
+
+                    <p>Ang Finale. Ang Pyramid.</p>
+
+                    <p>Ito ang pinakamahirap. Ito ang climax ng pelikula.</p>
+
+                    <p>Tumakbo ang mga bases papunta sa gitna. Si Cent, si Keanu, at iba pang malalakas na lalaki, bumuo ng foundation.</p>
+
+                    <p>Umakyat ang second layer.</p>
+
+                    <p>At si Lia… si Lia ang nasa tuktok. Ang flyer.</p>
+
+                    <p>Umakyat siya. Mabilis. Walang takot. Tumayo siya sa balikat ng second layer.</p>
+
+                    <p>Ang taas.</p>
+
+                    <p>Nasa baba ako, nakatingala. Naka-wide angle lens na ako ngayon para makuha ang buong pyramid.</p>
+
+                    <p>Ang hangin sa oval, medyo malakas. Nakita kong gumagalaw ang buhok ni Lia. Nakita kong medyo umuuga ang pyramid.</p>
+
+                    <p>Sa original timeline, ito ang moment na pumikit ako. Hindi ko kayang tignan noon. Takot akong mahulog siya. Takot akong makakita ng disgrasya.</p>
+
+                    <p>Duwag si Old Gio.</p>
+
+                    <p>Pero si New Gio? Si Director Gio?</p>
+
+                    <p>Walang kurap.</p>
+
+                    <p>Hindi ko ibababa ang camera. Hindi ako pipikit. Dahil kung mahuhulog man siya (wag naman sana), gusto kong makita niya na nakatingin pa rin ako. Na sasaluhin ko siya ng tingin ko.</p>
+
+                    <p>Tinaas ni Lia ang kamay niya. Hawak niya ang pom-poms.</p>
+
+                    <p>Music stops. Drum roll.</p>
+
+                    <p>Kailangan niyang mag-pose. One leg up. Arabesque.</p>
+
+                    <p>Delikado.</p>
+
+                    <p>Nakita ko ang paa ni Keanu sa baba, nanginginig sa bigat. "Cent! Ayusin mo!" sigaw ni Keanu (nabasa ko sa bibig niya).</p>
+
+                    <p>Umuuga ang base.</p>
+
+                    <p>Napatingin si Lia sa baba. Nakita niya ang uga.</p>
+
+                    <p>Nakita ko ang takot sa mata niya. Flash of panic.</p>
+
+                    <p><span class="thought">Wag kang tumingin sa baba, Lia,</span> bulong ko. <span class="thought">Tumingin ka sa akin.</span></p>
+
+                    <p>Ibinaba ko sandali ang camera mula sa mukha ko.</p>
+
+                    <p>Pinakita ko ang mukha ko.</p>
+
+                    <p>Nasa gitna ako ng mga photographers. Nakasuot ng Director's Cap.</p>
+
+                    <p>Itinaas ko ang kamay ko. Nag-thumbs up ako.</p>
+
+                    <p>Nakita niya ako.</p>
+
+                    <p>Mula sa tuktok ng pyramid, sa gitna ng langit at lupa, nag-lock ang paningin namin.</p>
+
+                    <p>Focus pulled.</p>
+
+                    <p>Nawala ang takot sa mukha niya. Huminga siya nang malalim.</p>
+
+                    <p>Dahan-dahan, itinaas niya ang kaliwang paa niya.</p>
+
+                    <p>Balanse.</p>
+
+                    <p>Ang pyramid… tumigil sa pag-uga.</p>
+
+                    <p>Ang crowd… tumahimik. Suspense.</p>
+
+                    <p>At sa exact moment na na-hit niya ang pose…</p>
+
+                    <p><span class="sound-effect">BOOOOOM!</span></p>
+
+                    <p>Sabog ng confetti cannons.</p>
+
+                    <p>Itinaas ko ulit ang camera.</p>
+
+                    <p><span class="sound-effect">CLICK!</span></p>
+
+                    <p>Nakuha ko.</p>
+
+                    <p>Ang perfect shot.</p>
+
+                    <p>Si Lia sa tuktok. Nakangiti. Ang background niya ay ang asul na langit at ang ulan ng gintong confetti. Para siyang lumilipad. Para siyang anghel na bumaba sa lupa.</p>
+
+                    <p>Pero ang pinakamaganda sa shot na 'yun?</p>
+
+                    <p>Hindi siya nakatingin sa kawalan.</p>
+
+                    <p>Nakatingin siya diretso sa lens.</p>
+
+                    <p>Ang mata niya, puno ng saya, at puno ng pasasalamat.</p>
+
+                    <p>"RABBITS! YELLOW TEAM! MABUHAY!" sigaw ng emcee.</p>
+
+                    <p>Bumaba ang pyramid. Sinalo ni Cent si Lia.</p>
+
+                    <p>Pagkababa ni Lia, hindi siya nag-bow agad sa audience.</p>
+
+                    <p>Hinanap niya ako.</p>
+
+                    <p>At nung nagtama ulit ang paningin namin, nginitian ko siya. Yung ngiting proud.</p>
+
+                    <p>Tumulo ang luha niya habang nakangiti.</p>
+
+                    <p>Tumulo rin ang luha ko sa likod ng camera.</p>
+
+                    <p>Sa original timeline, umiyak ako noon dahil sa inggit. Dahil sa feeling na hindi ako kasali.</p>
+
+                    <p>Ngayon, umiiyak ako dahil sa tagumpay.</p>
+
+                    <p>Hindi dahil mananalo sila ng trophy (spoiler: mananalo sila).</p>
+
+                    <p>Kundi dahil sa eksenang ito…</p>
+
+                    <p>…ako ang Director. Ako ang Cameraman. At ako ang Inspiration ng Bida.</p>
+
+                    <p>Wala man ako sa stage, kasama ako sa performance.</p>
+
+                    <p>"CUT! GOOD TAKE!" sigaw ko, kahit walang nakarinig dahil sa ingay ng drums.</p>
+
+                    <p>Tinignan ko ang preview sa screen ng camera.</p>
+
+                    <p>Ang huling litrato. Masterpiece.</p>
+
+                    <p>Ito ang poster ng pelikula namin.</p>
+
+                    <div class="camera-note">
+                        > TITLE: Director's Cut: 115 Million Kilometers of Film<br>
+                        > GENRE: Romance / Victory<br>
+                        > STATUS: Hit
+                    </div>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter15.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="chapter17.html" class="btn-sketch primary nav-btn">
+                        Next Chapter &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 13 - The Bench Yell (Rehearsal) | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        /* Drop Cap */
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Scene Header Style */
+        .scene-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--pencil-black);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Technical Note (Sticky Note Style) */
+        .tech-note { 
+            font-family: 'Patrick Hand', cursive; 
+            background: #ffecb3; /* Orange/Yellow sticky note */
+            color: #333;
+            padding: 15px 20px; 
+            border: 1px solid #e0e0e0;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+            transform: rotate(1deg);
+            display: block;
+            margin: 30px auto;
+            text-align: center;
+            max-width: 85%;
+            font-size: 1.1rem;
+        }
+
+        /* Camera/Audio Stats Note (Dark Box) */
+        .camera-note {
+            font-family: 'Courier Prime', monospace;
+            background: #2c2c2c;
+            color: #0f0; /* Retro green terminal text */
+            padding: 15px;
+            border-radius: 5px;
+            margin: 30px auto;
+            max-width: 350px;
+            text-align: left;
+            font-size: 0.9rem;
+            box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+            transform: rotate(-1deg);
+        }
+
+        /* Big Scream Style */
+        .scream {
+            font-size: 1.8rem;
+            text-align: center;
+            display: block;
+            margin: 40px 0;
+            transform: rotate(-2deg);
+            color: #d32f2f; /* Red for clipping/intensity */
+        }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 13</span>
+                    <h1 class="chap-title">The Bench Yell (Rehearsal)</h1>
+                </div>
+
+                <div class="story-text">
+                    <p>Sa audio editing, may tinatawag kaming <strong>Clipping</strong>.</p>
+
+                    <div class="tech-note">
+                        <strong>DEFINITION:</strong><br>
+                        Ito yung kapag sobrang lakas ng input ng sound—kapag sumigaw ka sa mic nang walang control—lumalagpas ang wave sa limit. Nagiging pula ang meter. Distorted ang labas. Basag.
+                    </div>
+
+                    <p>Sa loob ng walong taon, ang buhay ko ay isang mahabang silent film. Takot akong mag-clipping. Takot akong maging "too much." Kaya laging modulated ang boses ko. Laging mahina. Laging safe.</p>
+
+                    <p>Pero ngayon, tatlong araw bago ang Cheerdance Competition, kailangan kong basagin ang audio meter.</p>
+
+                    <div class="scene-header">EXT. GRANDSTAND - NIGHT</div>
+                    <p style="text-align: center; font-family: 'Patrick Hand', cursive; color: var(--text-light);">6:00 PM.</p>
+
+                    <p>"Mahina! Ulit!" sigaw ng coach namin.</p>
+
+                    <p>Hinihingal ako. Nakatayo kami sa formation. Pyramid stance. Ako ang base (dahil hindi naman ako payat, hindi rin mataba, perfect pambuhat).</p>
+
+                    <p>"Rabbits! Are you ready?!" sigaw ng captain.</p>
+
+                    <p>"YES! WE ARE READY!" sagot ng team.</p>
+
+                    <p>Sumigaw ako. Pero narinig ng coach na kulang.</p>
+
+                    <p>"Gio Cruz!" turo sa akin ni Coach. "Anong klaseng sigaw 'yan? Parang humihingi ka lang ng tawad! Sigaw na parang nananalo! Ulit!"</p>
+
+                    <p>Napailing ang mga ka-team ko. Pagod na sila. Gusto na nilang umuwi. Ako ang bottleneck.</p>
+
+                    <p>"Sorry Coach," sabi ko, pinupunasan ang pawis.</p>
+
+                    <p>"Last run! Pag hindi pa narinig ni Gio ang boses niya, walang uuwi!"</p>
+
+                    <p><strong>Pressure.</strong></p>
+
+                    <p>Sa original timeline, ito ang part na napahiya ako. Umiyak ako (patago) pagkauwi dahil feeling ko pabigat ako. Ang ending, nung competition mismo, nag-lip sync lang ako sa yell. Fake enthusiasm.</p>
+
+                    <p>Pero hindi pwedeng fake ngayon. Kailangan kong mahanap ang boses ko.</p>
+
+                    <hr class="divider">
+
+                    <p>Natapos ang practice nang medyo passable lang. Pinauwi na kami ni Coach, pero halatang disappointed siya.</p>
+
+                    <p>Isa-isang nag-alisan ang mga teammates ko. Si Cent, tinapik ako. "Kaya mo 'yan pre. Pahinga lang." Si Keanu, nag-joke, "Inom ka kasing salabat!"</p>
+
+                    <p>Naiwan ako.</p>
+
+                    <p>Umupo ako sa pinakamataas na bench ng grandstand.</p>
+
+                    <p>Madilim na ang oval. Ang tanging ilaw ay galing sa post lights sa labas ng campus. Ang hangin, malamig pero amoy alikabok.</p>
+
+                    <p>Huminga ako nang malalim. Hinawakan ko ang leeg ko. Masakit. Gasgas.</p>
+
+                    <p><span class="thought">Bakit ba ang hirap sumigaw?</span></p>
+
+                    <p>Pumikit ako. Sinubukan kong hukayin ang pinanggagalingan ng boses.</p>
+
+                    <p>Nakita ko ang condo ko sa 2026. Nakita ko ang mga gamot sa mesa. Nakita ko ang wedding video ni Lia na paulit-ulit kong ini-edit. Nakita ko ang sarili ko na nakatulala sa kisame, gustong sumigaw pero walang lumalabas na tunog kasi mag-isa lang naman ako. Walang makakarinig.</p>
+
+                    <p>Ang bigat.</p>
+
+                    <p>Ang bigat ng walong taon na itinago ko sa dibdib ko. Ang daming "Mahal kita" na hindi nasabi. Ang daming "Tulong" na hindi narinig. Ang daming "Ayoko na" na nabulunan sa lalamunan.</p>
+
+                    <p>Dito. Dito ko dapat ilabas.</p>
+
+                    <p>Tumayo ako sa bench. Mag-isa sa dilim. Humarap ako sa kawalan ng oval track.</p>
+
+                    <p>"Ahhh," simula ko. Mahina.</p>
+
+                    <p><span class="thought">Hindi pwede. Gain up.</span></p>
+
+                    <p>"Ahhhh!" Mas malakas.</p>
+
+                    <p>Kulang pa. Nasa lalamunan pa lang. Dapat galing sa diaphragm. Dapat galing sa kaluluwa.</p>
+
+                    <p>Inisip ko si Sir Vren. <em>The Director eats last.</em></p>
+                    <p>Inisip ko si Lia. Yung ngiti niya kanina.</p>
+                    <p>Inisip ko ang takot na baka mawala ulit ang lahat.</p>
+
+                    <p>Bumwelo ako.</p>
+
+                    <p>Hinugot ko ang hangin mula sa dulo ng lungs ko, dumaan sa tiyan, umakyat sa dibdib, hanggang sa lalamunan.</p>
+
+                    <span class="sound-effect scream">"AAAAAAAAAAHHHHHHHHHH!!!!!!!!"</span>
+
+                    <p>Sumigaw ako.</p>
+
+                    <p>Hindi ito yell ng Cheerdance.</p>
+
+                    <p>Ito ay sigaw ng isang taong galit. Sigaw ng isang taong pagod. Sigaw ng isang taong lumalaban.</p>
+
+                    <span class="sound-effect scream">"PUTANGINAAAAAA!!!!"</span>
+
+                    <p>Umalingawngaw ang boses ko sa buong grandstand. Nag-echo sa semento.</p>
+
+                    <p>Ramdam ko ang pag-vibrate ng vocal cords ko. Masakit, pero masarap. Para akong nagluwa ng maitim na usok.</p>
+
+                    <p>Napaluhod ako sa bench. Hinihingal. Umuuga ang balikat.</p>
+
+                    <p>Ang sarap pala. Ang sarap mag-ingay.</p>
+
+                    <p>"Grabe. Galit na galit gustong manakit?"</p>
+
+                    <p>Napatingala ako.</p>
+
+                    <p>Sa hagdan ng grandstand, may nakatayong anino.</p>
+
+                    <p><strong>Lia.</strong></p>
+
+                    <p>May hawak siyang dalawang bote ng tubig. Naka-jogging pants at t-shirt. Nakasabit ang towel sa balikat.</p>
+
+                    <p>Akala ko umuwi na siya.</p>
+
+                    <p>"Kanina ka pa dyan?" tanong ko, medyo paos.</p>
+
+                    <p>"Kakarating lang," sabi niya, bumababa ng hagdan palapit sa akin. "Naiwan ko kasi yung knee support ko. Tapos narinig ko may sumisigaw ng 'Putangina'. Akala ko may pinapatay."</p>
+
+                    <p>Umupo siya sa tabi ko. Inabot niya ang isang bote ng tubig.</p>
+
+                    <p>"O. Baka mapatid ugat mo sa leeg."</p>
+
+                    <p>Kinuha ko at ininom. Malamig. Heaven.</p>
+
+                    <p>"Sorry," sabi ko. "Nagpa-practice lang."</p>
+
+                    <p>"Practice ba 'yun?" tawa niya. "Parang exorcism eh."</p>
+
+                    <p>Natawa rin ako nang mahina. "Ganun talaga kapag maraming demonyo sa loob."</p>
+
+                    <p>Tumahimik kami sandali. Pinanood namin ang mga sasakyan na dumadaan sa highway sa malayo.</p>
+
+                    <p>"Gio," basag niya sa katahimikan.</p>
+
+                    <p>"Hmm?"</p>
+
+                    <p>"Bakit ka galit?"</p>
+
+                    <p>Tumingin ako sa kanya. Seryoso ang mukha niya. Hindi siya nagbibiro.</p>
+
+                    <p>"Hindi naman ako galit," depensa ko.</p>
+
+                    <p>"Weh?" Tumingin siya sa akin, yung piercing look niya. "Rinig ko sa boses mo, Gio. Hindi 'yun sigaw ng practice. Sigaw 'yun ng… ewan. Pain?"</p>
+
+                    <p>Ibinalik ko ang tingin sa kawalan.</p>
+
+                    <p><span class="thought">Hindi ko pwedeng sabihin sa kanya na galing ako sa future at traumatized ako.</span></p>
+
+                    <p>"Minsan kasi," simula ko, pinipili ang mga salita. "Pakiramdam ko… puno na ako. Puno ng expectations. Puno ng what ifs. Parang sasabog ako kung hindi ako sisigaw."</p>
+
+                    <p>Tumango siya. Parang naiintindihan niya. "Gets ko," sabi niya. "Ako rin."</p>
+
+                    <p>"Ikaw? Bakit? Eh ikaw ang bida. Muse. Maganda. Matalino."</p>
+
+                    <p>Ngumiti siya nang mapait. "Akala mo lang 'yun. Pero nakakapagod din maging Lia. Yung laging dapat nakangiti. Laging dapat okay. Bawal sumimangot kasi Muse eh. Bawal magkamali kasi Scholar eh."</p>
+
+                    <p>Tumingin siya sa akin.</p>
+
+                    <p>"Minsan, gusto ko ring sumigaw ng 'Putangina'. Pero bawal. Kasi bad words daw. Hindi bagay sa image ko."</p>
+
+                    <p>Napangisi ako.</p>
+
+                    <p>"Gusto mong i-try?" tanong ko.</p>
+
+                    <p>"Ha?"</p>
+
+                    <p>"Sumigaw," turo ko sa oval. "Wala namang tao. Madilim. Walang makakarinig kundi ako. At promise… hindi ko ire-record."</p>
+
+                    <p>Nagdalawang-isip siya. Tumingin siya sa paligid.</p>
+
+                    <p>"Nakakahiya," bulong niya.</p>
+
+                    <p>"Mas nakakahiya yung tinatago mo lang," sabi ko. Tumayo ako. Inilahad ko ang kamay ko sa kanya. "Tara. Sabay tayo."</p>
+
+                    <p>Tinignan niya ang kamay ko. Matagal. Tapos, tinanggap niya.</p>
+
+                    <p>Tumayo siya sa tabi ko.</p>
+
+                    <p>"Paano ba?" tanong niya.</p>
+
+                    <p>"Huwag sa lalamunan," turo ko, hinawakan ang tiyan ko. "Dito. Sa diaphragm. Isipin mo lahat ng inis mo. Kay Sir Magsanoc. Sa Coach. Sa pressure. Sa akin. Sa lahat."</p>
+
+                    <p>Pumikit siya. Huminga nang malalim.</p>
+
+                    <p>"Ready?" tanong ko.</p>
+
+                    <p>"Ready."</p>
+
+                    <p>"One. Two. Three. SIGAW!"</p>
+
+                    <span class="sound-effect scream">"AAAAAAHHHHHHHHHHHH!!!!!"</span>
+
+                    <p>Sumigaw kami. Sabay.</p>
+
+                    <p>Ang boses ko, malalim at garalgal. Ang boses niya, mataas at matinis. Naghalo ang boses namin sa hangin. Isang harmony ng frustration at release.</p>
+
+                    <p><span class="sound-effect">"AYOKO NAAAAA!!!! PAGOD NA AKOOOO!!! TANGINAAAA!!!"</span> sigaw ni Lia.</p>
+
+                    <p>Nagulat ako. Ang lutong ng mura niya.</p>
+
+                    <p>Tumagal ang sigaw namin ng limang segundo. Sampung segundo. Hanggang sa maubusan kami ng hininga.</p>
+
+                    <p>Pagkatapos, katahimikan.</p>
+
+                    <p>Tumingin ako sa kanya. Hinihingal siya. Gulo-gulo ang buhok. Namumula ang mukha. Tumingin siya sa akin.</p>
+
+                    <p>Bigla kaming natawa. Tawa na malakas. Tawa na parang mga baliw.</p>
+
+                    <p>"Grabe!" sabi niya, hawak ang tiyan kakatawa. "Ang sarap! Grabe ang sarap!"</p>
+
+                    <p>"Sabi sa'yo eh!" tawa ko rin. "Ang lutong ng mura mo ah! Hindi bagay!"</p>
+
+                    <p>"Che! Ngayon ko lang nagawa 'yun!"</p>
+
+                    <p>Umupo kami ulit sa bench, pagod pero magaan ang pakiramdam. Para kaming nag-gym ng emosyon. Cardio for the soul.</p>
+
+                    <p>Tumingin siya sa akin. Ang mga mata niya, kumikinang sa dilim.</p>
+
+                    <p>"Salamat, Gio," bulong niya.</p>
+
+                    <p>"Para saan?"</p>
+
+                    <p>"Sa pagtuturo sa akin… na okay lang maging hindi okay."</p>
+
+                    <p>Hinawakan niya ang kamay ko na nakapatong sa bench.</p>
+
+                    <p>"Ready na tayo," sabi niya. "Sa competition."</p>
+
+                    <p>Pinisil ko ang kamay niya.</p>
+
+                    <p>"Oo," sabi ko. "Ready na."</p>
+
+                    <p>Nung gabing 'yun, hindi lang boses ang nahanap ko. Nahanap ko rin ang boses niya. At narealize ko, hindi ko kailangang sumigaw mag-isa. May duet partner na ako.</p>
+
+                    <div class="camera-note">
+                        > SOUND CHECK: CLEAR<br>
+                        > SIGNAL: STRONG<br>
+                        > STATUS: CONNECTED
+                    </div>
+
+                    <p>Handa na kami sa performance.</p>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter12.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="#" class="btn-sketch primary nav-btn">
+                        Next Chapter &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

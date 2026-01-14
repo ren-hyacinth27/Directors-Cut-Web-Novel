@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 12 - Editing Room | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        /* Drop Cap */
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Scene Header Style */
+        .scene-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--pencil-black);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Flashback / Editing Room Dark Mode Style */
+        .flashback-terminal {
+            background-color: #1a1a1a; /* Dark gray like Premiere Pro */
+            color: #ccc;
+            padding: 25px;
+            border-radius: 5px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            margin: 30px 0;
+            border: 1px solid #333;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+        }
+        .flashback-terminal h4 {
+            color: #fff;
+            font-family: 'Courier Prime', monospace;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        .clip-list {
+            font-family: 'Courier Prime', monospace;
+            color: #4caf50; /* Green text like old screens */
+            list-style: none;
+            padding: 0;
+        }
+        .clip-list li { margin-bottom: 5px; }
+        .clip-list li::before { content: "> "; color: #666; }
+
+        /* Sketch Note for the Drawing Scene */
+        .sketch-note { 
+            font-family: 'Patrick Hand', cursive; 
+            border: 2px solid var(--pencil-black);
+            padding: 15px; 
+            margin: 30px auto; 
+            max-width: 300px; 
+            text-align: center;
+            border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; /* Wobbly */
+            transform: rotate(-1deg);
+        }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 12</span>
+                    <h1 class="chap-title">Editing Room</h1>
+                </div>
+
+                <div class="story-text">
+                    <p>Sa buhay ng isang videographer, 20% lang ang shooting. Ang 80%? <strong>Editing.</strong></p>
+
+                    <p>Dito nangyayari ang mahika. Dito mo tinatanggal ang mga dead air. Dito mo pinuputol ang mga awkward na tinginan. Dito mo inaayos ang kulay ng langit kung masyadong madilim. Dito mo nilalagyan ng masayang background music ang eksenang malungkot para dayain ang emosyon ng manonood.</p>
+
+                    <p>Ang Editing Room ang pinaka-makapangyarihang lugar sa mundo. Kasi dito… kontrolado mo ang oras.</p>
+
+                    <p>May <em>Ctrl+Z</em> kapag nagkamali ka.</p>
+                    <p>May <em>Ripple Delete</em> kapag gusto mong burahin ang isang tao sa eksena.</p>
+                    <p>May <em>Color Grade</em> para magmukhang mainit ang mundo kahit malamig na talaga.</p>
+
+                    <p>Kaya siguro naging editor ako sa future. Gusto ko ng control. Gusto kong ayusin ang mga bagay na broken.</p>
+
+                    <p>Pero ang problema sa buhay… wala namang post-production.</p>
+
+                    <div class="flashback-terminal">
+                        <h4>FLASHBACK: YEAR 2025</h4>
+                        <p style="font-size: 0.9rem; color: #888; margin-bottom: 20px;">
+                            LOCATION: Condo Unit 402, Mandaluyong.<br>
+                            TIME: 3:14 AM.
+                        </p>
+
+                        <p>Ang liwanag lang sa kwarto ay galing sa dalawang monitor ng PC ko.</p>
+
+                        <p>Naka-open ang Adobe Premiere Pro. Nasa timeline ang SDE (Same Day Edit) ng kasal nina Mark at Jen.</p>
+
+                        <p>Pagod na pagod na ako. Namamanhid na ang kamay ko sa kakahawak ng mouse. Ang ashtray sa tabi ko, puno na ng upos ng yosi. Ang kape ko, malamig na.</p>
+
+                        <p>Pinanood ko ang footage sa monitor.</p>
+
+                        <ul class="clip-list">
+                            <li>Clip 042: Groom crying.</li>
+                            <li>Clip 045: Bride walking down the aisle.</li>
+                            <li>Clip 089: Guests laughing.</li>
+                        </ul>
+
+                        <p style="margin-top: 20px;">Ang saya nila. Ang ganda ng kasal. Perfect.</p>
+
+                        <p>Pero habang pinapanood ko ang timeline, napatingin ako sa repleksyon ko sa itim na screen habang naglo-load ang render.</p>
+
+                        <p>Ang itim ng ilalim ng mata ko. Ang haba ng buhok ko. Ang payat ko.</p>
+
+                        <p><span style="font-style: italic; color: #aaa;">Bakit ba ako naging videographer?</span></p>
+
+                        <p>Nagsimula lang naman 'to bilang hobby noong college. Yung "One Shot" project. Pero nung nawala si Lia (nung naging sila ni Cent), at nung namatay si Mama… ang camera ang naging pananggalang ko.</p>
+
+                        <p>Kapag may hawak kang camera, hindi ka participant. Observer ka lang.</p>
+
+                        <p>Hindi ka kailangang magsalita. Hindi ka kailangang makipag-interact. Pwede kang magtago sa likod ng lens. Pwede kang umiyak habang nagshoshoot, at walang makakapansin kasi nakatakip ang camera sa mukha mo.</p>
+
+                        <p>Naging comfort zone ko ang pagiging invisible.</p>
+
+                        <p style="font-family: 'Courier Prime', monospace; color: cyan;">Rendering: 98%…</p>
+
+                        <p>Biglang nag-pop up ang isang folder sa desktop ko. "ARCHIVE 2018." Hindi ko alam kung bakit, pero binuksan ko.</p>
+
+                        <p>Nakita ko ang mga lumang video noong college. Intrams. School Fair. Bus ride. Hinanap ko ang mukha ko.</p>
+
+                        <p><strong>Wala.</strong></p>
+
+                        <p>Wala ako sa mga video. Kasi ako ang may hawak ng camera. Puro boses ko lang ang naririnig. <em>"Okay, smile!" "Ganda ng shot!" "Isa pa!"</em></p>
+
+                        <p>Para akong multo. Nandoon ako, pero wala ako.</p>
+
+                        <p>Napaluha ako nung 2025 na 'yun.</p>
+
+                        <p>"Tangina," bulong ko sa sarili ko. "Ang dami kong na-record na memories, pero wala akong sariling memorya."</p>
+
+                        <p>Pinatay ko ang PC. At nilamon ako ng dilim.</p>
+                    </div>
+
+                    <div class="scene-header">PRESENT DAY: YEAR 2018</div>
+                    <p style="text-align: center; font-family: 'Patrick Hand', cursive; color: var(--text-light);">Location: Physics Lab | Time: 4:30 PM</p>
+
+                    <p>"Gio? Hoy! Natutulala ka na naman."</p>
+
+                    <p>Bumalik ako sa reyalidad. Nawala ang dilim ng condo. Ang nakikita ko ngayon ay ang blackboard na puno ng formulas ng Projectile Motion.</p>
+
+                    <p>At sa harap ko, si Lia.</p>
+
+                    <p>Naka-pangalumbaba siya sa mesa, winawagayway ang ballpen sa mukha ko.</p>
+
+                    <p>"Ha? Ano 'yun?" tanong ko, medyo disoriented. <span class="thought">Yung transition mula 2025 pabalik ng 2018, minsan may lag.</span></p>
+
+                    <p>"Sabi ko," ulit ni Lia, "Tapos na tayo mag-review. Ang galing mo mag-explain! Mas naintindihan ko pa sa'yo kaysa kay Sir!"</p>
+
+                    <p>Ngumiti ako. "Syempre. Magaling ako mag-breakdown ng scenes… I mean, ng problems."</p>
+
+                    <p>Sinarado niya ang notebook niya. Tumingin siya sa akin. Yung tingin na curious.</p>
+
+                    <p>"Gio," sabi niya. "Tanong lang."</p>
+
+                    <p>"Ano?"</p>
+
+                    <p>"Ano ba talaga gusto mong maging someday?"</p>
+
+                    <p>Natigilan ako.</p>
+
+                    <p>Sa original timeline, tinanong niya rin ito. Ang sagot ko noon: <em>"Gusto kong maging sikat na Filmmaker. O kaya Videographer ng mga kasal."</em></p>
+
+                    <p>At nangyari nga. Naging Videographer ako. Pero hindi ako naging masaya.</p>
+
+                    <p>"Bakit mo natanong?" balik ko.</p>
+
+                    <p>"Wala lang," nagkibit-balikat siya. "Kasi parang… parang ang dami mong talent. Magaling ka mag-photo, magaling ka mag-video, tapos matalino ka pa sa Physics. Pero parang… parang ang lungkot mo minsan."</p>
+
+                    <p><strong>Bullseye.</strong></p>
+
+                    <p>Ang galing talaga ng instinct ni Lia. Kahit noong 2018 pa lang, nararamdaman na niya ang melancholy ko.</p>
+
+                    <p>Kumuha ako ng piraso ng papel. Nag-drawing ako ng camera.</p>
+
+                    <p>"Dati," simula ko, "gusto kong maging Videographer. Gusto kong i-capture yung moments ng ibang tao. Kasi feeling ko, ang ganda ng mundo, sayang kung makakalimutan lang."</p>
+
+                    <p>"O, diba maganda 'yun?" sabi niya. "Ang noble kaya nun."</p>
+
+                    <p>"Oo," tango ko. "Pero na-realize ko… kapag puro ka capture, nakakalimutan mong maging part ng picture."</p>
+
+                    <p>Tinitigan ko ang drawing ko. Dinagdagan ko ng tao sa likod ng camera. Tapos nilagyan ko ng X ang camera.</p>
+
+                    <div class="sketch-note">
+                        <i class="fas fa-camera" style="font-size: 1.5rem; color: #ccc;"></i> 
+                        <span style="font-size: 2rem; color: red; position: absolute; left: 45%; top: 10px;">X</span>
+                        <br>
+                        <span style="font-weight: bold; color: var(--pencil-black);">BE PRESENT.</span>
+                    </div>
+
+                    <p>"Ngayon?" tanong ni Lia. "Ano nang gusto mo?"</p>
+
+                    <p>Tumingin ako sa kanya.</p>
+
+                    <p>Ang hapon na araw ay tumatagos sa bintana ng lab. Ang alikabok, sumasayaw sa liwanag. Ang buhok ni Lia, may hibla na tumatakip sa mata niya.</p>
+
+                    <p>Gusto ko siyang hawiin. Gusto ko siyang ayusin.</p>
+
+                    <p>Sa Editing Room ng utak ko, gusto kong i-slow motion ang moment na 'to. Gusto kong lagyan ng Color Grade na warm at nostalgic.</p>
+
+                    <p>Pero pinigil ko ang sarili ko.</p>
+
+                    <p><span class="thought">Hindi. Huwag mong i-edit, Gio. Hayaan mong maging raw footage. Hayaan mong maging imperpekto.</span></p>
+
+                    <p>"Ngayon," sagot ko. "Gusto ko na lang maging… <strong>Present</strong>."</p>
+
+                    <p>Kumunot ang noo niya. "Present? Ano 'yun, gift?"</p>
+
+                    <p>Natawa ako. "Hindi. Ibig sabihin… nandito. Yung hindi lumilipad ang isip. Yung hindi nagtatago. Gusto kong maramdaman yung sakit, yung saya, yung inis… nang walang filter."</p>
+
+                    <p>Tumahimik si Lia. Parang pino-process niya ang sinabi ko.</p>
+
+                    <p>"Ang weird mo talaga," bulong niya, pero nakangiti. "Pero… gets ko."</p>
+
+                    <p>Inayos niya ang gamit niya. Tumayo siya. "Tara na? Uwi na tayo. Gutom na ako."</p>
+
+                    <p>"Tara."</p>
+
+                    <hr class="divider">
+
+                    <p>Habang naglalakad kami palabas ng building, napadaan kami sa glass window ng hallway.</p>
+
+                    <p>Nakita ko ang repleksyon namin.</p>
+
+                    <p>Si Lia. At si Gio.</p>
+
+                    <p>Magkatabi. Naglalakad.</p>
+
+                    <p>Walang camera na nakaharang sa mukha ko.</p>
+
+                    <p>Sa original timeline, puro Point of View (POV) shots lang ang meron ako. Nakikita ko ang likod niya, pero hindi ko nakikita ang sarili ko.</p>
+
+                    <p>Ngayon, <strong>Wide Shot</strong>. Kasama na ako sa frame.</p>
+
+                    <p>Napahawak ako sa dibdib ko.</p>
+
+                    <p>Wala na yung bigat. Wala na yung hollow feeling na nararamdaman ko tuwing nag-eedit ako ng SDE sa condo ko.</p>
+
+                    <p>Kasi hindi ko na kailangang i-edit ang buhay ko para maging maganda. Maganda na siya. Kasi totoo na siya.</p>
+
+                    <p>"Lia," tawag ko bago kami makalabas ng gate.</p>
+
+                    <p>"O?"</p>
+
+                    <p>"Wag ka munang umuwi," sabi ko. Biglaan. Wala sa script.</p>
+
+                    <p>"Ha? Bakit?"</p>
+
+                    <p>"Tara sa… sa arcade," yaya ko. "Timezone. Laro tayo."</p>
+
+                    <p>"Timezone?! May pasok bukas!"</p>
+
+                    <p>"Edi pumasok tayong puyat!" hamon ko. "Minsan lang tayo maging bata, Lia. Sulitin mo na."</p>
+
+                    <p>Tinitigan niya ako. Hinahanap niya kung nagbibiro ako.</p>
+
+                    <p>Pero seryoso ako.</p>
+
+                    <p>Gusto kong punuin ang timeline ko ng mga clips na kasama siya. Hindi clips na shinoot ko, kundi clips na naranasan ko.</p>
+
+                    <p>Ngumiti siya. Yung ngiting pilyo.</p>
+
+                    <p>"Sige. Pero ikaw taya sa tokens."</p>
+
+                    <p>"Deal."</p>
+
+                    <p>Tumakbo kami papunta sa sakayan ng jeep.</p>
+
+                    <p>Iniwan ko ang Editing Room sa future. Sinunog ko na ang render queue.</p>
+
+                    <p>Dito sa 2018, <strong>Live Broadcast</strong> ang buhay. Walang cut. Walang take two. Walang pause.</p>
+
+                    <p>At sa unang pagkakataon, hindi ako takot na magkamali live on air.</p>
+
+                    <p>Dahil kasama ko ang co-star ko.</p>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter11.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="chapter13.html" class="btn-sketch primary nav-btn">
+                        Next Chapter &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

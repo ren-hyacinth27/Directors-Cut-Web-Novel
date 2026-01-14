@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 14 - Plot Twist | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        /* Drop Cap */
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Scene Header Style */
+        .scene-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--pencil-black);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Script Note (Sticky Note Style) */
+        .script-note { 
+            font-family: 'Patrick Hand', cursive; 
+            background: #ffcdd2; /* Reddish sticky note for 'Red Herring' */
+            color: #b71c1c;
+            padding: 15px 20px; 
+            border: 1px solid #e57373;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+            transform: rotate(1deg);
+            display: block;
+            margin: 30px auto;
+            text-align: center;
+            max-width: 85%;
+            font-size: 1.1rem;
+        }
+
+        /* Role Tag */
+        .role-tag { 
+            font-family: 'Patrick Hand', cursive; 
+            background: #e0f2f1; 
+            padding: 2px 10px; 
+            border-left: 5px solid #00695c;
+            font-size: 1rem; 
+            color: #00695c; 
+            font-weight: 700; 
+            letter-spacing: 1px;
+        }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 14</span>
+                    <h1 class="chap-title">Plot Twist</h1>
+                </div>
+
+                <div class="story-text">
+                    <p>Sa pagsusulat ng script, may tinatawag kaming <strong>Red Herring</strong>.</p>
+
+                    <div class="script-note">
+                        <strong>DEFINITION:</strong><br>
+                        Ito yung detalye na akala mo importante. Akala mo clue. Akala mo sign. Pero sa huli, pampalito lang pala. Pampagulo para hindi mo mahulaan kung sino talaga ang killer o kung sino ang makakatuluyan ng bida.
+                    </div>
+
+                    <p>Sa loob ng ilang linggo, akala ko ako ang bida.</p>
+
+                    <p>Akala ko ang mga ngiti ni Lia, ang pagsama niya sa akin sa mosh pit, ang pagsigaw namin sa grandstand… akala ko lahat 'yun, clues na nagbabago na ang takbo ng istorya.</p>
+
+                    <p>Pero nakalimutan ko ang <strong>Golden Rule ng Time Travel:</strong> <em>History has a way of correcting itself.</em></p>
+
+                    <p>Kahit anong iwas mo sa iceberg, tatama at tatama pa rin ang Titanic.</p>
+
+                    <div class="scene-header">INT. CLASSROOM - DAY</div>
+                    <p style="text-align: center; font-family: 'Patrick Hand', cursive; color: var(--text-light);">Araw bago ang Competition.</p>
+
+                    <p>"Gio! Paki-abot ng glue gun!"</p>
+                    <p>"Gio! Yung feathers sa headdress, nalalaglag!"</p>
+
+                    <p>Busy ang lahat. Hell Week na. Bukas na ang Cheerdance Competition. Ang classroom namin, mukhang sumabog na factory ng glitter at tela.</p>
+
+                    <p>Nasa sulok ako, nag-aayos ng props. Pero hindi ako mapakali.</p>
+
+                    <p>Masaya ako these past few days. Sobrang saya. Feeling ko on track na ang Mission. Sabi ko sa sarili ko, <span class="thought">“Okay na. Confident na ako. Close na kami. Bukas, pagkatapos ng panalo, aamin na ako.”</span></p>
+
+                    <p>Yan ang plano. Cinematic confession after the championship.</p>
+
+                    <p>Tumayo ako para uminom ng tubig. Lumabas ako ng room para magpahangin.</p>
+
+                    <p>Dadaan sana ako sa likod ng stage (kung saan nagpa-practice ang iba), nang marinig ko ang boses ni Lia.</p>
+
+                    <p>Nasa may hagdan siya, kausap si Trina. Nakatago sila sa ilalim ng staircase. Medyo seryoso ang usapan.</p>
+
+                    <p>Dapat dideretso na ako. Dapat hindi ako nakinig. Pero cameraman instinct—sanay akong mag-eavesdrop.</p>
+
+                    <p>Huminto ako sa likod ng pader.</p>
+
+                    <p>"…sure ka na ba talaga, Lia?" tanong ni Trina. Boses na nag-aalala.</p>
+
+                    <p>"Oo, Trina," sagot ni Lia. Rinig ko ang kaba sa boses niya. "Ayoko nang magtago. Ilang taon ko na ring tinatago 'to."</p>
+
+                    <p><strong>Ilang taon?</strong></p>
+
+                    <p>Kumabog ang dibdib ko.</p>
+
+                    <p>"Pero paano kung… paano kung hindi ka gusto?" tanong ulit ni Trina. "Sayang yung friendship."</p>
+
+                    <p>"Bahala na," buntong-hininga ni Lia. "Bukas, after ng competition. Ibibigay ko sa kanya yung letter. Sasabihin ko na lahat."</p>
+
+                    <p>"Grabe," tili ni Trina nang mahina. "Kinikilig ako! Finally! Ang tagal na niyan ha! Simula 1st Year pa!"</p>
+
+                    <p>Nanigas ako.</p>
+
+                    <p>Simula 1st Year.</p>
+
+                    <p>Nag-flashback sa utak ko ang lahat. Noong 1st Year, sino ang crush ni Lia? Sino ang laging kasama niya? Sino ang laging tinutukso sa kanya?</p>
+
+                    <p><strong>Si Cent.</strong></p>
+
+                    <p>Ako? Naging close lang kami nung 2nd Year. Naging "tropa" lang ako sa kalagitnaan. Pero si Cent… si Cent ang original leading man.</p>
+
+                    <p>Bumagsak ang balikat ko.</p>
+
+                    <p><span class="thought">So… mali ako ng akala?</span></p>
+
+                    <p>Yung mga moments namin… yung bus ride, yung mosh pit, yung sigaw sa bench… ano 'yun? Friendly gestures lang? Baka kaya siya naging malapit sa akin lately ay dahil kumukuha lang siya ng lakas ng loob para umamin kay Cent?</p>
+
+                    <p>Baka ako lang ang naging confidante. Ang emotional support dog.</p>
+
+                    <p>Biglang lumabas sina Lia at Trina sa pinagtataguan nila. Nagtatawanan sila.</p>
+
+                    <p>Nakita nila ako.</p>
+
+                    <p>"O, Gio!" gulat na bati ni Lia. Namula siya bigla. "Kanina ka pa dyan?"</p>
+
+                    <p>"Ah… h-hindi," utal ko. "Kararating lang. Iinom sana ako."</p>
+
+                    <p>Nagkatinginan sina Lia at Trina. Yung tinginang may sikreto.</p>
+
+                    <p>"Ah, sige," sabi ni Lia, iiwas ng tingin. "Balik na kami sa loob. May aayusin lang kami."</p>
+
+                    <p>Nagmadali silang umalis.</p>
+
+                    <p>Naiwan akong nakatayo sa hallway. Parang gumuho ang mundo ko.</p>
+
+                    <p><span class="sound-effect">Cut.</span> Mali ang basa ko sa script.</p>
+
+                    <div class="scene-header">EXT. VENDING MACHINE AREA - LATER</div>
+
+                    <p>Kinahapunan. Sinubukan kong i-shake off ang narinig ko. Baka mali lang ako ng dinig. Baka ako 'yun.</p>
+
+                    <p>Naglalakad ako papunta sa court para sa final tech run.</p>
+
+                    <p>Sa malayo, nakita ko si Cent.</p>
+
+                    <p>Nakatayo siya sa may vending machine. May kausap siya sa phone. Nakangiti.</p>
+
+                    <p>Lumapit ako. Hindi niya ako napansin agad.</p>
+
+                    <p>"Oo nga," sabi ni Cent sa kausap niya. "Excited na ako bukas… Oo, alam ko… Sige, Love you."</p>
+
+                    <p><strong>Love you?</strong></p>
+
+                    <p>Binaba ni Cent ang phone. Lumingon siya at nakita ako.</p>
+
+                    <p>"O, pre!" bati niya. Ang saya ng mukha niya. "Musta?"</p>
+
+                    <p>"Sino kausap mo?" tanong ko. Deretsahan.</p>
+
+                    <p>"Ah," kamot-ulo siya. "Wala. Si Mama lang. Nangamusta."</p>
+
+                    <p>Mama. Palusot. Gasgas na palusot.</p>
+
+                    <p>Tinignan ko si Cent. Gwapo. Matangkad. Captain Ball. Mabait.</p>
+
+                    <p>Bakit nga ba ako umasa na ako ang pipiliin?</p>
+
+                    <p>Sa original timeline, naging sila. Sa timeline na 'to, naging close kami ni Cent. Naging close kami ni Lia. Pero hindi ibig sabihin nun, nabago ko na ang feelings nila.</p>
+
+                    <p>Baka kaya naging supportive si Cent nung inuman… ay dahil alam niyang wala naman akong pag-asa. Na secure na siya sa pwesto niya.</p>
+
+                    <p>"Gio, okay ka lang?" tanong ni Cent. "Namumutla ka."</p>
+
+                    <p>"Wala," sabi ko. Tinalikuran ko siya. "Masakit lang ulo ko."</p>
+
+                    <p>Naglakad ako palayo. Bawat hakbang, parang may humihila sa akin pabalik sa 2026. Yung Dark Cloud. Yung Morning Dread. Bumabalik.</p>
+
+                    <div class="scene-header">INT. DRESSING ROOM - CONTINUOUS</div>
+
+                    <p>Pumasok ako sa dressing room. Nakita ko si Lia. Busy siya sa paglalagay ng sequins sa costume niya.</p>
+
+                    <p>Ang ganda niya. Sobrang ganda. At sobrang layo.</p>
+
+                    <p>Lumapit ako sa kanya. Kailangan kong malaman. Kahit masakit.</p>
+
+                    <p>"Lia," tawag ko.</p>
+
+                    <p>Nag-angat siya ng tingin. "Yes, Direk?"</p>
+
+                    <p>"May… may gusto ka bang sabihin sa akin?" tanong ko.</p>
+
+                    <p>Kumunot ang noo niya. "Ha? Wala naman. Bakit?"</p>
+
+                    <p>"Wala lang," sabi ko. Tinitigan ko siya sa mata. "Good luck bukas. Sana… sana maging masaya ka."</p>
+
+                    <p>Ngumiti siya. "Ano ka ba! Syempre magiging masaya tayo! Mananalo tayo!"</p>
+
+                    <p>Hindi niya na-gets. Ang ibig kong sabihin: <em>Sana maging masaya ka sa kanya.</em></p>
+
+                    <p>Tumalikod ako at lumabas ng room. Hindi ko na kaya.</p>
+
+                    <div class="scene-header">EXT. FIRE EXIT - SUNSET</div>
+
+                    <p>Nagpunta ako sa likod ng gym. Sa may fire exit. Umupo ako sa sahig.</p>
+
+                    <p>Kinuha ko ang camera ko sa bag. (Dala ko na ulit ngayon dahil rehearsal). Binuksan ko ang Playback.</p>
+
+                    <p>Tinignan ko ang mga shots nitong nakaraang linggo. Ang selfie namin sa oval. Ang picture niya na natutulog sa bus. Ang tawa niya nung kumakain kami ng hotdog.</p>
+
+                    <p>Ang sasaya ng mga clips. Pero sa editing, kahit gaano kaganda ang clips mo, kung sad ending ang story, sad ending pa rin.</p>
+
+                    <p>Putangina.</p>
+
+                    <p>Umiyak ako. Walang sigaw. Walang Bench Yell. Tahimik lang na iyak.</p>
+
+                    <p>Yung iyak ng isang taong nare-realize na kahit bumalik siya ng walong taon, kahit binago niya ang dialogue, kahit nag-effort siya… extra pa rin siya sa kwento.</p>
+
+                    <p>Biglang bumukas ang pinto ng fire exit.</p>
+
+                    <p>"Gio?"</p>
+
+                    <p>May pumasok. Hindi si Lia. Hindi si Cent.</p>
+
+                    <p><strong>Si Sir Vren.</strong></p>
+
+                    <p>Nakasandal siya sa hamba ng pinto, humihithit ng yosi (kahit bawal).</p>
+
+                    <p>"Ang aga naman ng drama mo," sabi niya. "Bukas pa ang performance."</p>
+
+                    <p>Pinunasan ko ang luha ko. "Sir, tama na. Ayoko na. Ibalik niyo na ako sa 2026."</p>
+
+                    <p>"Ha?" lumapit siya. "Bakit? Dahil lang narinig mong may aaminan siya bukas?"</p>
+
+                    <p>Napatingin ako sa kanya. "Alam mo?"</p>
+
+                    <p>"Producer ako, Gio. Alam ko ang script," sabi niya, bumuga ng usok.</p>
+
+                    <p>"Kung alam mo pala, eh di sana sinabi mo na sa akin na wala rin palang kwenta 'to!" sigaw ko. "Na si Cent pa rin pala sa huli! Pinagod mo lang ako!"</p>
+
+                    <p>Tumawa si Sir Vren. Tinapon niya ang yosi at tinapakan.</p>
+
+                    <p>"Ang bilis mong sumuko," iling niya. "Isang plot twist lang, bibitaw ka na?"</p>
+
+                    <p>"Plot twist? Sir, ending na 'to! Tragedy!"</p>
+
+                    <p>Lumapit si Vren sa akin. Hinawakan niya ang kwelyo ng shirt ko at hinila ako patayo.</p>
+
+                    <p>"Makinig ka, Gio," seryoso niyang sabi. Ang lapit ng mukha niya. Amoy kape at yosi.</p>
+
+                    <p>"Sa pelikula, kapag inakala ng audience na talo na ang bida… doon nangyayari ang himala. Pero mangyayari lang 'yun kung hindi aalis ang bida sa set."</p>
+
+                    <p>Binitawan niya ako.</p>
+
+                    <p>"May letter si Lia? Good. May aaminan siya? Good. Ang tanong: Sigurado ka bang hindi ikaw 'yun?"</p>
+
+                    <p>"Sabi niya 1st Year pa, Sir! 1st Year! Hindi pa kami close nun!"</p>
+
+                    <p>Ngumiti si Sir Vren nang nakakaloko.</p>
+
+                    <p>"Malay mo… audience ka na niya dati pa, hindi mo lang alam na pinapanood ka rin niya."</p>
+
+                    <p>Natigilan ako.</p>
+
+                    <p>"Isipin mo, Gio. Gamitin mo 'yang utak mo, wag puro puso."</p>
+
+                    <p>Naglakad si Sir Vren pabalik sa pinto. "Matulog ka na. Bukas, mag-shave ka. Mag-ayos ka. Dahil kung magmumukha kang talunan bukas, talagang matatalo ka."</p>
+
+                    <p>Lumabas siya at iniwan ako.</p>
+
+                    <p>Naiwan ako sa fire exit.</p>
+
+                    <p><span class="thought">Malay mo… pinapanood ka rin niya.</span></p>
+
+                    <p>Imposible. Pero paano kung…</p>
+
+                    <p>Hindi. Masakit umasa. Pero nandito na ako. 115 million kilometers ang nilakbay ko pabalik. Sayang ang pamasahe kung aatras ako ngayon.</p>
+
+                    <p>Pinunasan ko ang mukha ko. Bahala na. Kung masaktan, edi masaktan. Sanay naman ako.</p>
+
+                    <p>Pero sisiguraduhin kong sa Director's Cut na 'to… kukunan ko ang ending. Happy man o sad.</p>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter13.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="chapter15.html" class="btn-sketch primary nav-btn">
+                        Next Chapter &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

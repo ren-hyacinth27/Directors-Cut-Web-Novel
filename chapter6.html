@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 6 - The Bus Ride (Take 2) | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        /* Drop Cap */
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Scene Header Style */
+        .scene-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--pencil-black);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Sticky Note for Diagrams */
+        .text-insert { 
+            font-family: 'Patrick Hand', cursive; 
+            background: #fff9c4; /* Yellow sticky note */
+            color: #333;
+            padding: 15px 20px; 
+            border: 1px solid #e0e0e0;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+            transform: rotate(-1deg);
+            display: block;
+            margin: 30px auto;
+            text-align: center;
+            max-width: 90%;
+            font-size: 1.1rem;
+        }
+
+        /* Special Card Text */
+        .role-tag { 
+            font-family: 'Patrick Hand', cursive; 
+            background: rgba(44, 62, 80, 0.1); 
+            padding: 2px 10px; 
+            border-left: 5px solid var(--pencil-blue);
+            font-size: 1rem; 
+            color: var(--pencil-blue); 
+            font-weight: 700; 
+            letter-spacing: 1px;
+        }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 6</span>
+                    <h1 class="chap-title">The Bus Ride (Take 2)</h1>
+                </div>
+
+                <div class="story-text">
+                    <p>Ang buhay ay parang shooting schedule.</p>
+
+                    <p>May mga araw na filler lang—yung gigising ka, papasok, kakain, uuwi. Walang dramatic na nangyayari. B-Roll footage lang ng buhay.</p>
+
+                    <p>Pero may mga araw na alam mong Blockbuster Scene ang kukunan.</p>
+
+                    <p>At nararamdaman ko na ngayong hapon ang shoot na 'yun.</p>
+
+                    <div class="scene-header">EXT. WAITING SHED - LATE AFTERNOON</div>
+
+                    <p>Alas-singko ng hapon. Tapos na ang practice sa oval. Pagod ang lahat. Amoy pawis, Salonpas, at Gatorade ang hangin. Nakatambay kami sa waiting shed sa labas ng university, naghihintay ng bus na inarkila ng Student Council.</p>
+
+                    <p>Sa original timeline, ito ang nangyari:</p>
+
+                    <p>Sumakay kami sa bus. Sa likod ako umupo, kasama sina Keanu at ang mga instruments. Si Lia at Cent, magkatabi sa gitna. Habang bumibyahe, nakita nila ang sunset. Nag-usap sila. Nagtawanan.</p>
+
+                    <p>Ako, nakikinig lang sa phone ko ng Official Higedandism, nag-eemo sa likod habang pinapanood ang likod ng ulo nila. <span class="thought">Missed opportunity.</span></p>
+
+                    <p>Kaya ngayon, habang paparating ang bus, nag-start na akong mag-strategize.</p>
+
+                    <p>"Pre, dun tayo sa likod! Masaya dun, pwede mag-ingay!" yaya ni Keanu, bitbit ang snare drum.</p>
+
+                    <p>Sa original script, sasama ako agad. Comfort zone ko ang likod ng bus. Doon ang pwesto ng mga extras.</p>
+
+                    <p>"Kayo na lang," sabi ko kay Keanu, inaayos ang bag ko. "Masakit ulo ko eh. Gusto ko sa may aircon."</p>
+
+                    <p><span class="role-tag">Palusot Card: Activated.</span></p>
+
+                    <p>Kumunot ang noo ni Keanu. "Luh? KJ mo naman. Sige na nga."</p>
+
+                    <p>Umakyat sina Keanu at Cent sa bus. Dumiretso sila sa likod, sa "party area."</p>
+
+                    <p>Nakita kong paakyat na si Lia. Hila-hila niya ang malaki niyang gym bag. Mukhang pagod na pagod.</p>
+
+                    <p>Sumunod ako agad sa kanya. Tailgating.</p>
+
+                    <p>Pag-akyat niya, huminto siya sa tapat ng isang bakanteng two-seater sa gitnang bahagi. Sa tapat ng bintana.</p>
+
+                    <p>Umupo siya sa window seat.</p>
+
+                    <p>Ito na. Ang <strong>Golden Moment.</strong></p>
+
+                    <p>Sa original timeline, dumaan lang ako dito at dumiretso sa likod. Pero ngayon…</p>
+
+                    <p>Huminga ako nang malalim. <span class="thought">Act natural.</span></p>
+
+                    <p>"May nakaupo dito?" tanong ko, tinuturo ang aisle seat sa tabi niya.</p>
+
+                    <p>Nag-angat ng tingin si Lia. Medyo pungay na ang mata niya sa antok. "Wala naman. Upo ka."</p>
+
+                    <p><span class="thought">Victory.</span></p>
+
+                    <p>Umupo ako.</p>
+
+                    <p>Ang sikip. Ang mga bus sa probinsya, hindi designed para sa personal space. Dumikit agad ang braso ko sa braso niya. Ramdam ko ang init ng balat niya kahit malamig ang buga ng aircon. Ramdam ko ang bawat galaw niya.</p>
+
+                    <p>"Pagod?" tanong ko.</p>
+
+                    <p>"Sobra," bulong niya, isinandal ang ulo sa sandalan ng upuan. "Sakit ng katawan ko. Feeling ko na-dislocate lahat ng buto ko sa sayaw."</p>
+
+                    <p>"Ganyan talaga kapag Lead Star," biro ko.</p>
+
+                    <p>Ngumiti siya nang tipid. "Lead star ka dyan. More like Lead Pagod."</p>
+
+                    <hr class="divider">
+
+                    <p>Umandar ang bus.</p>
+
+                    <p>Umugong ang makina. Bumuga ang aircon na amoy vanilla car freshener na nakakahilo kung gutom ka.</p>
+
+                    <p>Habang umaandar kami palabas ng Dagupan, nagsimulang magbago ang kulay ng langit.</p>
+
+                    <p>Mula sa asul, naging purple. Tapos pink. At unti-unti, naging matingkad na orange.</p>
+
+                    <p><strong>Kahel na Langit.</strong></p>
+
+                    <p>Ito na 'yun. Ang scene na paulit-ulit kong napanood sa memory card ng utak ko.</p>
+
+                    <p>Sa future, kapag nakakakita ako ng ganitong sunset, nalulungkot ako. Naaalala ko kasi na sa ilalim ng ganitong langit, nagkadevelopan sina Cent at Lia habang ako… wala.</p>
+
+                    <p>Lumingon si Lia sa bintana.</p>
+
+                    <p>Nasisinagan ng orange na liwanag ang mukha niya. Ang ganda. Para siyang scene sa anime na <em>Your Name</em>—yung Magic Hour.</p>
+
+                    <p>"Gio, tignan mo," sabi niya, nakaturo sa labas. "Ang ganda ng langit 'no?"</p>
+
+                    <p>Eto na ang cue ko.</p>
+
+                    <p>Sa original script, ang sagot ko dito ay isang defense mechanism joke: "Sus, pollution lang 'yan. Usok ng tricycle." Sinira ko yung moment kasi natatakot akong maging seryoso. Natatakot akong maging corny.</p>
+
+                    <p>Pero alam ko na ngayon na ang corniness ay kinikilig ang mga babae kapag galing sa taong sincere.</p>
+
+                    <p>Tinitigan ko ang langit. Tapos, dahan-dahan kong inilipat ang tingin ko sa kanya.</p>
+
+                    <p><span class="sound-effect">Rack focus. From the sunset to her face.</span></p>
+
+                    <p>"Oo nga," sabi ko nang mahina. "Paborito mong kulay."</p>
+
+                    <p>Napalingon siya sa akin. "Ha? Paano mo nalaman na favorite ko ang orange?"</p>
+
+                    <p><span class="thought">Wait. Information breach.</span></p>
+
+                    <p>Hindi pa pala niya nasasabi sa akin 'yun sa timeline na 'to. Nalaman ko lang 'yun nung 2022 nung nag-iinuman kami at lasing na siya.</p>
+
+                    <p><span class="thought">Panic. Improvise, Gio!</span></p>
+
+                    <p>"Ah… eh…" nag-isip ako mabilis. "Kasi… yung bag mo orange? Yung notebook mo orange? Halata kaya." (Buti na lang observant ako.)</p>
+
+                    <p>Natawa siya. "Sabagay. Obvious ba masyado?"</p>
+
+                    <p>Ibinalik niya ang tingin sa labas. Tumahimik ulit.</p>
+
+                    <p>"Alam mo," sabi niya, boses niya parang humahalo sa ugong ng bus. "Minsan naiisip ko, sana ganyan na lang palagi ang langit. Yung hindi madilim, hindi rin masakit sa mata. Yung sakto lang. Warm."</p>
+
+                    <p>Ito yung part na kailangan kong baguhin. Dati, tumahimik lang ako dito.</p>
+
+                    <p>Ngayon, humugot ako ng lakas ng loob mula sa 28-year-old self ko na marami nang nasayang na sunsets.</p>
+
+                    <p>"Pero hindi pwede," sagot ko.</p>
+
+                    <p>Tumingin siya sa akin. "Bakit naman?"</p>
+
+                    <p>"Kasi kung laging ganyan ang langit," sabi ko, tinititigan siya sa mata, "hindi mo maa-appreciate yung ganda niya. Kailangan mong maranasan yung dilim ng gabi tsaka yung init ng tanghali para ma-realize mo kung gaano ka-special yung takipsilim."</p>
+
+                    <p>Natigilan si Lia.</p>
+
+                    <p>Ang ingay sa likod ng bus—naggigitara sina Keanu, kumakanta ng <em>Parokya ni Edgar</em>—pero parang nasa loob kami ng vacuum. Tahimik.</p>
+
+                    <p>"Grabe," bulong niya. "Hugot 'yun ah? Saan galing 'yan? Sa pelikula?"</p>
+
+                    <p>"Hindi," sabi ko. "Sa akin lang."</p>
+
+                    <p>Ngumiti siya. Yung ngiting iba sa kanina. Yung ngiting may halong… pagka-intriga.</p>
+
+                    <p>"Weird mo talaga ngayon, Gio," sabi niya. "Pero… in a good way."</p>
+
+                    <p><span class="thought">In a good way.</span></p>
+
+                    <p>Nakahinga ako nang maluwag. Hindi ako naging creepy. Hindi ako naging awkward. Nasustain ko ang eksena.</p>
+
+                    <p>Biglang lumiko ang bus. Medyo matalim ang kurba.</p>
+
+                    <p>Napauga kaming lahat. Dahil sa centrifugal force (salamat Physics), napasandal si Lia sa direksyon ko.</p>
+
+                    <p>Bumagsak ang ulo niya sa balikat ko.</p>
+
+                    <p><span class="sound-effect">Thump.</span></p>
+
+                    <p>Nanigas ako.</p>
+
+                    <p>Sa original timeline, nangyari din 'to, pero lumayo ako agad. Hinayaan kong tumama ang ulo niya sa bintana (sorry, Lia) kasi nahihiya ako. Sobrang gentleman (read: torpe) ko noon na ayaw kong mag-take advantage.</p>
+
+                    <p>Pero ngayon?</p>
+
+                    <p>Hindi ako gumalaw.</p>
+
+                    <p>Naramdaman ko ang buhok niya sa leeg ko. Naramdaman ko ang bigat ng ulo niya sa balikat ko.</p>
+
+                    <p>Hindi siya umalis.</p>
+
+                    <p>"Sorry," bulong niya, nakapikit pa rin. "Mabigat ba ulo ko?"</p>
+
+                    <p>"Hindi," mabilis kong sagot. "Sakto lang. Parang… parang wala nga eh. Puro hangin ata laman."</p>
+
+                    <p>Pinalo niya ako nang mahina sa hita, pero hindi siya umaalis sa pagkakasandal. "Siraulo."</p>
+
+                    <p>At doon, nanatili siya.</p>
+
+                    <p>Nakatulog siya sa balikat ko habang bumabyahe ang bus sa ilalim ng kahel na langit.</p>
+
+                    <p>Sa likod, nagkakatuwaan sila Cent. Hindi nila nakikita ang eksenang 'to. Nasa blind spot nila kami dahil mataas ang sandalan ng upuan.</p>
+
+                    <p>Ito ang Director's Cut. Ito yung deleted scene na hindi nakita ng audience noon.</p>
+
+                    <p>Dahan-dahan, kinuha ko ang cellphone ko sa bulsa.</p>
+
+                    <p>Gusto kong picturan. Gusto kong i-document ang moment na 'to bilang pruweba na minsan sa buhay ko, naging sandalan ako ng taong mahal ko.</p>
+
+                    <p>Binuksan ko ang camera app. Itinutok ko.</p>
+
+                    <p>Nasa screen ko siya. Tulog. Payapa. Ang buhok niya, nakakalat sa t-shirt ko.</p>
+
+                    <p>Pero… hindi ko pinindot ang shutter.</p>
+
+                    <p>Naalala ko ang sinabi ko kay Sir Vren (at sa sarili ko) kanina. Gusto kong maging present.</p>
+
+                    <p>Kung pipicturan ko 'to, magiging content na naman 'to. Magiging file na naman sa hard drive.</p>
+
+                    <p>Ibinalik ko ang cellphone sa bulsa ko. Pumikit na lang ako.</p>
+
+                    <p>Sina-save ko ang moment na 'to hindi sa SD Card, kundi sa Core Memory.</p>
+
+                    <p>Ang amoy ng aircon. Ang ugong ng makina. Ang tugtog sa radyo—<em>Kathang Isip</em> ng Ben&Ben. At ang bigat ni Lia sa balikat ko.</p>
+
+                    <p><span class="thought">Diba nga ito ang iyong gusto? kanta sa radyo. O, ito'y lilisan na ako.</span></p>
+
+                    <p>Hindi. Hindi ako lilisan. Nandito lang ako.</p>
+
+                    <p><span class="thought">Stay still, Gio. Wag kang gagalaw. Baka magising siya.</span></p>
+
+                    <p>Habang nakapikit ako, may naramdaman akong humawak sa kamay ko.</p>
+
+                    <p>Napamulat ako nang kaunti.</p>
+
+                    <p>Dahil sa uga ng bus, dumulas ang kamay ni Lia mula sa pagkakayakap sa bag niya. Dumapo ang kamay niya sa kamay ko na nakapatong sa hita ko.</p>
+
+                    <p>Pinky finger niya, nakadikit sa pinky finger ko.</p>
+
+                    <p>Kuryente. 220 volts.</p>
+
+                    <p>Gusto kong hawakan ang kamay niya. Intertwine fingers. Holding hands.</p>
+
+                    <p><span class="thought">Pero cut. Masyado nang mabilis 'yun. Wag tayong gahaman, Direk. Less is more.</span></p>
+
+                    <p>Hinayaan ko lang na magkadikit ang mga daliri namin. Isang subtle connection. Isang pangako na nandito lang ako.</p>
+
+                    <p>Tumingin ako sa bintana.</p>
+
+                    <p>Madilim na ang langit. Wala na ang orange. Gabi na.</p>
+
+                    <p>Pero sa unang pagkakataon sa loob ng walong taon… hindi ako natatakot sa dilim.</p>
+
+                    <p>Kasi may liwanag sa balikat ko.</p>
+
+                    <p><span class="sound-effect">CUT.</span></p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter5.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous
+                    </a>
+                    <a href="#" class="btn-sketch primary nav-btn disabled">
+                        Next Chapter <em>(Coming Thursday)</em>&rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
