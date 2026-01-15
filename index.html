@@ -102,7 +102,7 @@
 
                 <div class="cta-group">
                 <a href="chapter1.html" class="btn btn-sketch primary">Start Reading (Ch. 1)</a>
-                <a href="chapter6.html" class="btn btn-sketch secondary">Read Latest (Ch. 6) &rarr;</a>
+                <a href="chapter7.html" class="btn btn-sketch secondary">Read Latest (Ch. 7) &rarr;</a>
                 </div>
             </div>
 
@@ -206,8 +206,7 @@
                     <div class="card-arrow">&rarr;</div>
                 </a>
 
-                <a href="chapter6.html" class="chapter-card new-release">
-                    <div class="new-sticker">NEW</div>
+                <a href="chapter6.html" class="chapter-card">
                     <div class="card-number">06</div>
                     <div class="card-content">
                         <h4>The Bus Ride (Take 2)</h4>
@@ -217,20 +216,16 @@
                     <div class="card-arrow">&rarr;</div>
                 </a>
 
-                <div class="chapter-card locked">
+                <a href="chapter7.html" class="chapter-card new-release">
+                    <div class="new-sticker">NEW</div>
                     <div class="card-number">07</div>
                     <div class="card-content">
                         <h4>Technical Difficulties</h4>
-                        <p class="chapter-desc">Locked.</p>
-                        <span class="handwritten-date">Jan 15 (Thu)</span>
-                        
-                        <div class="timer-container">
-                            <span class="timer-label">Releasing In:</span>
-                            <span id="countdown" class="timer-digits">Loading...</span>
-                        </div>
+                        <p class="chapter-desc">The emotional and physical toll of time travel catches up.</p>
+                        <span class="handwritten-date">Jan 15</span>
                     </div>
-                    <div class="card-arrow"><i class="fas fa-lock"></i></div>
-                </div>
+                    <div class="card-arrow">&rarr;</div>
+                </a>
 
                 <div class="chapter-card locked">
                     <div class="card-number">08</div>
@@ -238,6 +233,11 @@
                         <h4>The Supporting Cast</h4>
                         <p class="chapter-desc">Locked.</p>
                         <span class="handwritten-date">Jan 20 (Tue)</span>
+                        
+                        <div class="timer-container">
+                            <span class="timer-label">Releasing In:</span>
+                            <span id="countdown" class="timer-digits">Loading...</span>
+                        </div>
                     </div>
                     <div class="card-arrow"><i class="fas fa-lock"></i></div>
                 </div>
@@ -280,8 +280,8 @@
         <div class="container slim-container">
             <div class="newsletter-box">
                 <h3>Don't Miss the Next Take</h3>
-                <p>Get notified immediately when Chapter 7 goes live.</p>
-                <form class="email-form" action="https://formspree.io/f/mwvpggkq" method="POST">                        
+                <p>Get notified immediately when Chapter 8 goes live.</p>
+                <form class="email-form" action="https://formspree.io/f/mwvpggkq" method="POST">
                 <input type="hidden" name="_next" value="https://directorscutnovel.netlify.app/">
                 <input type="email" name="email" placeholder="Your email address" required>
                 <button type="submit" class="btn-sketch primary">Subscribe</button>
@@ -313,9 +313,9 @@
         });
 
         // COUNTDOWN TIMER LOGIC
-        // Updated Target Date: Jan 15, 2026 (Thursday)
-        // I set this to midnight (00:00:00). 
-        const targetDate = new Date("Jan 15, 2026 00:00:00").getTime();
+        // Updated Target Date: Jan 20, 2026 (Tuesday)
+        // I set this to midnight (00:00:00).
+        const targetDate = new Date("Jan 20, 2026 00:00:00").getTime();
 
         const timerInterval = setInterval(function() {
             const now = new Date().getTime();
