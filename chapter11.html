@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ch. 11 - The Antagonist (Self) | Director's Cut</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Ch. 11 - The Pitch | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
@@ -38,32 +38,53 @@
             border-bottom: 1px solid #e0e0e0;
         }
 
-        /* Role Tag for Modes */
-        .role-tag { 
-            font-family: 'Patrick Hand', cursive; 
-            background: #ffebee; /* Light red/pink for alert/mode */
-            padding: 2px 10px; 
-            border-left: 5px solid #c62828;
-            font-size: 1rem; 
-            color: #c62828; 
-            font-weight: 700; 
-            letter-spacing: 1px;
+        /* Script/Board Style */
+        .whiteboard-text {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.5rem;
+            color: #333;
+            border: 2px solid #333;
+            padding: 10px 20px;
+            display: inline-block;
+            transform: rotate(-1deg);
+            margin: 20px 0;
+            background: #fff;
+            box-shadow: 2px 2px 0px #aaa;
         }
 
-        /* Sticky Note for Antagonist Voice */
-        .text-insert { 
-            font-family: 'Patrick Hand', cursive; 
-            background: #eceff1; /* Greyish for doubt */
-            color: #333;
-            padding: 15px 20px; 
-            border: 1px solid #cfd8dc;
-            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-            transform: rotate(1deg);
-            display: block;
-            margin: 30px auto;
-            text-align: center;
-            max-width: 90%;
+        /* Notebook Insert */
+        .notebook-page {
+            background: #fdfbf7;
+            background-image: linear-gradient(#e8e8e8 1px, transparent 1px);
+            background-size: 100% 1.5em;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-family: 'Patrick Hand', cursive;
+            margin: 30px 0;
+            position: relative;
+        }
+        .notebook-page::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #ff5252; /* Red margin line */
+        }
+        .notebook-title {
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-decoration: underline;
+            margin-left: 15px;
+            color: var(--pencil-blue);
+        }
+        .notebook-body {
+            margin-left: 15px;
             font-size: 1.1rem;
+            line-height: 1.5em;
+            color: #555;
         }
 
         .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
@@ -93,231 +114,353 @@
                 
                 <div class="chapter-header">
                     <span class="chap-num">Chapter 11</span>
-                    <h1 class="chap-title">The Antagonist (Self)</h1>
+                    <h1 class="chap-title">The Pitch</h1>
                 </div>
 
                 <div class="story-text">
-                    <p>Sa bawat kwento, kailangan ng kontrabida.</p>
+                    <p>May tinatawag na "Post-Event Blues."</p>
 
-                    <p>Sa action movies, sila yung may hawak ng baril at naka-leather jacket. Sa drama, sila yung evil stepmother o kaya yung kabit.</p>
+                    <p>Ito yung pakiramdam pagkatapos ng isang malaking event—tulad ng kasal, concert, o sa kaso namin, Intramurals.</p>
 
-                    <p>Pero sa pelikulang ito… walang baril si Cent. Wala siyang masamang balak. Sa katunayan, siya pa nga ang number one supporter ko noong nakaraang inuman.</p>
+                    <p>Sa loob ng isang linggo, high na high ka sa adrenaline. Puro sigawan, takbuhan, at "Go Yellow Team!" ang laman ng utak mo. Ang mundo mo ay umiikot sa practice schedule at kung saan kakain pagkatapos. Para kayong sundalo na nasa gera, united by a common goal.</p>
 
-                    <p>So sino ang kalaban?</p>
+                    <p>Pero pagkatapos ng closing ceremony... katahimikan.</p>
 
-                    <div class="scene-header">EXT. GRANDSTAND - DAY</div>
+                    <p>Balik sa normal. Balik sa uniform. Balik sa reyalidad na estudyante ka pa rin at kailangan mong ipasa ang Midterms kung ayaw mong ma-kick out.</p>
 
-                    <p>Nakaupo ako sa grandstand. Walang tao. Tapos na ang Intrams. Back to regular programming na ang buong university. Ang mga props na pinaghirapan namin, nasa basurahan na. Ang confetti sa oval, winalis na ng mga janitor.</p>
+                    <div class="scene-header">INT. MULTIMEDIA ARTS CLASSROOM - DAY</div>
 
-                    <p>Ang naiwan na lang ay katahimikan.</p>
+                    <p>Lunes ng umaga. Ang vibe ng classroom ay parang lamay.</p>
 
-                    <p>At sa katahimikan na 'to, naririnig ko ang boses na pinaka-ayaw kong marinig.</p>
+                    <p>Lahat, puyat. Lahat, may hangover sa kasiyahan ng nakaraang linggo.</p>
 
-                    <p><span class="thought">Worth it ba 'to, Gio?</span></p>
+                    <p>Si Keanu, natutulog sa likod na nakanganga, may tumutulong laway sa desk.</p>
 
-                    <p>Hawak ko ang cellphone ko. Tinititigan ko ang litrato namin ni Lia sa grandstand nung nakaraan. Yung selfie namin. Ang saya ng mga mata niya. Ang saya ng mga mata ko.</p>
+                    <p>Si Cent, nakatulala sa bintana, siguro iniisip pa rin yung buzzer beater na na-miss niya nung finals (talo kami, by the way. Silver lang).</p>
 
-                    <p>Pero sa halip na kiligin ako, bigla akong nilamig.</p>
+                    <p>Si Lia...</p>
 
-                    <p><strong>Post-Production Blues.</strong> Yan ang tawag namin dito. Yung lungkot pagkatapos ng event. Yung crash pagkatapos ng adrenaline.</p>
+                    <p>Napatingin ako sa kanya. Nasa kabilang row siya. Naka-earphones, nagsusulat sa notebook. Mukhang seryoso. Pero maya-maya, nakita kong bumagsak ang ulo niya.</p>
 
-                    <p>Bigla kong naalala ang future.</p>
+                    <p><span class="sound-effect">Thud.</span></p>
 
-                    <p>Paano kung… kahit anong gawin ko, bad ending pa rin?</p>
+                    <p>Nagising siya agad, lumingon-lingon kung may nakakita. Nakita niya akong nakatingin.</p>
 
-                    <p>Paano kung pasayahin ko lang siya ngayon, tapos sa huli, iiwan din niya ako?</p>
+                    <p>Ngumiti ako at nag-gesture ng "tulog ka na lang."</p>
 
-                    <p>Paano kung mas masakit pala 'to?</p>
+                    <p>Inirapan niya ako (pero nakangiti) at bumalik sa pagsusulat.</p>
 
-                    <p>Dati, sa original timeline, safe ako. Nasa malayo ako. Masakit manood, pero at least, hindi ako ang directly na nasasaktan. Observer lang ako ng sakit ng iba. Pero ngayon… nasa gitna na ako ng arena. Kapag tinamaan ako, bullseye.</p>
+                    <p>Sa Original Timeline, ganitong-ganito rin ang eksena. Boring na Lunes. Magle-lecture lang si Sir Magsanoc tungkol sa History of Cinema. Makakatulog ako. Gigising ako para mag-lunch. Uuwi.</p>
 
-                    <p>"Cut," bulong ko sa sarili. "Ang nega mo naman."</p>
+                    <p>Pero nung pumasok si Sir Magsanoc, dala niya ang aura ng isang terror prof na handang manira ng pangarap.</p>
 
-                    <p>Sinubukan kong itago ang cellphone ko. Sinubukan kong tumayo para umalis.</p>
+                    <p>Bumukas ang pinto. <span class="sound-effect">BLAG!</span></p>
 
-                    <p>"Alam mo, ang problema sa mga baguhang director, masyado silang takot sa critics."</p>
+                    <p>Nagising si Keanu. "Present!" sigaw niya, akala yata attendance na.</p>
 
-                    <p>Napahinto ako.</p>
+                    <p>Nagtawanan ang klase.</p>
 
-                    <p>Sa row sa itaas ko, may nakaupong lalaki. Naka-shades kahit makulimlim. Naka-polo barong na parang galing sa meeting. Hawak niya ang isang tasa ng taho.</p>
+                    <p>"Good morning, class," bati ni Sir Magsanoc, nilapag ang makapal na clearbook sa mesa. "Tapos na ang saya. Tapos na ang Intrams. Back to reality."</p>
 
-                    <p>Si Sir Vren.</p>
+                    <p>Nag-groan ang buong klase.</p>
 
-                    <p>"Sir Vren," bati ko, medyo gulat. "Akala ko tapos na shift mo as OJT?"</p>
+                    <p>"And for your reality check," dugtong ni Sir, nagsusulat sa whiteboard gamit ang marker na sobrang baho ng amoy. "Let's talk about your Final Project."</p>
 
-                    <p>"Lunch break," sabi niya, humihigop ng taho. "At binibisita ko ang investment ko."</p>
+                    <p>Tumahimik ang lahat. Final Project. 50% ng grade. Ang "Great Filter" ng kurso namin.</p>
 
-                    <p>Bumaba siya ng hagdan at tumabi sa akin.</p>
+                    <p>Sinulat ni Sir sa board ang dalawang salita:</p>
 
-                    <p>"So," panimula niya. "Balita ko nag-enjoy ka nung Fair ah. Nabalitaan ko sa mga source ko na nag-mosh pit ka daw? Very un-Gio behavior."</p>
-
-                    <p>"Sinusubukan ko lang mag-enjoy," sagot ko. "Gaya ng sabi mo."</p>
-
-                    <p>"Good," tango niya. "Pero bakit ka nakasimangot ngayon? Diba dapat inspired ka?"</p>
-
-                    <p>Huminga ako nang malalim. Tumingin ako sa oval track. Walang laman.</p>
-
-                    <p>"Natatakot ako, Sir," pag-amin ko.</p>
-
-                    <p>"Saan?"</p>
-
-                    <p>"Sa lahat," sabi ko. "Sa future. Sa sarili ko. Paano kung… paano kung nag-iilusyon lang ako? Paano kung temporary lang 'to? Sa future kasi, sira na ako eh. Sira ang utak ko, sira ang puso ko. Baka… baka madamay ko lang si Lia sa pagkasira ko."</p>
-
-                    <p>Ito ang totoong <strong>Antagonist</strong>.</p>
-
-                    <p>Ang Self-Doubt. Ang Trauma ng future na bumubulong sa akin na damaged goods na ako at hindi ako karapat-dapat sa happy ending.</p>
-
-                    <p>Tumawa si Sir Vren. Yung tawang medyo nakakainis.</p>
-
-                    <p>"Alam mo, Gio," sabi niya, tinatanggal ang shades niya. Seryoso ang mga mata niya. "Ang tawag dyan, Imposter Syndrome."</p>
-
-                    <p>"Imposter?"</p>
-
-                    <p>"Oo. Feeling mo peke ka. Feeling mo hindi mo deserve ang spotlight. Kasi sanay kang maging extra. Sanay kang nasa dilim."</p>
-
-                    <p>May kinuha siya sa bulsa niya. Isang lens cap.</p>
-
-                    <p>Inikot-ikot niya ito sa mga daliri niya.</p>
-
-                    <p>"Tignan mo 'to," sabi niya. "Ang trabaho ng lens cap, protektahan ang lens. Para hindi magasgasan. Para hindi madumihan."</p>
-
-                    <p>Itinaas niya ang lens cap sa tapat ng mata ko. Tinakpan ang paningin ko.</p>
-
-                    <p>Dumilim ang mundo.</p>
-
-                    <p>"Safe ang lens kapag may takip," bulong niya. "Pero Gio… hindi makakakuha ng picture ang camera na may takip."</p>
-
-                    <p>Binaba niya ang kamay niya. Lumiwanag ulit ang paningin ko.</p>
-
-                    <p>"Ang tanong ko sa'yo," tuloy niya. "Gusto mo bang maging safe? O gusto mong makakuha ng shot?"</p>
-
-                    <p>Natigilan ako.</p>
-
-                    <p>"Kung takot kang masaktan, ibalik mo na lang ang takip," sabi ni Vren. Tumayo siya at inayos ang polo barong niya. "Pwede kitang ibalik sa 2026 ngayon din. Walang sakit. Walang risk. Pero babalik ka sa condo mo, mag-isa, habang pinapanood mo ang wedding video nila."</p>
-
-                    <p>Nanlamig ako sa imagination. Ang condo. Ang gamot. Ang dilim.</p>
-
-                    <p>"Ayoko," mabilis kong sagot.</p>
-
-                    <p>"Edi wag kang umarte na parang talo ka na," mariing sabi niya. "Kalahati pa lang ng sem, Gio. Wag kang mag-cut bago pa matapos ang eksena."</p>
-
-                    <p>Tumingin siya sa relo niya.</p>
-
-                    <p>"Time is running out. Midterms na next week. Pagkatapos nun, sembreak. Then Finals. Ang bilis ng oras kapag masaya ka, pero mas mabilis kapag nagdadalawang-isip ka."</p>
-
-                    <p>Tinapik niya ako sa balikat.</p>
-
-                    <p>"Make it count, Direk."</p>
-
-                    <p>Naglakad siya palayo. Nawala siya sa likod ng grandstand pillars.</p>
-
-                    <p>Naiwan akong nakaupo, hawak ang lens cap na iniwan niya sa tabi ko.</p>
-
-                    <p>Safe o Shot?</p>
-
-                    <p>Tumayo ako. Kailangan kong makita si Lia. Kailangan kong siguraduhin na totoo pa rin kami.</p>
-
-                    <div class="scene-header">INT. LIBRARY - DAY</div>
-
-                    <p>Naglakad ako papunta sa library. Alam kong dun siya tumatambay kapag vacant.</p>
-
-                    <p>Pagpasok ko, ang tahimik. Amoy lumang papel at floor wax.</p>
-
-                    <p>Nakita ko siya agad. Nasa dulo, sa may Fiction section.</p>
-
-                    <p>Pero hindi siya nag-iisa.</p>
-
-                    <p>Kausap niya si Cent.</p>
-
-                    <p>Nakatayo silang dalawa sa pagitan ng shelves. May hawak na libro si Cent. Tumatawa si Lia. Hinampas niya si Cent sa braso—yung classic move niya kapag kinikilig o natutuwa.</p>
-
-                    <p>Huminto ako. Nagtago ako sa likod ng isang shelf.</p>
-
-                    <p><span class="role-tag">Observer Mode: Activated.</span></p>
-
-                    <p>Bumalik ang old habit.</p>
-
-                    <p>Tinitignan ko sila mula sa malayo. Ang tangkad ni Cent. Ang liit ni Lia. Bagay sila. Visually pleasing silang tignan. Parang poster ng romantic comedy.</p>
-
-                    <p>Ako? Ano ba ako? Isang time traveler na may dalang bagahe ng depression at anxiety.</p>
-
-                    <p>Biglang bumulong ang Antagonist sa utak ko:</p>
-
-                    <div class="text-insert">
-                        <em>Tignan mo. Mas bagay sila. Ginugulo mo lang ang timeline. Masaya naman siya kay Cent sa original timeline ah? Sino ka para baguhin 'yun?</em>
+                    <div style="text-align: center;">
+                        <span class="whiteboard-text">SHORT FILM</span>
                     </div>
 
-                    <p>Ang sakit.</p>
+                    <p>"Theme is open," paliwanag ni Sir. "Genre is open. Maximum of 15 minutes. Minimum of 10. You will be graded based on Story, Cinematography, Editing, and Acting. Deadline is end of the semester. Group yourselves into 5."</p>
 
-                    <p>Nakita kong inabot ni Cent ang libro kay Lia. Nagngitian sila.</p>
+                    <p>Nagkatinginan kami ng barkada. Automatic.</p>
 
-                    <p>Dati, sa original timeline, ito yung moment na aalis ako nang tahimik. Uuwi ako, magpapatugtog ng malungkot na kanta, at iisiping talo na ako.</p>
+                    <p>Cent. Keanu. Trina. Lia. Ako.</p>
 
-                    <p>Akmang tatalikod na sana ako. Akmang aalis na ako gaya ng dati.</p>
+                    <p>Ang "Dream Team." (O sa kaso ng academic group works, ang "Disaster Team").</p>
 
-                    <p>Pero naalala ko ang lens cap.</p>
+                    <p>"Sir!" tanong ni Rhudel, isang kaklase namin. "May budget po ba?"</p>
 
-                    <p>Hindi makakakuha ng picture ang camera na may takip. Kung aalis ako ngayon, tinatakpan ko ulit ang lens ko.</p>
+                    <p>"Kayo ang bahala," sagot ni Sir. "Pero tandaan niyo: A big budget cannot save a bad story. But a good story can survive a zero budget."</p>
 
-                    <p>Huminga ako nang malalim.</p>
+                    <p>Tumingin sa akin si Sir Magsanoc. Parang tumagos ang tingin niya sa kaluluwa ko.</p>
 
-                    <p><span class="thought">Fuck it.</span></p>
+                    <p>"I expect quality," sabi niya. "Huwag niyong sayangin ang oras ko sa mga cliché na kwento ng gangster na na-in love sa nerd."</p>
 
-                    <p>Lumabas ako sa pinagtataguan ko.</p>
+                    <p>Napalunok ako.</p>
 
-                    <p>"Hoy!" bati ko, medyo malakas kaya napalingon ang librarian at sinaway ako. <span class="sound-effect">"Ssshh!"</span></p>
+                    <p>Sa Original Timeline, ang ginawa naming short film ay... horror. Tungkol sa multo sa CR na pumapatay ng mga estudyanteng hindi nagfa-flush.</p>
 
-                    <p>"Sorry po," bulong ko.</p>
+                    <p>Sobrang baduy. Ketchup ang dugo. Flashlight ng cellphone ang lighting. Si Keanu ang multo (nilagyan lang ng pulbos). Ang title? "Flush or Die."</p>
 
-                    <p>Lumapit ako kina Cent at Lia.</p>
+                    <p>Nakakuha kami ng grade na 78. Pasang-awa.</p>
 
-                    <p>Gulat na tumingin si Cent. "O, Gio! Andyan ka pala."</p>
+                    <p>Tinignan ko ang mga ka-grupo ko. Nag-uusap na sila. Mukhang excited.</p>
 
-                    <p>Si Lia, ngumiti nung makita ako. "Uy, Gio! Hinahanap kita kanina! Sabi ko sa'yo sabay tayo mag-lunch eh."</p>
+                    <p>Kailangan kong baguhin 'to. Kung gusto kong maging Director sa future, kailangan kong simulan ngayon.</p>
 
-                    <p>Yung ngiti niya. Sa akin nakadirekta.</p>
+                    <div class="scene-header">INT. CANTEEN - LUNCH TIME</div>
 
-                    <p>Nawala ang bigat sa dibdib ko.</p>
+                    <p>"Zombie Apocalypse!" sigaw ni Cent, sabay hampas sa mesa.</p>
 
-                    <p>"Sorry," sabi ko, sumiksik sa gitna nila. Literal na pumagitna ako. "May inasikaso lang kay Sir Vren. Ano 'yan?"</p>
+                    <p>Tumalsik ang sabaw ng sinigang ni Trina.</p>
 
-                    <p>Tinuro ko ang libro.</p>
+                    <p>"Kadiri ka naman, Cent!" reklamo ni Trina, pinupunasan ang uniform niya.</p>
 
-                    <p>"Ah, eto? Reviewer sa Physics," sabi ni Cent. "Pinapahiram ko kay Lia, bobo daw kasi siya sa vectors."</p>
+                    <p>"Sorry, sorry," sabi ni Cent, pero tuloy pa rin sa hype. "Pero seryoso guys, isipin niyo. Action! Tatakbo tayo sa campus! Ako yung bida na may baseball bat, tapos ililigtas ko si Lia sa mga zombies!"</p>
 
-                    <p>"Grabe makabobo!" reklamo ni Lia.</p>
+                    <p>Tumingin ako kay Lia. Nakatukod ang baba niya sa kamay niya, mukhang hindi bilib.</p>
 
-                    <p>"Ako na magtuturo sa'yo," prisinta ko agad. Wala nang hiya-hiya. "Mas magaling ako sa Physics kaysa kay Cent. Puro basketball lang alam niyan eh. Projectile motion lang alam niyan."</p>
+                    <p>"Saan tayo kukuha ng zombies?" tanong ni Lia. "Alangan namang mag-hire tayo ng extras?"</p>
 
-                    <p>Tumawa si Cent. "Yabang! Sige nga, ikaw na magturo. Tinatamad din naman ako eh."</p>
+                    <p>"Edi yung ibang kaklase natin!" sagot ni Cent. "Sila Keanu!"</p>
 
-                    <p>Inakbayan ako ni Cent. "O paano, una na ako? May training pa. Kayo na bahala dyan. Love birds."</p>
+                    <p>"Ayoko nga," sabi ni Keanu habang ngumunguya ng fried chicken. "Gusto ko may dialogue ako. Gusto ko Drama. Yung tipong... mamamatay ako sa cancer tapos iiyak kayong lahat."</p>
 
-                    <p>Kumindat si Cent bago umalis.</p>
+                    <p>"Ang heavy naman nun," sabi ni Trina. "Tsaka ang mahal ng make-up para magmukhang zombie o may sakit. Wala tayong budget, guys. 500 pesos lang ambag ko."</p>
 
-                    <p><span class="thought">Love birds.</span></p>
+                    <p>"Edi Romance!" suggest ni Cent. Tumingin siya kay Lia, tapos sa akin. "Love triangle! Ako yung gwapong varsity, tapos si Gio yung... yung best friend na laging sawi."</p>
 
-                    <p>Iniwan niya kaming dalawa. Sinadya niya 'yun. Alam kong sinadya niya.</p>
+                    <p>Aray.</p>
 
-                    <p>Tumingin ako kay Lia. Nakatingin din siya sa akin.</p>
+                    <p>"Gasgas na 'yan," sabi ko, seryoso. Hinihiwa ko ang porkchop ko nang pino. "Masyadong cliché. Diba sabi ni Sir, bawal cliché?"</p>
 
-                    <p>"So," sabi niya, yakap ang libro. "Tutor mo ako?"</p>
+                    <p>"E ano gusto mo?" hamon ni Cent. "Documentary na naman?"</p>
 
-                    <p>"Oo," sagot ko. "Mahal TF ko. Isang siomai rice."</p>
+                    <p>Tumahimik ang mesa. Hinihintay nila akong sumagot.</p>
 
-                    <p>"Ang cheap mo naman!" tawa niya.</p>
+                    <p>Ito ang moment.</p>
 
-                    <p>Naglakad kami palabas ng library.</p>
+                    <p>Sa loob ng walong taon, ako ang "Yes Man" ng grupo. Kung anong gusto ni Cent, yun ang nasusunod kasi siya ang maingay, siya ang leader. Ako? Taga-sunod. Taga-edit ng kung anong basurang ma-shoot nila.</p>
 
-                    <p>Pero habang naglalakad kami, ramdam ko pa rin ang anino ng Antagonist sa likod ko. Nandiyan pa rin ang takot. Nandiyan pa rin ang doubt.</p>
+                    <p>Pero hindi na ngayon. Director na ako. At ang unang trabaho ng Director ay ang Quality Control.</p>
 
-                    <p>Pero sa ngayon, tinanggal ko muna ang lens cap.</p>
+                    <p>Nilapag ko ang tinidor ko.</p>
 
-                    <p>Hayaan mong magasgasan. Hayaan mong masaktan.</p>
+                    <p>"Guys," panimula ko. "Real talk. Wala tayong budget para sa Action. Magmumukhang cheap ang zombie kapag pulbos lang ang gamit. At kung Drama naman na pilit... tatawanan lang tayo."</p>
 
-                    <p>Basta makakuha lang ako ng shot na kasama ka.</p>
+                    <p>"O, edi ikaw na magaling," medyo pikon na sabi ni Cent. "Ikaw na mag-Direct kung marunong ka."</p>
 
-                    <p><span class="sound-effect">CUT.</span></p>
+                    <p>"Ako talaga ang didirek," sabi ko. Walang pag-aalinlangan.</p>
+
+                    <p>Natigilan si Cent. Pati si Lia, napaangat ang tingin. Dati kasi, pag sinabihan ako ng ganyan, aatras ako. Sasabihin ko, "Hindi pre, suggestion lang."</p>
+
+                    <p>"Wow," bulong ni Keanu. "Tapang."</p>
+
+                    <p>"Seryoso ako," pagpapatuloy ko. Kinuha ko ang notebook ko at binuksan sa pahina kung saan may mga drawings at notes na ako. (Prepared ako, unlike before).</p>
+
+                    <p>"Ito ang pitch ko," sabi ko.</p>
+
+                    <p>Lahat sila lumapit para tignan ang notebook.</p>
+
+                    <div class="notebook-page">
+                        <div class="notebook-title">Project Title: STATIC</div>
+                        <div class="notebook-body">
+                            Logline: Dalawang tao, na-trap sa elevator. Walang signal. Walang ilaw. Walang ibang makakausap kundi ang isa't isa.<br><br>
+                            Characters: Ex-Girlfriend & Ex-Boyfriend (Broken up without closure)<br>
+                            Setting: Elevator (Box set-up)<br>
+                            Theme: Miscommunication & Isolation
+                        </div>
+                    </div>
+
+                    <p>"Static?" tanong ni Lia. "Tungkol saan?"</p>
+
+                    <p>"Tungkol sa dalawang tao na na-trap sa elevator," paliwanag ko. "Walang signal. Walang ilaw. Walang ibang makakausap kundi ang isa't isa."</p>
+
+                    <p>Kumunot ang noo ni Cent. "Dalawang tao lang? Sa elevator? Boring naman nun pre. Walang suntukan?"</p>
+
+                    <p>"Cent," tawag ko sa kanya. "Ang budget natin, 2,500 lang. Sa story na 'to, hindi natin kailangan ng locations. Pwede nating i-set up ang 'elevator' gamit ang karton at silver paint sa garahe niyo. Isang location lang. Controlled lighting."</p>
+
+                    <p>Tumingin ako kay Trina (ang ating Producer/Treasurer). Nakita kong nagliwanag ang mata niya nung narinig niya ang 'isang location lang'.</p>
+
+                    <p>"Tipid 'yun," sang-ayon ni Trina. "Less gastos sa pamasahe at pagkain."</p>
+
+                    <p>"Pero paano magiging interesting kung nag-uusap lang sila?" tanong ni Keanu.</p>
+
+                    <p>"Doon papasok ang acting," sagot ko. Tumingin ako kay Lia. "At ang script."</p>
+
+                    <p>"Ang kwento ay tungkol sa miscommunication," sabi ko, nakatingin kay Lia. "Yung babae at lalaki, mag-ex sila. Naghiwalay sila without closure. Ngayon, na-trap sila sa loob ng dalawang oras. Mapipilitan silang pag-usapan lahat ng hindi nila napag-usapan noon."</p>
+
+                    <p>Nakita kong nagbago ang ekspresyon ni Lia. Mula sa pagiging skeptical, naging interesado. Bilang isang taong mahilig sa hugot (fan siya ng spoken poetry, alam ko 'yun), pasok ito sa taste niya.</p>
+
+                    <p>"Dialogue-heavy," dagdag ko. "Parang <em>Before Sunrise</em> pero sa elevator. Walang zombies. Walang pagsabog. Tao lang at emosyon."</p>
+
+                    <p>Katahimikan sa mesa.</p>
+
+                    <p>Si Cent, mukhang hindi pa rin kumbinsido. Gusto niya talagang maging action star.</p>
+
+                    <p>"Ewan ko lang pre," sabi ni Cent, sumandal sa upuan. "Parang antok aabutin ng audience dyan. Mas okay pa rin kung may thrill."</p>
+
+                    <p>"May thrill," sabi ko. "Psychological thrill. Ang thrill ay kung magkaka-balikan ba sila o magpapatayan sa loob."</p>
+
+                    <p>"Ako, gusto ko," biglang sabi ni Trina. "Pasok sa budget. At feeling ko kaya natin i-execute nang maayos."</p>
+
+                    <p>"Ako rin," sabi ni Keanu. "Basta ba may role ako. Pwede akong janitor na bubukas ng pinto sa ending?"</p>
+
+                    <p>"Oo, Keanu. Ikaw ang savior," ngiti ko.</p>
+
+                    <p>Ngayon, 2 votes for Gio, 1 vote for Cent.</p>
+
+                    <p>Ang tie-breaker: Lia.</p>
+
+                    <p>Tumingin kaming lahat kay Lia. Siya ang Muse. Siya ang magiging Lead Actress (kahit anong mangyari, siya naman talaga ang bida). Kung ayaw niya ang script, hindi matutuloy.</p>
+
+                    <p>Kinakabahan ako.</p>
+
+                    <p>"Gio," tawag niya.</p>
+
+                    <p>"Yes?"</p>
+
+                    <p>"Seryoso ka bang ikaw ang magdidirek?" tanong niya.</p>
+
+                    <p>"Oo."</p>
+
+                    <p>"Kaya mong pagalitan si Cent kapag pasaway?"</p>
+
+                    <p>Napatingin ako sa Cent. "Oo. Kahit si Cent pa 'yan."</p>
+
+                    <p>"Kaya mong i-handle ang pressure kapag sira ang ilaw o pangit ang audio?"</p>
+
+                    <p>"Lia," sabi ko, boses na puno ng confidence ng isang beterano. "Walong taon na akong nag-aaral ng—este, matagal ko nang pinag-aaralan 'to. Trust me."</p>
+
+                    <p>Ngumiti si Lia. Isinara niya ang notebook at ibinalik sa akin.</p>
+
+                    <p>"Okay," sabi niya. "I vote for Static."</p>
+
+                    <p><span class="thought">Yes.</span></p>
+
+                    <p>"Pero," dugtong niya, nakataas ang kilay. "Ikaw ang Director. So ikaw ang bahala sa lahat. Kapag pumalpak 'to, ikaw ang sisisihin namin."</p>
+
+                    <p>"Deal," sabi ko.</p>
+
+                    <p>"Teka, teka," singit ni Cent. "So hindi ako bida?"</p>
+
+                    <p>"Ikaw ang bida, Cent," sabi ko. "Ikaw yung ex-boyfriend."</p>
+
+                    <p>Lumiwanag ang mukha ni Cent. "Ah, okay! Akala ko extra lang ako. Sige, game na 'yan! Basta gwapo ako sa shot ha?"</p>
+
+                    <p>Napailing na lang ako. Typical Cent. Basta nasa spotlight, masaya na.</p>
+
+                    <p>"Okay team," sabi ko, taking charge. Wala nang hiya-hiya. "Meeting trip tayo sa Bolinao sa Sabado. Trina, gawa ka ng budget breakdown. Keanu, maghanap ka ng malalaking karton. Cent, mag-practice ka ng 'sad boy' acting. Lia..."</p>
+
+                    <p>Tumingin ako kay Lia.</p>
+
+                    <p>"...pag-usapan natin ang script mamaya. Kailangan ko ng input mo sa dialogue ng babae."</p>
+
+                    <p>Tumango si Lia. "Sige, Direk."</p>
+
+                    <p><strong>Direk.</strong></p>
+
+                    <p>Unang beses niyang tinawag ako niyan. Sa future, libu-libong beses ko nang narinig 'yan sa mga kliyente at staff. Pero galing sa kanya? Iba ang dating.</p>
+
+                    <p>Parang musika.</p>
+
+                    <div class="scene-header">INT. LIBRARY - AFTERNOON</div>
+
+                    <p>Pagkatapos ng klase, tumambay kami ni Lia sa library para pag-usapan ang script. (Ang iba naming kasama ay umuwi na. Si Cent may basketball practice).</p>
+
+                    <p>Tahimik sa library. Amoy lumang papel at floor wax.</p>
+
+                    <p>Naka-pwesto kami sa dulo, sa may Fiction section.</p>
+
+                    <p>"So," panimula ni Lia, habang binabasa ang draft na sinulat ko sa yellow pad. "Ang bigat naman nito."</p>
+
+                    <p>"Bakit?"</p>
+
+                    <p>"Yung dialogue," turo niya. "Hindi naman ako umalis dahil ayaw ko na. Umalis ako dahil parang wala namang pupuntahan 'to." Binasa niya nang malakas.</p>
+
+                    <p>Tumingin siya sa akin. "Hugot mo ba 'to, Gio? May ex ka ba na hindi namin alam?"</p>
+
+                    <p>Napalunok ako.</p>
+
+                    <p>Wala akong ex sa 2018. Pero ang hugot na 'yan... galing 'yan sa future. Galing 'yan sa naramdaman ko nung nakita ko siyang ikinasal sa iba. Ang pakiramdam na wala namang pupuntahan ang paghihintay ko.</p>
+
+                    <p>"Fiction lang 'yan," palusot ko. "Research."</p>
+
+                    <p>"Sus," ngiti niya. "Pero maganda. Masakit. Mas gusto ko 'to kaysa sa Zombie ni Cent na puro Argh! Argh! lang."</p>
+
+                    <p>"Buti naman," sabi ko. "Akala ko pipiliin mo yung Zombie eh."</p>
+
+                    <p>"Bakit naman?"</p>
+
+                    <p>"Kasi... si Cent 'yun," bulong ko, nagkukunwaring nagbabasa ng libro. "Usually, kung anong gusto ni Cent, support ka."</p>
+
+                    <p>Huminto si Lia sa pagbabasa.</p>
+
+                    <p>"Gio," tawag niya.</p>
+
+                    <p>Tumingin ako sa kanya.</p>
+
+                    <p>"Supportive ako kay Cent kasi kaibigan ko siya," sabi niya, seryoso. "Pero hindi ibig sabihin nun, bulag ako."</p>
+
+                    <p>Tinuro niya ang script.</p>
+
+                    <p>"Pinili ko 'to hindi dahil ikaw ang may gawa. Pinili ko 'to kasi ito yung may sense. Ito yung may puso."</p>
+
+                    <p>Tinukod niya ang baba niya sa palad niya at tumitig sa akin.</p>
+
+                    <p>"At tsaka..." dugtong niya.</p>
+
+                    <p>"Ano?"</p>
+
+                    <p>"Gusto kong makita kung paano ka mag-work," sabi niya. "Iba ka kasi kapag seryoso ka eh. Yung kanina sa canteen? Nung nag-take charge ka? First time kong nakita yun."</p>
+
+                    <p>"Pangit ba?" tanong ko, kinakabahan.</p>
+
+                    <p>"Hindi," iling niya. May maliit na ngiti sa labi niya. "Bagay sa'yo. Mas... gwapo ka tignan kapag alam mo yung ginagawa mo."</p>
+
+                    <p><strong>Dug-dug.</strong></p>
+
+                    <p>Bumilis ang tibok ng puso ko.</p>
+
+                    <p>Wait. Did she just say... gwapo?</p>
+
+                    <p>Sa Original Timeline, ang compliment lang na natatanggap ko kay Lia ay "Ang bait mo talaga, Gio" o "Salamat sa tulong, Gio."</p>
+
+                    <p>Never "Gwapo."</p>
+
+                    <p>Namula ang tenga ko. Sigurado ako.</p>
+
+                    <p>"Bolero," sabi ko na lang para matago ang kilig. "Magbasa ka na nga lang dyan."</p>
+
+                    <p>Tumawa siya nang mahina. "Ay, nahiya si Direk."</p>
+
+                    <p>Binalik niya ang atensyon niya sa script. Pero nakita ko... nakangiti siya habang nagbabasa.</p>
+
+                    <p>Napatingin ako sa kanya.</p>
+
+                    <p>Sa ilalim ng fluorescent lights ng library, habang seryoso siyang nag-aaral ng linya... narealize ko na tama ang desisyon ko.</p>
+
+                    <p>Tama na pinaglaban ko ang vision ko. Tama na hindi ako pumayag sa Zombie movie ni Cent.</p>
+
+                    <p>Dahil sa project na 'to, hindi lang kami magkakatrabaho.</p>
+
+                    <p>Magkakaroon kami ng shared world. Isang mundo na kami ang bumuo. Isang mundo na kaming dalawa lang ang nakakaintindi.</p>
+
+                    <p>"Lia," tawag ko.</p>
+
+                    <p>"Hmm?"</p>
+
+                    <p>"Galingan natin ha," sabi ko. "Gusto kong maging proud ka sa film na 'to."</p>
+
+                    <p>Tumingin siya sa akin. Mata sa mata.</p>
+
+                    <p>"Galingan mo rin, Direk," sabi niya. "Dahil sa'yo nakasalalay ang grade natin. Ikaw ang captain ng barko."</p>
+
+                    <p>Tumango ako.</p>
+
+                    <p>"Copy," sabi ko.</p>
+
+                    <p>Sa labas ng library, padilim na. Pero sa loob, maliwanag ang lahat.</p>
+
+                    <p>May Project na kami. May Title na kami. May Director at Lead Actress na.</p>
+
+                    <p>Ang kulang na lang... ay ang Happy Ending.</p>
+
+                    <p>At sisiguraduhin kong sa cut na 'to, makukuha namin 'yun.</p>
                 </div>
 
                 <div class="chapter-nav">
@@ -346,3 +489,4 @@
     </script>
 </body>
 </html>
+
