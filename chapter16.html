@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ch. 16 - The Amphitheater | Director's Cut</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Ch. 16 - Creative Differences | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
@@ -38,48 +38,37 @@
             border-bottom: 1px solid #e0e0e0;
         }
 
-        /* Camera/Tech Note (Dark Box) */
-        .camera-note {
+        /* Monitor/Screen Style */
+        .monitor-box {
+            background: #000;
+            color: #0f0;
+            padding: 20px;
             font-family: 'Courier Prime', monospace;
-            background: #2c2c2c;
-            color: #0f0; /* Retro green terminal text */
-            padding: 15px;
+            border: 4px solid #333;
             border-radius: 5px;
-            margin: 30px auto;
-            max-width: 350px;
-            text-align: left;
-            font-size: 0.9rem;
-            box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
-            transform: rotate(-1deg);
-        }
-
-        /* Sticky Note for Shot List */
-        .text-insert { 
-            font-family: 'Patrick Hand', cursive; 
-            background: #fff9c4; 
-            color: #333;
-            padding: 15px 20px; 
-            border: 1px solid #e0e0e0;
-            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-            transform: rotate(1deg);
-            display: block;
-            margin: 30px auto;
-            text-align: left;
-            max-width: 90%;
-            font-size: 1.1rem;
-        }
-
-        /* Scream Style */
-        .scream {
-            font-size: 1.5rem;
-            text-align: center;
-            display: block;
             margin: 30px 0;
-            transform: rotate(-1deg);
-            color: #d32f2f;
-            font-weight: bold;
-            font-family: 'Patrick Hand', cursive;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            position: relative;
         }
+        .monitor-box::before {
+            content: "REC [PLAY] 00:09:24";
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 0.7rem;
+            color: #fff;
+        }
+
+        /* Script/Breakdown Box */
+        .breakdown-box {
+            background: #fff3e0;
+            border-left: 5px solid #ff9800;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+        }
+        .role-label { font-weight: bold; text-transform: uppercase; color: #e65100; }
 
         .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
 
@@ -108,260 +97,281 @@
                 
                 <div class="chapter-header">
                     <span class="chap-num">Chapter 16</span>
-                    <h1 class="chap-title">The Amphitheater</h1>
+                    <h1 class="chap-title">Creative Differences</h1>
                 </div>
 
                 <div class="story-text">
-                    <div class="camera-note">
-                        > ROLL SOUND.<br>
-                        > ROLL CAMERA.<br>
-                        > MARKER.
+                    <div class="scene-header">INT. GIO’S BEDROOM - NIGHT</div>
+
+                    <p>Alas-onse ng gabi.</p>
+
+                    <p>Ang kwarto ko ay naging makeshift Editing Suite. Naka-set up ang PC ko. Naka-kalat ang mga wires, external hard drives, at mga balat ng tsitsirya.</p>
+
+                    <p>Nasa likod ko sina Cent, Lia, at Keanu. Nanonood sila sa monitor habang nag-eedit ako ng "Rough Cut" ng Scene 9.</p>
+
+                    <p>Ito yung eksena kung saan mag-aaway nang malala si Mark (Cent) at Elle (Lia). Ito ang climax ng Static. Dapat intense. Dapat masakit.</p>
+
+                    <p>Pinindot ko ang Spacebar. Play.</p>
+
+                    <div class="monitor-box">
+                        Mark (Cent) grabs Elle (Lia) by the arm.<br><br>
+                        MARK: "Huwag kang umalis! Hindi pa tayo tapos!"<br><br>
+                        Elle pulls away.<br><br>
+                        ELLE: "Bitawan mo ako!"
                     </div>
 
-                    <p><span class="sound-effect">Boooooom!</span></p>
+                    <p>Pinindot ko ang Spacebar. Pause.</p>
 
-                    <p>Ang unang beat ng drums ay parang suntok sa dibdib.</p>
+                    <p>Bumuntong-hininga ako. Hinilot ko ang sentido ko.</p>
 
-                    <p>Sabay-sabay na tumalon ang Yellow Team. Ang kulay ng uniform nila—itim at dilaw—ay parang kidlat sa gitna ng green na oval.</p>
+                    <p>"Anong problema, Direk?" tanong ni Keanu, na kumakain ng Chippy. "Okay naman ah?"</p>
 
-                    <p>Nasa Media Box ako. Nakaluhod. Ang kanang tuhod ko, nakadikit sa mainit na semento. Ang kaliwang paa, naka-brace para sa balance. Hawak ko ang camera nang mahigpit, parang baril sa gera.</p>
+                    <p>"Hindi okay," sagot ko, medyo iritado. "Ang lamya. Tignan niyo yung hawak ni Cent."</p>
 
-                    <p><span class="sound-effect">Click. Click. Click. Click.</span></p>
+                    <p>Zinoom-in ko ang video.</p>
 
-                    <p>Continuous Shooting Mode. 5 frames per second.</p>
+                    <p>"Cent," sabi ko, humarap sa kanya. "Pre, galit ka dyan. Desperado ka. Pero yung hawak mo kay Lia... parang humahawak ka ng sisiw. Takot na takot kang masaktan siya."</p>
 
-                    <p>Sa bawat frame, nakikita ko ang kwento.</p>
+                    <p>"E syempre!" depensa ni Cent. "Babae yan eh! Alangan namang higpitan ko? Magkakapasa yan!"</p>
 
-                    <div class="text-insert">
-                        <strong>Frame 1:</strong> Si Cent, seryoso ang mukha, buhat ang banner. Lead Actor material talaga.<br>
-                        <strong>Frame 2:</strong> Si Trina, todo ngiti kahit alam kong masakit ang paa niya. Professionalism.<br>
-                        <strong>Frame 3:</strong> Si Lia.
+                    <p>"Acting nga eh!" katwiran ko. "Kailangan mong iparamdam sa audience na possessive si Mark. Na nasasaktan si Elle. Kung ganyan kahina ang hawak mo, hindi maniniwala ang manonood na nagpupumiglas siya. Magmumukha kayong naglalaro ng Langit-Lupa."</p>
+
+                    <p>Tumayo ako.</p>
+
+                    <p>"Kailangan nating i-reshoot 'to bukas," desisyon ko.</p>
+
+                    <p>"Ha?!" sabay-sabay na reklamo nila.</p>
+
+                    <p>"Direk naman!" sabi ni Trina (na nakahiga na sa kama ko, pagod na). "Ang hirap i-set up nung ilaw dun! Tsaka wala na tayong time! Deadline na sa Friday!"</p>
+
+                    <p>"Hindi pwedeng ipasa 'to nang ganyan," matigas kong sabi. "Bagsak tayo sa Acting grade kapag ganyan. Sayang yung galing ni Lia sa dialogue kung hindi sasabayan ni Cent sa physical acting."</p>
+
+                    <p>"So kasalanan ko?" tanong ni Cent. Medyo tumataas na ang boses niya.</p>
+
+                    <p>"Oo," prangka kong sagot. Wala na akong filter. Pagod na rin ako. "Masyado kang nag-iingat. Gets ko, gentleman ka. Pero Cent, sa harap ng camera, character ka. Hindi ikaw si Cent na tropa."</p>
+
+                    <p>"Wow," tawa ni Cent, pero walang humor. "Grabe ka naman magsalita, Gio. Porket Director ka, akala mo kung sino ka na?"</p>
+
+                    <p>Tumahimik ang kwarto.</p>
+
+                    <p>Nagkatinginan si Keanu at Trina. Awkward.</p>
+
+                    <p>"Hindi sa ganun," sabi ko, pinipilit pakalmahin ang boses ko. "Gusto ko lang maging maganda ang output natin. Diba gusto niyong maka-flat 1.00?"</p>
+
+                    <p>"Gusto," sagot ni Cent. "Pero hindi sa paraan na sasaktan ko si Lia."</p>
+
+                    <p>Lumapit si Cent kay Lia. "Lia, okay lang ba sa'yo na saktan kita? Na higpitan ko hawak ko?"</p>
+
+                    <p>Tumingin si Lia kay Cent, tapos sa akin. Nasa gitna siya ng crossfire.</p>
+
+                    <p>"Okay lang naman sa akin kung... kung kailangan sa scene," alanganing sagot ni Lia. "Pero..."</p>
+
+                    <p>"See?" sabi ko. "Payag naman si Lia eh. Method acting lang, Cent."</p>
+
+                    <p>"Method acting mo mukha mo," bulong ni Cent. Kinuha niya ang bag niya. "Uuwi na ako. Nawalan na ako ng gana."</p>
+
+                    <p>"Cent, teka!" tawag ni Lia.</p>
+
+                    <p>"Bukas na lang," sabi ni Cent. Hindi niya ako tinignan. Lumabas siya ng kwarto. Blag ang pinto.</p>
+
+                    <p>Naiwan kaming tahimik.</p>
+
+                    <p>"Hala," bulong ni Keanu. "Lagot."</p>
+
+                    <p>Napaupo ako sa swivel chair ko. Hinawakan ko ang mukha ko.</p>
+
+                    <p>Tangina. Nasobrahan yata ako.</p>
+
+                    <p>Dala ko kasi ang standards ng 2026. Sa future, kapag sinabi kong "Ulitin natin," walang nagrereklamo kasi bayad sila. Trabaho nila 'yun. Pero nakalimutan ko... mga estudyante lang kami dito. Magkakaibigan. Walang bayad 'to kundi grades at pizza.</p>
+
+                    <p>"Gio," tawag ni Lia.</p>
+
+                    <p>Humarap ako.</p>
+
+                    <p>Nakatayo siya sa tabi ko. Hindi siya mukhang galit, pero mukhang disappointed.</p>
+
+                    <p>"Mali ka dun," sabi niya.</p>
+
+                    <p>"Alam ko," sagot ko. "Pero Lia, ang pangit talaga nung shot. Sayang eh."</p>
+
+                    <p>"Gets ko," sabi niya. "Gets ko na gusto mong maging perfect. Pero Gio... si Cent 'yun. Best friend mo. Hindi siya aktor na binabayaran mo."</p>
+
+                    <p>Lumuhod siya ng konti para magkapantay ang mukha namin.</p>
+
+                    <p>"Ang galing mo sa technical, Direk. Ang galing mo sa vision. Pero minsan... nakakalimutan mong tao ang kaharap mo."</p>
+
+                    <p>Natamaan ako.</p>
+
+                    <p><strong>Tao.</strong></p>
+
+                    <p>Sa sobrang focus ko na baguhin ang future, sa sobrang focus ko na maging "Successful Director," nakakalimutan ko na ang foundation ng lahat ng 'to ay ang Relationship namin.</p>
+
+                    <p>Aanhin ko ang Flat 1.00 kung sira naman ang barkada?</p>
+
+                    <p>"Anong gagawin ko?" tanong ko. Parang batang humihingi ng payo.</p>
+
+                    <p>Ngumiti si Lia nang tipid.</p>
+
+                    <p>"Suyuin mo," sabi niya. "Bukas. Daanan natin sa bahay. Magdala ka ng peace offering."</p>
+
+                    <p>"Peace offering? Ano? Red Horse?"</p>
+
+                    <p>"Hindi," sabi niya. "Fishball. Tsaka mag-sorry ka nang totoo. Yung walang 'pero'."</p>
+
+                    <p>Tumango ako. "Sige."</p>
+
+                    <p>"Tsaka Gio..." dugtong niya.</p>
+
+                    <p>"Hmm?"</p>
+
+                    <p>"Wag mo na kaming i-pressure masyado," sabi niya. Hinawakan niya ang kamay ko na nasa armrest ng upuan. "Maganda naman yung gawa natin eh. Kahit may imperpeksyon. Diba sabi mo... Wabi-Sabi? Beauty in imperfection?"</p>
+
+                    <p>Natawa ako. "Saan mo narinig yan?"</p>
+
+                    <p>"Sa'yo," sabi niya. "Nung lasing ka nung 202... ay, nung isang araw pala."</p>
+
+                    <p>Muntik na.</p>
+
+                    <p>"Sige na," tayo niya. "Uwi na kami. Pahinga ka na rin. Ang laki na ng eyebags mo, mukha ka nang raccoon."</p>
+
+                    <p>"Salamat, Lia," sabi ko.</p>
+
+                    <p>"Goodnight, Direk Raccoon."</p>
+
+                    <p>Umalis na sila.</p>
+
+                    <p>Naiwan akong mag-isa sa kwarto. Tinitigan ko ang monitor. Andun pa rin ang mukha ni Cent na naka-pause.</p>
+
+                    <p>Pinatay ko ang PC.</p>
+
+                    <p>Bukas, hindi muna ako Director. Bukas, Tropa muna ako.</p>
+
+                    <div class="scene-header">EXT. BASKETBALL COURT - LATE AFTERNOON (NEXT DAY)</div>
+
+                    <p>Nakaupo si Cent sa bleachers. Nagpupunas ng pawis. Katatapos lang ng practice game nila.</p>
+
+                    <p>Lumapit ako. May dala akong plastic ng fishball at palamig.</p>
+
+                    <p>Kinakabahan ako. Mas mahirap 'to kaysa mag-pitch ng script.</p>
+
+                    <p>"Cent," tawag ko.</p>
+
+                    <p>Lumingon siya. Nung nakita niya ako, sumimangot siya at bumalik sa pag-inom ng tubig.</p>
+
+                    <p>"Ano? I-re-reshoot na ba?" masungit niyang tanong. "Handa naman ako eh. Sasaktan ko na si Lia para masaya ka."</p>
+
+                    <p>Umupo ako sa tabi niya.</p>
+
+                    <p>"Sorry," sabi ko.</p>
+
+                    <p>Hindi siya sumagot.</p>
+
+                    <p>"Sorry, pre," ulit ko. "Gago ako kagabi. Nadala lang ng stress. Hindi ko dapat sinabi 'yun."</p>
+
+                    <p>Inabot ko ang fishball. "O. Walang suka yan. Alam kong ayaw mo ng maasim."</p>
+
+                    <p>Tinignan niya ang fishball. Tinignan niya ako.</p>
+
+                    <p>Bumuntong-hininga siya at kumuha ng stick.</p>
+
+                    <p>"Gago ka talaga," sabi niya, habang ngumunguya. "Sakit mo magsalita. Tagos eh."</p>
+
+                    <p>"Sorry na nga," sabi ko. "Masyado lang akong perfectionist. Nakalimutan kong... safety niyo pala ang priority."</p>
+
+                    <p>"Yun nga," sabi ni Cent. "Pre, mahal ko si Lia. I mean... bilang kaibigan. Ayoko siyang masaktan physically. Kahit acting lang."</p>
+
+                    <p>Tumingin siya sa akin.</p>
+
+                    <p>"Alam ko namang gusto mo ring maging maganda yung film. Pero wag naman sa point na magkakasakitan tayo."</p>
+
+                    <p>"Oo," sagot ko. "Lesson learned."</p>
+
+                    <p>"So, paano na?" tanong ni Cent. "Reshoot pa rin ba? Ang pangit daw nung shot eh."</p>
+
+                    <p>Napangiti ako. May naisip na ako kagabi habang hindi ako makatulog.</p>
+
+                    <p>"Reshoot pa rin," sabi ko. "Pero hindi mo na siya kailangang hawakan nang mahigpit."</p>
+
+                    <p>"Ha? Paano?"</p>
+
+                    <p>"Camera trick," kindat ko. "Movie Magic."</p>
+
+                    <div class="scene-header">INT. GIO'S HOUSE - EVENING</div>
+
+                    <p>Back on set. (Sa sala naman namin para maiba ang background, kunwari hallway).</p>
+
+                    <p>"Okay," sabi ko. "Scene 9. Reshoot."</p>
+
+                    <p>Nakatayo si Cent at Lia.</p>
+
+                    <p>"Cent," instruction ko. "Imbis na hawakan mo siya sa braso... hawakan mo siya sa balikat. Pero wag mong diinan. Ipatong mo lang kamay mo."</p>
+
+                    <p>"Okay," sabi ni Cent.</p>
+
+                    <p>"Lia," baling ko. "Paglapit ng kamay ni Cent, um-acting ka na nasasaktan ka. Tapos... Keanu!"</p>
+
+                    <p>"Yes Direk!" sigaw ni Keanu na may hawak na cardboard.</p>
+
+                    <p>"Pag-sigaw ni Cent, alugin mo yung ilaw nang konti. Para magmukhang shaky at intense ang environment."</p>
+
+                    <p>"Copy!"</p>
+
+                    <p>"Trina," sabi ko. "Zoom in mabilis sa mukha ni Lia pagkasabi niya ng 'Bitawan mo ako!'"</p>
+
+                    <p>"Crash zoom? Sige!"</p>
+
+                    <p>Ito ang plano: Dolly Zoom + Shaky Cam + Sound Effects.</p>
+
+                    <p>Hindi kailangan ng physical pain para magmukhang masakit. Kailangan lang ng tamang framing.</p>
+
+                    <p>"Action!"</p>
+
+                    <div class="breakdown-box">
+                        <span class="role-label">CENT:</span> (Sumisigaw, pero hindi nananakit) "Huwag kang umalis!"<br>
+                        <span class="role-label">KEANU:</span> (Inalog ang ilaw) Shadows flickering intensity.<br>
+                        <span class="role-label">LIA:</span> (Acting pain, crying) "Bitawan mo ako!"<br>
+                        <span class="role-label">TRINA:</span> (Zoom in sa mata ni Lia) Intense close up.
                     </div>
 
-                    <p>Naka-zoom ang lens ko sa kanya. 55mm.</p>
+                    <p>"Cut!"</p>
 
-                    <p>Nasa harap siya. Center stage.</p>
+                    <p>Tinignan namin ang replay.</p>
 
-                    <p>Ang galaw niya, matalim. Sharp. Bawat hampas ng kamay, bawat kembot, on beat.</p>
+                    <p>Dahil sa alog ng ilaw at mabilis na zoom, mukhang nagkakagulo sila. Mukhang bayolente ang eksena. Pero sa totoo lang, hindi man lang napisil ni Cent ang balat ni Lia.</p>
 
-                    <p>Sa original timeline, ang nakita ko lang ay ang "performance." Nakita ko lang na magaling sila sumayaw. Pero dahil Director na ako ngayon, nakikita ko ang subtext.</p>
+                    <p>"Whoa," sabi ni Cent. "Ang angas! Mukhang totoo!"</p>
 
-                    <p>Nakikita ko ang pawis na tumutulo sa gilid ng noo niya. Nakikita ko ang paghingal niya sa pagitan ng transitions. Nakikita ko ang kaba sa mata niya na pilit niyang tinatago sa likod ng malapad na ngiti.</p>
+                    <p>"Diba?" ngiti ko. "Safe na, intense pa."</p>
 
-                    <p><span class="thought">Kaya mo yan, Lia,</span> bulong ko sa likod ng camera.</p>
+                    <p>Tumingin ako kay Lia. Nakangiti siya.</p>
 
-                    <p>Nag-transition ang music. Mula sa upbeat drums, naging dramatic strings.</p>
+                    <p>"Galing mo, Direk," bulong niya.</p>
 
-                    <p>Naghiwalay ang formation. Si Lia ang naiwan sa gitna. Solo part.</p>
+                    <p>"Teamwork," sabi ko. "Salamat sa payo kagabi."</p>
 
-                    <p>Ito yung delikadong part. Maraming turns. Maraming jumps.</p>
+                    <p>Lumapit si Cent at inakbayan ako. "Ayan! Ganyan dapat! Creative! Hindi yung mananakit!"</p>
 
-                    <p>Umikot siya. Pirouette. Isa. Dalawa. Tatlo.</p>
+                    <p>Nagtawanan kami.</p>
 
-                    <p>Sa pangatlong ikot, medyo nawalan siya ng balance. Nakita ko sa viewfinder. Gumewang nang konti ang sakong niya.</p>
+                    <p>Narealize ko na sa paggawa ng pelikula (at sa buhay), hindi mo kailangang manakit para maging totoo ang emosyon.</p>
 
-                    <p><strong>Shit.</strong></p>
+                    <p>Minsan, kailangan mo lang baguhin ang anggulo.</p>
 
-                    <p>Napigil ko ang hininga ko.</p>
+                    <p>"Okay guys!" sigaw ko. "Last scene na lang! Scene 10! The Kiss... ay este, The Hug!"</p>
 
-                    <p>Sa original timeline, hindi ko napansin 'to. Pero ngayon, dahil nakatutok ako sa kanya—dahil siya lang ang subject ko—ramdam ko ang bawat wobble.</p>
+                    <p>"Huy! Anong kiss?!" sigaw ni Cent. "Wala sa script yun!"</p>
 
-                    <p><span class="thought">Hanapin mo ako, Lia.</span></p>
+                    <p>"Joke lang!" tawa ko. "Ending scene na. Back to one!"</p>
 
-                    <p>Yun ang sabi ko sa kanya kanina. Hanapin mo yung lens ko.</p>
+                    <p>Bumalik sila sa pwesto.</p>
 
-                    <p>At sa gitna ng pagkahilo niya sa pag-ikot… lumingon siya.</p>
+                    <p>Pinanood ko sila sa viewfinder.</p>
 
-                    <p>Hindi sa judges. Hindi sa crowd. Diretso sa Media Box. Diretso sa akin.</p>
+                    <p>Cent at Lia. Ang mga bida ko. Ang mga kaibigan ko.</p>
 
-                    <p>Kahit nakatakip ang camera sa mukha ko, alam kong nakikita niya ako. Alam kong nararamdaman niya ang presence ko.</p>
+                    <p>Buti na lang nakinig ako kay Lia. Buti na lang inayos ko.</p>
 
-                    <p>Para kaming nag-usap sa loob ng split second.</p>
-
-                    <p><span class="thought">Gio, andyan ka ba?</span></p>
-                    <p><span class="thought">Andito ako. Di ako aalis. Ituloy mo.</span></p>
-
-                    <p>Parang magic. Bigla siyang tumatag. Nakuha niya ang balance niya. Nag-landing siya nang perfect.</p>
-
-                    <p><span class="sound-effect">Click!</span></p>
-
-                    <p>Nakuha ko ang shot. Ang mukha niya pagkatapos ng landing—fierce, matapang, buhay na buhay.</p>
-
-                    <p>Naghiyawan ang crowd. "GO YELLOW TEAM! GO LIA!"</p>
-
-                    <p>Bumilis ulit ang tugtog. Remix ng <em>Run the World</em> ni Beyoncé.</p>
-
-                    <p>Takbuhan. Formation change.</p>
-
-                    <p>Ito na. Ang <strong>Yell</strong>.</p>
-
-                    <p>Sa Chapter 13, sa madilim na grandstand, sumigaw kami ng Putangina. Nilabas namin ang frustration. Ngayon, sa harap ng libo-libong tao, iba ang isisigaw nila.</p>
-
-                    <p>Pumunta sila sa harap. Yumuko. Humarap sa crowd.</p>
-
-                    <p>"RABBITS! RABBITS! ARE YOU READY?!" sigaw ni Cent.</p>
-
-                    <p>"YES! WE ARE READY!" sagot ng team.</p>
-
-                    <p>Huminga si Lia nang malalim. Nakita ko ang dibdib niya na umalsa. Ito na. Yung diaphragm technique na tinuro ko.</p>
-
-                    <p>Tumingin siya sa akin habang bumubwelo.</p>
-
-                    <p>At sumigaw siya.</p>
-
-                    <span class="scream">"ONE! TWO! FIGHT! WIN! YELLOOOOOOW!"</span>
-
-                    <p>Ang lakas.</p>
-
-                    <p>Basag ang audio levels ng mic ng video team sa tabi ko.</p>
-
-                    <p>Ang boses ni Lia, hindi matinis na pabebe. Buo. Galing sa bituka. Galing sa lahat ng pagod, sa lahat ng expectations, sa lahat ng takot na tinago niya simula 1st Year.</p>
-
-                    <p>Sumigaw din ako sa isip ko. Sinabayan ko siya.</p>
-
-                    <p><span class="thought">ILABAS MO LIA! SIGAW!</span></p>
-
-                    <p>Pagkatapos ng yell, nakita ko ang ngiti niya. Iba ito. Hindi ito ngiti para sa judges. Ngiti ito ng relief. Ngiti ng kalayaan.</p>
-
-                    <p><strong>Mission Accomplished: The Voice is Unlocked.</strong></p>
-
-                    <p>Pero hindi pa tapos.</p>
-
-                    <p>Ang Finale. Ang Pyramid.</p>
-
-                    <p>Ito ang pinakamahirap. Ito ang climax ng pelikula.</p>
-
-                    <p>Tumakbo ang mga bases papunta sa gitna. Si Cent, si Keanu, at iba pang malalakas na lalaki, bumuo ng foundation.</p>
-
-                    <p>Umakyat ang second layer.</p>
-
-                    <p>At si Lia… si Lia ang nasa tuktok. Ang flyer.</p>
-
-                    <p>Umakyat siya. Mabilis. Walang takot. Tumayo siya sa balikat ng second layer.</p>
-
-                    <p>Ang taas.</p>
-
-                    <p>Nasa baba ako, nakatingala. Naka-wide angle lens na ako ngayon para makuha ang buong pyramid.</p>
-
-                    <p>Ang hangin sa oval, medyo malakas. Nakita kong gumagalaw ang buhok ni Lia. Nakita kong medyo umuuga ang pyramid.</p>
-
-                    <p>Sa original timeline, ito ang moment na pumikit ako. Hindi ko kayang tignan noon. Takot akong mahulog siya. Takot akong makakita ng disgrasya.</p>
-
-                    <p>Duwag si Old Gio.</p>
-
-                    <p>Pero si New Gio? Si Director Gio?</p>
-
-                    <p>Walang kurap.</p>
-
-                    <p>Hindi ko ibababa ang camera. Hindi ako pipikit. Dahil kung mahuhulog man siya (wag naman sana), gusto kong makita niya na nakatingin pa rin ako. Na sasaluhin ko siya ng tingin ko.</p>
-
-                    <p>Tinaas ni Lia ang kamay niya. Hawak niya ang pom-poms.</p>
-
-                    <p>Music stops. Drum roll.</p>
-
-                    <p>Kailangan niyang mag-pose. One leg up. Arabesque.</p>
-
-                    <p>Delikado.</p>
-
-                    <p>Nakita ko ang paa ni Keanu sa baba, nanginginig sa bigat. "Cent! Ayusin mo!" sigaw ni Keanu (nabasa ko sa bibig niya).</p>
-
-                    <p>Umuuga ang base.</p>
-
-                    <p>Napatingin si Lia sa baba. Nakita niya ang uga.</p>
-
-                    <p>Nakita ko ang takot sa mata niya. Flash of panic.</p>
-
-                    <p><span class="thought">Wag kang tumingin sa baba, Lia,</span> bulong ko. <span class="thought">Tumingin ka sa akin.</span></p>
-
-                    <p>Ibinaba ko sandali ang camera mula sa mukha ko.</p>
-
-                    <p>Pinakita ko ang mukha ko.</p>
-
-                    <p>Nasa gitna ako ng mga photographers. Nakasuot ng Director's Cap.</p>
-
-                    <p>Itinaas ko ang kamay ko. Nag-thumbs up ako.</p>
-
-                    <p>Nakita niya ako.</p>
-
-                    <p>Mula sa tuktok ng pyramid, sa gitna ng langit at lupa, nag-lock ang paningin namin.</p>
-
-                    <p>Focus pulled.</p>
-
-                    <p>Nawala ang takot sa mukha niya. Huminga siya nang malalim.</p>
-
-                    <p>Dahan-dahan, itinaas niya ang kaliwang paa niya.</p>
-
-                    <p>Balanse.</p>
-
-                    <p>Ang pyramid… tumigil sa pag-uga.</p>
-
-                    <p>Ang crowd… tumahimik. Suspense.</p>
-
-                    <p>At sa exact moment na na-hit niya ang pose…</p>
-
-                    <p><span class="sound-effect">BOOOOOM!</span></p>
-
-                    <p>Sabog ng confetti cannons.</p>
-
-                    <p>Itinaas ko ulit ang camera.</p>
-
-                    <p><span class="sound-effect">CLICK!</span></p>
-
-                    <p>Nakuha ko.</p>
-
-                    <p>Ang perfect shot.</p>
-
-                    <p>Si Lia sa tuktok. Nakangiti. Ang background niya ay ang asul na langit at ang ulan ng gintong confetti. Para siyang lumilipad. Para siyang anghel na bumaba sa lupa.</p>
-
-                    <p>Pero ang pinakamaganda sa shot na 'yun?</p>
-
-                    <p>Hindi siya nakatingin sa kawalan.</p>
-
-                    <p>Nakatingin siya diretso sa lens.</p>
-
-                    <p>Ang mata niya, puno ng saya, at puno ng pasasalamat.</p>
-
-                    <p>"RABBITS! YELLOW TEAM! MABUHAY!" sigaw ng emcee.</p>
-
-                    <p>Bumaba ang pyramid. Sinalo ni Cent si Lia.</p>
-
-                    <p>Pagkababa ni Lia, hindi siya nag-bow agad sa audience.</p>
-
-                    <p>Hinanap niya ako.</p>
-
-                    <p>At nung nagtama ulit ang paningin namin, nginitian ko siya. Yung ngiting proud.</p>
-
-                    <p>Tumulo ang luha niya habang nakangiti.</p>
-
-                    <p>Tumulo rin ang luha ko sa likod ng camera.</p>
-
-                    <p>Sa original timeline, umiyak ako noon dahil sa inggit. Dahil sa feeling na hindi ako kasali.</p>
-
-                    <p>Ngayon, umiiyak ako dahil sa tagumpay.</p>
-
-                    <p>Hindi dahil mananalo sila ng trophy (spoiler: mananalo sila).</p>
-
-                    <p>Kundi dahil sa eksenang ito…</p>
-
-                    <p>…ako ang Director. Ako ang Cameraman. At ako ang Inspiration ng Bida.</p>
-
-                    <p>Wala man ako sa stage, kasama ako sa performance.</p>
-
-                    <p>"CUT! GOOD TAKE!" sigaw ko, kahit walang nakarinig dahil sa ingay ng drums.</p>
-
-                    <p>Tinignan ko ang preview sa screen ng camera.</p>
-
-                    <p>Ang huling litrato. Masterpiece.</p>
-
-                    <p>Ito ang poster ng pelikula namin.</p>
-
-                    <div class="camera-note">
-                        > TITLE: Director's Cut: 115 Million Kilometers of Film<br>
-                        > GENRE: Romance / Victory<br>
-                        > STATUS: Hit
-                    </div>
-
-                    <p><span class="sound-effect">CUT.</span></p>
+                    <p>Kasi sa huli, ang pelikula, matatapos. Ang grades, makakalimutan. Pero yung pagsasamahan? Yan ang 115 million kilometers ang haba.</p>
                 </div>
 
                 <div class="chapter-nav">
