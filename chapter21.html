@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch. 21 - The Glitch | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
+        .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
+        
+        /* Glitch Title Effect */
+        .chap-title { 
+            font-size: 2.5rem; 
+            color: var(--pencil-black); 
+            line-height: 1.1; 
+            position: relative;
+        }
+        .glitch-text {
+            position: relative;
+        }
+        .glitch-text::before, .glitch-text::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fdfbf7; /* Match background color */
+        }
+        .glitch-text::before {
+            left: 2px;
+            text-shadow: -1px 0 red;
+            clip: rect(24px, 550px, 90px, 0);
+            animation: glitch-anim-2 3s infinite linear alternate-reverse;
+        }
+        .glitch-text::after {
+            left: -2px;
+            text-shadow: -1px 0 blue;
+            clip: rect(85px, 550px, 140px, 0);
+            animation: glitch-anim-1 2.5s infinite linear alternate-reverse;
+        }
+        @keyframes glitch-anim-1 {
+            0% { clip: rect(20px, 9999px, 15px, 0); }
+            20% { clip: rect(60px, 9999px, 70px, 0); }
+            40% { clip: rect(20px, 9999px, 50px, 0); }
+            60% { clip: rect(10px, 9999px, 80px, 0); }
+            80% { clip: rect(50px, 9999px, 20px, 0); }
+            100% { clip: rect(90px, 9999px, 50px, 0); }
+        }
+        @keyframes glitch-anim-2 {
+            0% { clip: rect(10px, 9999px, 90px, 0); }
+            20% { clip: rect(80px, 9999px, 10px, 0); }
+            40% { clip: rect(30px, 9999px, 50px, 0); }
+            60% { clip: rect(70px, 9999px, 20px, 0); }
+            80% { clip: rect(20px, 9999px, 60px, 0); }
+            100% { clip: rect(50px, 9999px, 30px, 0); }
+        }
+        
+        .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
+        .story-text p { margin-bottom: 1.5em; }
+        
+        /* Drop Cap */
+        .story-text > p:first-of-type::first-letter {
+            font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
+        }
+
+        .thought { font-style: italic; color: #555; }
+        .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        
+        /* Scene Header Style */
+        .scene-header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--pencil-black);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Award Card Style */
+        .award-card {
+            border: 2px solid #bcaaa4;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .award-title { font-weight: bold; font-size: 1.2rem; color: #3e2723; display: block; margin-bottom: 5px; }
+        .award-detail { font-size: 0.9rem; color: #795548; font-style: italic; }
+
+        /* Phone Screen Style */
+        .phone-screen {
+            background: #f5f5f5;
+            border-radius: 15px;
+            padding: 20px;
+            border: 4px solid #333;
+            max-width: 300px;
+            margin: 30px auto;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+        .phone-time { font-size: 2rem; font-weight: 200; display: block; margin-bottom: 10px; }
+        .phone-date { font-size: 0.9rem; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Google Search Style */
+        .search-result {
+            font-family: Arial, sans-serif;
+            border: 1px solid #dfe1e5;
+            padding: 15px;
+            border-radius: 8px;
+            background: #fff;
+            margin: 20px 0;
+            box-shadow: 0 1px 6px rgba(32,33,36,0.1);
+        }
+        .search-link { color: #1a0dab; font-size: 1.2rem; text-decoration: none; display: block; margin-bottom: 5px; }
+        .search-url { color: #202124; font-size: 0.85rem; display: block; margin-bottom: 10px; }
+        .search-snippet { font-size: 0.9rem; color: #4d5156; line-height: 1.4; }
+
+        .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
+
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-strip"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Director's Cut<span class="dot">.</span></a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#chapters">Table of Contents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="section-paper">
+        <div class="container chapter-container">
+            <div class="torn-paper-sheet">
+                
+                <div class="chapter-header">
+                    <span class="chap-num">Chapter 21</span>
+                    <h1 class="chap-title"><span class="glitch-text" data-text="The Glitch">The Glitch</span></h1>
+                </div>
+
+                <div class="story-text">
+                    <div class="scene-header">INT. HIGH-RISE CONDO - METRO MANILA - MORNING</div>
+
+                    <p><strong>GASP.</strong></p>
+
+                    <p>Bumalik ang hangin sa baga ko na parang sinuntok ako sa dibdib.</p>
+
+                    <p>Napabangon ako mula sa pagkakahiga. Habol ang hininga. Ang mga kamay ko, nakakumo sa kumot. Ang likod ko, basang-basa ng malamig na pawis.</p>
+
+                    <p>Ang huling naaalala ko ay ang amoy ng damo sa oval. Ang bigat ng trophy sa tabi ko. Ang mukha ni Lia na puno ng takot habang sumisigaw ng tulong. At ang pagdidilim ng paningin ko sa ilalim ng buwan ng 2018.</p>
+
+                    <p><em>“Gio! Gumising ka!”</em></p>
+
+                    <p>Yung boses niya. Yung takot sa boses niya. Rinig na rinig ko pa rin.</p>
+
+                    <p>Idinilat ko ang mga mata ko.</p>
+
+                    <p>Inasahan kong makikita ko ang puting kisame ng ospital. Inasahan kong maaamoy ko ang alcohol at maririnig ang beep-beep-beep ng heart monitor.</p>
+
+                    <p>Pero hindi.</p>
+
+                    <p>Ang kisame ay kulay gray. Industrial finish. May modernong chandelier na nakasabit—isang abstract na hugis ng lens aperture.</p>
+
+                    <p>Bumaba ang tingin ko.</p>
+
+                    <p>Nakahiga ako sa isang king-sized bed. Ang mga unan, malambot at amoy lavender. Ang kumot, mamahaling cotton, kulay charcoal black.</p>
+
+                    <p>Sa gilid, may floor-to-ceiling window.</p>
+
+                    <p>Mula sa kinahihigaan ko, kitang-kita ko ang skyline ng Makati. Ang mga building na nagsisiksikan, ang MRT na parang uod sa EDSA, ang smog ng Metro Manila.</p>
+
+                    <p>Hindi ito Dagupan. Hindi ito ang kwarto ko sa bahay nina Mama. At lalong hindi ito ang makalat kong studio apartment nung 2026 bago ako bumalik sa nakaraan.</p>
+
+                    <p>Nasaan ako?</p>
+
+                    <p>Sinubukan kong gumalaw.</p>
+
+                    <p>Walang sakit. Walang hilo.</p>
+
+                    <p>Ang katawan ko, parang bagong change oil.</p>
+
+                    <p>Itinaas ko ang kamay ko. May suot akong relo. Hindi ito ang lumang G-Shock ko. Isang <strong>Rolex Submariner.</strong></p>
+
+                    <p>Kinapa ko ang mukha ko. May stubble. Ang balat ko, medyo magaspang pero naalagaan.</p>
+
+                    <p>Lumingon ako sa bedside table.</p>
+
+                    <p>Walang gamot. Walang tissue.</p>
+
+                    <p>Ang nandoon lang ay isang baso ng tubig, isang librong tungkol sa Auteur Theory, at isang iPhone 15 Pro Max.</p>
+
+                    <p>Kinuha ko ang cellphone. Nanginginig ang kamay ko.</p>
+
+                    <p>Tinapik ko ang screen.</p>
+
+                    <div class="phone-screen">
+                        <span class="phone-time">7:30 AM</span>
+                        <span class="phone-date">Wednesday, January 21, 2026</span>
+                    </div>
+
+                    <p>Bumalik na ako.</p>
+
+                    <p>Nasa future na ako.</p>
+
+                    <p>Napahawak ako sa dibdib ko. Ang bilis ng tibok ng puso ko.</p>
+
+                    <p>"Lia?" tawag ko.</p>
+
+                    <p>Walang sumagot. Ang tunog ng boses ko ay inabsorb ng soundproof walls ng condo.</p>
+
+                    <p>Bumangon ako at lumabas ng kwarto.</p>
+
+                    <p>Ang condo unit ay malawak. Minimalist. Parang showroom ng IKEA pero mas mahal. Itim, puti, at gray ang kulay. Walang kalat.</p>
+
+                    <p>Sa hallway papuntang sala, may mga nakasabit na framed posters. Malalaki. Naka-glass frame.</p>
+
+                    <p>Huminto ako sa tapat ng una.</p>
+
+                    <div class="award-card">
+                        <span class="award-title">"STATIC"</span>
+                        <span class="award-detail">Best Short Film - Sinag Maynila 2019</span><br>
+                        Directed by: Gio Cruz
+                    </div>
+
+                    <p>Nanlaki ang mata ko. Nanalo kami? Hindi lang sa school? Umabot sa Sinag Maynila?</p>
+
+                    <p>Lumipat ako sa pangalawa.</p>
+
+                    <div class="award-card">
+                        <span class="award-title">"PAPER PLANES"</span>
+                        <span class="award-detail">Cinemalaya Independent Film Festival 2021 Audience Choice Award</span><br>
+                        Directed by: Gio Cruz
+                    </div>
+
+                    <p>Pangatlo.</p>
+
+                    <div class="award-card" style="border-color: gold;">
+                        <span class="award-title">"LILAC"</span>
+                        <span class="award-detail">Metro Manila Film Festival 2024</span><br>
+                        <strong>Best Director • Best Screenplay</strong><br>
+                        Directed by: Gio Cruz
+                    </div>
+
+                    <p>Napahawak ako sa bibig ko.</p>
+
+                    <p>Best Director.</p>
+
+                    <p>Nagawa ko.</p>
+
+                    <p>Yung pangarap ko nung college na maging "Real Director"? Yung pangarap na tinawanan lang ng mga kamag-anak ko noon? Hawak ko na.</p>
+
+                    <p>Ako si Direk Gio Cruz. Award-winning filmmaker. Hindi na wedding videographer na naghahabol ng same-day-edit.</p>
+
+                    <p>Tagumpay.</p>
+
+                    <p>Success.</p>
+
+                    <p>Ito ang Happy Ending.</p>
+
+                    <p>Agad kong hinanap ang presensya ni Lia.</p>
+
+                    <p>Kung successful ako, ibig sabihin, successful din kami, diba? Diba nangako siya sa rooftop? Diba sinagot niya ako sa oval bago ako nawalan ng malay?</p>
+
+                    <p>"Lia!" tawag ko ulit, naglalakad papunta sa kusina. "Love? Nandyan ka ba?"</p>
+
+                    <p>Inasahan kong makikita ko siya sa kitchen counter, nagtitimpla ng kape, suot ang oversized t-shirt ko. Inasahan kong lilingon siya at ngingiti, "Good morning, Direk. Ang ingay mo."</p>
+
+                    <p>Pero walang tao sa kusina.</p>
+
+                    <p>Malinis ang counter. Walang mug na may lipstick stain. Walang box ng cereal na paborito niya.</p>
+
+                    <p>Binuksan ko ang ref.</p>
+
+                    <p>Puro bottled water, beer, at takeout boxes ng salad. Walang Yakult. Walang chocolates. Walang kahit anong trace ng isang Lia Reyes.</p>
+
+                    <p>Kinabahan ako.</p>
+
+                    <p>Baka nasa trabaho na? Journalist siya diba? Baka maaga ang call time?</p>
+
+                    <p>Tumakbo ako pabalik sa sala. Kinuha ko ang phone ko.</p>
+
+                    <p>Binuksan ko ang Contacts.</p>
+
+                    <p>Nag-type ako: "Lia"</p>
+
+                    <p style="font-family: 'Courier Prime', monospace; color: red;">> No Results Found.</p>
+
+                    <p>Nanlamig ako.</p>
+
+                    <p>Imposible.</p>
+
+                    <p>Nag-type ako ulit: "Muse"</p>
+
+                    <p style="font-family: 'Courier Prime', monospace; color: red;">> No Results Found.</p>
+
+                    <p>Nag-type ako: "Love"</p>
+
+                    <p style="font-family: 'Courier Prime', monospace; color: red;">> No Results Found.</p>
+
+                    <p>Binuksan ko ang Photos app.</p>
+
+                    <p>Scroll. Scroll. Scroll.</p>
+
+                    <p>Puro pictures ng shooting. Pictures ng set. Pictures kasama ang mga artista. Pictures ng awards night.</p>
+
+                    <p>May pictures kasama si Cent at Keanu. Naka-tuxedo kami. Masaya.</p>
+
+                    <p>Pero walang Lia.</p>
+
+                    <p>Wala kahit isang litrato ng babaeng mahal ko. Wala kahit sa background.</p>
+
+                    <p>Para siyang binura sa existence ko.</p>
+
+                    <p><strong>Continuity Error.</strong></p>
+
+                    <p>Sa pelikula, ang tawag dito ay glitch sa editing. Kapag ang isang character na nandoon sa Scene 1 ay biglang nawala sa Scene 2 nang walang paliwanag.</p>
+
+                    <p>Pero hindi ito pelikula. Ito ang buhay ko.</p>
+
+                    <p>Binuksan ko ang Safari browser.</p>
+
+                    <p>Nanginginig ang mga daliri ko habang nagta-type sa Google search bar.</p>
+
+                    <p>"Lia Reyes Journalist"</p>
+
+                    <p>Enter.</p>
+
+                    <p style="font-size: 0.8rem; color: #777;">0.45 seconds result.</p>
+
+                    <div class="search-result">
+                        <a href="#" class="search-link">Lia Reyes - GMA Integrated News</a>
+                        <span class="search-url">https://www.gmanetwork.com/news/anchors/lia-reyes</span>
+                        <p class="search-snippet">Lia Reyes is a Senior Anchor for 24 Oras and an award-winning investigative journalist known for her documentaries on social issues...</p>
+                    </div>
+
+                    <p>Nabitawan ko ang cellphone ko sa sofa.</p>
+
+                    <p>Buhay siya. Successful siya. Natupad niya ang pangarap niya na maging Broadcaster. Hindi siya naging corporate slave. Hindi siya nakatali sa desk job na ayaw niya.</p>
+
+                    <p>Nagawa ko. Nabago ko ang future niya.</p>
+
+                    <p>Pero bakit wala siya sa phone ko?</p>
+
+                    <p>Bakit wala siya sa condo ko?</p>
+
+                    <p>Kinuha ko ulit ang phone. Dinial ko ang number ni Cent.</p>
+
+                    <p>Kailangan kong malaman. Kailangan ng exposition.</p>
+
+                    <p>Ring... Ring... Ring...</p>
+
+                    <p>"Yo, Direk!" sagot ni Cent. Maingay ang background. "Napatawag ka? Aga pa ah!"</p>
+
+                    <p>"Cent," boses ko, garalgal. "Cent, nasaan si Lia?"</p>
+
+                    <p>Katahimikan sa kabilang linya.</p>
+
+                    <p>"Lia?" tanong ni Cent. "Sinong Lia? Si Lia Reyes?"</p>
+
+                    <p>"Oo! Si Lia natin! Nasaan siya?"</p>
+
+                    <p>Tumawa si Cent nang mahina. "Pre, anong 'Lia natin'? High school reunion ba hanap mo? Bakit mo hinahanap 'yun?"</p>
+
+                    <p>"Anong bakit?" naguguluhan ako. "Cent... girlfriend ko siya diba? Diba kami?"</p>
+
+                    <p>Huminto ang tawa ni Cent.</p>
+
+                    <p>"Gio," seryoso niyang sabi. "Lasing ka ba? Umagang-umaga."</p>
+
+                    <p>"Hindi ako lasing! Sagutin mo ako!"</p>
+
+                    <p>"Pre," sabi ni Cent, dahan-dahan. "Kailan pa naging kayo ni Lia? Diba binasted ka nun nung college? After ng Premiere Night ng Static?"</p>
+
+                    <p>Parang binuhusan ako ng malamig na tubig.</p>
+
+                    <p>Binasted?</p>
+
+                    <p>"H-hindi..." bulong ko. "Sinagot niya ako. Sa oval. Sa ilalim ng buwan. Naaalala ko. Sinagot niya ako bago ako himatayin."</p>
+
+                    <p>"Himatayin?" tanong ni Cent. "Oo, nahimatay ka nun. Overfatigue. Dinala ka namin sa ospital. Pero pre... pagkagising mo nun, wala na si Lia. Umalis na siya."</p>
+
+                    <p>"Umalis?"</p>
+
+                    <p>"Oo. Sabi niya, focus muna siya sa career. Sabi niya, hindi kayo okay. Simula nun, hindi na kayo nag-usap. Cold treatment. Hanggang sa grumaduate tayo."</p>
+
+                    <p>Napaupo ako sa carpet.</p>
+
+                    <p>Mali. Mali ang script.</p>
+
+                    <p>Naaalala ko ang Director's Cut. Naaalala ko ang 115 Million Kilometers na pinagsamahan namin. Naaalala ko ang halik. Ang pangako.</p>
+
+                    <p>Bakit iba ang naaalala ni Cent?</p>
+
+                    <p>"Cent," sabi ko, nanghihina. "Sige. Sige. Salamat."</p>
+
+                    <p>"Gio, okay ka lang ba? Puntahan kita dyan?"</p>
+
+                    <p>"Wag na. Okay lang ako. May... may tinatapos lang akong script. Nalilito lang ako sa character."</p>
+
+                    <p>Binaba ko ang tawag.</p>
+
+                    <p>Tinitigan ko ang poster ng LILAC sa dingding.</p>
+
+                    <p><strong>LILAC.</strong></p>
+
+                    <p>Kulay ng buhok na gusto niya noon.</p>
+
+                    <p>Nilapitan ko ang poster. Binasa ko ang tagline.</p>
+
+                    <p class="thought">"Some stories are meant to be rewritten. Others are meant to be forgotten."</p>
+
+                    <p>Writer and Director: Gio Cruz.</p>
+
+                    <p>Sinulat ko 'to. Sinulat ko 'to tungkol sa kanya. Tungkol sa amin.</p>
+
+                    <p>Kaya ako naging Best Director... kaya ako naging successful... ay dahil ginamit ko ang sakit ng pagkawala niya bilang gasolina.</p>
+
+                    <p>Ang tagumpay ko ay nakatayo sa libingan ng relasyon namin.</p>
+
+                    <p>Pero paano?</p>
+
+                    <p>Paano nangyari na naging "Basted" ang ending sa 2018?</p>
+
+                    <p>Naalala ko ang mukha ni Lia nung gabing 'yun. Yung takot. Yung sigaw.</p>
+
+                    <p><em>“Gio! Gumising ka!”</em></p>
+
+                    <p>Posible bang...</p>
+
+                    <p>Posible bang may kinalaman ang pagbagsak ko sa desisyon niya?</p>
+
+                    <p>Tumayo ako. Naglakad ako papunta sa bintana.</p>
+
+                    <p>Tumingin ako sa syudad.</p>
+
+                    <p>Ang layo ko na. Ang taas ko na. Nasa penthouse na ako ng mundo.</p>
+
+                    <p>Pero ang lamig.</p>
+
+                    <p>Sa Part 1, ang goal ko ay baguhin ang future para maging masaya kami.</p>
+
+                    <p>Pero ang nangyari... binago ko ang future para maging successful kami, pero magkahiwalay.</p>
+
+                    <p>Ito ba ang kapalit?</p>
+
+                    <p>The Director eats last.</p>
+
+                    <p>Sir Vren.</p>
+
+                    <p>Si Sir Vren ang may alam nito. Siya ang Producer ng buhay ko. Kailangan ko siyang makausap.</p>
+
+                    <p>Pero bago 'yun... kailangan ko muna siyang makita. Kahit sa malayo.</p>
+
+                    <p>Binuksan ko ang TV.</p>
+
+                    <p>GMA News TV.</p>
+
+                    <p>Live broadcast.</p>
+
+                    <p>Nandoon siya. Si Lia Reyes. Nagbabalita tungkol sa traffic. Tungkol sa politika.</p>
+
+                    <p>Ang galing niya. Ang linaw ng boses niya. Ang ganda ng posture niya.</p>
+
+                    <p>She is exactly who she wanted to be.</p>
+
+                    <p>"Elle," bulong ko, hawak ang screen ng TV.</p>
+
+                    <p>Tumingin siya sa camera. Para bang nakatingin siya sa akin.</p>
+
+                    <p>Sa likod ng professional smile niya... sa likod ng makapal na make-up at studio lights...</p>
+
+                    <p>Parang may lungkot.</p>
+
+                    <p>Parang may hinahanap din siya.</p>
+
+                    <p>Kung ako ang Director ng buhay ko... bakit hindi ko kontrolado ang ending?</p>
+
+                    <p>At bakit pakiramdam ko... may ibang Director na nakialam sa script ko habang tulog ako?</p>
+
+                    <p>Isang Director na handang isakripisyo ang "Kami" para sa "Ako".</p>
+
+                    <p>At kilalang-kilala ko kung sino ang kayang gumawa nun.</p>
+
+                    <p><strong>Si Lia.</strong></p>
+
+                    <p>Siya ang nag-cut. Siya ang nag-edit.</p>
+
+                    <p>Para iligtas ako.</p>
+
+                    <p>Pumatak ang luha ko.</p>
+
+                    <p>"Ang daya mo," bulong ko sa hangin. "Ang daya-daya mo, Lia."</p>
+
+                    <p>Pinunasan ko ang luha ko.</p>
+
+                    <p>Tumayo ako nang tuwid.</p>
+
+                    <p>Kung akala mo, Ms. Reyes, na papayag ako sa ending na 'to dahil lang successful tayo... nagkakamali ka.</p>
+
+                    <p>Ako si Gio Cruz. Best Director ng Metro Manila Film Festival.</p>
+
+                    <p>At hindi ako tumatanggap ng Unfinished Business.</p>
+
+                    <p>Kung kailangan kong i-reshoot ang buong 2026 para maibalik ka... gagawin ko.</p>
+
+                    <p>Kinuha ko ang susi ng kotse ko.</p>
+
+                    <p><span class="sound-effect">Cut.</span></p>
+
+                    <p style="text-align: center; font-weight: bold; letter-spacing: 2px;">START OF ACT 2.</p>
+                </div>
+
+                <div class="chapter-nav">
+                    <a href="chapter20.html" class="btn-sketch secondary nav-btn">
+                        &larr; Previous Act
+                    </a>
+                    <a href="#" class="btn-sketch primary nav-btn" style="opacity: 0.5; cursor: not-allowed;">
+                        Next Chapter &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="handwritten-note">&copy; 2026 Director's Cut.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
