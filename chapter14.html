@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ch. 14 - Plot Twist | Director's Cut</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Ch. 14 - Murphy's Law | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
@@ -38,32 +38,46 @@
             border-bottom: 1px solid #e0e0e0;
         }
 
-        /* Script Note (Sticky Note Style) */
-        .script-note { 
-            font-family: 'Patrick Hand', cursive; 
-            background: #ffcdd2; /* Reddish sticky note for 'Red Herring' */
-            color: #b71c1c;
-            padding: 15px 20px; 
-            border: 1px solid #e57373;
-            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-            transform: rotate(1deg);
-            display: block;
-            margin: 30px auto;
+        /* Script/Dialogue Box */
+        .script-box {
+            font-family: 'Courier Prime', monospace;
+            background: #eee;
+            padding: 20px;
+            border-left: 5px solid #555;
+            margin: 30px 0;
+            font-size: 1rem;
+            color: #333;
+        }
+        .script-char { font-weight: bold; text-transform: uppercase; }
+
+        /* Murphy's Law Box */
+        .law-box {
+            background: #263238;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-            max-width: 85%;
-            font-size: 1.1rem;
+            font-family: 'Courier Prime', monospace;
+            margin: 30px 0;
+            border: 2px solid #cfd8dc;
+            box-shadow: 4px 4px 0 #000;
+        }
+        .law-title {
+            color: var(--sunset-orange);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        /* Role Tag */
-        .role-tag { 
-            font-family: 'Patrick Hand', cursive; 
-            background: #e0f2f1; 
-            padding: 2px 10px; 
-            border-left: 5px solid #00695c;
-            font-size: 1rem; 
-            color: #00695c; 
-            font-weight: 700; 
-            letter-spacing: 1px;
+        /* Date/Time Stamp */
+        .timestamp {
+            font-family: 'Courier Prime', monospace;
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+            margin-bottom: 20px;
+            display: block;
         }
 
         .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
@@ -93,244 +107,300 @@
                 
                 <div class="chapter-header">
                     <span class="chap-num">Chapter 14</span>
-                    <h1 class="chap-title">Plot Twist</h1>
+                    <h1 class="chap-title">Murphy's Law</h1>
                 </div>
 
                 <div class="story-text">
-                    <p>Sa pagsusulat ng script, may tinatawag kaming <strong>Red Herring</strong>.</p>
+                    <div class="scene-header">INT. CENT’S GARAGE - NIGHT</div>
+                    <span class="timestamp">Friday Night. 11:00 PM.</span>
 
-                    <div class="script-note">
-                        <strong>DEFINITION:</strong><br>
-                        Ito yung detalye na akala mo importante. Akala mo clue. Akala mo sign. Pero sa huli, pampalito lang pala. Pampagulo para hindi mo mahulaan kung sino talaga ang killer o kung sino ang makakatuluyan ng bida.
+                    <p>Tatlong araw na lang bago ang deadline ng submission. At kasalukuyan kaming nasa "Hell Week" ng production.</p>
+
+                    <p>Ang garahe nina Cent ay ginawa naming makeshift studio. Mainit. Amoy pintura, rugby, at lumang karton. Nagkalat ang mga wires sa sahig. Ang semento, puno ng footprints ng sapatos na may alikabok.</p>
+
+                    <p>Ang set namin: Isang "Elevator" na gawa sa pinagtagpi-tagping kahon ng refrigerator na hiningi namin sa appliance center, pininturahan ng silver spray paint para magmukhang metal.</p>
+
+                    <p>Mukha siyang... pwede na. Kapag nilagyan ng tamang ilaw at tamang angle, mukha naman siyang elevator. Pero sa personal? Mukha siyang high school project na ginawa ng cramming.</p>
+
+                    <p>"Okay," sabi ko, hinihilot ang sentido ko. Masakit ang ulo ko. Kulang sa tulog. "Lights check."</p>
+
+                    <p>Si Keanu ang may hawak ng clamp light (binili namin sa hardware).</p>
+
+                    <p>"On!" sigaw ni Keanu.</p>
+
+                    <p>Bumukas ang ilaw. Flicker.</p>
+
+                    <p>Ang init. Dahil halogen light ang gamit namin (mura lang), sobrang init ng buga nito. Para kaming nasa oven toaster.</p>
+
+                    <p>"Audio check," sabi ko.</p>
+
+                    <p>Si Trina ang may hawak ng boom pole (na gawa sa PVC pipe na may nakatape na mic sa dulo).</p>
+
+                    <p>"Sound rolling," sagot ni Trina, pero halatang pagod na. Naka-upo na siya sa sahig.</p>
+
+                    <p>"Okay. Scene 8. Climax. Take 1."</p>
+
+                    <p>Pumwesto si Cent at Lia sa loob ng masikip na karton-elevator. Pawisan na sila. Nasisira na ang make-up ni Lia dahil sa init ng ilaw.</p>
+
+                    <p>"Action!"</p>
+
+                    <p>Nagsimula ang eksena. Ito yung part na magsisigawan na sila.</p>
+
+                    <div class="script-box">
+                        <span class="script-char">CENT:</span> Bakit ba ang labo mo?! Tinatanong kita nang maayos!<br><br>
+                        <span class="script-char">LIA:</span> Hindi ako malabo, Mark! Ikaw ang hindi nakikinig!
                     </div>
 
-                    <p>Sa loob ng ilang linggo, akala ko ako ang bida.</p>
+                    <p>Biglang...</p>
 
-                    <p>Akala ko ang mga ngiti ni Lia, ang pagsama niya sa akin sa mosh pit, ang pagsigaw namin sa grandstand… akala ko lahat 'yun, clues na nagbabago na ang takbo ng istorya.</p>
+                    <p><span class="sound-effect">KRRRKKK.</span></p>
 
-                    <p>Pero nakalimutan ko ang <strong>Golden Rule ng Time Travel:</strong> <em>History has a way of correcting itself.</em></p>
+                    <p>May tumunog na scotch tape na bumibigay.</p>
 
-                    <p>Kahit anong iwas mo sa iceberg, tatama at tatama pa rin ang Titanic.</p>
+                    <p>Sa gitna ng intense acting nila, dahan-dahang tumagilid ang kanang pader ng elevator. Dahil sa init ng ilaw at humidity, natunaw ang dikit ng tape.</p>
 
-                    <div class="scene-header">INT. CLASSROOM - DAY</div>
-                    <p style="text-align: center; font-family: 'Patrick Hand', cursive; color: var(--text-light);">Araw bago ang Competition.</p>
+                    <div class="script-box">
+                        <span class="script-char">LIA:</span> Gusto ko lang naman na—
+                    </div>
 
-                    <p>"Gio! Paki-abot ng glue gun!"</p>
-                    <p>"Gio! Yung feathers sa headdress, nalalaglag!"</p>
+                    <p><span class="sound-effect">BLAG!</span></p>
 
-                    <p>Busy ang lahat. Hell Week na. Bukas na ang Cheerdance Competition. Ang classroom namin, mukhang sumabog na factory ng glitter at tela.</p>
+                    <p>Bumagsak ang pader. Tumama ito sa balikat ni Cent. Nahulog din ang "Control Panel" na gawa sa styro.</p>
 
-                    <p>Nasa sulok ako, nag-aayos ng props. Pero hindi ako mapakali.</p>
+                    <p>"Aray!" sigaw ni Cent.</p>
 
-                    <p>Masaya ako these past few days. Sobrang saya. Feeling ko on track na ang Mission. Sabi ko sa sarili ko, <span class="thought">“Okay na. Confident na ako. Close na kami. Bukas, pagkatapos ng panalo, aamin na ako.”</span></p>
+                    <p>"Cut!" sigaw ko.</p>
 
-                    <p>Yan ang plano. Cinematic confession after the championship.</p>
+                    <p>Katahimikan.</p>
 
-                    <p>Tumayo ako para uminom ng tubig. Lumabas ako ng room para magpahangin.</p>
+                    <p>Nakatingin kaming lahat sa gumuhong set. Tatlong araw naming ginawa 'yan. Tatlong araw na puyatan, pinturahan, at pagdidikit.</p>
 
-                    <p>Dadaan sana ako sa likod ng stage (kung saan nagpa-practice ang iba), nang marinig ko ang boses ni Lia.</p>
+                    <p>At ngayon, sira na.</p>
 
-                    <p>Nasa may hagdan siya, kausap si Trina. Nakatago sila sa ilalim ng staircase. Medyo seryoso ang usapan.</p>
+                    <p>Bumuntong-hininga ako. Yung buntong-hininga na nanggagaling sa kailaliman ng pagod na kaluluwa.</p>
 
-                    <p>Dapat dideretso na ako. Dapat hindi ako nakinig. Pero cameraman instinct—sanay akong mag-eavesdrop.</p>
+                    <p>"Sabi ko..." simula ko, mahina pero madiin. "...sabi ko dagdagan niyo ng duct tape sa likod, diba?"</p>
 
-                    <p>Huminto ako sa likod ng pader.</p>
+                    <p>Tumingin ako kay Keanu. Siya ang inassign ko sa set construction.</p>
 
-                    <p>"…sure ka na ba talaga, Lia?" tanong ni Trina. Boses na nag-aalala.</p>
+                    <p>"Pre, dinagdagan ko naman..." katwiran ni Keanu. "Mainit lang talaga siguro kaya bumigay."</p>
 
-                    <p>"Oo, Trina," sagot ni Lia. Rinig ko ang kaba sa boses niya. "Ayoko nang magtago. Ilang taon ko na ring tinatago 'to."</p>
+                    <p>"Dinagdagan?" Tumayo ako at lumapit sa sira-sirang karton. "Keanu, masking tape lang 'to! Sabi ko duct tape! Yung kulay gray! Yung makapit!"</p>
 
-                    <p><strong>Ilang taon?</strong></p>
+                    <p>"E naubusan tayo ng budget eh!" sagot ni Keanu, medyo tumataas na rin ang boses dahil sa pagod. "Sabi ni Trina tipirin daw!"</p>
 
-                    <p>Kumabog ang dibdib ko.</p>
+                    <p>Tumingin ako kay Trina. "Trina, sabi ko mag-allocate ng budget para sa tape. Bakit tinipid?"</p>
 
-                    <p>"Pero paano kung… paano kung hindi ka gusto?" tanong ulit ni Trina. "Sayang yung friendship."</p>
+                    <p>"Gio, 2,500 lang budget natin!" naiiyak na sagot ni Trina. "Ang mahal nung ilaw na pinabili mo! Wala na tayong pera!"</p>
 
-                    <p>"Bahala na," buntong-hininga ni Lia. "Bukas, after ng competition. Ibibigay ko sa kanya yung letter. Sasabihin ko na lahat."</p>
+                    <p>"So kasalanan ko?" bulyaw ko.</p>
 
-                    <p>"Grabe," tili ni Trina nang mahina. "Kinikilig ako! Finally! Ang tagal na niyan ha! Simula 1st Year pa!"</p>
+                    <p>Nagulat sila. First time kong sumigaw nang ganito.</p>
 
-                    <p>Nanigas ako.</p>
+                    <p>Sa Original Timeline, kapag nasisira ang props, tatawanan lang namin. Sasabihin ko, "Okay lang yan, tape na lang ulit." Chill lang ako dati.</p>
 
-                    <p>Simula 1st Year.</p>
+                    <p>Pero ngayon?</p>
 
-                    <p>Nag-flashback sa utak ko ang lahat. Noong 1st Year, sino ang crush ni Lia? Sino ang laging kasama niya? Sino ang laging tinutukso sa kanya?</p>
+                    <p>Ngayon, dala-dala ko ang pressure ng Future. Dala-dala ko ang pangako ko kay Lia na maganda ang output. Dala-dala ko ang professional standards ng 28-year-old self ko na hindi sanay sa amateur mistakes.</p>
 
-                    <p><strong>Si Cent.</strong></p>
+                    <p>"Tangina naman oh," bulong ko, sinipa ang isang piraso ng styro. "Paano tayo matatapos nito? Bukas na ang deadline ng rough draft! Uulitin pa natin 'to bukas?!"</p>
 
-                    <p>Ako? Naging close lang kami nung 2nd Year. Naging "tropa" lang ako sa kalagitnaan. Pero si Cent… si Cent ang original leading man.</p>
+                    <p>"Pre, chill lang," awat ni Cent, lumabas sa sira-sirang elevator. "Maayos naman 'yan eh. Ididikit lang ulit."</p>
 
-                    <p>Bumagsak ang balikat ko.</p>
+                    <p>"Hindi na 'yan didikit, Cent!" sigaw ko sa kanya. "Punit na yung karton! Kailangan na namang pinturahan! Maghihintay na naman tayong matuyo! Sayang sa oras!"</p>
 
-                    <p><span class="thought">So… mali ako ng akala?</span></p>
+                    <p>Napahawak ako sa ulo ko. "Simple instructions. Duct tape. Hindi magawa."</p>
 
-                    <p>Yung mga moments namin… yung bus ride, yung mosh pit, yung sigaw sa bench… ano 'yun? Friendly gestures lang? Baka kaya siya naging malapit sa akin lately ay dahil kumukuha lang siya ng lakas ng loob para umamin kay Cent?</p>
+                    <p>Tumahimik ang garahe.</p>
 
-                    <p>Baka ako lang ang naging confidante. Ang emotional support dog.</p>
+                    <p>Nakita kong yumuko si Keanu. Si Trina, umiiyak na sa gilid. Si Cent, nakatingin sa akin nang masama.</p>
 
-                    <p>Biglang lumabas sina Lia at Trina sa pinagtataguan nila. Nagtatawanan sila.</p>
-
-                    <p>Nakita nila ako.</p>
-
-                    <p>"O, Gio!" gulat na bati ni Lia. Namula siya bigla. "Kanina ka pa dyan?"</p>
-
-                    <p>"Ah… h-hindi," utal ko. "Kararating lang. Iinom sana ako."</p>
-
-                    <p>Nagkatinginan sina Lia at Trina. Yung tinginang may sikreto.</p>
-
-                    <p>"Ah, sige," sabi ni Lia, iiwas ng tingin. "Balik na kami sa loob. May aayusin lang kami."</p>
-
-                    <p>Nagmadali silang umalis.</p>
-
-                    <p>Naiwan akong nakatayo sa hallway. Parang gumuho ang mundo ko.</p>
-
-                    <p><span class="sound-effect">Cut.</span> Mali ang basa ko sa script.</p>
-
-                    <div class="scene-header">EXT. VENDING MACHINE AREA - LATER</div>
-
-                    <p>Kinahapunan. Sinubukan kong i-shake off ang narinig ko. Baka mali lang ako ng dinig. Baka ako 'yun.</p>
-
-                    <p>Naglalakad ako papunta sa court para sa final tech run.</p>
-
-                    <p>Sa malayo, nakita ko si Cent.</p>
-
-                    <p>Nakatayo siya sa may vending machine. May kausap siya sa phone. Nakangiti.</p>
-
-                    <p>Lumapit ako. Hindi niya ako napansin agad.</p>
-
-                    <p>"Oo nga," sabi ni Cent sa kausap niya. "Excited na ako bukas… Oo, alam ko… Sige, Love you."</p>
-
-                    <p><strong>Love you?</strong></p>
-
-                    <p>Binaba ni Cent ang phone. Lumingon siya at nakita ako.</p>
-
-                    <p>"O, pre!" bati niya. Ang saya ng mukha niya. "Musta?"</p>
-
-                    <p>"Sino kausap mo?" tanong ko. Deretsahan.</p>
-
-                    <p>"Ah," kamot-ulo siya. "Wala. Si Mama lang. Nangamusta."</p>
-
-                    <p>Mama. Palusot. Gasgas na palusot.</p>
-
-                    <p>Tinignan ko si Cent. Gwapo. Matangkad. Captain Ball. Mabait.</p>
-
-                    <p>Bakit nga ba ako umasa na ako ang pipiliin?</p>
-
-                    <p>Sa original timeline, naging sila. Sa timeline na 'to, naging close kami ni Cent. Naging close kami ni Lia. Pero hindi ibig sabihin nun, nabago ko na ang feelings nila.</p>
-
-                    <p>Baka kaya naging supportive si Cent nung inuman… ay dahil alam niyang wala naman akong pag-asa. Na secure na siya sa pwesto niya.</p>
-
-                    <p>"Gio, okay ka lang?" tanong ni Cent. "Namumutla ka."</p>
-
-                    <p>"Wala," sabi ko. Tinalikuran ko siya. "Masakit lang ulo ko."</p>
-
-                    <p>Naglakad ako palayo. Bawat hakbang, parang may humihila sa akin pabalik sa 2026. Yung Dark Cloud. Yung Morning Dread. Bumabalik.</p>
-
-                    <div class="scene-header">INT. DRESSING ROOM - CONTINUOUS</div>
-
-                    <p>Pumasok ako sa dressing room. Nakita ko si Lia. Busy siya sa paglalagay ng sequins sa costume niya.</p>
-
-                    <p>Ang ganda niya. Sobrang ganda. At sobrang layo.</p>
-
-                    <p>Lumapit ako sa kanya. Kailangan kong malaman. Kahit masakit.</p>
-
-                    <p>"Lia," tawag ko.</p>
-
-                    <p>Nag-angat siya ng tingin. "Yes, Direk?"</p>
-
-                    <p>"May… may gusto ka bang sabihin sa akin?" tanong ko.</p>
-
-                    <p>Kumunot ang noo niya. "Ha? Wala naman. Bakit?"</p>
-
-                    <p>"Wala lang," sabi ko. Tinitigan ko siya sa mata. "Good luck bukas. Sana… sana maging masaya ka."</p>
-
-                    <p>Ngumiti siya. "Ano ka ba! Syempre magiging masaya tayo! Mananalo tayo!"</p>
-
-                    <p>Hindi niya na-gets. Ang ibig kong sabihin: <em>Sana maging masaya ka sa kanya.</em></p>
-
-                    <p>Tumalikod ako at lumabas ng room. Hindi ko na kaya.</p>
-
-                    <div class="scene-header">EXT. FIRE EXIT - SUNSET</div>
-
-                    <p>Nagpunta ako sa likod ng gym. Sa may fire exit. Umupo ako sa sahig.</p>
-
-                    <p>Kinuha ko ang camera ko sa bag. (Dala ko na ulit ngayon dahil rehearsal). Binuksan ko ang Playback.</p>
-
-                    <p>Tinignan ko ang mga shots nitong nakaraang linggo. Ang selfie namin sa oval. Ang picture niya na natutulog sa bus. Ang tawa niya nung kumakain kami ng hotdog.</p>
-
-                    <p>Ang sasaya ng mga clips. Pero sa editing, kahit gaano kaganda ang clips mo, kung sad ending ang story, sad ending pa rin.</p>
-
-                    <p>Putangina.</p>
-
-                    <p>Umiyak ako. Walang sigaw. Walang Bench Yell. Tahimik lang na iyak.</p>
-
-                    <p>Yung iyak ng isang taong nare-realize na kahit bumalik siya ng walong taon, kahit binago niya ang dialogue, kahit nag-effort siya… extra pa rin siya sa kwento.</p>
-
-                    <p>Biglang bumukas ang pinto ng fire exit.</p>
-
-                    <p>"Gio?"</p>
-
-                    <p>May pumasok. Hindi si Lia. Hindi si Cent.</p>
-
-                    <p><strong>Si Sir Vren.</strong></p>
-
-                    <p>Nakasandal siya sa hamba ng pinto, humihithit ng yosi (kahit bawal).</p>
-
-                    <p>"Ang aga naman ng drama mo," sabi niya. "Bukas pa ang performance."</p>
-
-                    <p>Pinunasan ko ang luha ko. "Sir, tama na. Ayoko na. Ibalik niyo na ako sa 2026."</p>
-
-                    <p>"Ha?" lumapit siya. "Bakit? Dahil lang narinig mong may aaminan siya bukas?"</p>
-
-                    <p>Napatingin ako sa kanya. "Alam mo?"</p>
-
-                    <p>"Producer ako, Gio. Alam ko ang script," sabi niya, bumuga ng usok.</p>
-
-                    <p>"Kung alam mo pala, eh di sana sinabi mo na sa akin na wala rin palang kwenta 'to!" sigaw ko. "Na si Cent pa rin pala sa huli! Pinagod mo lang ako!"</p>
-
-                    <p>Tumawa si Sir Vren. Tinapon niya ang yosi at tinapakan.</p>
-
-                    <p>"Ang bilis mong sumuko," iling niya. "Isang plot twist lang, bibitaw ka na?"</p>
-
-                    <p>"Plot twist? Sir, ending na 'to! Tragedy!"</p>
-
-                    <p>Lumapit si Vren sa akin. Hinawakan niya ang kwelyo ng shirt ko at hinila ako patayo.</p>
-
-                    <p>"Makinig ka, Gio," seryoso niyang sabi. Ang lapit ng mukha niya. Amoy kape at yosi.</p>
-
-                    <p>"Sa pelikula, kapag inakala ng audience na talo na ang bida… doon nangyayari ang himala. Pero mangyayari lang 'yun kung hindi aalis ang bida sa set."</p>
-
-                    <p>Binitawan niya ako.</p>
-
-                    <p>"May letter si Lia? Good. May aaminan siya? Good. Ang tanong: Sigurado ka bang hindi ikaw 'yun?"</p>
-
-                    <p>"Sabi niya 1st Year pa, Sir! 1st Year! Hindi pa kami close nun!"</p>
-
-                    <p>Ngumiti si Sir Vren nang nakakaloko.</p>
-
-                    <p>"Malay mo… audience ka na niya dati pa, hindi mo lang alam na pinapanood ka rin niya."</p>
+                    <p>"Sobra ka naman magsalita, Gio," sabi ni Cent, seryoso. "Pagod din kami. Hindi lang ikaw ang puyat."</p>
 
                     <p>Natigilan ako.</p>
 
-                    <p>"Isipin mo, Gio. Gamitin mo 'yang utak mo, wag puro puso."</p>
+                    <p>Tumingin ako sa paligid. Nakita ko ang mga mukha nila.</p>
 
-                    <p>Naglakad si Sir Vren pabalik sa pinto. "Matulog ka na. Bukas, mag-shave ka. Mag-ayos ka. Dahil kung magmumukha kang talunan bukas, talagang matatalo ka."</p>
+                    <p>Pagod. Gutom. Puyat.</p>
 
-                    <p>Lumabas siya at iniwan ako.</p>
+                    <p>At takot. Takot sila sa akin.</p>
 
-                    <p>Naiwan ako sa fire exit.</p>
+                    <p>Biglang bumigat ang dibdib ko. Ito ba ang gusto kong mangyari? Maging terror director na kinatatakutan ng mga kaibigan niya?</p>
 
-                    <p><span class="thought">Malay mo… pinapanood ka rin niya.</span></p>
+                    <p>"Break muna," sabi ko, hindi makatingin sa kanila. "1 hour break."</p>
 
-                    <p>Imposible. Pero paano kung…</p>
+                    <p>Tumalikod ako at lumabas ng garahe.</p>
 
-                    <p>Hindi. Masakit umasa. Pero nandito na ako. 115 million kilometers ang nilakbay ko pabalik. Sayang ang pamasahe kung aatras ako ngayon.</p>
+                    <div class="scene-header">EXT. CENT’S GARDEN - NIGHT</div>
 
-                    <p>Pinunasan ko ang mukha ko. Bahala na. Kung masaktan, edi masaktan. Sanay naman ako.</p>
+                    <p>Umupo ako sa gutter sa labas ng bahay nina Cent. Madilim. Tahimik.</p>
 
-                    <p>Pero sisiguraduhin kong sa Director's Cut na 'to… kukunan ko ang ending. Happy man o sad.</p>
+                    <p>Nanginginig ang kamay ko.</p>
 
-                    <p><span class="sound-effect">CUT.</span></p>
+                    <p>Gusto ko ng yosi. Shit, kailangan ko ng yosi. Pero wala akong yosi sa 2018.</p>
+
+                    <p>Kinuha ko ang cellphone ko. Tinignan ko ang date.</p>
+
+                    <p><span class="timestamp">October 12, 2018.</span></p>
+
+                    <p>Dalawang buwan na ako dito.</p>
+
+                    <p>Akala ko, dahil galing ako sa future, magiging madali ang lahat. Akala ko, dahil alam ko na ang mangyayari, perfect na ang execution ko.</p>
+
+                    <p>Pero hindi pala.</p>
+
+                    <p>Ang hirap. Ang hirap i-drag ang past papunta sa standards ng future. Ang hirap maging leader kapag ang mga kasama mo ay mga estudyanteng gusto lang pumasa, habang ikaw, gusto mong gumawa ng masterpiece.</p>
+
+                    <p>"Ang sungit mo naman, Direk."</p>
+
+                    <p>Napatingala ako.</p>
+
+                    <p>Si Lia.</p>
+
+                    <p>Nakatayo siya sa harap ko. May hawak na dalawang cup ng kape (yung 3-in-1 lang).</p>
+
+                    <p>Umupo siya sa tabi ko sa gutter. Hindi siya nagsalita agad. Iniabot niya lang ang isang cup.</p>
+
+                    <p>"Wala nang asukal," sabi niya. "Matapang yan. Bagay sa ugali mo ngayon."</p>
+
+                    <p>Kinuha ko ang kape. Mainit.</p>
+
+                    <p>"Sorry," bulong ko.</p>
+
+                    <p>"Wag ka sa akin mag-sorry," sabi niya. "Kay Trina ka mag-sorry. Umiiyak 'yun sa loob. Si Keanu, naghahanap na ng duct tape sa bodega ni Cent kahit hatinggabi na."</p>
+
+                    <p>Napayuko ako. "Alam ko. Na-pressure lang ako."</p>
+
+                    <p>"Bakit ka ba kasi sobrang pressure?" tanong niya. "Short film lang 'to, Gio. Project lang."</p>
+
+                    <p>"Hindi lang 'to project," sagot ko.</p>
+
+                    <p>Tumingin ako sa kanya.</p>
+
+                    <p>Paano ko ipapaliwanag? Na kaya ako nagkakaganito ay dahil gusto kong patunayan sa'yo na hindi ako loser? Na gusto kong ipagmalaki mo ako? Na gusto kong baguhin ang future kung saan corporate slave ka lang at hindi Journalist?</p>
+
+                    <p>"Gusto ko kasing..." naghanap ako ng tamang salita. "...gusto ko kasing maging worth it yung pagod niyo. Ayokong gumawa lang tayo ng basura. Sayang yung talent mo. Sayang yung effort nila."</p>
+
+                    <p>Huminga ako nang malalim.</p>
+
+                    <p>"Feeling ko kasi, kapag pumalpak ako dito... palpak na ako forever."</p>
+
+                    <p>Tumahimik si Lia. Humigop siya ng kape.</p>
+
+                    <p>"Alam mo," sabi niya. "Ang weird mo talaga."</p>
+
+                    <p>"Bakit na naman?"</p>
+
+                    <p>"Kasi masyado mong pasan ang daigdig," sabi niya. "Director ka nga, oo. Ikaw ang Captain. Pero Gio..."</p>
+
+                    <p>Tinapik niya ang tuhod ko.</p>
+
+                    <p>"...hindi mo kailangang buhatin ang barko mag-isa. May crew ka. At kahit pumalpak tayo, kahit bumagsak yung elevator... edi itatayo ulit."</p>
+
+                    <p>Ngumiti siya.</p>
+
+                    <p>"Tao lang kami, Gio. Tao ka lang din. Hindi tayo robot. Masisira at masisira ang plano. Murphy's Law, diba?"</p>
+
+                    <div class="law-box">
+                        <span class="law-title">MURPHY'S LAW</span>
+                        "Anything that can go wrong, will go wrong."
+                    </div>
+
+                    <p>"Oo," sabi ko. "Anything that can go wrong, will go wrong."</p>
+
+                    <p>"Exactly," sabi niya. "So kapag nagkamali, wag kang sumigaw. Tumawa ka na lang. Tapos ayusin natin."</p>
+
+                    <p>Tinignan ko siya.</p>
+
+                    <p>Sa ilalim ng liwanag ng street light, kahit sira na ang make-up niya, kahit gulo-gulo ang buhok niya sa init... ang ganda niya.</p>
+
+                    <p>Siya ang anchor ko.</p>
+
+                    <p>Nung nawawala ako sa ere dahil sa standards ko, siya yung humihila sa akin pabalik sa lupa.</p>
+
+                    <p>"Lia," tawag ko.</p>
+
+                    <p>"Hmm?"</p>
+
+                    <p>"Salamat," sabi ko. "Kailangan ko 'yun."</p>
+
+                    <p>"Alin? Yung kape?"</p>
+
+                    <p>"Yung sermon."</p>
+
+                    <p>Tumawa siya. "Ah, libre lang 'yun. Part ng service ng Muse/Lead Actress/Production Assistant/Moral Support."</p>
+
+                    <p>Tumayo siya at pinagpag ang pwetan niya.</p>
+
+                    <p>"Tara na sa loob? Batiin mo na sila. May nahanap na raw na tape si Keanu. Silver tape. Pwede na 'yun."</p>
+
+                    <p>Tumayo rin ako.</p>
+
+                    <p>"Tara."</p>
+
+                    <p>Naglakad kami pabalik sa garahe.</p>
+
+                    <p>Bago kami pumasok, huminto siya at lumingon sa akin.</p>
+
+                    <p>"Gio."</p>
+
+                    <p>"Yes?"</p>
+
+                    <p>"Wag ka nang sumimangot," sabi niya. "Pumapangit ka."</p>
+
+                    <p>Ngumiti ako. "Opo, Ma'am."</p>
+
+                    <p>Pumasok kami sa loob.</p>
+
+                    <p>Nandoon sila. Tahimik. Nag-aayos ng kalat.</p>
+
+                    <p>Si Trina, namumugto ang mata. Si Keanu, may hawak na tape. Si Cent, nagwawalis.</p>
+
+                    <p>Huminga ako nang malalim. Ibaba ang pride.</p>
+
+                    <p>"Guys," tawag ko.</p>
+
+                    <p>Tumingin sila sa akin.</p>
+
+                    <p>"Sorry," sabi ko. "Sorry sumigaw ako kanina. Nadala lang ng pagod. My bad."</p>
+
+                    <p>Lumapit ako kay Trina. "Sorry, Trina. Alam kong mahirap mag-budget. Gawan natin ng paraan."</p>
+
+                    <p>Lumapit ako kay Keanu. "Pre, sorry. Salamat sa paghahanap ng tape."</p>
+
+                    <p>Ngumiti si Keanu, medyo alanganin pa. "Okay lang pre. Nakahanap ako sa toolbox ng Tatay ni Cent. Kapit 'to, pramis."</p>
+
+                    <p>Lumapit ako kay Cent.</p>
+
+                    <p>Tinapik ni Cent ang balikat ko bago pa ako makapagsalita. "Ayos lang, Direk. Gets namin. Passionate ka lang. Pero sa susunod, chill lang ha? Puso mo."</p>
+
+                    <p>Tumango ako. "Oo. Chill na."</p>
+
+                    <p>Tumingin ako sa set. Sira pa rin, pero tinatapalan na nila.</p>
+
+                    <p>"Okay team," sabi ko, pumalakpak ng mahina. "Alas-dose na. Hindi na natin kaya mag-shoot ngayon. Pack up na muna."</p>
+
+                    <p>"Talaga?" liwanag ng mukha ni Trina. "Pwede nang matulog?"</p>
+
+                    <p>"Oo. Matulog na tayo. Bukas, agahan natin. Fresh start."</p>
+
+                    <p>"Yes! Tulugan na!" sigaw ni Keanu, humiga agad sa sofa sa garahe.</p>
+
+                    <p>Nagtawanan kami.</p>
+
+                    <p>Nawala ang bigat sa dibdib ko.</p>
+
+                    <p>Tumingin ako kay Lia sa gilid. Nakangiti siya sa akin. Nag-thumbs up siya.</p>
+
+                    <p>Napangiti rin ako.</p>
+
+                    <p>Murphy's Law: Anything that can go wrong, will go wrong.</p>
+
+                    <p>Pero may corollary 'yun: As long as you have the right people, you can fix it.</p>
+
+                    <p>Pinatay ko ang ilaw sa garahe.</p>
+
+                    <p>"Goodnight, team."</p>
                 </div>
 
                 <div class="chapter-nav">
