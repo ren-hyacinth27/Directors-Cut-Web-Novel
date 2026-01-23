@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ch. 18 - The Confession Scene | Director's Cut</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Ch. 18 - The Reshoot | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
@@ -38,46 +38,31 @@
             border-bottom: 1px solid #e0e0e0;
         }
 
-        /* The Love Letter Style */
-        .love-letter {
-            font-family: 'Patrick Hand', cursive; 
-            background: #f3e5f5; /* Lavender tint */
-            color: #4a148c;
-            padding: 30px;
-            border: 1px dashed #ce93d8;
-            box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
-            transform: rotate(-1deg);
-            margin: 40px auto;
-            font-size: 1.25rem;
-            line-height: 1.6;
-            position: relative;
-        }
-        .love-letter::before {
-            content: "\f004"; /* FontAwesome Heart */
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #ab47bc;
-            font-size: 2rem;
-            background: #f3e5f5;
-            padding: 0 10px;
-        }
-
-        /* Script Direction Note (Small) */
-        .script-direction {
+        /* Script/Dialogue Box */
+        .script-box {
             font-family: 'Courier Prime', monospace;
-            font-size: 0.9rem;
-            color: #666;
-            text-align: center;
-            border-top: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-            padding: 5px 0;
+            background: #eee;
+            padding: 20px;
+            border-left: 5px solid #555;
             margin: 30px 0;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            font-size: 1rem;
+            color: #333;
+        }
+        .script-char { font-weight: bold; text-transform: uppercase; }
+        .script-direction { font-style: italic; color: #666; font-size: 0.9em; }
+
+        /* Magic Hour Box */
+        .magic-hour-box {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            color: #d35400;
         }
 
         .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
@@ -107,187 +92,281 @@
                 
                 <div class="chapter-header">
                     <span class="chap-num">Chapter 18</span>
-                    <h1 class="chap-title">The Confession Scene</h1>
+                    <h1 class="chap-title">The Reshoot</h1>
                 </div>
 
                 <div class="story-text">
-                    <p>Sa scriptwriting, may tinatawag na <strong>The Grand Gesture</strong>.</p>
+                    <div class="scene-header">EXT. SCHOOL ROOFTOP - LATE AFTERNOON</div>
 
-                    <p>Ito yung tatakbo ang bida sa airport para pigilan ang flight. O kaya haharanahin niya ang babae sa harap ng maraming tao. Malaki. Maingay. Public.</p>
-
-                    <p>Pero sa totoong buhay, ang pinakamalakas na eksena ay yung… <strong>tahimik.</strong></p>
-
-                    <p>Yung moment na ang maririnig mo lang ay ang tibok ng sarili mong puso at ang paghinga ng taong kaharap mo.</p>
-
-                    <div class="scene-header">EXT. ROOFTOP (OLD BUILDING) - NIGHT</div>
-                    <p style="text-align: center; font-family: 'Patrick Hand', cursive; color: var(--text-light);">8:30 PM.</p>
-
-                    <p>Ang rooftop ng Old Building ay hindi naman talaga "romantic spot." May mga lumang sirang desk sa gilid. May tangke ng tubig na kinakalawang. Ang sahig, maalikabok.</p>
-
-                    <p>Pero dito kami tumatakas noon kapag ayaw naming pumasok sa Calculus. Dito kami nag-she-share ng Stick-O. Dito ko siya unang kinuhanan ng litrato nang patago.</p>
-
-                    <p>Nakaupo kami sa ledge. Tanaw namin ang city lights ng Dagupan. Sa baba, rinig pa rin ang muffled na ingay ng celebration, pero dito sa taas, parang nasa ibang planeta kami.</p>
-
-                    <p>Tahimik si Lia. Nakayuko, nilalaro ang laylayan ng skirt niya.</p>
-
-                    <p>Ako naman, nakatingin sa kanya. Pinapakiramdaman ang hangin.</p>
-
-                    <p>"Gio," basag niya sa katahimikan.</p>
-
-                    <p>"Hmm?"</p>
-
-                    <p>Kinuha niya ang isang envelope mula sa bag niya. Kulay blue. (Paborito kong kulay).</p>
-
-                    <p>"Para sa'yo," abot niya.</p>
-
-                    <p>Nanginginig ang kamay niya.</p>
-
-                    <p>Kinuha ko ang envelope. Ang bigat. Parang may lamang bomba.</p>
-
-                    <p>"Ano 'to?" tanong ko, kahit may hinala na ako.</p>
-
-                    <p>"Basahin mo," bulong niya. "Kasi… baka hindi ko masabi nang diretso. Nauutal ako eh."</p>
-
-                    <p>Binuksan ko ang envelope. Naglabas ako ng isang piraso ng papel. Stationery. Amoy lavender. Sulat kamay.</p>
-
-                    <p>Binasa ko.</p>
-
-                    <div class="love-letter">
-                        <p><strong>Dear Gio,</strong></p>
-                        <p>Naalala mo nung 1st Year? Nung Intrams din? Ikaw yung photographer ng org namin nun. Ang payat mo pa, tapos ang laki ng shirt mo. Pawisan ka kakatakbo para lang makakuha ng picture namin.</p>
-                        <p>Sabi ni Trina, ang weird mo daw kasi hindi ka nagsasalita. Pero sabi ko… ang cool mo. Kasi habang lahat ng lalaki nagpapapogi para mapansin, ikaw… busy ka sa pagpapaganda ng iba.</p>
-                        <p>Simula nun, hinahanap na kita palagi. Sa canteen. Sa hallway. Sa library. Gusto kong lumapit, pero lagi kang may hawak na camera. O kaya kasama mo si Cent. Naisip ko, baka masyado kang busy para sa isang katulad ko.</p>
-                        <p>Pero nitong sem… nag-iba ka. Binaba mo yung camera. Tumabi ka sa akin. Tinuruan mo akong sumigaw.</p>
-                        <p>Gio, sa lahat ng lenses na meron ka… sana ako lang ang makita mo. Kasi ako? Matagal na kitang nakikita. Kahit nasa dilim ka pa.</p>
-                        <p style="text-align: right;"><strong>— Lia</strong></p>
+                    <div class="magic-hour-box">
+                        <i class="fas fa-sun"></i> Magic Hour.
                     </div>
 
-                    <p>Natapos kong basahin ang sulat.</p>
+                    <p>Sa filmmaking, ito ang pinaka-sagradong oras. Yung 30 minutes bago lumubog ang araw. Ang ilaw ay kulay ginto, malambot, at flattering sa kahit sinong subject. Wala kang kailangang filter. Ang tawag dito ng mga cinematographers ay "God’s Light."</p>
 
-                    <p>Nanlabo ang mata ko. Hindi dahil sa luha (okay, konting luha), kundi sa shock. Binaliktad ko ang papel. Wala nang ibang nakasulat.</p>
+                    <p>Nasa rooftop kami ng Main Building. (Nagpaalam kami kay Sir Vren sa Student Affairs para payagan kami. Lakas ng kapit).</p>
 
-                    <p>Tumingin ako kay Lia. Nakatakip siya ng mukha gamit ang dalawang palad niya. Hiyang-hiya.</p>
+                    <p>Ito ang Final Scene ng Static.</p>
 
-                    <p>"Lia," tawag ko. Garalgal ang boses ko.</p>
+                    <p>Sa script, pagkatapos ma-trap sa elevator, finally bumukas ang pinto. Umakyat si Mark (Cent) at Elle (Lia) sa rooftop para huminga. Dito mangyayari ang Final Decision: Magbabalikan ba sila o magpapaalam na nang tuluyan?</p>
 
-                    <p>"Wag kang tumingin!" sabi niya, muffled sa kamay niya. "Nakakahiya! Ang baduy ng letter ko!"</p>
+                    <p>"Okay team, bilisan natin!" sigaw ko. "Mawawala na ang araw! We have 20 minutes!"</p>
 
-                    <p>Hinawakan ko ang pulso niya at dahan-dahang inalis ang mga kamay niya sa mukha niya. Namumula siya. Sobra.</p>
+                    <p>Naka-setup na ang camera. Si Trina, hawak ang reflector. Si Keanu, nag-aabang sa audio.</p>
 
-                    <p>"Teka," sabi ko, kailangan ng clarification. "Akala ko… akala ko si Cent?"</p>
+                    <p>"Scene 12. The Goodbye. Take 1."</p>
 
-                    <p>Kumunot ang noo niya. "Si Cent? Bakit si Cent?"</p>
+                    <p>Nakatayo si Cent at Lia sa gilid ng railing. Ang background nila ay ang orange na langit at ang silhouette ng city skyline. Ang ganda ng shot. Pang-award winning.</p>
 
-                    <p>"Diba sabi mo… crush mo since 1st Year? Diba narinig ko kayo ni Trina?"</p>
+                    <p>"Action!"</p>
 
-                    <p>Tumawa siya. Yung tawang may halong disbelief.</p>
+                    <p>Tumingin si Lia kay Cent. Ang galing ni Lia. Agad-agad, nasa character na siya. Ang mata niya, puno ng lungkot at pag-asa.</p>
 
-                    <p>"Gio! Si Cent ang bridge! Siya yung tinatanungan ko kung anong gusto mo! Siya yung nagkukuwento sa akin na loner ka daw!"</p>
-
-                    <p>Napanganga ako.</p>
-
-                    <p>So, sa loob ng walong taon sa original timeline… akala ko ako ang extra. Yun pala, <strong>ako ang Bida.</strong></p>
-
-                    <p>Ako lang ang hindi nakakaalam kasi masyado akong busy sa pagiging insecure. Masyado akong busy sa pagtago sa likod ng camera kaya hindi ko nakitang nakatingin din pala siya sa akin.</p>
-
-                    <p>"Ang tanga ko," bulong ko. "Ang tanga, tanga ko."</p>
-
-                    <p>"Medyo," sang-ayon niya, nakangiti na ngayon. "Pero cute ka naman."</p>
-
-                    <p>Hinawakan niya ang kamay ko.</p>
-
-                    <p>"So?" tanong niya. "Ano na? Nabasa mo na. Ano sagot mo, Direk?"</p>
-
-                    <p>Tinitigan ko siya. Sa ilalim ng buwan, ang ganda niya. Mas maganda kaysa sa anumang litrato na nakuha ko. Wala nang script. Wala nang plano.</p>
-
-                    <p>Hinawakan ko ang mukha niya.</p>
-
-                    <p>"Lia," sabi ko. "Wala akong dalang letter. Pero may dala akong… spoiler."</p>
-
-                    <p>"Spoiler?"</p>
-
-                    <p>"Galing ako sa future," sabi ko. (Medyo risky, pero idadaan ko sa "joke" tone para hindi siya matakot). "At sa future… puro regrets ako. Kasi hindi ko nasabi sa'yo 'to."</p>
-
-                    <p>Lumapit ako lalo.</p>
-
-                    <p>"Mahal kita, Lia. Since Day 1. Since nung unang beses kitang nakita sa viewfinder ko. Ikaw lang. Walang iba."</p>
-
-                    <p>Nanlaki ang mga mata niya. Nangingilid ang luha.</p>
-
-                    <p>"Talaga?" bulong niya.</p>
-
-                    <p>"Oo. At ayoko nang maging cameraman lang. Gusto ko… ako na ang Leading Man mo."</p>
-
-                    <p>Ngumiti siya. Yung ngiting abot hanggang tenga.</p>
-
-                    <p>"Matagal na kitang Leading Man, Gio," sabi niya. "Ikaw lang ang mabagal sa pickup."</p>
-
-                    <p>Tumawa kami pareho. Tawa ng relief. Tawa ng saya. At dahan-dahan, nawala ang distansya sa pagitan namin.</p>
-
-                    <p>Yumuko ako. Tumunganga siya.</p>
-
-                    <p><span class="thought">Closing the gap.</span></p>
-
-                    <p>Ramdam ko ang hininga niya sa labi ko. Amoy strawberry candy.</p>
-
-                    <p>Pumikit ako.</p>
-
-                    <div class="script-direction">
-                        Wait. Cut. Lighting check. OK. Audio check. OK.<br>
-                        ACTION.
+                    <div class="script-box">
+                        <span class="script-char">LIA (ELLE):</span> So... hanggang dito na lang ba? Babalik na tayo sa dati?
                     </div>
 
-                    <p>Hinalikan ko siya.</p>
+                    <p>Huminga nang malalim si Cent. Tumingin siya kay Lia.</p>
 
-                    <p>Malambot. Matamis. Maingat. Hindi ito yung halik sa pelikula na aggressive. Ito yung halik ng pag-uwi.</p>
+                    <div class="script-box">
+                        <span class="script-char">CENT (MARK):</span> Hindi ko alam, Elle. Siguro... siguro mas mabuti kung... kung friends na lang tayo.
+                    </div>
 
-                    <p>Parang sinasabi ng mga labi namin ang lahat ng salitang hindi namin nasabi sa loob ng walong taon.</p>
+                    <p>"CUT!" sigaw ko.</p>
 
-                    <p><span class="thought">Sorry, natagalan ako. Andito na ako. Hindi na ako aalis.</span></p>
+                    <p>Napakamot ako sa ulo.</p>
 
-                    <p>Tumagal ang halik ng ilang segundo. O baka ilang minuto. Nawalan ako ng concept ng oras.</p>
+                    <p>"Cent!" tawag ko. "Pre, anong 'friends na lang'? Ang script, 'Hindi ko alam kung kaya kitang pakawalan ulit.' Bakit mo binago?"</p>
 
-                    <p>Nung humiwalay kami, pareho kaming habol ang hininga. Nakasandal ang noo ko sa noo niya.</p>
+                    <p>"Eh Direk!" reklamo ni Cent. "Ang cheesy kasi eh! 'Di ko kaya pakawalan'? Parang telenovela!"</p>
 
-                    <p>"Okay na ba 'yun?" tanong ko, nakapikit pa rin.</p>
+                    <p>"Drama nga eh!" sabi ko. "Romance 'to! Kailangan ng cheese! Kailangan ng pighati!"</p>
 
-                    <p>"Hmm," ungol niya. "Pwede na. Pero parang kailangan ng Take Two."</p>
+                    <p>"Ang hirap pre," iling ni Cent. "Hindi ko maramdaman. Parang ang fake kapag sinabi ko."</p>
 
-                    <p>Napamulat ako. Nakangiti siya nang nakakaloko.</p>
+                    <p>Tinignan ko ang relo ko. 15 minutes na lang bago lumubog ang araw. Nauubusan na kami ng ilaw.</p>
 
-                    <p>"Take Two?" tanong ko.</p>
+                    <p>Stress level: 9/10.</p>
 
-                    <p>"Oo. Para sure. Para sharp ang focus."</p>
+                    <p>"Trina, ilaw!" utos ko. "Keanu, ready ka lang."</p>
 
-                    <p>Natawa ako. Hinawakan ko siya sa bewang at hinila palapit.</p>
+                    <p>Lumapit ako kay Cent.</p>
 
-                    <p>"Okay. Take Two. Rolling."</p>
+                    <p>"Cent, ganito," paliwanag ko. "Isipin mo, ito na ang huling beses na makikita mo siya. Aalis na siya papuntang ibang bansa. Mawawala na siya sa buhay mo. Ganun kabigat."</p>
 
-                    <p>Hinalikan ko siya ulit. Mas malalim. Mas sigurado.</p>
+                    <p>"Try ko," sabi ni Cent.</p>
 
-                    <p>Sa moment na 'yun, naramdaman ko ang pagbabago ng timeline. Yung Future Gio na mag-isa sa condo? Naglalaho na siya. Napapalitan na siya ng memorya ng gabing ito.</p>
+                    <p>Take 2. Action.</p>
 
-                    <p>Yung Morning Dread? Wala na. Kasi hawak ko na ang gamot ko.</p>
+                    <p>Cent: "Hindi ko alam... kung kaya kitang... ano... bitawan?"</p>
 
-                    <p>Nung humiwalay kami ulit, niyakap niya ako nang mahigpit. Isiniksik niya ang mukha niya sa leeg ko.</p>
+                    <p>Cut. Masagwa.</p>
 
-                    <p>"Tayo na?" tanong niya.</p>
+                    <p>Take 3. Action.</p>
 
-                    <p>"Tayo na," sagot ko. "Wala nang bawian. Nasa kontrata na 'to."</p>
+                    <p>Cent: "Elle, wag ka nang umalis. Dito ka na lang." (Masyadong demanding).</p>
 
-                    <p>"Good," sabi niya. "Kasi pag iniwan mo ako, ipapabugbog kita kay Cent."</p>
+                    <p>Cut.</p>
 
-                    <p>"Di mangyayari 'yun," bulong ko. Hinalikan ko ang tuktok ng ulo niya.</p>
+                    <p>"Cent!" sigaw ko, frustrated na. "Pre, malapit na mawala yung araw! Sayang yung shot!"</p>
 
-                    <p>Tumingin ako sa langit.</p>
+                    <p>"Eh hindi ko nga makuha eh!" sigaw pabalik ni Cent. "Ikaw na kaya dito?! Ang hirap ng pinapagawa mo!"</p>
 
-                    <p><strong>115 Million Kilometers.</strong></p>
+                    <p>Natahimik ang set.</p>
 
-                    <p>Ganun kalayo ang nilakbay ng liwanag bago makarating sa amin. Pero worth it ang byahe.</p>
+                    <p>Tumingin ako sa araw. Kalahati na lang ang nakasilip sa horizon. 5 minutes max.</p>
 
-                    <p>Dahil sa wakas… nasa frame na ako. At hindi na ako aalis.</p>
+                    <p>Wala nang oras para mag-coach. Kailangan ng visual aid.</p>
 
-                    <p><span class="sound-effect">CUT.</span></p>
+                    <p>"Okay," sabi ko. Binigay ko ang headphones ko kay Keanu. "Keanu, ikaw muna sa monitor. Cent, tabi ka muna. Panoorin mo ako."</p>
+
+                    <p>"Ha?" gulat ni Cent. "Ikaw aarte?"</p>
+
+                    <p>"Ipapakita ko lang sayo ang blocking at delivery," sabi ko. "Gayahin mo na lang mamaya. Bilis!"</p>
+
+                    <p>Pumwesto ako sa harap ni Lia.</p>
+
+                    <p>Kinabahan si Lia. Nakita ko ang slight na pagkagulat sa mata niya.</p>
+
+                    <p>"Game, Lia," sabi ko, seryoso. "Throw lines tayo. Ibato mo sa akin."</p>
+
+                    <p>Tumango siya. Shift to character.</p>
+
+                    <p>Naging si Elle siya ulit.</p>
+
+                    <p>Ang hangin sa rooftop, lumakas. Nilipad ang buhok ni Lia. Ang ilaw ng sunset, tumama sa mukha niya.</p>
+
+                    <p>Sobrang ganda.</p>
+
+                    <p>Sa moment na 'to, nawala ang camera. Nawala si Cent at Keanu. Kaming dalawa lang ni Lia sa taas ng mundo.</p>
+
+                    <div class="script-box">
+                        <span class="script-char">LIA (ELLE):</span> So... hanggang dito na lang ba? Babalik na tayo sa dati?
+                    </div>
+
+                    <p>Tinitigan ko siya.</p>
+
+                    <p>Sa script, si Mark ay isang lalaking takot mag-commit. Pero sa totoong buhay... ako si Gio na bumalik mula sa future para lang sa moment na 'to.</p>
+
+                    <p>Huminga ako nang malalim. Hinayaan kong lumabas ang walong taon ng paghihintay.</p>
+
+                    <div class="script-box">
+                        <span class="script-char">GIO (MARK):</span> Paano ako babalik sa dati... kung ikaw na ang mundo ko?
+                    </div>
+
+                    <p>Natigilan si Lia. Wala sa script 'yun. Adlib.</p>
+
+                    <p>Pero hindi siya bumitaw. Sinakyan niya ang emosyon ko.</p>
+
+                    <p><span class="script-char">LIA (ELLE):</span> Natatakot ka lang, Mark. Natatakot ka na baka masaktan ka ulit.</p>
+
+                    <p><span class="script-char">GIO (MARK):</span> Oo. Takot na takot ako.</p>
+
+                    <p>Humakbang ako palapit sa kanya. Isang hakbang.</p>
+
+                    <p>"Takot ako na baka sa huli, hindi ako sapat. Takot ako na baka isang araw, magising ako at wala ka na. Pero mas takot ako..."</p>
+
+                    <p>Hinawakan ko ang kamay niya. Ang lamig ng kamay niya.</p>
+
+                    <p>"...mas takot ako na palampasin ang pagkakataon na sabihin sa'yo 'to."</p>
+
+                    <p>Tumingin si Lia sa akin. Ang mga mata niya, nagniningning. Hindi ko alam kung acting pa ba 'to o totoo na.</p>
+
+                    <p><span class="script-char">LIA (ELLE):</span> Sabihin ang ano?</p>
+
+                    <p>Ito na. Ang climax line.</p>
+
+                    <p>Sa script: "Na mahal pa rin kita."</p>
+
+                    <p>Pero binago ko.</p>
+
+                    <p>Tinitigan ko siya. Mata sa mata. Soul to soul.</p>
+
+                    <p><strong>GIO:</strong> "Na mahal kita. Since Day 1."</p>
+
+                    <p>Since Day 1.</p>
+
+                    <p>Yung unang araw na nakita kita sa enrollment. Yung unang araw na nginitian mo ako. Yung mga araw na nasa gilid lang ako. Yung walong taon na nawala.</p>
+
+                    <p>Mahal kita, Lia. Since Day 1.</p>
+
+                    <p>Naramdaman ko ang pagpigil ng hininga ni Lia.</p>
+
+                    <p>Hindi siya nakagalaw.</p>
+
+                    <p>Ang hangin, huminto. Ang ingay ng campus sa baba, nawala.</p>
+
+                    <p>Dahan-dahan, yumuko ako palapit sa mukha niya.</p>
+
+                    <p>Nakatingin siya sa labi ko. Tumingin ako sa labi niya.</p>
+
+                    <p>Magnetic pull. Gravity.</p>
+
+                    <p>Nakita kong pumikit siya.</p>
+
+                    <p><span class="thought">Wait. Pumikit siya?</span></p>
+
+                    <p>Ibig sabihin... she wants it too?</p>
+
+                    <p>Lalapit pa sana ako. Konti na lang. Isang inch na lang.</p>
+
+                    <p>Konti na lang, mababago na ang history. Konti na lang, hindi na ako Director. Leading Man na ako.</p>
+
+                    <p><span class="sound-effect">"CUT!"</span> sigaw ni Keanu.</p>
+
+                    <p>BLAG.</p>
+
+                    <p>Bumalik ako sa realidad. Napadilat si Lia.</p>
+
+                    <p>Napalayo ako agad. Bumilis ang tibok ng puso ko. Dug-dug-dug-dug.</p>
+
+                    <p>"Ang ganda nun Direk!" sigaw ni Keanu habang pumapalakpak. "Solid! Kuhang-kuha yung emosyon!"</p>
+
+                    <p>"Woah," sabi ni Cent, nakanganga. "Grabe. Ganun pala dapat? Ang intense, pre! Kinilabutan ako!"</p>
+
+                    <p>Tumingin ako kay Lia.</p>
+
+                    <p>Nakatingin siya sa akin. Namumula ang mukha. Hawak niya ang dibdib niya.</p>
+
+                    <p>Gulat.</p>
+
+                    <p>Putek. Muntik na. Muntik ko na siyang halikan. Sa harap ng barkada. Sa gitna ng shooting.</p>
+
+                    <p>"A-ah," utal ko. "G-ganun. Ganun dapat, Cent. Gets mo na?"</p>
+
+                    <p>Tumango si Cent, pero nakatingin pa rin siya sa amin ni Lia nang may pagdududa. "O-oo. Gets ko na. Intense ah. Parang... totoo."</p>
+
+                    <p>"Method acting," palusot ko, kahit nanginginig ang tuhod ko. "Kailangan ibigay lahat."</p>
+
+                    <p>Tinignan ko ang araw. Lubog na. Wala na ang Golden Hour.</p>
+
+                    <p>"Shit," sabi ko. "Wala na yung ilaw."</p>
+
+                    <p>"Paano yan?" tanong ni Trina. "Hindi natin nakunan si Cent!"</p>
+
+                    <p>Huminga ako nang malalim. Tumingin ako kay Lia.</p>
+
+                    <p>Yung tingin niya... hindi na acting 'yun.</p>
+
+                    <p>"Okay lang," sabi ko. "Gamitin natin yung take na 'yun."</p>
+
+                    <p>"Ha?" tanong ni Cent. "Yung take niyo ni Lia?"</p>
+
+                    <p>"Oo," desisyon ko. "Naka-record naman diba, Keanu?"</p>
+
+                    <p>"Oo Direk, clear na clear."</p>
+
+                    <p>"Pero Direk," sabi ni Cent. "Hindi ako 'yun! Ikaw 'yun!"</p>
+
+                    <p>"Shadow shot," palusot ko. "Silhouette naman eh. Madilim na. Hindi halata na ako 'yun. Parehas naman tayong built. Sa editing ko na lang dadayain."</p>
+
+                    <p>Kasinungalingan. Kitang-kita na ako 'yun. Pero wala na akong pakialam.</p>
+
+                    <p>Gusto ko yung shot na 'yun. Gusto kong i-keep. Gusto kong maging part ng pelikula ang katotohanan ko.</p>
+
+                    <p>"Okay, pack up!" sigaw ko, tumalikod agad para itago ang mukha kong sobrang pula. "Tapos na ang Static!"</p>
+
+                    <p>Naghiyawan sila Keanu at Trina. "It's a wrap!"</p>
+
+                    <p>Habang nagliligpit sila ng gamit, naramdaman ko ang presensya ni Lia sa likod ko.</p>
+
+                    <p>"Gio," bulong niya.</p>
+
+                    <p>Lumingon ako.</p>
+
+                    <p>"Yung sinabi mo..." simula niya.</p>
+
+                    <p>"Alin dun?" maang-maangan ko. "Yung blocking?"</p>
+
+                    <p>"Yung Since Day 1," sabi niya. Tinitigan niya ako. "Script ba 'yun? Wala naman sa script 'yun ah."</p>
+
+                    <p>Napalunok ako.</p>
+
+                    <p>Sasabihin ko na ba? Aaminin ko na ba?</p>
+
+                    <p>Tumingin ako sa kanya.</p>
+
+                    <p>"Adlib lang," ngiti ko nang pilit. "Diba sabi mo, mas gusto mo yung frustrated na character? Kaya dinagdagan ko."</p>
+
+                    <p>Tinitigan niya ako nang matagal. Hindi siya naniniwala. Alam kong hindi siya naniniwala.</p>
+
+                    <p>Pero ngumiti rin siya. Isang misteryosong ngiti.</p>
+
+                    <p>"Okay," sabi niya. "Magaling na adlib, Direk. Muntik na akong maniwala."</p>
+
+                    <p>Tinalikuran niya ako at lumapit kay Trina.</p>
+
+                    <p>Napahawak ako sa puso ko.</p>
+
+                    <p>Muntik na.</p>
+
+                    <p>Pero alam ko... alam niya.</p>
+
+                    <p>Hindi pa kami nag-uusap nang diretsahan. Pero sa eksenang 'yun, sa rooftop na 'yun, nagkaintindihan kami.</p>
+
+                    <p>The script is broken. Reality is leaking in.</p>
+
+                    <p>At sa unang pagkakataon, hindi ako natatakot sa kung anong susunod na eksena.</p>
                 </div>
 
                 <div class="chapter-nav">
