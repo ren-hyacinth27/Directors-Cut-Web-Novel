@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ch. 13 - The Bench Yell (Rehearsal) | Director's Cut</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Ch. 13 - The Audition | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
@@ -24,6 +24,7 @@
 
         .thought { font-style: italic; color: #555; }
         .sound-effect { font-family: 'Patrick Hand', cursive; font-weight: 700; font-size: 1.1rem; color: var(--sunset-orange); letter-spacing: 1px; }
+        .dialogue-strong { font-weight: bold; color: #333; }
         
         /* Scene Header Style */
         .scene-header {
@@ -38,45 +39,40 @@
             border-bottom: 1px solid #e0e0e0;
         }
 
-        /* Technical Note (Sticky Note Style) */
-        .tech-note { 
-            font-family: 'Patrick Hand', cursive; 
-            background: #ffecb3; /* Orange/Yellow sticky note */
-            color: #333;
-            padding: 15px 20px; 
-            border: 1px solid #e0e0e0;
-            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-            transform: rotate(1deg);
-            display: block;
-            margin: 30px auto;
-            text-align: center;
-            max-width: 85%;
-            font-size: 1.1rem;
-        }
-
-        /* Camera/Audio Stats Note (Dark Box) */
-        .camera-note {
+        /* Script/Dialogue Box */
+        .script-box {
             font-family: 'Courier Prime', monospace;
-            background: #2c2c2c;
-            color: #0f0; /* Retro green terminal text */
-            padding: 15px;
-            border-radius: 5px;
-            margin: 30px auto;
-            max-width: 350px;
-            text-align: left;
-            font-size: 0.9rem;
-            box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
-            transform: rotate(-1deg);
+            background: #eee;
+            padding: 20px;
+            border-left: 5px solid #555;
+            margin: 30px 0;
+            font-size: 1rem;
+            color: #333;
         }
+        .script-char { font-weight: bold; text-transform: uppercase; }
+        .script-direction { font-style: italic; color: #666; font-size: 0.9em; }
 
-        /* Big Scream Style */
-        .scream {
-            font-size: 1.8rem;
+        /* Clapperboard Box */
+        .clapper-box {
+            background: #222;
+            color: #fff;
+            padding: 15px;
             text-align: center;
-            display: block;
-            margin: 40px 0;
-            transform: rotate(-2deg);
-            color: #d32f2f; /* Red for clipping/intensity */
+            font-family: 'Courier Prime', monospace;
+            font-weight: bold;
+            margin: 20px auto;
+            max-width: 300px;
+            border-top: 5px solid #fff;
+            border-bottom: 5px solid #fff;
+            background-image: repeating-linear-gradient(135deg, #222, #222 10px, #fff 10px, #fff 20px);
+            background-size: 100% 10px;
+            background-repeat: no-repeat;
+            padding-top: 25px; 
+        }
+        .clapper-text {
+            background: #222;
+            padding: 10px;
+            border: 2px solid #fff;
         }
 
         .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
@@ -106,258 +102,264 @@
                 
                 <div class="chapter-header">
                     <span class="chap-num">Chapter 13</span>
-                    <h1 class="chap-title">The Bench Yell (Rehearsal)</h1>
+                    <h1 class="chap-title">The Audition</h1>
                 </div>
 
                 <div class="story-text">
-                    <p>Sa audio editing, may tinatawag kaming <strong>Clipping</strong>.</p>
+                    <div class="scene-header">INT. CLASSROOM 404 - LATE AFTERNOON</div>
 
-                    <div class="tech-note">
-                        <strong>DEFINITION:</strong><br>
-                        Ito yung kapag sobrang lakas ng input ng sound—kapag sumigaw ka sa mic nang walang control—lumalagpas ang wave sa limit. Nagiging pula ang meter. Distorted ang labas. Basag.
+                    <p>May kakaibang energy kapag ang isang classroom ay ginawang studio.</p>
+
+                    <p>Inurong namin ang lahat ng armchairs sa gilid. Tinakpan ni Keanu ang mga bintana gamit ang manila paper para ma-control ang lighting. Sa gitna, may dalawang upuan na nakaharap sa isa't isa. May masking tape sa sahig—marking kung saan dapat tumayo ang actors.</p>
+
+                    <p>"Quiet on the set!" sigaw ko.</p>
+
+                    <p>Tumahimik ang buong room. Pati si Trina na nagbibilang ng barya para sa budget, tumigil.</p>
+
+                    <p>Nakatayo ako sa likod ng tripod. Naka-set up ang Canon 700D. Nakakabit ang shotgun mic.</p>
+
+                    <p>Sa Original Timeline, wala kaming ganitong prep. Basta na lang kami nag-shoot sa hallway, maingay, magulo. Ang ending, hindi marinig ang dialogue dahil sa ingay ng electric fan.</p>
+
+                    <p>Pero ngayon, hindi pwede ang "pwede na."</p>
+
+                    <p>"Okay," sabi ko, tinignan ang script. "Scene 1. The Breakup. Take 1."</p>
+
+                    <p>Nakaupo sa gitna si Cent at Lia.</p>
+
+                    <p>Si Cent, naka-polo shirt (costume). Si Lia, naka-blouse.</p>
+
+                    <p>"Action!"</p>
+
+                    <p>Huminga nang malalim si Cent. Tumingin siya kay Lia.</p>
+
+                    <div class="script-box">
+                        <span class="script-char">CENT:</span> Bakit... bakit mo ginagawa 'to, Elle? Diba masaya naman tayo?<br><br>
+                        <span class="script-char">LIA:</span> Hindi na ako masaya, Mark. Pagod na ako. Gusto ko nang... gusto ko nang lumipad.
                     </div>
 
-                    <p>Sa loob ng walong taon, ang buhay ko ay isang mahabang silent film. Takot akong mag-clipping. Takot akong maging "too much." Kaya laging modulated ang boses ko. Laging mahina. Laging safe.</p>
+                    <p>Medyo stiff si Cent. Parang nagbabasa ng teleprompter.</p>
 
-                    <p>Pero ngayon, tatlong araw bago ang Cheerdance Competition, kailangan kong basagin ang audio meter.</p>
+                    <p>Huminto ako. Napakunot ang noo ko.</p>
 
-                    <div class="scene-header">EXT. GRANDSTAND - NIGHT</div>
-                    <p style="text-align: center; font-family: 'Patrick Hand', cursive; color: var(--text-light);">6:00 PM.</p>
+                    <p>"Cut!" sigaw ko.</p>
 
-                    <p>"Mahina! Ulit!" sigaw ng coach namin.</p>
+                    <p>Tumingin sila sa akin.</p>
 
-                    <p>Hinihingal ako. Nakatayo kami sa formation. Pyramid stance. Ako ang base (dahil hindi naman ako payat, hindi rin mataba, perfect pambuhat).</p>
+                    <p>"Cent," sabi ko, lumapit sa kanila. "Pre, ex-boyfriend ka dito na iiwanan. Hindi ka nag-oorder sa Jollibee. Lagyan mo ng sakit."</p>
 
-                    <p>"Rabbits! Are you ready?!" sigaw ng captain.</p>
+                    <p>"May sakit naman ah!" depensa ni Cent. "Naka-kunot na nga noo ko o."</p>
 
-                    <p>"YES! WE ARE READY!" sagot ng team.</p>
+                    <p>"Hindi sa noo nakikita ang sakit, sa mata," paliwanag ko. "Isipin mo, last 2 minutes ng championship game, tapos na-foul out ka. Ganun."</p>
 
-                    <p>Sumigaw ako. Pero narinig ng coach na kulang.</p>
+                    <p>Nagliwanag ang mukha ni Cent. "Ah! Gets! Foul out! Sige, sige."</p>
 
-                    <p>"Gio Cruz!" turo sa akin ni Coach. "Anong klaseng sigaw 'yan? Parang humihingi ka lang ng tawad! Sigaw na parang nananalo! Ulit!"</p>
+                    <p>Tumingin ako kay Lia.</p>
 
-                    <p>Napailing ang mga ka-team ko. Pagod na sila. Gusto na nilang umuwi. Ako ang bottleneck.</p>
+                    <p>"Lia," sabi ko.</p>
 
-                    <p>"Sorry Coach," sabi ko, pinupunasan ang pawis.</p>
+                    <p>"Yes, Direk?" ngiti niya. Yung ngiting 'Muse'. Cute. Charming.</p>
 
-                    <p>"Last run! Pag hindi pa narinig ni Gio ang boses niya, walang uuwi!"</p>
+                    <p>"Wag kang ngumiti," seryoso kong sabi.</p>
 
-                    <p><strong>Pressure.</strong></p>
+                    <p>Nawala ang ngiti niya. "Ha?"</p>
 
-                    <p>Sa original timeline, ito ang part na napahiya ako. Umiyak ako (patago) pagkauwi dahil feeling ko pabigat ako. Ang ending, nung competition mismo, nag-lip sync lang ako sa yell. Fake enthusiasm.</p>
+                    <p>"Nakikipag-break ka," sabi ko. "Seryoso ang eksena. Ang dialogue mo, 'Pagod na ako.' Pero ang mukha mo, parang nagpapa-cute ka sa camera."</p>
 
-                    <p>Pero hindi pwedeng fake ngayon. Kailangan kong mahanap ang boses ko.</p>
+                    <p>Natigilan siya. Medyo namula ang pisngi niya. Hindi siya sanay na pinupuna. Usually kasi, lahat ng gawin niya, perfect agad sa paningin ng iba.</p>
 
-                    <hr class="divider">
+                    <p>"Sorry," bulong niya. "Ulitin ko."</p>
 
-                    <p>Natapos ang practice nang medyo passable lang. Pinauwi na kami ni Coach, pero halatang disappointed siya.</p>
+                    <p>"Okay. Back to one. Action!"</p>
 
-                    <p>Isa-isang nag-alisan ang mga teammates ko. Si Cent, tinapik ako. "Kaya mo 'yan pre. Pahinga lang." Si Keanu, nag-joke, "Inom ka kasing salabat!"</p>
+                    <p>Umakte ulit sila.</p>
 
-                    <p>Naiwan ako.</p>
+                    <p>Cent: "Bakit mo ginagawa 'to?" (Mas okay na ngayon, may konting desperation).</p>
 
-                    <p>Umupo ako sa pinakamataas na bench ng grandstand.</p>
+                    <p>Lia: "Hindi na ako masaya, Mark. Pagod na ako."</p>
 
-                    <p>Madilim na ang oval. Ang tanging ilaw ay galing sa post lights sa labas ng campus. Ang hangin, malamig pero amoy alikabok.</p>
+                    <p>Malamya pa rin. Kulang sa diin. Parang nagbabasa lang ng script sa play ng Buwan ng Wika.</p>
 
-                    <p>Huminga ako nang malalim. Hinawakan ko ang leeg ko. Masakit. Gasgas.</p>
+                    <p>"Cut!"</p>
 
-                    <p><span class="thought">Bakit ba ang hirap sumigaw?</span></p>
+                    <p>Bumuntong-hininga ako. "Lia, kulang."</p>
 
-                    <p>Pumikit ako. Sinubukan kong hukayin ang pinanggagalingan ng boses.</p>
+                    <p>"Anong kulang?" medyo iritado na siya. "Sinabi ko naman nang maayos ah?"</p>
 
-                    <p>Nakita ko ang condo ko sa 2026. Nakita ko ang mga gamot sa mesa. Nakita ko ang wedding video ni Lia na paulit-ulit kong ini-edit. Nakita ko ang sarili ko na nakatulala sa kisame, gustong sumigaw pero walang lumalabas na tunog kasi mag-isa lang naman ako. Walang makakarinig.</p>
+                    <p>"Sinabi mo lang," sagot ko. "Pero hindi mo naramdaman."</p>
 
-                    <p>Ang bigat.</p>
+                    <p>Lumapit ako sa kanya. Ang lapit. Pumasok ako sa personal space niya.</p>
 
-                    <p>Ang bigat ng walong taon na itinago ko sa dibdib ko. Ang daming "Mahal kita" na hindi nasabi. Ang daming "Tulong" na hindi narinig. Ang daming "Ayoko na" na nabulunan sa lalamunan.</p>
+                    <p>"Lia," bulong ko para kaming dalawa lang ang makarinig. "Si Elle, yung character mo... frustrated Journalist siya. Gusto niyang magsalita, pero pinipigilan siya ni Mark. Pinipigilan siya ng mundo."</p>
 
-                    <p>Dito. Dito ko dapat ilabas.</p>
+                    <p>Tinitigan ko siya sa mata.</p>
 
-                    <p>Tumayo ako sa bench. Mag-isa sa dilim. Humarap ako sa kawalan ng oval track.</p>
+                    <p>"Isipin mo yung sinabi mo sa akin sa Bolinao. Yung gusto mong maging Broadcaster pero sabi ng Papa mo, 'wag na lang kasi delikado'. Yung pakiramdam na gusto mong sumigaw pero kailangan mong maging 'Safe'."</p>
 
-                    <p>"Ahhh," simula ko. Mahina.</p>
+                    <p>Nakita kong nagbago ang timpla ng mata niya. Natamaan siya.</p>
 
-                    <p><span class="thought">Hindi pwede. Gain up.</span></p>
+                    <p>"Gamitin mo 'yun," sabi ko. "Wag kang umarte na parang si Lia na Muse. Maging si Elle ka na tinanggalan ng boses."</p>
 
-                    <p>"Ahhhh!" Mas malakas.</p>
+                    <p>Umatras ako. Bumalik ako sa camera.</p>
 
-                    <p>Kulang pa. Nasa lalamunan pa lang. Dapat galing sa diaphragm. Dapat galing sa kaluluwa.</p>
+                    <p>Tahimik ang buong room. Si Keanu, hindi humihinga. Si Trina, nakanganga. First time nilang makita si Gio na ganito ka-intense.</p>
+                    
+                    <div class="clapper-box">
+                        <div class="clapper-text">
+                            SCENE 1 - TAKE 3<br>
+                            DIRECTOR: GIO CRUZ
+                        </div>
+                    </div>
 
-                    <p>Inisip ko si Sir Vren. <em>The Director eats last.</em></p>
-                    <p>Inisip ko si Lia. Yung ngiti niya kanina.</p>
-                    <p>Inisip ko ang takot na baka mawala ulit ang lahat.</p>
+                    <p>"Take 3," sabi ko. "Action."</p>
 
-                    <p>Bumwelo ako.</p>
+                    <p>Tumingin si Cent kay Lia. "Bakit mo ginagawa 'to, Elle? Diba masaya naman tayo? Safe ka naman dito sa akin ah?"</p>
 
-                    <p>Hinugot ko ang hangin mula sa dulo ng lungs ko, dumaan sa tiyan, umakyat sa dibdib, hanggang sa lalamunan.</p>
+                    <p>(Nice adlib, Cent. "Safe." Gumana ang coaching ko).</p>
 
-                    <span class="sound-effect scream">"AAAAAAAAAAHHHHHHHHHH!!!!!!!!"</span>
+                    <p>Tumingin si Lia kay Cent.</p>
 
-                    <p>Sumigaw ako.</p>
+                    <p>Sa loob ng ilang segundo, walang nagsalita. Nakita ko ang pagtaas-baba ng dibdib ni Lia. Nakita ko ang panginginig ng panga niya.</p>
 
-                    <p>Hindi ito yell ng Cheerdance.</p>
+                    <p>Hindi na siya si Lia na classmate namin.</p>
 
-                    <p>Ito ay sigaw ng isang taong galit. Sigaw ng isang taong pagod. Sigaw ng isang taong lumalaban.</p>
+                    <p>"Safe?" bulong niya. Basag ang boses.</p>
 
-                    <span class="sound-effect scream">"PUTANGINAAAAAA!!!!"</span>
+                    <p>Tumaas ang tingin niya. May luha na sa gilid ng mata niya, pero hindi 'yun luha ng pagpapa-awa. Luha 'yun ng galit.</p>
 
-                    <p>Umalingawngaw ang boses ko sa buong grandstand. Nag-echo sa semento.</p>
+                    <p>"Yun na nga ang problema eh!" sigaw niya bigla.</p>
 
-                    <p>Ramdam ko ang pag-vibrate ng vocal cords ko. Masakit, pero masarap. Para akong nagluwa ng maitim na usok.</p>
+                    <p>Nagulat si Cent. Pati ako, nagulat.</p>
 
-                    <p>Napaluhod ako sa bench. Hinihingal. Umuuga ang balikat.</p>
+                    <p>"Sobrang safe!" tuloy ni Lia, garalgal ang boses pero matapang. "Sa sobrang safe, para na akong nakakulong! Hindi mo ba naiintindihan, Mark? Ayoko ng safe! Gusto kong maramdaman na buhay ako! Kahit masaktan, kahit madapa... basta ako ang pumili!"</p>
 
-                    <p>Ang sarap pala. Ang sarap mag-ingay.</p>
+                    <p>Tumulo ang luha niya. Isang butil. Perfect timing.</p>
 
-                    <p>"Grabe. Galit na galit gustong manakit?"</p>
+                    <p>"Pagod na akong maging spectator sa sarili kong buhay," bulong niya sa huli.</p>
 
-                    <p>Napatingala ako.</p>
+                    <p>Katahimikan.</p>
 
-                    <p>Sa hagdan ng grandstand, may nakatayong anino.</p>
+                    <p>Sobrang tahimik ng classroom, rinig mo ang ugong ng aircon.</p>
 
-                    <p><strong>Lia.</strong></p>
+                    <p>Si Cent, natulala. Nakalimutan ang susunod na line niya.</p>
 
-                    <p>May hawak siyang dalawang bote ng tubig. Naka-jogging pants at t-shirt. Nakasabit ang towel sa balikat.</p>
+                    <p>"Cut," sabi ko nang mahina.</p>
 
-                    <p>Akala ko umuwi na siya.</p>
+                    <p>Bumalik sa reyalidad si Lia. Pinunasan niya agad ang luha niya. "Okay ba? Masyado bang OA?"</p>
 
-                    <p>"Kanina ka pa dyan?" tanong ko, medyo paos.</p>
+                    <p>Ngumiti ako. Yung totoo.</p>
 
-                    <p>"Kakarating lang," sabi niya, bumababa ng hagdan palapit sa akin. "Naiwan ko kasi yung knee support ko. Tapos narinig ko may sumisigaw ng 'Putangina'. Akala ko may pinapatay."</p>
+                    <p>"Perfect," sabi ko. "Good take."</p>
 
-                    <p>Umupo siya sa tabi ko. Inabot niya ang isang bote ng tubig.</p>
+                    <p>Nagpalakpakan sila Keanu at Trina. "Grabe Lia! Pang-FAMAS!"</p>
 
-                    <p>"O. Baka mapatid ugat mo sa leeg."</p>
+                    <p>Si Cent, napakamot sa ulo. "Luh, kinabahan ako dun ah. Akala ko talaga hinihiwalayan mo na ako, Lia."</p>
 
-                    <p>Kinuha ko at ininom. Malamig. Heaven.</p>
+                    <p>Tumawa si Lia, pero medyo shaky pa rin ang tawa niya. Nadala siya sa emosyon.</p>
 
-                    <p>"Sorry," sabi ko. "Nagpa-practice lang."</p>
+                    <p>"Break muna!" sigaw ko. "15 minutes. Good job, team."</p>
 
-                    <p>"Practice ba 'yun?" tawa niya. "Parang exorcism eh."</p>
+                    <p>Lumabas muna sina Cent at Keanu para mag-CR. Si Trina, lumabas para bumili ng merienda.</p>
 
-                    <p>Natawa rin ako nang mahina. "Ganun talaga kapag maraming demonyo sa loob."</p>
+                    <p>Naiwan kami ni Lia sa room.</p>
 
-                    <p>Tumahimik kami sandali. Pinanood namin ang mga sasakyan na dumadaan sa highway sa malayo.</p>
+                    <p>Umupo siya sa isang armchair sa gilid, nakatulala sa sahig. Pagod. Acting is draining, lalo na kapag humuhugot ka sa totoong trauma.</p>
 
-                    <p>"Gio," basag niya sa katahimikan.</p>
+                    <p>Kumuha ako ng tubig sa bag ko at lumapit sa kanya.</p>
+
+                    <p>"O," abot ko.</p>
+
+                    <p>Tinanggap niya. "Salamat."</p>
+
+                    <p>Ininom niya ang tubig. "Grabe ka mag-direk," sabi niya, hindi nakatingin sa akin. "Nakakatakot ka."</p>
+
+                    <p>"Sorry," sabi ko, umupo sa desk sa harap niya. "Kailangan eh. Sayang kasi. Alam kong kaya mo, ayaw mo lang ilabas."</p>
+
+                    <p>Tumingin siya sa akin. Ang mata niya, medyo mapula pa.</p>
+
+                    <p>"Paano mo nalaman na gagana 'yun?" tanong niya. "Yung... yung sinabi mo tungkol kay Papa?"</p>
+
+                    <p>"Kasi parehas tayo," sabi ko.</p>
+
+                    <p>Kumunot ang noo niya.</p>
+
+                    <p>"Ako rin naman," kwento ko. "Buong buhay ko, nasa safe side lang. Hawak camera. Tago sa likod. Takot mag-take ng risk."</p>
+
+                    <p>Tinitigan ko siya.</p>
+
+                    <p>"Kaya naiintindihan kita, Lia. Alam ko yung feeling na may gusto kang gawin pero natatakot ka sa sasabihin ng iba."</p>
+
+                    <p>Ngumiti siya nang mapait. "So damay-damay na 'to? Parehas tayong repressed?"</p>
+
+                    <p>"Parang ganun na nga," tawa ko. "Kaya nga tayo ang gumagawa ng film na 'to diba? Para kahit papaano... makasigaw tayo."</p>
+
+                    <p>Tumahimik siya sandali. Pinaglaruan niya ang takip ng bote ng tubig.</p>
+
+                    <p>"Gio," tawag niya.</p>
 
                     <p>"Hmm?"</p>
 
-                    <p>"Bakit ka galit?"</p>
-
-                    <p>Tumingin ako sa kanya. Seryoso ang mukha niya. Hindi siya nagbibiro.</p>
-
-                    <p>"Hindi naman ako galit," depensa ko.</p>
-
-                    <p>"Weh?" Tumingin siya sa akin, yung piercing look niya. "Rinig ko sa boses mo, Gio. Hindi 'yun sigaw ng practice. Sigaw 'yun ng… ewan. Pain?"</p>
-
-                    <p>Ibinalik ko ang tingin sa kawalan.</p>
-
-                    <p><span class="thought">Hindi ko pwedeng sabihin sa kanya na galing ako sa future at traumatized ako.</span></p>
-
-                    <p>"Minsan kasi," simula ko, pinipili ang mga salita. "Pakiramdam ko… puno na ako. Puno ng expectations. Puno ng what ifs. Parang sasabog ako kung hindi ako sisigaw."</p>
-
-                    <p>Tumango siya. Parang naiintindihan niya. "Gets ko," sabi niya. "Ako rin."</p>
-
-                    <p>"Ikaw? Bakit? Eh ikaw ang bida. Muse. Maganda. Matalino."</p>
-
-                    <p>Ngumiti siya nang mapait. "Akala mo lang 'yun. Pero nakakapagod din maging Lia. Yung laging dapat nakangiti. Laging dapat okay. Bawal sumimangot kasi Muse eh. Bawal magkamali kasi Scholar eh."</p>
-
-                    <p>Tumingin siya sa akin.</p>
-
-                    <p>"Minsan, gusto ko ring sumigaw ng 'Putangina'. Pero bawal. Kasi bad words daw. Hindi bagay sa image ko."</p>
-
-                    <p>Napangisi ako.</p>
-
-                    <p>"Gusto mong i-try?" tanong ko.</p>
-
-                    <p>"Ha?"</p>
-
-                    <p>"Sumigaw," turo ko sa oval. "Wala namang tao. Madilim. Walang makakarinig kundi ako. At promise… hindi ko ire-record."</p>
-
-                    <p>Nagdalawang-isip siya. Tumingin siya sa paligid.</p>
-
-                    <p>"Nakakahiya," bulong niya.</p>
-
-                    <p>"Mas nakakahiya yung tinatago mo lang," sabi ko. Tumayo ako. Inilahad ko ang kamay ko sa kanya. "Tara. Sabay tayo."</p>
-
-                    <p>Tinignan niya ang kamay ko. Matagal. Tapos, tinanggap niya.</p>
-
-                    <p>Tumayo siya sa tabi ko.</p>
-
-                    <p>"Paano ba?" tanong niya.</p>
-
-                    <p>"Huwag sa lalamunan," turo ko, hinawakan ang tiyan ko. "Dito. Sa diaphragm. Isipin mo lahat ng inis mo. Kay Sir Magsanoc. Sa Coach. Sa pressure. Sa akin. Sa lahat."</p>
-
-                    <p>Pumikit siya. Huminga nang malalim.</p>
-
-                    <p>"Ready?" tanong ko.</p>
-
-                    <p>"Ready."</p>
-
-                    <p>"One. Two. Three. SIGAW!"</p>
-
-                    <span class="sound-effect scream">"AAAAAAHHHHHHHHHHHH!!!!!"</span>
-
-                    <p>Sumigaw kami. Sabay.</p>
-
-                    <p>Ang boses ko, malalim at garalgal. Ang boses niya, mataas at matinis. Naghalo ang boses namin sa hangin. Isang harmony ng frustration at release.</p>
-
-                    <p><span class="sound-effect">"AYOKO NAAAAA!!!! PAGOD NA AKOOOO!!! TANGINAAAA!!!"</span> sigaw ni Lia.</p>
-
-                    <p>Nagulat ako. Ang lutong ng mura niya.</p>
-
-                    <p>Tumagal ang sigaw namin ng limang segundo. Sampung segundo. Hanggang sa maubusan kami ng hininga.</p>
-
-                    <p>Pagkatapos, katahimikan.</p>
-
-                    <p>Tumingin ako sa kanya. Hinihingal siya. Gulo-gulo ang buhok. Namumula ang mukha. Tumingin siya sa akin.</p>
-
-                    <p>Bigla kaming natawa. Tawa na malakas. Tawa na parang mga baliw.</p>
-
-                    <p>"Grabe!" sabi niya, hawak ang tiyan kakatawa. "Ang sarap! Grabe ang sarap!"</p>
-
-                    <p>"Sabi sa'yo eh!" tawa ko rin. "Ang lutong ng mura mo ah! Hindi bagay!"</p>
-
-                    <p>"Che! Ngayon ko lang nagawa 'yun!"</p>
-
-                    <p>Umupo kami ulit sa bench, pagod pero magaan ang pakiramdam. Para kaming nag-gym ng emosyon. Cardio for the soul.</p>
-
-                    <p>Tumingin siya sa akin. Ang mga mata niya, kumikinang sa dilim.</p>
-
-                    <p>"Salamat, Gio," bulong niya.</p>
+                    <p>"Thank you," sabi niya.</p>
 
                     <p>"Para saan?"</p>
 
-                    <p>"Sa pagtuturo sa akin… na okay lang maging hindi okay."</p>
+                    <p>"Kasi..." nag-isip siya. "Kasi hindi mo ako bine-baby. Si Cent, si Keanu, si Trina... lagi nila akong trinatrato na parang bata o prinsesa na dapat ingatan. Pero ikaw... pinupush mo ako."</p>
 
-                    <p>Hinawakan niya ang kamay ko na nakapatong sa bench.</p>
+                    <p>Tumingin siya sa akin nang diretso.</p>
 
-                    <p>"Ready na tayo," sabi niya. "Sa competition."</p>
+                    <p>"Feeling ko, sineseryoso mo ako. Bilang tao. Hindi bilang Muse."</p>
 
-                    <p>Pinisil ko ang kamay niya.</p>
+                    <p><strong>Dug-dug.</strong></p>
 
-                    <p>"Oo," sabi ko. "Ready na."</p>
+                    <p>Ito na naman. Yung tibok ng puso ko na hindi ko mapigilan.</p>
 
-                    <p>Nung gabing 'yun, hindi lang boses ang nahanap ko. Nahanap ko rin ang boses niya. At narealize ko, hindi ko kailangang sumigaw mag-isa. May duet partner na ako.</p>
+                    <p>Sa Original Timeline, ang gusto ko lang ay mapansin niya ako. Pero ngayon, higit pa doon ang nakuha ko. Respeto.</p>
 
-                    <div class="camera-note">
-                        > SOUND CHECK: CLEAR<br>
-                        > SIGNAL: STRONG<br>
-                        > STATUS: CONNECTED
+                    <p>"Sineseryoso naman talaga kita," sabi ko. <span class="thought">(Double meaning. Bahala na kung ma-gets niya).</span> "At alam kong marami ka pang kayang ibuga. Intro pa lang yan."</p>
+
+                    <p>"Sus," irap niya, pero nakangiti. "Yabang mo na porket Director ka."</p>
+
+                    <p>"Syempre. Trabaho ko 'yun."</p>
+
+                    <p>Tumayo ako.</p>
+
+                    <p>"Pahinga ka na dyan. Aralin mo yung Scene 5. Mas mahirap 'yun. Kailangan mo nang sumigaw dun."</p>
+
+                    <p>"Opo, Direk," sarcastic niyang sagot.</p>
+
+                    <p>Naglakad ako pabalik sa camera para i-check ang footage.</p>
+
+                    <p>Sa maliit na LCD screen, pinanood ko ulit ang Take 3.</p>
+
+                    <p>Ang galing niya. Ang ganda niya. Hindi dahil naka-ayos siya, kundi dahil totoo siya.</p>
+
+                    <p>Sa video, kitang-kita ang galit at lungkot sa mata niya.</p>
+
+                    <div class="script-box">
+                        <span class="script-char">ELLE:</span> Pagod na akong maging spectator sa sarili kong buhay.
                     </div>
 
-                    <p>Handa na kami sa performance.</p>
+                    <p>Napangiti ako.</p>
 
-                    <p><span class="sound-effect">CUT.</span></p>
+                    <p>Buti ka pa, Elle/Lia, nasabi mo na. Ako, papunta pa lang dun.</p>
+
+                    <p>Pero at least, magkasama tayo sa byahe.</p>
+
+                    <p>Bumukas ang pinto. Pumasok na sina Cent na may dalang fishball.</p>
+
+                    <p>"Direk! Kain na!"</p>
+
+                    <p>"Game," sabi ko.</p>
+
+                    <p>Sinara ko ang LCD screen.</p>
+
+                    <p>Audition passed. Not just for the role, but for the partnership.</p>
                 </div>
 
                 <div class="chapter-nav">
                     <a href="chapter12.html" class="btn-sketch secondary nav-btn">
                         &larr; Previous
                     </a>
-                    <a href="#" class="btn-sketch primary nav-btn">
+                    <a href="chapter14.html" class="btn-sketch primary nav-btn">
                         Next Chapter &rarr;
                     </a>
                 </div>
