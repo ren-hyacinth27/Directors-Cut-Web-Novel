@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ch. 20 - 115 Million Kilometers of Film | Director's Cut</title>
+    <title>Ch. 20 - The Premiere | Director's Cut</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -17,6 +17,7 @@
         .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
         .story-text p { margin-bottom: 1.5em; }
         
+        /* Drop Cap */
         .story-text > p:first-of-type::first-letter {
             font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 10px; color: var(--pencil-blue); font-family: 'Patrick Hand', cursive; font-weight: 700;
         }
@@ -37,78 +38,38 @@
             border-bottom: 1px solid #e0e0e0;
         }
 
-        /* Screenplay Transition */
-        .fade-in {
-            font-family: 'Courier Prime', monospace;
-            font-weight: 700;
-            font-size: 1.2rem;
-            letter-spacing: 3px;
-            margin-bottom: 30px;
-            display: block;
-        }
-
-        /* Framed Photo Style */
-        .framed-photo {
-            background: #fff;
-            padding: 15px 15px 50px 15px;
-            border: 8px solid #8d6e63; /* Wood frame color */
-            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-            width: 80%;
-            margin: 40px auto;
-            transform: rotate(-1deg);
-            text-align: center;
-            position: relative;
-        }
-        .framed-photo::after {
-            content: "My Greatest Hit";
-            font-family: 'Patrick Hand', cursive;
-            position: absolute;
-            bottom: 15px;
-            left: 0;
-            width: 100%;
-            color: #555;
-            font-size: 1.2rem;
-        }
-        .photo-inner {
-            background: #eee;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #aaa;
-            font-size: 3rem;
-            border: 1px solid #ccc;
-        }
-
-        /* Phone Message */
-        .phone-msg {
-            background: #e1f5fe;
-            border-radius: 15px;
-            padding: 15px;
-            max-width: 320px;
-            margin: 20px 0;
-            border: 2px solid #b3e5fc;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
-        }
-
-        /* Final Credits */
-        .credits-roll {
-            background: #111;
+        /* Cinema Screen Style */
+        .cinema-screen {
+            background: #000;
             color: #fff;
-            padding: 40px 20px;
+            padding: 30px;
             text-align: center;
             font-family: 'Courier Prime', monospace;
-            margin-top: 60px;
+            margin: 40px 0;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
             border-radius: 5px;
+            border-top: 5px solid #333;
+            border-bottom: 5px solid #333;
         }
-        .credits-roll h3 { color: #fff; font-family: 'Courier Prime', monospace; letter-spacing: 2px; margin-bottom: 10px; font-size: 1.2rem; }
-        .credits-roll p { margin-bottom: 5px; font-size: 1.1rem; }
+        .movie-dialogue { font-style: italic; color: #ccc; margin-top: 10px; }
+
+        /* System Alert / Watch Style */
+        .system-alert {
+            background: #ffebee;
+            border: 2px solid #ef5350;
+            color: #c62828;
+            padding: 15px;
+            text-align: center;
+            font-family: 'Courier Prime', monospace;
+            font-weight: bold;
+            margin: 30px auto;
+            max-width: 300px;
+            transform: rotate(1deg);
+        }
 
         .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
 
-        .chapter-nav { display: flex; justify-content: center; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
+        .chapter-nav { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 40px; border-top: 2px dashed #ccc; }
         .nav-btn { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
     </style>
 </head>
@@ -133,238 +94,237 @@
                 
                 <div class="chapter-header">
                     <span class="chap-num">Chapter 20</span>
-                    <h1 class="chap-title">115 Million Kilometers of Film</h1>
+                    <h1 class="chap-title">The Premiere</h1>
                 </div>
 
                 <div class="story-text">
-                    <span class="fade-in">FADE IN.</span>
+                    <div class="scene-header">INT. UNIVERSITY AUDITORIUM - NIGHT</div>
 
-                    <div class="scene-header">INT. CONDO UNIT - DAY</div>
+                    <p>Friday. The Grand Premiere.</p>
 
-                    <p>Liwanag.</p>
+                    <p>Puno ang auditorium. Daan-daang estudyante, professors, at judges ang nakaupo sa dilim.</p>
 
-                    <p>Masakit sa mata ang sikat ng araw na tumatagos sa malaking bintana.</p>
+                    <p>Nakatayo kami ng barkada sa gilid ng stage. Naka-formal wear kami. Si Cent at Keanu, naka-polo at slacks (mukhang tao for once). Si Trina, naka-dress. Si Lia...</p>
 
-                    <p>Napabangon ako agad. Hingal na hingal. Basang-basa ng pawis.</p>
+                    <p>Napatingin ako sa kanya. Naka-simpleng itim na dress siya. Naka-curl nang konti ang buhok. Ang ganda niya. Sobra.</p>
 
-                    <p>"Hah... Hah..."</p>
+                    <p>Napansin niyang nakatingin ako. Ngumiti siya at kumindat.</p>
 
-                    <p>Kinapa ko ang dibdib ko. Ang bilis ng tibok ng puso ko. Tumingin ako sa paligid.</p>
+                    <p>"Kinakabahan ka ba, Direk?" bulong niya.</p>
 
-                    <p>Hindi ito ang kwarto ko sa 2018. Walang poster ng Pulp Fiction. Walang amoy ng floor wax.</p>
+                    <p>"Medyo," sagot ko, inaayos ang necktie ko. "Pero mas excited."</p>
 
-                    <p>Nasa condo ko ako. Mandaluyong. High-rise.</p>
+                    <p>Excited ako sa film. Pero mas excited ako sa after-party. Yung pangako niya sa rooftop.</p>
 
-                    <p>Napahawak ako sa ulo ko. Brain check. Walang headache. Walang brain zaps. Walang Morning Dread.</p>
+                    <p>Biglang namatay ang ilaw sa auditorium.</p>
 
-                    <p>Teka. Anong taon na?</p>
+                    <p>"Ladies and Gentlemen," boses ng Emcee. "For our final entry... presenting 'Static' by Group 4."</p>
 
-                    <p>Kinuha ko ang cellphone ko sa bedside table. iPhone 15. (Wala na yung basag na Android).</p>
+                    <p>Nagpalakpakan ang crowd.</p>
 
-                    <p style="font-family: 'Courier Prime', monospace; font-weight: bold;">January 8, 2026. <br> 8:00 AM.</p>
+                    <p>Bumukas ang projector.</p>
 
-                    <p>Bumalik na ako. Nasa future na ulit ako.</p>
+                    <p>Lumalabas sa malaking screen ang logo ng production house namin (na dinrawing lang ni Keanu sa MS Paint): <strong>Red Horse Productions.</strong> (Nagtawanan ang audience).</p>
 
-                    <p>Biglang pumasok ang takot. Ang alaala ng 2018… totoo ba 'yun? O panaginip lang ng isang depressed na videographer na nakatulog sa editing room?</p>
-
-                    <p>Si Lia. Nasaan si Lia?</p>
-
-                    <p>Tumalon ako mula sa kama. Tinakbo ko ang sala.</p>
-
-                    <p>Malinis ang condo. Walang kalat na take-out boxes. Walang nagtambak na labahin. May mga halaman sa gilid (Monstera, buhay na buhay). May nakasabit na paintings.</p>
-
-                    <p>Hinanap ko ang mesa ko. Ang Editing Station ko.</p>
-
-                    <p>Dati, puro reseta ng gamot at upos ng yosi ang nandoon.</p>
-
-                    <p>Ngayon… may nakapatong na Trophy. Gold. <strong>Cinemalaya Best Director 2025.</strong></p>
-
-                    <p>Napahawak ako sa trophy. Malamig. Totoo. Director ako? Hindi na lang SDE videographer?</p>
-
-                    <p>Pero hindi 'yan ang mahalaga.</p>
-
-                    <p>Hinanap ng mata ko ang litrato. Sa tabi ng monitor, may isang framed photo. Wooden frame. Luma na.</p>
-
-                    <div class="framed-photo">
-                        <div class="photo-inner">
-                            <i class="fas fa-laugh-squint"></i>
-                        </div>
+                    <div class="cinema-screen">
+                        [SCENE 1: THE ELEVATOR]<br>
+                        Mark (Cent) and Elle (Lia) trapped in silence.
                     </div>
 
-                    <p>Litrato ng isang grupo ng mga estudyante sa oval. Naka-yellow shirt. Wacky pose.</p>
+                    <p>Tahimik ang buong auditorium. Walang nagse-cellphone. Lahat nakatutok.</p>
 
-                    <p>Sa gitna, may isang lalaking tumatawa habang dinidilaan siya ng babaeng katabi niya sa pisngi.</p>
+                    <p>Ang ganda ng kulay. Salamat sa puyat ko sa color grading, mukhang pelikula talaga. Ang audio, malinaw. Ang acting...</p>
 
-                    <p><strong>Kami.</strong></p>
+                    <p>Pagdating sa Scene 9 (The Argument), narinig ko ang pagsinghap ng audience.</p>
 
-                    <p>Kami ni Lia. Nung 2018. Nung Intrams.</p>
-
-                    <p>Totoo. Nangyari. Hindi burado.</p>
-
-                    <p>Napaupo ako sa sahig. Niyakap ko ang litrato. Tumawa ako nang mag-isa. Tawa na may halong iyak.</p>
-
-                    <p><span class="thought">Nagbago ang script.</span></p>
-
-                    <p>Biglang tumunog ang phone ko.</p>
-
-                    <p><strong>Message from: Misis (Lia)</strong></p>
-
-                    <p>Nanlaki ang mata ko. Misis?! Wait. Fast forward masyado! Kasal na kami?!</p>
-
-                    <div class="phone-msg">
-                        "Hoy Direk! Gising ka na ba? Nasa venue na ako. Don't be late sa sarili mong Premiere Night! Love you! 😘"
+                    <div class="cinema-screen">
+                        ELLE:<br>
+                        "Pagod na akong maging spectator sa sarili kong buhay!"
                     </div>
 
-                    <p>Napamura ako sa tuwa. "Tangina! Love you too!"</p>
+                    <p>Damang-dama nila ang sakit. May nakita akong nagpupunas ng luha sa front row.</p>
 
-                    <p>Tumayo ako at nagmadali. Naligo (mabilisang banlaw). Nagbihis ng suit (Black, tailored fit, hindi na yung maluwag na damit). Isinuot ko ang Director's Cap ko—luma na at kupas, pero ito pa rin yung suot ko nung 2018.</p>
+                    <p>Tumingin ako kay Lia. Nakatingin siya sa screen, pero nakahawak siya sa braso ko. Mahigpit. Proud siya.</p>
 
-                    <p>Lumabas ako ng condo. Ang mundo, parang High Definition. Ang kulay ng langit, matingkad na asul. Walang filter.</p>
+                    <p>At pagdating sa Scene 12 (The Rooftop/Shadow Shot)...</p>
 
-                    <div class="scene-header">INT. CULTURAL CENTER OF THE PHILIPPINES (CCP) - NIGHT</div>
-
-                    <p><strong>Premiere Night.</strong></p>
-
-                    <p>Ang daming tao. May red carpet. May mga flashes ng camera.</p>
-
-                    <p>Nakita ko ang poster ng pelikula ko sa lobby.</p>
-
-                    <p><strong>Title:</strong> "115 Million Kilometers"<br>
-                    <strong>Directed by:</strong> Gio Cruz</p>
-
-                    <p>Ang poster ay shot ng isang babae sa tuktok ng pyramid, inaabot ang langit, habang umuulan ng confetti.</p>
-
-                    <p>Pumasok ako sa lobby. Hinahanap siya ng mata ko.</p>
-
-                    <p>Ang daming bumabati sa akin. "Congrats Direk!", "Sir Gio, pa-picture!"</p>
-
-                    <p>Ngumingiti ako, tumatango, pero lumilipad ang isip ko. <span class="thought">Nasaan na ang Lead Star ko?</span></p>
-
-                    <p>Sa gitna ng siksikan, parang Slow Motion na nahawi ang crowd.</p>
-
-                    <p>Nakita ko siya.</p>
-
-                    <p>Nakatayo sa may dulo ng red carpet. Naka-suot ng eleganteng orange dress (callback sa <em>Kahel na Langit</em>). Ang buhok niya, nakababa, wavy. Mas mature na siya tignan kaysa sa college student na iniwan ko sa 2018. May mga lines na sa gilid ng mata niya kapag ngumingiti, pero mas gumanda siya lalo.</p>
-
-                    <p>May kausap siya. Isang lalaking matangkad na may karga-kargang bata.</p>
-
-                    <p><strong>Si Cent.</strong> At ang bata… kamukha ni Cent.</p>
-
-                    <p>Lumapit ako.</p>
-
-                    <p>"Gio!" bati ni Cent. Niyakap ako (bro hug). "Congrats, pre! Solid ng trailer! Siguradong iiyak na naman kami nito."</p>
-
-                    <p>"Salamat, pre," sabi ko. Tinignan ko ang bata. "Inaanak ko?"</p>
-
-                    <p>"Oo! Si CJ," pakilala ni Cent. "Nagmana sa kagwapuhan ko, buti na lang."</p>
-
-                    <p>Tumawa kami. Buhay si Cent. Masaya siya. May sarili siyang pamilya.</p>
-
-                    <p>At si Lia… Humarap si Lia sa akin.</p>
-
-                    <p>Sa moment na 'yun, parang bumalik kami sa Timezone. Parang bumalik kami sa Rooftop. Parang bumalik kami sa mosh pit.</p>
-
-                    <p>Walang nagbago sa tingin niya. Yun pa rin ang tingin ng babaeng nakakakita sa akin—kahit nasa dilim ako, kahit nasa liwanag.</p>
-
-                    <p>"Hi," bati niya.</p>
-                    <p>"Hi," sagot ko.</p>
-
-                    <p>"Late ka," sabi niya, inaayos ang kwelyo ng suit ko. "Director ka pa naman."</p>
-
-                    <p>"Sorry," ngiti ko, hinawakan ang kamay niya. "Traffic sa EDSA. Mas malala kaysa sa time travel."</p>
-
-                    <p>Natawa siya. "Baliw."</p>
-
-                    <p>Hinila niya ako palapit. "Kinakabahan ka ba?" bulong niya.</p>
-
-                    <p>"Medyo," amin ko. "First time eh."</p>
-
-                    <p>"Wag kang kabahan," sabi niya. "Nandito lang ako. Audience mo."</p>
-
-                    <p>Naalala ko yung sinabi ko sa kanya sa oval. <em>Hanapin mo lang ako.</em> Ngayon, binalik niya sa akin.</p>
-
-                    <p>Hinawakan ko ang kamay niya. Napansin ko ang singsing sa daliri niya. Gold band.</p>
-
-                    <p><strong>Kasal na nga kami.</strong></p>
-
-                    <p>Hindi ko man nakita ang proposal, ang kasal, o ang first few years ng pagsasama namin sa bagong timeline… okay lang. Kasi nasa akin na ang Memory Card. Nasa akin na ang natitirang mga taon ng buhay namin.</p>
-
-                    <p>"Tara na?" yaya niya. "Mag-iistart na."</p>
-
-                    <hr class="divider">
-
-                    <p>Pumasok kami sa sinehan. Umupo kami sa gitna. Dumilim ang paligid.</p>
-
-                    <p>Bumukas ang projector. Ang liwanag, tumagos sa dilim.</p>
-
-                    <p>Nag-play ang kanta ng Official HigeDandism.</p>
-
-                    <p style="text-align:center;">🎵 <em>115 man kiro no firumu no naka ni...</em> 🎵</p>
-
-                    <p>Sa screen, lumabas ang opening scene. Isang montage ng mga grainy footage mula 2018.</p>
-
-                    <p>Si Lia na tumatawa sa bus. Si Lia na sumisigaw sa grandstand. Si Lia na nakatingin sa lens habang nasa pyramid.</p>
-
-                    <p>Naramdaman ko ang ulo ni Lia na sumandal sa balikat ko. Gaya ng dati. Gaya nung sa bus.</p>
-
-                    <p>Hinawakan ko ang kamay niya. Intertwined fingers.</p>
-
-                    <p>"Gio," bulong niya sa dilim.</p>
-                    <p>"Hmm?"</p>
-                    <p>"Thank you."</p>
-                    <p>"Para saan?"</p>
-                    <p>"Kasi binalikan mo ako," sabi niya. "Kasi binago mo yung script. Kasi pinili mong maging matapang."</p>
-
-                    <p>Napaluha ako.</p>
-
-                    <p>Sa dilim ng sinehan, kung saan bawal mag-ingay, hinayaan kong tumulo ang luha ko.</p>
-
-                    <p>Wala nang camera na nakaharang sa mukha ko. Wala nang gamot na kailangan inumin. Wala nang what ifs.</p>
-
-                    <p>Ang buhay ko ay hindi na isang pelikula na pinapanood ko lang.</p>
-
-                    <p>Ako na ang nagsusulat. Ako na ang nagdidirek. At higit sa lahat… <strong>Ako na ang Bida.</strong></p>
-
-                    <p>Tinitigan ko si Lia sa tabi ko. Ang ilaw ng screen ay nagrereflect sa mukha niya.</p>
-
-                    <p>Ang layo ng nilakbay namin.</p>
-
-                    <p><strong>115 Million Kilometers.</strong> Mula sa araw papunta sa lupa. Mula sa future pabalik sa past, at pabalik sa future.</p>
-
-                    <p>Pero kahit gaano kalayo, kahit gaano katagal… basta katabi ko siya, home na ako.</p>
-
-                    <p>Hinawakan ko ang kamay niya nang mahigpit. Hinalikan ko ito.</p>
-
-                    <p>"I love you, Lia," bulong ko.</p>
-                    <p>"I love you too, Gio," sagot niya.</p>
-
-                    <p>Sa screen, nag-fade to black ang pelikula. Lumabas ang credits.</p>
-
-                    <div class="credits-roll">
-                        <h3>DIRECTED BY</h3>
-                        <p>GIO CRUZ</p>
-                        <br>
-                        <h3>STARRING</h3>
-                        <p>LIA REYES-CRUZ</p>
+                    <div class="cinema-screen">
+                        MARK (Gio's Silhouette):<br>
+                        "Mahal kita. Since Day 1."
                     </div>
 
-                    <p>Nagpalakpakan ang mga tao. Tumayo kami.</p>
+                    <p>Naghiyawan ang crowd. "Yiieeee!" "Sana all!"</p>
 
-                    <p>Ngumiti ako.</p>
+                    <p>Kahit silhouette lang, ramdam ang chemistry. Ramdam ang realidad.</p>
 
-                    <p style="text-align: center; font-family: 'Courier Prime', monospace; font-weight: bold; margin-top: 30px;">
-                        CUT. PRINT. GOOD TAKE.
-                    </p>
+                    <p>Nag-fade to black.</p>
 
-                    <p style="text-align: center; font-size: 0.8rem; letter-spacing: 5px; margin-top: 50px;">[THE END]</p>
+                    <p style="text-align: center; font-family: 'Courier Prime', monospace; font-weight: bold;">Directed by: Gio Cruz.</p>
+
+                    <p>Nagbukas ang ilaw.</p>
+
+                    <p>Palakpakan. Standing ovation.</p>
+
+                    <p>Umakyat kami sa stage. Inabot sa akin ang mic.</p>
+
+                    <p>"Thank you," sabi ko, medyo nanginginig ang boses. "Para 'to sa lahat ng takot sumugal. Para sa mga nasa Rough Draft pa lang ng buhay nila. Wag kayong matakot mag-revise. Pwedeng-pwede pang baguhin ang ending."</p>
+
+                    <p>Tumingin ako kay Lia.</p>
+
+                    <p>"At para sa Lead Star ko," sabi ko. "Salamat sa tiwala."</p>
+
+                    <p>Naghiyawan ulit ang audience.</p>
+
+                    <div class="scene-header">EXT. SCHOOL GROUNDS - LATER THAT NIGHT</div>
+
+                    <p>Tapos na ang event.</p>
+
+                    <p>Resulta: <strong>Best Picture. Best Screenplay. Best Actress (Lia).</strong></p>
+
+                    <p>Panalo kami. Flat 1.00.</p>
+
+                    <p>Nasa labas kami ng auditorium, nagce-celebrate.</p>
+
+                    <p>"Inuman na!" sigaw ni Keanu, hawak ang trophy (na gawa sa plastic pero gold paint).</p>
+
+                    <p>"Tara!" sigaw ni Cent. "Sa bahay niyo, Gio! May handa daw si Tita!"</p>
+
+                    <p>"Mauna na kayo," sabi ko. "May... may pupuntahan lang kami ni Lia sandali."</p>
+
+                    <p>Nagkatinginan si Cent at Keanu. Gets na nila.</p>
+
+                    <p>"Ayun," ngisi ni Cent. "Sige pre. Wag niyo kaming tagalan ha. Baka maubusan kayo ng lechon kawali."</p>
+
+                    <p>"Ingat kayo," kindat ni Trina.</p>
+
+                    <p>Umalis ang barkada. Naiwan kami ni Lia.</p>
+
+                    <p>Ang ganda ng gabi. Maliwanag ang buwan.</p>
+
+                    <p>"So," sabi ni Lia, nakangiti habang yakap ang trophy niya. "Best Actress ako. Dahil sa'yo 'yun, Direk."</p>
+
+                    <p>"Dahil sa'yo 'yun," sabi ko. "Magaling ka naman talaga eh. Kailangan lang ng push."</p>
+
+                    <p>Naglakad kami papunta sa oval. Tahimik na ang school.</p>
+
+                    <p>Umupo kami sa damuhan, sa gitna ng field.</p>
+
+                    <p>"Naalala mo yung usapan natin?" tanong niya.</p>
+
+                    <p>"Yung sa rooftop?"</p>
+
+                    <p>"Oo."</p>
+
+                    <p>Tumingin siya sa akin. Ibinaba niya ang trophy sa damuhan.</p>
+
+                    <p>"Gio," sabi niya. "Tapos na ang deadline. Premiere Night na. Nanalo na tayo."</p>
+
+                    <p>Hinawakan niya ang kamay ko.</p>
+
+                    <p>"So..." huminga siya nang malalim. "Yes."</p>
+
+                    <p>Natigilan ako. "Yes?"</p>
+
+                    <p>"Oo nga!" tawa niya, namumula. "Oo, Gio. Tayo na. Boyfriend na kita. Girlfriend mo na ako. Official. Final Cut."</p>
+
+                    <p>Parang sumabog ang fireworks sa utak ko.</p>
+
+                    <p>Sa loob ng walong taon, ito lang ang pinangarap ko. Ang marinig ang salitang 'yun mula sa kanya.</p>
+
+                    <p>"Seryoso?" tanong ko, parang tanga.</p>
+
+                    <p>"Ayaw mo ba? Babawiin ko," biro niya.</p>
+
+                    <p>"Hindi!" mabilis kong sagot. Hinawakan ko ang mukha niya. "Wala nang bawian. Naka-record na 'to sa Core Memory ko."</p>
+
+                    <p>Tumawa siya.</p>
+
+                    <p>At sa ilalim ng buwan, sa gitna ng oval kung saan kami unang nagkasama sa Intrams Parade...</p>
+
+                    <p>Lumapit ako. Lumapit siya.</p>
+
+                    <p>At sa wakas... hinalikan ko siya.</p>
+
+                    <p>Hindi ito "Almost Kiss." Hindi ito "Camera Trick."</p>
+
+                    <p>Totoo. Malambot. Matamis. Lasang tagumpay. Lasang future na puno ng pag-asa.</p>
+
+                    <p>Nung humiwalay kami, nakangiti siya.</p>
+
+                    <p>"I love you, Gio," bulong niya.</p>
+
+                    <p>"I love you too, Lia," sagot ko. "Sobra."</p>
+
+                    <p>Niyakap ko siya nang mahigpit. Isinubsob ko ang mukha ko sa leeg niya. Amoy Sunsilk at Perfume.</p>
+
+                    <p>Gusto kong manatili dito habangbuhay.</p>
+
+                    <p>Pero...</p>
+
+                    <p><span class="sound-effect">Bzzzt.</span></p>
+
+                    <p>Nag-vibrate ang relo ko.</p>
+
+                    <p>Tumingin ako.</p>
+
+                    <div class="system-alert">
+                        11:59 PM<br>
+                        CONTRACT EXPIRED
+                    </div>
+
+                    <p>Nanlamig ako.</p>
+
+                    <p>"Gio?" tanong ni Lia, naramdaman ang paghigpit ng yakap ko. "Okay ka lang?"</p>
+
+                    <p>"Lia," bulong ko. "Mahal na mahal kita. Tandaan mo 'yan ha?"</p>
+
+                    <p>"Oo naman," sagot niya, hinahaplos ang likod ko. "Bakit parang namamaalam ka?"</p>
+
+                    <p>"Hindi ako namamaalam," sabi ko, pinipigilan ang luha. "Nagpapaalala lang. Kahit anong mangyari... ikaw lang."</p>
+
+                    <p>"Baliw," tawa niya. "Tara na nga. Hinihintay na nila tayo. Gutom na ako."</p>
+
+                    <p>Tumayo siya. Hinila niya ako patayo.</p>
+
+                    <p>"Tara," sabi ko.</p>
+
+                    <p>Naglakad kami palabas ng oval. Hawak-kamay.</p>
+
+                    <p>Pero habang naglalakad kami, naramdaman ko ang pagbigat ng talukap ng mata ko.</p>
+
+                    <p>Ang paligid, nagsisimulang lumabo. Parang out of focus.</p>
+
+                    <p>Ang boses ni Lia, nagiging echo.</p>
+
+                    <p>"Gio? Bakit ka huminto?"</p>
+
+                    <p>Tumingin ako sa kanya. Ang mukha niya, unti-unting nagiging blurred.</p>
+
+                    <p>"Lia..."</p>
+
+                    <p>Bumagsak ako sa damuhan.</p>
+
+                    <p>"Gio!" sigaw niya.</p>
+
+                    <p>Naramdaman ko ang paglapit niya. Ang hawak niya sa mukha ko.</p>
+
+                    <p>"Gio! Gumising ka! Tulong! Tulungan niyo kami!"</p>
+
+                    <p>Ang huli kong nakita ay ang mukha niya. Takot na takot. Umiiyak.</p>
+
+                    <p>At sa likod niya... nakatayo si Sir Vren. Naka-suit. Nakangiti nang malungkot. Tumango siya sa akin.</p>
+
+                    <p><em>Good job, Direk. It's a wrap.</em></p>
+
+                    <p style="text-align: center; font-weight: bold; margin-top: 50px;">NAGDILIM ANG LAHAT.</p>
                 </div>
 
                 <div class="chapter-nav">
                     <a href="chapter19.html" class="btn-sketch secondary nav-btn">
-                        &larr; Previous
+                        &larr; Previous 
                     </a>
-                    <a href="afterword.html" class="btn-sketch primary nav-btn">
-                        Afterword &rarr;
+                    <a href="chapter21.html" class="btn-sketch primary nav-btn">
+                        Next &rarr;
                     </a>
                 </div>
 
