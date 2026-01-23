@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ch. 12 - Editing Room | Director's Cut</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Ch. 12 - Location Scouting | Director's Cut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
@@ -12,7 +12,7 @@
         .chapter-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
         .chapter-header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 2px dashed #ccc; }
         .chap-num { font-family: 'Patrick Hand', cursive; font-size: 1.5rem; color: var(--sunset-orange); margin-bottom: 5px; display: block; transform: rotate(-2deg); }
-        .chap-title { font-size: 2.5rem; color: var(--pencil-black); line-height: 1.1; }
+        .chap-title { font-size: 2.2rem; color: var(--pencil-black); line-height: 1.1; }
         
         .story-text { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #222; }
         .story-text p { margin-bottom: 1.5em; }
@@ -38,47 +38,51 @@
             border-bottom: 1px solid #e0e0e0;
         }
 
-        /* Flashback / Editing Room Dark Mode Style */
-        .flashback-terminal {
-            background-color: #1a1a1a; /* Dark gray like Premiere Pro */
-            color: #ccc;
-            padding: 25px;
-            border-radius: 5px;
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
+        /* Seating Chart Box */
+        .seating-chart {
+            background: #f0f4c3;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Patrick Hand', cursive;
             margin: 30px 0;
-            border: 1px solid #333;
-            box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+            border: 2px dashed #afb42b;
+            position: relative;
         }
-        .flashback-terminal h4 {
-            color: #fff;
-            font-family: 'Courier Prime', monospace;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-bottom: 1px solid #444;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 1rem;
-        }
-        .clip-list {
-            font-family: 'Courier Prime', monospace;
-            color: #4caf50; /* Green text like old screens */
-            list-style: none;
-            padding: 0;
-        }
-        .clip-list li { margin-bottom: 5px; }
-        .clip-list li::before { content: "> "; color: #666; }
-
-        /* Sketch Note for the Drawing Scene */
-        .sketch-note { 
-            font-family: 'Patrick Hand', cursive; 
-            border: 2px solid var(--pencil-black);
-            padding: 15px; 
-            margin: 30px auto; 
-            max-width: 300px; 
+        .seating-title {
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 10px;
+            display: block;
             text-align: center;
-            border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; /* Wobbly */
-            transform: rotate(-1deg);
+        }
+
+        /* Notebook Insert */
+        .notebook-page {
+            background: #fdfbf7;
+            background-image: linear-gradient(#e8e8e8 1px, transparent 1px);
+            background-size: 100% 1.5em;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-family: 'Patrick Hand', cursive;
+            margin: 30px 0;
+            position: relative;
+            transform: rotate(1deg);
+        }
+        .notebook-page::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #ff5252; /* Red margin line */
+        }
+        .notebook-body {
+            margin-left: 15px;
+            font-size: 1.1rem;
+            line-height: 1.5em;
+            color: #555;
         }
 
         .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
@@ -108,231 +112,359 @@
                 
                 <div class="chapter-header">
                     <span class="chap-num">Chapter 12</span>
-                    <h1 class="chap-title">Editing Room</h1>
+                    <h1 class="chap-title">Location Scouting</h1>
                 </div>
 
                 <div class="story-text">
-                    <p>Sa buhay ng isang videographer, 20% lang ang shooting. Ang 80%? <strong>Editing.</strong></p>
+                    <div class="scene-header">EXT. 7-ELEVEN PARKING LOT - 4:30 AM</div>
 
-                    <p>Dito nangyayari ang mahika. Dito mo tinatanggal ang mga dead air. Dito mo pinuputol ang mga awkward na tinginan. Dito mo inaayos ang kulay ng langit kung masyadong madilim. Dito mo nilalagyan ng masayang background music ang eksenang malungkot para dayain ang emosyon ng manonood.</p>
+                    <p>May dalawang uri ng tao sa mundo tuwing Call Time ng 4:00 AM.</p>
 
-                    <p>Ang Editing Room ang pinaka-makapangyarihang lugar sa mundo. Kasi dito… kontrolado mo ang oras.</p>
+                    <p>Una, ang "The Early Birds." Sila yung nakaligo na, naka-bihis, amoy baby powder, at may hawak na kape. Handa nang sakupin ang mundo.</p>
 
-                    <p>May <em>Ctrl+Z</em> kapag nagkamali ka.</p>
-                    <p>May <em>Ripple Delete</em> kapag gusto mong burahin ang isang tao sa eksena.</p>
-                    <p>May <em>Color Grade</em> para magmukhang mainit ang mundo kahit malamig na talaga.</p>
+                    <p>Pangalawa, ang "The Walking Dead." Sila yung naka-tsinelas lang, gulo-gulo ang buhok, may muta pa, at galit sa universe kung bakit kailangang gumising nang ganito kaaga.</p>
 
-                    <p>Kaya siguro naging editor ako sa future. Gusto ko ng control. Gusto kong ayusin ang mga bagay na broken.</p>
+                    <p>Ako? Nasa Category 1 ako. (Salamat sa anxiety ng pagiging Director, gising na ako since 3 AM nagdo-double check ng itinerary).</p>
 
-                    <p>Pero ang problema sa buhay… wala namang post-production.</p>
+                    <p>Si Lia? Nasa Category 2.</p>
 
-                    <div class="flashback-terminal">
-                        <h4>FLASHBACK: YEAR 2025</h4>
-                        <p style="font-size: 0.9rem; color: #888; margin-bottom: 20px;">
-                            LOCATION: Condo Unit 402, Mandaluyong.<br>
-                            TIME: 3:14 AM.
-                        </p>
+                    <p>"Bakit..." reklamo ni Lia habang bumababa sa tricycle, bitbit ang unan niya. "...bakit ang aga? Pwede namang 8 AM?"</p>
 
-                        <p>Ang liwanag lang sa kwarto ay galing sa dalawang monitor ng PC ko.</p>
+                    <p>Naka-jogging pants siya at hoodie na sobrang laki sa kanya. Nakapikit pa ang isang mata.</p>
 
-                        <p>Naka-open ang Adobe Premiere Pro. Nasa timeline ang SDE (Same Day Edit) ng kasal nina Mark at Jen.</p>
+                    <p>"Para iwas traffic sa Alaminos," sagot ko, inaabot ang bag niya. "Tsaka para mahabol natin ang Golden Hour sa location. Sayang ang lighting."</p>
 
-                        <p>Pagod na pagod na ako. Namamanhid na ang kamay ko sa kakahawak ng mouse. Ang ashtray sa tabi ko, puno na ng upos ng yosi. Ang kape ko, malamig na.</p>
+                    <p>"Lighting, lighting," bulong niya, padabog na iniabot ang bag. "Kainin mo lighting mo."</p>
 
-                        <p>Pinanood ko ang footage sa monitor.</p>
+                    <p>Napangiti ako. Kahit masungit siya sa umaga, ang cute pa rin tignan. <span class="thought">(Erase. Professional tayo, Gio. Professional.)</span></p>
 
-                        <ul class="clip-list">
-                            <li>Clip 042: Groom crying.</li>
-                            <li>Clip 045: Bride walking down the aisle.</li>
-                            <li>Clip 089: Guests laughing.</li>
-                        </ul>
+                    <p>"Morning guys!" sigaw ni Cent mula sa driver's seat ng Innova ng tatay niya. Siya ang designated driver namin. Fresh na fresh, naka-shades pa kahit madilim pa.</p>
 
-                        <p style="margin-top: 20px;">Ang saya nila. Ang ganda ng kasal. Perfect.</p>
+                    <p>"Ang ingay mo, Cent," sabi ni Trina, na sumakay na sa likod at natulog agad.</p>
 
-                        <p>Pero habang pinapanood ko ang timeline, napatingin ako sa repleksyon ko sa itim na screen habang naglo-load ang render.</p>
+                    <p>"Shotgun!" sigaw ni Keanu, tumakbo papunta sa passenger seat.</p>
 
-                        <p>Ang itim ng ilalim ng mata ko. Ang haba ng buhok ko. Ang payat ko.</p>
+                    <p>"Teka, teka," awat ko. "Keanu, sa likod ka. Kailangan ko sa harap para mag-navigate kay Cent. Ako may hawak ng Waze."</p>
 
-                        <p><span style="font-style: italic; color: #aaa;">Bakit ba ako naging videographer?</span></p>
+                    <p>"Luh? Daya!" reklamo ni Keanu.</p>
 
-                        <p>Nagsimula lang naman 'to bilang hobby noong college. Yung "One Shot" project. Pero nung nawala si Lia (nung naging sila ni Cent), at nung namatay si Mama… ang camera ang naging pananggalang ko.</p>
+                    <p>"Sa likod ka na," sabi ko, binuksan ang pinto ng backseat para sa kanya. "Tabihan mo si Trina para may unan siya."</p>
 
-                        <p>Kapag may hawak kang camera, hindi ka participant. Observer ka lang.</p>
+                    <p>Napilitan si Keanu na sumakay sa likod.</p>
 
-                        <p>Hindi ka kailangang magsalita. Hindi ka kailangang makipag-interact. Pwede kang magtago sa likod ng lens. Pwede kang umiyak habang nagshoshoot, at walang makakapansin kasi nakatakip ang camera sa mukha mo.</p>
-
-                        <p>Naging comfort zone ko ang pagiging invisible.</p>
-
-                        <p style="font-family: 'Courier Prime', monospace; color: cyan;">Rendering: 98%…</p>
-
-                        <p>Biglang nag-pop up ang isang folder sa desktop ko. "ARCHIVE 2018." Hindi ko alam kung bakit, pero binuksan ko.</p>
-
-                        <p>Nakita ko ang mga lumang video noong college. Intrams. School Fair. Bus ride. Hinanap ko ang mukha ko.</p>
-
-                        <p><strong>Wala.</strong></p>
-
-                        <p>Wala ako sa mga video. Kasi ako ang may hawak ng camera. Puro boses ko lang ang naririnig. <em>"Okay, smile!" "Ganda ng shot!" "Isa pa!"</em></p>
-
-                        <p>Para akong multo. Nandoon ako, pero wala ako.</p>
-
-                        <p>Napaluha ako nung 2025 na 'yun.</p>
-
-                        <p>"Tangina," bulong ko sa sarili ko. "Ang dami kong na-record na memories, pero wala akong sariling memorya."</p>
-
-                        <p>Pinatay ko ang PC. At nilamon ako ng dilim.</p>
+                    <p>So ang seating arrangement:</p>
+                    
+                    <div class="seating-chart" style="background: #ffccbc; border-color: #ff5722;">
+                        <span class="seating-title">Original Timeline Setup</span>
+                        Row 1: Cent (Driver), Gio (Navi)<br>
+                        Row 2: Lia, Keanu, Trina<br>
+                        Likod: Bags at Props
                     </div>
 
-                    <div class="scene-header">PRESENT DAY: YEAR 2018</div>
-                    <p style="text-align: center; font-family: 'Patrick Hand', cursive; color: var(--text-light);">Location: Physics Lab | Time: 4:30 PM</p>
+                    <p>Wait. Mali.</p>
 
-                    <p>"Gio? Hoy! Natutulala ka na naman."</p>
+                    <p>Sa Original Timeline, ganito ang pwesto namin. At sa buong byahe, tulog silang lahat sa likod habang kami lang ni Cent ang naguusap. Boring. Walang interaction kay Lia.</p>
 
-                    <p>Bumalik ako sa reyalidad. Nawala ang dilim ng condo. Ang nakikita ko ngayon ay ang blackboard na puno ng formulas ng Projectile Motion.</p>
+                    <p>Kailangan kong baguhin ang blocking.</p>
 
-                    <p>At sa harap ko, si Lia.</p>
+                    <p>"Wait lang," sabi ko. "Masyadong masikip sa gitna kung tatlo kayo. Lia, payat ka naman, dito ka na lang sa harap. Ako na lang sa gitna."</p>
 
-                    <p>Naka-pangalumbaba siya sa mesa, winawagayway ang ballpen sa mukha ko.</p>
+                    <p>"Ha?" nagising si Lia nang konti. "Seryoso? Ayoko sa gitna sa likod, nahihilo ako."</p>
 
-                    <p>"Ha? Ano 'yun?" tanong ko, medyo disoriented. <span class="thought">Yung transition mula 2025 pabalik ng 2018, minsan may lag.</span></p>
+                    <p>"Kaya nga sa harap ka," sabi ko. "Shotgun seat. Pinaka-comfy. Para makatulog ka nang maayos."</p>
 
-                    <p>"Sabi ko," ulit ni Lia, "Tapos na tayo mag-review. Ang galing mo mag-explain! Mas naintindihan ko pa sa'yo kaysa kay Sir!"</p>
+                    <p>Tumingin siya sa passenger seat. Tumingin sa akin. Mukhang na-tempt siya sa offer ng leg room.</p>
 
-                    <p>Ngumiti ako. "Syempre. Magaling ako mag-breakdown ng scenes… I mean, ng problems."</p>
+                    <p>"Sige na nga," sabi niya. "Basta wag mong i-jujudge playlist ko ha? Ako magiging DJ."</p>
 
-                    <p>Sinarado niya ang notebook niya. Tumingin siya sa akin. Yung tingin na curious.</p>
+                    <p>"Deal," sabi ko.</p>
 
-                    <p>"Gio," sabi niya. "Tanong lang."</p>
+                    <p>Nagpalit kami.</p>
 
-                    <p>"Ano?"</p>
-
-                    <p>"Ano ba talaga gusto mong maging someday?"</p>
-
-                    <p>Natigilan ako.</p>
-
-                    <p>Sa original timeline, tinanong niya rin ito. Ang sagot ko noon: <em>"Gusto kong maging sikat na Filmmaker. O kaya Videographer ng mga kasal."</em></p>
-
-                    <p>At nangyari nga. Naging Videographer ako. Pero hindi ako naging masaya.</p>
-
-                    <p>"Bakit mo natanong?" balik ko.</p>
-
-                    <p>"Wala lang," nagkibit-balikat siya. "Kasi parang… parang ang dami mong talent. Magaling ka mag-photo, magaling ka mag-video, tapos matalino ka pa sa Physics. Pero parang… parang ang lungkot mo minsan."</p>
-
-                    <p><strong>Bullseye.</strong></p>
-
-                    <p>Ang galing talaga ng instinct ni Lia. Kahit noong 2018 pa lang, nararamdaman na niya ang melancholy ko.</p>
-
-                    <p>Kumuha ako ng piraso ng papel. Nag-drawing ako ng camera.</p>
-
-                    <p>"Dati," simula ko, "gusto kong maging Videographer. Gusto kong i-capture yung moments ng ibang tao. Kasi feeling ko, ang ganda ng mundo, sayang kung makakalimutan lang."</p>
-
-                    <p>"O, diba maganda 'yun?" sabi niya. "Ang noble kaya nun."</p>
-
-                    <p>"Oo," tango ko. "Pero na-realize ko… kapag puro ka capture, nakakalimutan mong maging part ng picture."</p>
-
-                    <p>Tinitigan ko ang drawing ko. Dinagdagan ko ng tao sa likod ng camera. Tapos nilagyan ko ng X ang camera.</p>
-
-                    <div class="sketch-note">
-                        <i class="fas fa-camera" style="font-size: 1.5rem; color: #ccc;"></i> 
-                        <span style="font-size: 2rem; color: red; position: absolute; left: 45%; top: 10px;">X</span>
-                        <br>
-                        <span style="font-weight: bold; color: var(--pencil-black);">BE PRESENT.</span>
+                    <div class="seating-chart">
+                        <span class="seating-title">New Arrangement</span>
+                        Row 1: Cent (Driver), Lia (DJ/Passenger Princess)<br>
+                        Row 2: Gio (Middle), Keanu (Left), Trina (Right)
                     </div>
 
-                    <p>"Ngayon?" tanong ni Lia. "Ano nang gusto mo?"</p>
+                    <p>Pumwesto ako sa gitna, sa likod mismo ni Lia at Cent.</p>
 
-                    <p>Tumingin ako sa kanya.</p>
+                    <p>Strategically, mukhang talo ako kasi pinagtabi ko sila. Pero tactically? Panalo ako.</p>
 
-                    <p>Ang hapon na araw ay tumatagos sa bintana ng lab. Ang alikabok, sumasayaw sa liwanag. Ang buhok ni Lia, may hibla na tumatakip sa mata niya.</p>
+                    <p>Kasi nasa gitna ako. Rinig ko usapan nila. At kapag lumingon si Lia para makipag-usap sa likod... ako ang una niyang makikita.</p>
 
-                    <p>Gusto ko siyang hawiin. Gusto ko siyang ayusin.</p>
+                    <p>"Game na?" sigaw ni Cent.</p>
 
-                    <p>Sa Editing Room ng utak ko, gusto kong i-slow motion ang moment na 'to. Gusto kong lagyan ng Color Grade na warm at nostalgic.</p>
+                    <p>"Game!"</p>
 
-                    <p>Pero pinigil ko ang sarili ko.</p>
+                    <p>Umandar ang sasakyan. Papuntang Bolinao.</p>
 
-                    <p><span class="thought">Hindi. Huwag mong i-edit, Gio. Hayaan mong maging raw footage. Hayaan mong maging imperpekto.</span></p>
+                    <div class="scene-header">INT. CAR - ON THE ROAD - 6:00 AM</div>
 
-                    <p>"Ngayon," sagot ko. "Gusto ko na lang maging… <strong>Present</strong>."</p>
+                    <p>Dalawang oras na kaming nasa byahe.</p>
 
-                    <p>Kumunot ang noo niya. "Present? Ano 'yun, gift?"</p>
+                    <p>Tulog na si Keanu at Trina sa tabi ko. (Si Keanu, nakanganga na naman at humihilik nang mahina).</p>
 
-                    <p>Natawa ako. "Hindi. Ibig sabihin… nandito. Yung hindi lumilipad ang isip. Yung hindi nagtatago. Gusto kong maramdaman yung sakit, yung saya, yung inis… nang walang filter."</p>
+                    <p>Si Lia, gising na gising na dahil sa kape na binili namin sa 7-Eleven. Hawak niya ang AUX cord.</p>
 
-                    <p>Tumahimik si Lia. Parang pino-process niya ang sinabi ko.</p>
+                    <p>"Okay," sabi ni Lia. "Oras na para sa culture."</p>
 
-                    <p>"Ang weird mo talaga," bulong niya, pero nakangiti. "Pero… gets ko."</p>
+                    <p>Pinindot niya ang play sa phone niya.</p>
 
-                    <p>Inayos niya ang gamit niya. Tumayo siya. "Tara na? Uwi na tayo. Gutom na ako."</p>
+                    <p>Tumugtog ang intro ng <em>Halaga</em> ng Parokya ni Edgar.</p>
 
-                    <p>"Tara."</p>
+                    <p>"Yown!" sigaw ni Cent, humampas sa manibela. "Rakrakan na!"</p>
 
-                    <hr class="divider">
+                    <p>Sumabay si Cent sa kanta. "Umiiyak ka na namaaaaaan!"</p>
 
-                    <p>Habang naglalakad kami palabas ng building, napadaan kami sa glass window ng hallway.</p>
+                    <p>Kumanta rin si Lia. "Langya talaga, wala ka bang ibang alam!"</p>
 
-                    <p>Nakita ko ang repleksyon namin.</p>
+                    <p>Ang ingay nila. Parang concert sa loob ng kotse.</p>
 
-                    <p>Si Lia. At si Gio.</p>
+                    <p>Sa Original Timeline, nasa harap ako, tahimik lang. Feeling OP (Out of Place). Iniisip ko, <span class="thought">"Bagay talaga sila. Parehas silang maingay. Parehas silang extrovert."</span></p>
 
-                    <p>Magkatabi. Naglalakad.</p>
+                    <p>Pero ngayon, nakaupo ako sa likod nila. Nakikita ko sila.</p>
 
-                    <p>Walang camera na nakaharang sa mukha ko.</p>
+                    <p>At nakikita ko na... hindi naman sila naglalandian. Nagba-bardagulan lang sila.</p>
 
-                    <p>Sa original timeline, puro Point of View (POV) shots lang ang meron ako. Nakikita ko ang likod niya, pero hindi ko nakikita ang sarili ko.</p>
+                    <p>"Lia, sintunado ka!" asar ni Cent.</p>
 
-                    <p>Ngayon, <strong>Wide Shot</strong>. Kasama na ako sa frame.</p>
+                    <p>"Che! Mas sintunado ka! Nung nag-karaoke nga tayo, binato ka ng tsinelas ng kapitbahay!" balik ni Lia.</p>
 
-                    <p>Napahawak ako sa dibdib ko.</p>
+                    <p>Tumawa ako mula sa likod. "Legit 'yun. Ako yung taga-pulot ng tsinelas."</p>
 
-                    <p>Wala na yung bigat. Wala na yung hollow feeling na nararamdaman ko tuwing nag-eedit ako ng SDE sa condo ko.</p>
+                    <p>Lumingon si Lia sa akin, tumatawa. "Diba? Saksi si Gio! Napaka-pangit ng boses mo, Cent!"</p>
 
-                    <p>Kasi hindi ko na kailangang i-edit ang buhay ko para maging maganda. Maganda na siya. Kasi totoo na siya.</p>
+                    <p>"Grabe kayo sa akin," iling ni Cent. "Gio, kampihan mo naman ako!"</p>
 
-                    <p>"Lia," tawag ko bago kami makalabas ng gate.</p>
+                    <p>"Sorry pre," sabi ko, sumandal sa upuan. "Facts only. Director ako, kailangan honest."</p>
 
-                    <p>"O?"</p>
+                    <p>Nag-apir kami ni Lia. <span class="sound-effect">Slap.</span></p>
 
-                    <p>"Wag ka munang umuwi," sabi ko. Biglaan. Wala sa script.</p>
+                    <p>Ang gaan.</p>
 
-                    <p>"Ha? Bakit?"</p>
+                    <p>Dati, selos na selos ako sa mga ganitong moment. Pero ngayon, na-realize ko na ang ingay ay hindi laging ibig sabihin ay chemistry. Minsan, ingay lang talaga 'yun. Friendship.</p>
 
-                    <p>"Tara sa… sa arcade," yaya ko. "Timezone. Laro tayo."</p>
+                    <p>"Next song!" sabi ni Lia.</p>
 
-                    <p>"Timezone?! May pasok bukas!"</p>
+                    <p>Tumugtog ang <em>Tadhana</em> ng Up Dharma Down.</p>
 
-                    <p>"Edi pumasok tayong puyat!" hamon ko. "Minsan lang tayo maging bata, Lia. Sulitin mo na."</p>
+                    <p>Biglang kumalma ang vibe.</p>
 
-                    <p>Tinitigan niya ako. Hinahanap niya kung nagbibiro ako.</p>
+                    <p><em>"Sa hindi inaasahang... pagtatagpo ng mga mundo..."</em></p>
 
-                    <p>Pero seryoso ako.</p>
+                    <p>Tumahimik si Cent. Nag-focus sa pagda-drive.</p>
 
-                    <p>Gusto kong punuin ang timeline ko ng mga clips na kasama siya. Hindi clips na shinoot ko, kundi clips na naranasan ko.</p>
+                    <p>Sumandal si Lia sa bintana. Pinapanood ang mga palayan ng Tarlac na nadadaanan namin.</p>
 
-                    <p>Ngumiti siya. Yung ngiting pilyo.</p>
+                    <p>Sumilip ako sa pagitan ng upuan nila.</p>
 
-                    <p>"Sige. Pero ikaw taya sa tokens."</p>
+                    <p>"Lia," tawag ko nang mahina.</p>
 
-                    <p>"Deal."</p>
+                    <p>Lumingon siya. "Hmm?"</p>
 
-                    <p>Tumakbo kami papunta sa sakayan ng jeep.</p>
+                    <p>"Gutom ka na?" tanong ko.</p>
 
-                    <p>Iniwan ko ang Editing Room sa future. Sinunog ko na ang render queue.</p>
+                    <p>"Medyo," bulong niya. "May pagkain ba dyan?"</p>
 
-                    <p>Dito sa 2018, <strong>Live Broadcast</strong> ang buhay. Walang cut. Walang take two. Walang pause.</p>
+                    <p>Binuksan ko ang bag ko. Kinuha ko ang isang pack ng Hello Panda (Strawberry, favorite niya) at isang Chuckie.</p>
 
-                    <p>At sa unang pagkakataon, hindi ako takot na magkamali live on air.</p>
+                    <p>Iniabot ko sa kanya.</p>
 
-                    <p>Dahil kasama ko ang co-star ko.</p>
+                    <p>Nanlaki ang mata niya. "Hala! Penge!"</p>
 
-                    <p><span class="sound-effect">CUT.</span></p>
+                    <p>Kinuha niya agad. Binuksan at kumain.</p>
+
+                    <p>"Gio," sabi niya habang ngumunguya. "Ikaw na talaga ang favorite person ko today."</p>
+
+                    <p>"Today lang?" joke ko.</p>
+
+                    <p>"Depende kung may baon ka pa mamaya," ngisi niya.</p>
+
+                    <p>Inalok niya si Cent ng Hello Panda. "O, driver, kain."</p>
+
+                    <p>"Salamat," sabi ni Cent, kumain ng isa.</p>
+
+                    <p>Inalok niya ako. "Gio, gusto mo?"</p>
+
+                    <p>Dati, tatanggi ako. <span class="thought">"Sayo na lang."</span></p>
+
+                    <p>Pero ngayon, dumukwang ako nang konti at kumuha ng isa mula sa pack na hawak niya.</p>
+
+                    <p>"Parang 'di sakin nanggaling ah!" sabi ko.</p>
+
+                    <p>Habang kumakain kami sa byahe, habang tumutugtog ang Tadhana, na-realize ko ang advantage ng pwesto ko.</p>
+
+                    <p>Nasa likod ako. Ako ang nagbabantay. Ako ang nag-aabot ng pagkain. Ako ang support system.</p>
+
+                    <p>Si Cent ang nagdadrive, oo. Siya ang may control sa manibela. Pero ako ang may hawak ng supply.</p>
+
+                    <p>At sa gyera (at sa love), mas importante ang supply lines.</p>
+
+                    <div class="scene-header">EXT. BOLINAO - 9:00 AM</div>
+
+                    <p>Dumating kami sa location.</p>
+
+                    <p>Isang lumang rest house na pag-aari ng tita ni Trina. Nasa gilid siya ng bangin, overlooking sa dagat. Luma na ang pintura, medyo creepy ang vibe, pero perfect para sa "Isolation" theme ng Static.</p>
+
+                    <p>"Whoa," sabi ni Keanu, bumaba ng kotse. "Parang bahay ni Sadako."</p>
+
+                    <p>"Perfect," sabi ko, nilabas ang notebook ko. "Trina, paalam ka muna sa caretaker. Cent, Keanu, tulungan niyo akong mag-check ng lighting sa loob. Lia, ikaw mag-check ng acoustics kung maingay ang hangin."</p>
+
+                    <p>"Yes Direk," sabay-sabay nilang sagot.</p>
+
+                    <p>Naging busy kami. Work mode.</p>
+
+                    <p>Sinukat ko ang bawat sulok ng bahay. Chineck ko kung saan tatama ang araw kapag hapon. Nag-notes ako sa script.</p>
+
+                    <p>Habang busy sila sa loob, lumabas ako sa terrace.</p>
+
+                    <p>Ang ganda ng view. Dagat. Asul na asul.</p>
+
+                    <p>Nakita ko si Lia. Nakaupo sa railing ng terrace (delikado, pero maganda ang shot). Nakatingin siya sa horizon. Ang hangin, nililipad ang buhok niya.</p>
+
+                    <p>Lumapit ako.</p>
+
+                    <p>"Hoy," tawag ko. "Baka mahulog ka dyan. Wala tayong budget pang-ospital."</p>
+
+                    <p>Lumingon siya at tumawa. "Grabe siya. Ang ganda kasi ng view eh."</p>
+
+                    <p>Tumabi ako sa kanya. Sumandal ako sa railing (sa safe side).</p>
+
+                    <p>"Ano sa tingin mo?" tanong ko. "Pwede ba 'to sa film?"</p>
+
+                    <p>"Oo naman," sagot niya. "Ang lungkot ng vibe ng bahay. Bagay sa kwento nung dalawang ex na bitter."</p>
+
+                    <p>"Buti naman."</p>
+
+                    <p>Tumahimik kami sandali. Pinakinggan namin ang hampas ng alon sa baba.</p>
+
+                    <p>"Gio," biglang sabi niya.</p>
+
+                    <p>"Po?"</p>
+
+                    <p>"Bakit Multimedia Arts ang kinuha mo?"</p>
+
+                    <p>Napatingin ako sa kanya. Random question.</p>
+
+                    <p>"Ha? Bakit mo natanong?"</p>
+
+                    <p>"Wala lang," nagkibit-balikat siya. "Ang galing mo kasi eh. Yung vision mo, yung pagiging OC mo. Parang... born for this ka."</p>
+
+                    <p><strong>Born for this.</strong></p>
+
+                    <p>Kung alam lang niya na sa future, gusto ko nang sukuan ang course na 'to dahil sa burnout.</p>
+
+                    <p>"Ewan," sagot ko. "Mahilig lang siguro ako manood ng tao. Gusto kong i-capture yung mga moments na hindi napapansin ng iba."</p>
+
+                    <p>Tumingin ako sa kanya. "Ikaw? Bakit ka nag-Multimedia?"</p>
+
+                    <p>Sa Original Timeline, never ko siyang tinanong nito. Ang alam ko lang, magkaklase kami. Ang assumption ko, gusto niya maging artist o designer.</p>
+
+                    <p>Huminga siya nang malalim. Tumingin siya sa dagat.</p>
+
+                    <p>"Sa totoo lang?" sabi niya. "Hindi ko naman talaga gusto 'to."</p>
+
+                    <p>Natigilan ako. "Ha? Anong ibig mong sabihin?"</p>
+
+                    <p>"Ang gusto ko talaga..." bulong niya, parang nahihiyang aminin. "...maging Broadcaster. News Anchor. Yung parang si Jessica Soho o kaya si Karen Davila."</p>
+
+                    <p><strong>News Anchor.</strong></p>
+
+                    <p>Bigla kong naalala yung future. Yung engagement video. Yung trabaho niya noon... Marketing Head sa isang corporate firm. Malayo sa News Anchor.</p>
+
+                    <p>"O, bakit hindi mo tinuloy?" tanong ko. "Mass Comm dapat kinuha mo."</p>
+
+                    <p>"Ayaw ni Papa," simpleng sagot niya. Walang drama, pero ramdam mo yung bigat. "Sabi niya, walang pera dun. Mapapahamak lang daw ako sa field. Mas okay daw sa Multimedia, pwedeng corporate. Pwedeng graphic artist. Safe."</p>
+
+                    <p><strong>Safe.</strong></p>
+
+                    <p>Yung salitang paborito ng lahat pero pumapatay ng pangarap.</p>
+
+                    <p>"Kaya eto," tawa niya nang mapait. "Nag-eedit ng video. Nag-dedesign ng logo. Pwede na rin. At least creative pa rin."</p>
+
+                    <p>Tumingin siya sa akin. Ang mata niya, may lungkot na tinatago sa likod ng ngiti.</p>
+
+                    <p>"Kaya siguro gusto ko yung role sa Static," sabi niya. "Kasi dun sa script... yung babae, matapang. Sinabi niya lahat ng gusto niyang sabihin. Hindi siya nagpatali sa 'Safe'."</p>
+
+                    <p>Natahimik ako.</p>
+
+                    <p>Sa loob ng walong taon, akala ko kilala ko na siya. Akala ko siya yung "Happy-Go-Lucky Muse" na walang problema. Yun pala, may pangarap siyang binaon sa limot para lang sundin ang tatay niya.</p>
+
+                    <p>Kaya pala ang galing niyang magtago ng feelings. Sanay siyang mag-perform. Sanay siyang maging kung anong gusto ng iba na maging siya.</p>
+
+                    <p>"Lia," sabi ko.</p>
+
+                    <p>Tumingin siya sa akin.</p>
+
+                    <p>"Baguhin natin yung script," sabi ko.</p>
+
+                    <p>"Ha? Bakit? Ang ganda na nun ah!"</p>
+
+                    <p>"Hindi," iling ko. "Dagdagan natin ng konti."</p>
+
+                    <p>Nilabas ko ang notebook ko.</p>
+
+                    <p>"Yung character ng babae," sabi ko, nagsusulat. "Gawin nating Frustrated Journalist. Kaya sila naghiwalay ng lalaki, kasi pinipigilan siya nito sa pangarap niya. Gusto ng lalaki ng 'Safe' life, pero gusto ng babae ng 'Adventure'."</p>
+
+                    <p>Nanlaki ang mata ni Lia. "Gio..."</p>
+
+                    <p>"Mas okay 'yun diba?" tanong ko. "Mas may hugot. Mas... totoo."</p>
+
+                    <p>Tinitigan niya ako. Matagal.</p>
+
+                    <p>Tapos, dahan-dahan siyang ngumiti. Yung ngiting abot sa mata. Yung ngiting nagsasabing: <em>Naintindihan mo ako.</em></p>
+
+                    <p>"Oo," bulong niya. "Mas okay 'yun. Sobra."</p>
+
+                    <p>"Sige," sabi ko, sinara ang notebook. "Yun ang gagawin natin. Sa film na 'to, Lia... magiging matapang ka. Kahit sa fiction man lang."</p>
+
+                    <p>Tumango siya. "Salamat, Direk."</p>
+
+                    <p>Biglang bumukas ang pinto ng terrace.</p>
+
+                    <p>"HOY!" sigaw ni Keanu. "Kain na daw! May lechon manok!"</p>
+
+                    <p>"Andyan na!" sigaw ni Lia pabalik.</p>
+
+                    <p>Tumalon siya mula sa railing. Muntik na siyang matalisod, pero nasalo ko ang braso niya.</p>
+
+                    <p>"Ingat," sabi ko.</p>
+
+                    <p>"Thanks," sabi niya. Hindi siya bumitaw agad. "Tara na? Gutom na ako."</p>
+
+                    <p>"Mauna ka na," sabi ko. "Ayusin ko lang notes ko."</p>
+
+                    <p>Tumakbo siya papasok.</p>
+
+                    <p>Naiwan ako sa terrace. Ang hangin ng dagat, malamig.</p>
+
+                    <p>Tumingin ako sa notebook ko.</p>
+
+                    <div class="notebook-page">
+                        <div class="notebook-body">
+                            <strong>Character Note:</strong> Female Lead<br>
+                            <strong>Name:</strong> Elle<br>
+                            <strong>Profession:</strong> Frustrated Journalist<br>
+                            <strong>Motivation:</strong> To be heard.
+                        </div>
+                    </div>
+
+                    <p>Sa pamamagitan ng film na 'to, bibigyan ko siya ng boses. Kung hindi man niya magawa sa totoong buhay ngayon... at least mararanasan niya sa harap ng camera ko.</p>
+
+                    <p>First mission ng Production: Make Lia shine.</p>
+
+                    <p>Sinara ko ang notebook at pumasok sa loob.</p>
+
+                    <p>Gutom na rin ako. At mukhang masarap ang lechon manok.</p>
                 </div>
 
                 <div class="chapter-nav">
                     <a href="chapter11.html" class="btn-sketch secondary nav-btn">
                         &larr; Previous
                     </a>
-                    <a href="chapter13.html" class="btn-sketch primary nav-btn">
-                        Next Chapter &rarr;
+                    <a href="#" class="btn-sketch primary nav-btn">
+                        Next Chapter (Thursday) &rarr;
                     </a>
                 </div>
 
