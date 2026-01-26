@@ -102,7 +102,7 @@
 
                 <div class="cta-group">
                 <a href="chapter1.html" class="btn btn-sketch primary">Start Reading (Ch. 1)</a>
-                <a href="chapter11.html" class="btn btn-sketch secondary">Read Latest (Ch. 11) &rarr;</a>
+                <a href="chapter12.html" class="btn btn-sketch secondary">Read Latest (Ch. 12) &rarr;</a>
                 </div>
             </div>
 
@@ -256,8 +256,7 @@
                     <div class="card-arrow">&rarr;</div>
                 </a>
 
-                <a href="chapter11.html" class="chapter-card new-release">
-                    <div class="new-sticker">NEW</div>
+                <a href="chapter11.html" class="chapter-card">
                     <div class="card-number">11</div>
                     <div class="card-content">
                         <h4>The Pitch</h4>
@@ -267,20 +266,16 @@
                     <div class="card-arrow">&rarr;</div>
                 </a>
 
-                <div class="chapter-card locked">
+                <a href="chapter12.html" class="chapter-card new-release">
+                    <div class="new-sticker">NEW</div>
                     <div class="card-number">12</div>
                     <div class="card-content">
-                        <h4>Chapter 12</h4>
-                        <p class="chapter-desc">Locked.</p>
-                        <span class="handwritten-date">Jan 27 (Tue)</span>
-                        
-                         <div class="timer-container">
-                            <span class="timer-label">Releasing In:</span>
-                            <span id="countdown" class="timer-digits">Loading...</span>
-                        </div>
+                        <h4>Location Scouting</h4>
+                        <p class="chapter-desc">A road trip to Bolinao reveals hidden dreams as Gio and Lia find a moment of quiet amidst the chaos of pre-production.</p>
+                        <span class="handwritten-date">Jan 27</span>
                     </div>
-                    <div class="card-arrow"><i class="fas fa-lock"></i></div>
-                </div>
+                    <div class="card-arrow">&rarr;</div>
+                </a>
 
                 <div class="chapter-card locked">
                     <div class="card-number">13</div>
@@ -288,6 +283,11 @@
                         <h4>Chapter 13</h4>
                         <p class="chapter-desc">Locked.</p>
                         <span class="handwritten-date">Jan 29 (Thu)</span>
+                        
+                        <div class="timer-container">
+                            <span class="timer-label">Releasing In:</span>
+                            <span id="countdown" class="timer-digits">Loading...</span>
+                        </div>
                     </div>
                     <div class="card-arrow"><i class="fas fa-lock"></i></div>
                 </div>
@@ -353,36 +353,14 @@
                 </div>
 
                 <div class="chapter-card locked">
-                    <div class="card-number">19.5</div>
+                    <div class="card-number">20</div>
                     <div class="card-content">
-                        <h4>Chapter 19.5</h4>
+                        <h4>Chapter 20</h4>
                         <p class="chapter-desc">Locked.</p>
                         <span class="handwritten-date">Feb 24 (Tue)</span>
                     </div>
-                    <div class="card-arrow"><i class="fas fa-film"></i></div>
-                </div>
-
-                <div class="chapter-card locked" style="border: 2px solid var(--sunset-orange);">
-                    <div class="card-number" style="color: var(--sunset-orange);">20</div>
-                    <div class="card-content">
-                        <h4 style="color: var(--sunset-orange);">Chapter 20</h4>
-                        <p class="chapter-desc">Locked.</p>
-                        <span class="handwritten-date">Feb 26 (Thu)</span>
-                    </div>
-                    <div class="card-arrow"><i class="fas fa-star"></i></div>
-                </div>
-
-                <div class="chapter-card locked" style="background: #fffbe6;">
-                    <div class="card-number"><i class="fas fa-pen-nib"></i></div>
-                    <div class="card-content">
-                        <h4>Locked.</h4>
-                        <p class="chapter-desc">Locked.</p>
-                        <span class="handwritten-date">Feb 26 (Thu)</span>
-                    </div>
                     <div class="card-arrow"><i class="fas fa-lock"></i></div>
                 </div>
-
-            </div>
         </div>
     </section>
 
@@ -390,7 +368,7 @@
         <div class="container slim-container">
             <div class="newsletter-box">
                 <h3>Don't Miss the Next Take</h3>
-                <p>Get notified immediately when Chapter 12 goes live.</p>
+                <p>Get notified immediately when Chapter 13 goes live.</p>
                 <form class="email-form" action="https://formspree.io/f/mwvpggkq" method="POST">
                 <input type="hidden" name="_next" value="https://<YOUR-GITHUB-USERNAME>.github.io/<YOUR-REPO-NAME>/">
                 <input type="email" name="email" placeholder="Your email address" required>
@@ -423,9 +401,9 @@
         });
 
         // COUNTDOWN TIMER LOGIC
-        // Updated Target Date: Jan 27, 2026 (Tuesday)
+        // Updated Target Date: Jan 29, 2026 (Thursday)
         // Set to midnight (00:00:00).
-        const targetDate = new Date("Jan 27, 2026 00:00:00").getTime();
+        const targetDate = new Date("Jan 29, 2026 00:00:00").getTime();
 
         const timerInterval = setInterval(function() {
             const now = new Date().getTime();
