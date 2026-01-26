@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ch. 7 - Technical Difficulties | Director's Cut</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Patrick+Hand&family=Inter:wght@300;400;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
@@ -38,20 +38,49 @@
             border-bottom: 1px solid #e0e0e0;
         }
 
-        /* Sticky Note for Notes/Lyrics */
-        .text-insert { 
-            font-family: 'Patrick Hand', cursive; 
-            background: #fff9c4; /* Yellow sticky note */
-            color: #333;
-            padding: 15px 20px; 
-            border: 1px solid #e0e0e0;
-            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-            transform: rotate(-1deg);
-            display: block;
-            margin: 30px auto;
+        /* Symptoms Visualizer */
+        .symptoms-box {
+            background: #212121;
+            color: #ff5252;
+            padding: 20px;
+            font-family: 'Courier Prime', monospace;
+            border: 2px solid #ff1744;
+            margin: 30px 0;
+            position: relative;
+            animation: shake 0.5s infinite;
+        }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        .symptom-text { font-weight: bold; text-transform: uppercase; }
+
+        /* Breathing Guide */
+        .breathing-guide {
+            background: #e0f7fa;
+            border: 2px solid #00acc1;
+            padding: 20px;
             text-align: center;
-            max-width: 80%;
-            font-size: 1.2rem;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            color: #006064;
+            box-shadow: 0 0 20px rgba(0,172,193,0.3);
         }
 
         .divider { border: 0; border-bottom: 2px solid #ddd; margin: 40px 0; transform: rotate(1deg); }
@@ -85,28 +114,34 @@
                 </div>
 
                 <div class="story-text">
+                    <div class="scene-header">INT. CHEM LAB - DAY</div>
+
                     <p><span class="sound-effect">Zzzzt.</span></p>
 
                     <p>May kuryenteng gumapang sa batok ko.</p>
 
-                    <p>Hindi ito yung kilig mula sa bus ride kahapon. Hindi ito yung spark nung nagdikit ang pinky fingers namin ni Lia.</p>
+                    <p>Hindi ito 'yung kilig mula sa bus ride kahapon. Hindi ito 'yung spark nung nagdikit ang pinky fingers namin ni Lia.</p>
 
-                    <p>Ito ay <strong>brain zap.</strong></p>
+                    <p>Ito ay <strong>Brain Zap.</strong></p>
 
-                    <p>Kung nakaranas ka na ng SSRI discontinuation syndrome (o yung biglang pagtigil sa anti-depressants), alam mo ang feeling. Para kang hinihigop ng lupa nang millisecond, tapos babalik ka sa reality na hilo at nasusuka. Frame skip sa totoong buhay.</p>
-
-                    <div class="scene-header">INT. CHEM LAB - DAY</div>
+                    <p>Kung nakaranas ka na ng SSRI discontinuation syndrome (o 'yung biglang pagtigil sa anti-depressants), alam mo ang feeling. Para kang hinihigop ng lupa nang millisecond, tapos babalik ka sa reality na hilo at nasusuka. Frame skip sa totoong buhay.</p>
 
                     <p>Nagsasalita si Sir Magsanoc sa harap tungkol sa Ideal Gas Law, pero ang naririnig ko lang ay static noise.</p>
 
-                    <div class="text-insert">
-                        PV = nRT<br>
-                        <span style="font-size: 0.9em; display:block; margin-top:5px;">Pressure. Volume. Temperature.</span>
+                    <div class="symptoms-box">
+                        SYSTEM ERROR: SEROTONIN DEPLETED.<br>
+                        AUDIO: DISTORTED.<br>
+                        VIDEO: LAG.<br>
+                        <span class="symptom-text">PLEASE RECONNECT.</span>
                     </div>
+
+                    <p>PV = nRT.</p>
+
+                    <p>Pressure. Volume. Temperature.</p>
 
                     <p>Ang pressure sa ulo ko, sasabog na. Ang volume ng boses ng mga kaklase ko, sobrang lakas, parang naka-max gain sa audio levels. At ang temperature ng katawan ko, ang lamig pero pinagpapawisan ako.</p>
 
-                    <p>Nakayuko ako sa desk. Nakasalpak ang earphones ko, pero walang tumutugtog. Naka-pause sa kalagitnaan ng “No Doubt” ng Official HigeDandism. Gusto ko sana pakinggan para kumalma, pero kahit ang upbeat na piano intro ng Higedan, parang tunog ng martilyo sa utak ko ngayon.</p>
+                    <p>Nakayuko ako sa desk. Nakasalpak ang earphones ko, pero walang tumutugtog. Naka-pause sa kalagitnaan ng “No Doubt” ng Official HigeDandism. Gusto ko sanang pakinggan para kumalma, pero kahit ang upbeat na piano intro ng Higedan, parang tunog ng martilyo sa utak ko ngayon.</p>
 
                     <p>Apat na araw.</p>
 
@@ -122,7 +157,7 @@
 
                     <p>Si Lia. Nasa tabi ko siya.</p>
 
-                    <p>Dahan-dahan kong inangat ang ulo ko. Ang bagal ng mundo. <span class="thought">Frame rate drop.</span> Parang nagla-lag ang vision ko.</p>
+                    <p>Dahan-dahan kong inangat ang ulo ko. Ang bagal ng mundo. Frame rate drop. Parang nagla-lag ang vision ko.</p>
 
                     <p>"Okay ka lang?" bulong niya. "Namumutla ka. Para kang nakakita ng multo."</p>
 
@@ -130,7 +165,9 @@
 
                     <p><span class="thought">Sinungaling. Wala akong inedit. Nakatitig lang ako sa kisame kagabi habang nanginginig ang mga kamay ko.</span></p>
 
-                    <p>"Sure ka?" Hinawakan niya ang noo ko gamit ang likod ng palad niya. "Wala ka namang lagnat. Pero ang lamig ng pawis mo."</p>
+                    <p>"Sure ka?"</p>
+
+                    <p>Hinawakan niya ang noo ko gamit ang likod ng palad niya. "Wala ka namang lagnat. Pero ang lamig ng pawis mo."</p>
 
                     <p>Ang sarap ng hawak niya. Pero sa sobrang hypersensitive ng balat ko ngayon, parang masakit. Napaiwas ako nang kaunti.</p>
 
@@ -146,9 +183,9 @@
 
                     <p>Pagkalabas ko ng room, tumakbo ako.</p>
 
-                    <p>Ang hallway ng building, parang humahaba. <span class="thought">Dolly Zoom effect.</span> Yung parang sa pelikula ni Hitchcock. Lumalayo ang dulo habang tumatakbo ako palapit.</p>
+                    <p>Ang hallway ng building, parang humahaba. <strong>Dolly Zoom effect.</strong> Yung parang sa pelikula ni Hitchcock. Lumalayo ang dulo habang tumatakbo ako palapit.</p>
 
-                    <p>Naririnig ko ang tibok ng puso ko sa tenga ko. <span class="sound-effect">Dug-dug. Dug-dug. Dug-dug.</span></p>
+                    <p>Naririnig ko ang tibok ng puso ko sa tenga ko. <em>Dug-dug. Dug-dug. Dug-dug.</em></p>
 
                     <p>Pumasok ako sa CR ng mga lalaki sa 2nd floor. Buti na lang walang tao. Oras ng klase eh.</p>
 
@@ -156,11 +193,11 @@
 
                     <p>Bumagsak ako sa inidoro (nakasarado ang takip). Niyakap ko ang tuhod ko.</p>
 
-                    <p><span class="thought">Hinga, Gio. Hinga.</span></p>
+                    <p>Hinga, Gio. Hinga.</p>
 
-                    <p>5 things you can see. Tiles na madumi. Graffiti sa pinto ("Bawal umihi dito"). Tissue holder na walang tissue. Sapatos ko. Langgam sa sahig.</p>
+                    <p><strong>5 things you can see:</strong> Tiles na madumi. Graffiti sa pinto ("Bawal umihi dito"). Tissue holder na walang tissue. Sapatos ko. Langgam sa sahig.</p>
 
-                    <p>4 things you can feel. Ang lamig ng tiles. Ang panginginig ng kamay ko. Ang sikip ng dibdib ko. Ang luha sa pisngi ko.</p>
+                    <p><strong>4 things you can feel:</strong> Ang lamig ng tiles. Ang panginginig ng kamay ko. Ang sikip ng dibdib ko. Ang luha sa pisngi ko.</p>
 
                     <p>Wait, umiiyak na pala ako?</p>
 
@@ -168,7 +205,7 @@
 
                     <p>"Putangina," bulong ko. "Akala ko ba Director's Cut 'to? Bakit naging Trainspotting?"</p>
 
-                    <p>Akala ko magiging madali lang. Akala ko mind over matter. Pero hindi mo pwedeng dayain ang biology. Ang brain chemistry ko, nagka-crash. Ito ang <strong>Technical Difficulty</strong> na hindi ko napaghandaan.</p>
+                    <p>Akala ko magiging madali lang. Akala ko mind over matter. Pero hindi mo pwedeng dayain ang biology. Ang brain chemistry ko, nagka-crash. Ito ang Technical Difficulty na hindi ko napaghandaan.</p>
 
                     <p>Walang pharmacy na magbebenta sa akin ng gamot na kailangan ko dahil: Wala akong reseta sa 2018. Hindi pa ako diagnosed sa taong 'to. Baka isipin nilang adik ako.</p>
 
@@ -180,7 +217,7 @@
 
                     <p>Nanahimik ako. Pinigil ko ang paghinga. Baka ibang estudyante. Baka prof. Ayokong makita nilang umiiyak ako sa cubicle.</p>
 
-                    <p>Narinig ko ang mga yabag ng sapatos. Papalapit.</p>
+                    <p>Narinig ko ang mga yabag ng sapatos. Papalapit. Mabilis.</p>
 
                     <p>Huminto sa tapat ng cubicle ko.</p>
 
@@ -190,158 +227,146 @@
 
                     <p>Nanlaki ang mata ko. Si Lia. Pumasok siya sa CR ng lalaki?!</p>
 
-                    <p>"Gio, alam kong nandyan ka," sabi niya. Medyo nanginginig din ang boses niya. "Nakita ko sapatos mo sa ilalim."</p>
+                    <p>"Gio, alam kong nandyan ka," sabi niya, pabulong pero madiin. "Nakita ko sapatos mo sa ilalim."</p>
 
                     <p>Hindi ako sumagot. Nakatakip ang kamay ko sa bibig ko para pigilan ang hikbi.</p>
 
-                    <p>"Gio, buksan mo 'to," sabi niya, mas matatag na ngayon. "Nag-aalala na ako. Bigla ka na lang tumakbo."</p>
+                    <p>"Gio, buksan mo 'to," sabi niya. "Nag-aalala na ako. Bigla ka na lang tumakbo."</p>
 
                     <p>"Lia, lumabas ka," sagot ko, garalgal ang boses. "CR ng lalaki 'to. Baka may makakita sa'yo."</p>
 
-                    <p>"Wala akong paki," sabi niya.</p>
+                    <p>"Wala akong paki," sagot niya. "Sumilip na ako, walang tao. Buksan mo na, please?"</p>
 
-                    <p>At narinig ko ang lock ng main door ng CR na na-click.</p>
+                    <p>"Ayoko. Umalis ka na."</p>
 
-                    <p>Ni-lock niya ang buong CR?! Baliw na ba siya?!</p>
+                    <p>"Isa," banta niya. "Bubuksan mo 'to o gagapang ako sa ilalim?"</p>
 
-                    <p>"Ni-lock ko na ang pinto," sabi niya. "Tayong dalawa lang dito. So please… buksan mo 'to."</p>
-
-                    <p>Napapikit ako. Ito yung audio log. Sa Prologue, narinig ko sa recorder yung boses niya na nagtatanong kung okay lang ako. Ito na 'yun. Ito yung moment na 'yun.</p>
-
-                    <p>Sa original timeline, hindi ako tumakbo sa CR. Nanatili ako sa classroom, tiniis ko ang hilo, at natulog lang ako sa desk. Hindi niya nalaman na may pinagdadaanan ako.</p>
-
-                    <p>Pero dahil binago ko ang script—dahil naging mas vulnerable ako sa kanya nitong mga nakaraang araw—sinundan niya ako.</p>
-
-                    <p>Nag-aalala siya.</p>
+                    <p>Napapikit ako. Gagawin niya talaga 'yun. Ang tigas ng ulo nito.</p>
 
                     <p>Dahan-dahan, tumayo ako. Nanginginig pa rin ang kamay ko habang inaabot ang lock ng cubicle.</p>
 
                     <p><span class="sound-effect">Click.</span></p>
 
-                    <p>Binuksan ko ang pinto.</p>
+                    <p>Binuksan ko ang pinto nang bahagya.</p>
 
-                    <p>Nakita ko siya. Nakatayo sa harap ko. Naka-uniform. Ang buhok niya, medyo gulo. Ang mukha niya, puno ng takot at pag-aalala.</p>
+                    <p>Nakita ko siya. Nakatayo sa harap ko. Naka-uniform. Ang mukha niya, hindi galit, kundi puno ng takot. Takot para sa akin.</p>
 
-                    <p>Nung makita niya ako—namumula ang mata, basang-basa ng pawis, nanginginig—parang naiiyak na rin siya.</p>
+                    <p>Nung makita niya ako—namumula ang mata, basang-basa ng pawis, nanginginig—nagbago ang ekspresyon niya. From inis to awa.</p>
 
-                    <p>"Gio… anong nangyayari sa'yo?" bulong niya.</p>
+                    <p>"Gio..."</p>
 
-                    <p>Hindi ako makasagot. Ano ang sasabihin ko? 'Galing ako sa future at nagwi-withdrawal ako sa anti-depressants?' Sasabihin ko bang baliw ako? Na broken ako?</p>
+                    <p>Hindi na siya nagpaalam. Pumasok siya sa loob ng cubicle.</p>
 
-                    <p>Sa takot na baka i-judge niya ako, yumuko ako. "Wala 'to. Panic attack lang. Lilipas din."</p>
+                    <p>"Teka, Lia—"</p>
 
-                    <p>Akmang isasara ko ulit ang pinto, pero pinigil niya gamit ang kamay niya.</p>
+                    <p>"Shhh," sabi niya. Sinarado niya ang pinto ng cubicle sa likod niya at ni-lock ito.</p>
 
-                    <p>"Wag," sabi niya.</p>
+                    <p>Ngayon, dalawa na kami sa loob ng masikip na cubicle. Sobrang sikip. Halos magkapalitan na kami ng mukha. Amoy zonrox at lumang tubig, pero nangingibabaw 'yung amoy ng cologne niya.</p>
 
-                    <p>Pumasok siya sa loob ng makipot na cubicle. "Lia, ang sikip—"</p>
+                    <p>Napaupo ulit ako sa inidoro dahil nanghihina ang tuhod ko.</p>
 
-                    <p>Hindi siya nakinig. Niyakap niya ako. Mahigpit.</p>
+                    <p>Si Lia, nanatiling nakatayo sa harap ko. Ang lapit ng binti niya sa tuhod ko.</p>
 
-                    <p>Isinubsob niya ang mukha niya sa dibdib ko. Naramdaman ko ang init ng katawan niya na tumatagos sa manipis kong t-shirt.</p>
+                    <p>"Anong nangyayari?" bulong niya.</p>
 
-                    <p>"Hindi ko alam kung anong problema," sabi niya, muffled ang boses sa shirt ko. "Hindi ko alam kung bakit ka nagkakaganyan. Pero hindi kita iiwan dito mag-isa."</p>
+                    <p>"Panic attack," amin ko. Wala nang rason para magsinungaling. "Hindi ako makahinga."</p>
 
-                    <p>Nanigas ako.</p>
+                    <p>Hindi siya nag-panic. Imbis na yakapin ako agad o gumawa ng eksena, kumilos siya nang praktikal.</p>
 
-                    <p>Sa loob ng walong taon, sanay akong harapin ang mga demons ko nang mag-isa. Sa condo ko, kapag inaatake ako, kayakap ko lang ang unan. Kausap ko lang ang dilim.</p>
+                    <p>Hinawakan niya ang magkabilang pisngi ko. Hinila niya ang mukha ko para tumingin sa kanya.</p>
 
-                    <p>Ngayon… may yumayakap sa akin. At hindi lang kung sino. Si Lia. Ang TOTGA ko. Ang dahilan kung bakit ako bumalik.</p>
+                    <p>"Gio, look at me," utos niya. Seryoso. "Tingin sa akin."</p>
 
-                    <p>Bumigay ang tuhod ko. Napaupo ako sa takip ng inidoro. Dahil yakap niya ako, napasama siya ng upo—lumuhod siya sa harap ko, sa pagitan ng mga binti ko.</p>
+                    <p>Tumingin ako sa mata niya. Brown. Malinaw.</p>
 
-                    <p>Hinawakan niya ang mga kamay ko na nanginginig. "Ang lamig ng kamay mo," bulong niya. Hinipan niya ito. <em>Haaah.</em> Tapos kiniskis para uminit.</p>
-
-                    <p>Tinitigan ko siya. Ang kanta ng Official HigeDandism na kanina ay nagbibigay sakit sa ulo ko… biglang pumasok ulit sa isip ko. Yung lyrics ng 115 Million Kilometer Film.</p>
-
-                    <div class="text-insert">
-                        “Shuen wa mochirom kimi de, boku wa kantoku de cameraman.”<br>
-                        <span style="font-size: 0.8em; font-style: italic;">(You are the lead star, and I am the director.)</span>
+                    <div class="breathing-guide">
+                        <strong>INHALE</strong><br>
+                        1... 2... 3...<br><br>
+                        <strong>EXHALE</strong><br>
+                        1... 2... 3...
                     </div>
 
-                    <p>Tama. Ako ang director. Pero tao rin ako. Tao na nasasaktan, natatakot, at nangangailangan ng tulong.</p>
+                    <p>"Sabayan mo ako," sabi niya. "Inhale."</p>
 
-                    <p>"Lia," bulong ko.</p>
+                    <p>Huminga siya nang malalim.</p>
 
-                    <p>Tumingin siya sa akin. "Hmm?"</p>
+                    <p>Sinubukan ko. Inhale. Pero putol-putol.</p>
 
-                    <p>"Wag mo kong iiwan," sabi ko. Sobrang hina, parang hangin lang.</p>
+                    <p>"Exhale."</p>
 
-                    <p>Ngumiti siya. Yung ngiting may halong lungkot pero puno ng assurance.</p>
+                    <p>Bumuga siya ng hangin.</p>
 
-                    <p>"Baliw," sabi niya, pinisil ang kamay ko. "Saan naman ako pupunta? Dito lang ako. Hanggang sa kumalma ka."</p>
+                    <p>Exhale.</p>
 
-                    <p>Nanatili kami sa ganung posisyon. Nakaupo ako sa inidoro, nakaluhod siya sa harap ko, hawak ang kamay ko. Sa loob ng mabahong CR ng lalaki. Hindi ito romantic sa traditional sense. Walang flowers. Walang sunset. Amoy Zonrox at ihi.</p>
+                    <p>"Isa pa," sabi niya. "Inhale... one, two, three. Exhale... one, two, three."</p>
 
-                    <p>Pero ito ang pinaka-intimate na moment namin.</p>
+                    <p>Paulit-ulit. Hanggang sa medyo kumalma ang baga ko.</p>
 
-                    <p>Unti-unti bumagal ang tibok ng puso ko. Nawala ang static sa paningin ko. Ang brain zaps, andun pa rin, pero manageable na.</p>
+                    <p>Nang maramdaman niyang hindi na ako nagha-hyperventilate, dahan-dahan siyang yumuko. Hindi siya lumuhod. Nag-squat siya sa harap ko para magkapantay ang mukha namin.</p>
 
-                    <p>Ang technical difficulty… na-troubleshoot na. Hindi gamot ang solusyon ngayon. <strong>Connection.</strong></p>
+                    <p>Hinawakan niya ang mga kamay ko na nanginginig pa rin. Ang higpit ng hawak niya. Anchor.</p>
 
-                    <p>"Okay ka na?" tanong niya makalipas ang ilang minuto.</p>
+                    <p>"Ang lamig mo," bulong niya.</p>
 
-                    <p>Tumango ako. "Medyo."</p>
+                    <p>"Sorry," sabi ko. "Sorry nadamay ka pa dito."</p>
 
-                    <p>"Kayang tumayo?"</p>
+                    <p>"Sira," ngiti niya nang tipid. "Okay lang. Sanay ako sa stress, diba? Muse ako ng block."</p>
 
-                    <p>"Oo."</p>
+                    <p>Natawa ako nang mahina. Isang hininga ng hangin ang nakapasok sa dibdib ko.</p>
 
-                    <p>Tumayo kaming dalawa. Medyo namanhid ang binti ko. Inayos niya ang kwelyo ng polo shirt ko. "Ayan. Mukha ka nang tao ulit."</p>
+                    <p>"Ayan," sabi niya. "Tumawa ka na. Good sign."</p>
 
-                    <p>"Sorry ha," sabi ko, nahihiya. "Nakita mo pa akong ganito."</p>
+                    <p>Pinisil niya ang kamay ko.</p>
 
-                    <p>Umiling siya. "Mas okay na 'yun. Kaysa naman sinosolo mo. Diba sabi mo nung isang araw… <em>Life is short?</em> Kaya wag kang magsolo flight sa problema."</p>
+                    <p>"May tubig ako sa bag," sabi niya. "Gusto mo?"</p>
 
-                    <p>Binuksan niya ang pinto ng cubicle. "Tara na?" yaya niya.</p>
+                    <p>Tumango ako.</p>
 
-                    <p>"Teka," sabi ko. "Safe ba? Baka may tao sa labas."</p>
+                    <p>Tumayo siya nang konti para kunin ang tumbler sa bag niya na nakasabit sa pinto. Inabot niya sa akin. Uminom ako.</p>
 
-                    <p>Sinilip niya. "Clear."</p>
+                    <p>"Salamat," sabi ko.</p>
 
-                    <p>Lumabas kami ng CR na parang mga secret agent. Buti na lang nasa klase pa ang lahat.</p>
+                    <p>Tinitigan niya ako. Andun pa rin ang pag-aalala, pero hindi na siya mukhang matataranta.</p>
 
-                    <div class="scene-header">INT. CHEM LAB - MOMENTS LATER</div>
+                    <p>Sa Original Timeline, hindi ako tumakbo sa CR. Nanatili ako sa classroom, tiniis ko ang hilo, at natulog lang ako sa desk. Hindi niya nalaman na may pinagdadaanan ako.</p>
 
-                    <p>Pagbalik namin sa classroom, nagtinginan ang mga kaklase namin. Si Sir Magsanoc, nasa board, nagsusulat.</p>
+                    <p>Pero dahil binago ko ang script—dahil naging mas vulnerable ako sa kanya nitong mga nakaraang araw—sinundan niya ako.</p>
 
-                    <p>"Mr. Cruz, Ms. Reyes," tawag ni Sir. "You're late. Saan kayo galing?"</p>
+                    <p>"Gio," tawag niya.</p>
 
-                    <p>Kinabahan ako. Ano sasabihin namin? Galing kami sa CR ng lalaki?</p>
+                    <p>"Hmm?"</p>
 
-                    <p>Tumingin ako kay Lia.</p>
+                    <p>"Kung ano man 'yan," sabi niya. "Andito lang ako. Hindi kita pipiliting magkwento. Pero wag mo naman solohin, please? Mukha kang mamamatay kanina eh."</p>
 
-                    <p>Ngumiti siya kay Sir. "Sorry po Sir, sinamahan ko lang po si Gio sa Clinic. Sumama pakiramdam eh."</p>
+                    <p>Tumango ako. "Oo. Hindi na."</p>
 
-                    <p>"Ah, ganun ba?" lumambot ang mukha ni Sir. "Okay ka na ba, Mr. Cruz?"</p>
+                    <p>"Good."</p>
 
-                    <p>"O-opo, Sir," sagot ko. "Medyo okay na."</p>
+                    <p>Sinilip niya ang relo niya.</p>
 
-                    <p>"Sige, take your seats."</p>
+                    <p>"Tara na?" yaya niya. "Baka hanapin na tayo ni Sir. Sabihin ko na lang nahilo ka sa gutom."</p>
 
-                    <p>Umupo kami. Pagkaupo ko, may inabot si Lia sa ilalim ng desk. Isang piraso ng Mentos.</p>
+                    <p>"Sige."</p>
 
-                    <p>"Pampakalma," bulong niya.</p>
+                    <p>Tumayo ako. Medyo okay na ang pakiramdam ko.</p>
 
-                    <p>Kinuha ko at kinain. Minty. Malamig.</p>
+                    <p>Binuksan niya ang pinto ng cubicle nang dahan-dahan. Sinilip niya kung may tao sa main CR.</p>
 
-                    <p>Tumingin ako sa kanya. Nakatingin na siya sa blackboard, seryosong nakikinig. Pero nakita ko ang kamay niya sa ilalim ng desk… nanginginig din nang kaunti.</p>
+                    <p>"Clear," bulong niya.</p>
 
-                    <p>Natakot din siya. Natakot siya para sa akin.</p>
+                    <p>Lumabas kami ng cubicle.</p>
 
-                    <p>Sa <em>115 Million Kilometers of Film</em> na kanta, may linya dun na:</p>
+                    <p>Bago kami lumabas ng main door, huminto siya sa harap ng salamin. Inayos niya ang buhok niya. Tapos, tinignan niya ako.</p>
 
-                    <div class="text-insert" style="background:#e0f7fa; transform: rotate(1deg);">
-                        “I will capture every moment of yours so I won’t forget.”
-                    </div>
+                    <p>"Ayos ka na tignan," sabi niya. "Gwapo pa rin. Pwede na."</p>
 
-                    <p>Sa araw na 'to, hindi ako ang nag-capture. Siya ang kumuha sa akin mula sa dilim.</p>
+                    <p>Napangiti ako.</p>
 
-                    <p>Si Lia ang naging Director ng eksenang 'to. At ako… ako muna ang naging helpless na extra na kailangang iligtas.</p>
+                    <p>Lumabas kami ng CR.</p>
 
-                    <p>At okay lang pala 'yun.</p>
+                    <p>Ang brain zaps, andun pa rin. Ang withdrawal, hindi pa tapos. Pero habang naglalakad kami pabalik sa classroom, at habang dikit ang braso niya sa braso ko...</p>
 
-                    <p><span class="sound-effect">CUT.</span></p>
+                    <p>Alam kong kaya ko nang itawid ang araw na 'to.</p>
                 </div>
 
                 <div class="chapter-nav">
@@ -349,7 +374,7 @@
                         &larr; Previous
                     </a>
                     <a href="chapter8.html" class="btn-sketch primary nav-btn">
-                        Next Chapter   &rarr;
+                        Next Chapter &rarr;
                     </a>
                 </div>
 
@@ -369,6 +394,4 @@
         });
     </script>
 </body>
-
 </html>
-
