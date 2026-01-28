@@ -102,7 +102,7 @@
 
                 <div class="cta-group">
                 <a href="chapter1.html" class="btn btn-sketch primary">Start Reading (Ch. 1)</a>
-                <a href="chapter12.html" class="btn btn-sketch secondary">Read Latest (Ch. 12) &rarr;</a>
+                <a href="chapter13.html" class="btn btn-sketch secondary">Read Latest (Ch. 13) &rarr;</a>
                 </div>
             </div>
 
@@ -266,8 +266,7 @@
                     <div class="card-arrow">&rarr;</div>
                 </a>
 
-                <a href="chapter12.html" class="chapter-card new-release">
-                    <div class="new-sticker">NEW</div>
+                <a href="chapter12.html" class="chapter-card">
                     <div class="card-number">12</div>
                     <div class="card-content">
                         <h4>Location Scouting</h4>
@@ -277,20 +276,16 @@
                     <div class="card-arrow">&rarr;</div>
                 </a>
 
-                <div class="chapter-card locked">
+                <a href="chapter13.html" class="chapter-card new-release">
+                    <div class="new-sticker">NEW</div>
                     <div class="card-number">13</div>
                     <div class="card-content">
-                        <h4>Chapter 13</h4>
-                        <p class="chapter-desc">Locked.</p>
-                        <span class="handwritten-date">Jan 29 (Thu)</span>
-                        
-                        <div class="timer-container">
-                            <span class="timer-label">Releasing In:</span>
-                            <span id="countdown" class="timer-digits">Loading...</span>
-                        </div>
+                        <h4>The Audition</h4>
+                        <p class="chapter-desc">To get the perfect take, Gio pushes Lia to channel her own repressed feelings, leading to a performance that blurs the line between fiction and reality.</p>
+                        <span class="handwritten-date">Jan 29</span>
                     </div>
-                    <div class="card-arrow"><i class="fas fa-lock"></i></div>
-                </div>
+                    <div class="card-arrow">&rarr;</div>
+                </a>
 
                  <div class="chapter-card locked">
                     <div class="card-number">14</div>
@@ -298,6 +293,11 @@
                         <h4>Chapter 14</h4>
                         <p class="chapter-desc">Locked.</p>
                         <span class="handwritten-date">Feb 3 (Tue)</span>
+                        
+                        <div class="timer-container">
+                            <span class="timer-label">Releasing In:</span>
+                            <span id="countdown" class="timer-digits">Loading...</span>
+                        </div>
                     </div>
                     <div class="card-arrow"><i class="fas fa-lock"></i></div>
                 </div>
@@ -361,6 +361,7 @@
                     </div>
                     <div class="card-arrow"><i class="fas fa-lock"></i></div>
                 </div>
+
         </div>
     </section>
 
@@ -368,7 +369,7 @@
         <div class="container slim-container">
             <div class="newsletter-box">
                 <h3>Don't Miss the Next Take</h3>
-                <p>Get notified immediately when Chapter 13 goes live.</p>
+                <p>Get notified immediately when Chapter 14 goes live.</p>
                 <form class="email-form" action="https://formspree.io/f/mwvpggkq" method="POST">
                 <input type="hidden" name="_next" value="https://<YOUR-GITHUB-USERNAME>.github.io/<YOUR-REPO-NAME>/">
                 <input type="email" name="email" placeholder="Your email address" required>
@@ -401,9 +402,9 @@
         });
 
         // COUNTDOWN TIMER LOGIC
-        // Updated Target Date: Jan 29, 2026 (Thursday)
+        // Updated Target Date: Feb 3, 2026 (Tuesday)
         // Set to midnight (00:00:00).
-        const targetDate = new Date("Jan 29, 2026 00:00:00").getTime();
+        const targetDate = new Date("Feb 3, 2026 00:00:00").getTime();
 
         const timerInterval = setInterval(function() {
             const now = new Date().getTime();
