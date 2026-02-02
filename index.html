@@ -102,7 +102,7 @@
 
                 <div class="cta-group">
                 <a href="chapter1.html" class="btn btn-sketch primary">Start Reading (Ch. 1)</a>
-                <a href="chapter13.html" class="btn btn-sketch secondary">Read Latest (Ch. 13) &rarr;</a>
+                <a href="chapter14.html" class="btn btn-sketch secondary">Read Latest (Ch. 14) &rarr;</a>
                 </div>
             </div>
 
@@ -276,8 +276,7 @@
                     <div class="card-arrow">&rarr;</div>
                 </a>
 
-                <a href="chapter13.html" class="chapter-card new-release">
-                    <div class="new-sticker">NEW</div>
+                <a href="chapter13.html" class="chapter-card">
                     <div class="card-number">13</div>
                     <div class="card-content">
                         <h4>The Audition</h4>
@@ -287,20 +286,16 @@
                     <div class="card-arrow">&rarr;</div>
                 </a>
 
-                 <div class="chapter-card locked">
+                <a href="chapter14.html" class="chapter-card new-release">
+                    <div class="new-sticker">NEW</div>
                     <div class="card-number">14</div>
                     <div class="card-content">
-                        <h4>Chapter 14</h4>
-                        <p class="chapter-desc">Locked.</p>
-                        <span class="handwritten-date">Feb 3 (Tue)</span>
-                        
-                        <div class="timer-container">
-                            <span class="timer-label">Releasing In:</span>
-                            <span id="countdown" class="timer-digits">Loading...</span>
-                        </div>
+                        <h4>Murphy's Law</h4>
+                        <p class="chapter-desc">Anything that can go wrong will go wrong.</p>
+                        <span class="handwritten-date">Feb 3</span>
                     </div>
-                    <div class="card-arrow"><i class="fas fa-lock"></i></div>
-                </div>
+                    <div class="card-arrow">&rarr;</div>
+                </a>
 
                 <div class="chapter-card locked">
                     <div class="card-number">15</div>
@@ -308,6 +303,11 @@
                         <h4>Chapter 15</h4>
                         <p class="chapter-desc">Locked.</p>
                         <span class="handwritten-date">Feb 5 (Thu)</span>
+                        
+                        <div class="timer-container">
+                            <span class="timer-label">Releasing In:</span>
+                            <span id="countdown" class="timer-digits">Loading...</span>
+                        </div>
                     </div>
                     <div class="card-arrow"><i class="fas fa-lock"></i></div>
                 </div>
@@ -362,6 +362,7 @@
                     <div class="card-arrow"><i class="fas fa-lock"></i></div>
                 </div>
 
+            </div>
         </div>
     </section>
 
@@ -402,9 +403,9 @@
         });
 
         // COUNTDOWN TIMER LOGIC
-        // Updated Target Date: Feb 3, 2026 (Tuesday)
+        // Updated Target Date: Feb 5, 2026 (Thursday)
         // Set to midnight (00:00:00).
-        const targetDate = new Date("Feb 3, 2026 00:00:00").getTime();
+        const targetDate = new Date("Feb 5, 2026 00:00:00").getTime();
 
         const timerInterval = setInterval(function() {
             const now = new Date().getTime();
