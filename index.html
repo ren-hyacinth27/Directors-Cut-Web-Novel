@@ -102,13 +102,13 @@
 
                 <div class="cta-group">
                 <a href="chapter1.html" class="btn btn-sketch primary">Start Reading (Ch. 1)</a>
-                <a href="chapter15.html" class="btn btn-sketch secondary">Read Latest (Ch. 15) &rarr;</a>
+                <a href="chapter16.html" class="btn btn-sketch secondary">Read Latest (Ch. 16) &rarr;</a>
                 </div>
             </div>
 
             <div class="hero-visual">
                 <div class="sketch-frame">
-                    <img src="cover.png" alt="Director's Cut Cover" class="main-cover">
+                    <img src="cover.jpg" alt="Director's Cut Cover" class="main-cover">
                     <div class="tape-corner top-left"></div>
                     <div class="tape-corner bottom-right"></div>
                 </div>
@@ -296,31 +296,26 @@
                     <div class="card-arrow">&rarr;</div>
                 </a>
 
-                <a href="chapter15.html" class="chapter-card new-release">
-                    <div class="new-sticker">NEW</div>
+                <a href="chapter15.html" class="chapter-card">
                     <div class="card-number">15</div>
                     <div class="card-content">
                         <h4>Waterproof</h4>
-                        <p class="chapter-desc">A sudden downpour halts production.</p>
+                        <p class="chapter-desc">A sudden downpour halts production, leaving Gio and Lia stranded in a waiting shed where a shared hoodie speaks louder than lines in a script.</p>
                         <span class="handwritten-date">Feb 5</span>
                     </div>
                     <div class="card-arrow">&rarr;</div>
                 </a>
 
-                <div class="chapter-card locked">
+                <a href="chapter16.html" class="chapter-card new-release">
+                    <div class="new-sticker">NEW</div>
                     <div class="card-number">16</div>
                     <div class="card-content">
-                        <h4>Chapter 16</h4>
-                        <p class="chapter-desc">Locked.</p>
-                        <span class="handwritten-date">Feb 10 (Tue)</span>
-                        
-                        <div class="timer-container">
-                            <span class="timer-label">Releasing In:</span>
-                            <span id="countdown" class="timer-digits">Loading...</span>
-                        </div>
+                        <h4>Creative Differences</h4>
+                        <p class="chapter-desc">Tensions rise in the editing room as perfectionism clashes with friendship, forcing Gio to learn that not everything can be fixed in post.</p>
+                        <span class="handwritten-date">Feb 10</span>
                     </div>
-                    <div class="card-arrow"><i class="fas fa-lock"></i></div>
-                </div>
+                    <div class="card-arrow">&rarr;</div>
+                </a>
 
                 <div class="chapter-card locked">
                     <div class="card-number">17</div>
@@ -328,6 +323,11 @@
                         <h4>Chapter 17</h4>
                         <p class="chapter-desc">Locked.</p>
                         <span class="handwritten-date">Feb 12 (Thu)</span>
+                        
+                        <div class="timer-container">
+                            <span class="timer-label">Releasing In:</span>
+                            <span id="countdown" class="timer-digits">Loading...</span>
+                        </div>
                     </div>
                     <div class="card-arrow"><i class="fas fa-lock"></i></div>
                 </div>
@@ -370,7 +370,7 @@
         <div class="container slim-container">
             <div class="newsletter-box">
                 <h3>Don't Miss the Next Take</h3>
-                <p>Get notified immediately when Chapter 16 goes live.</p>
+                <p>Get notified immediately when Chapter 17 goes live.</p>
                 <form class="email-form" action="https://formspree.io/f/mwvpggkq" method="POST">
                 <input type="hidden" name="_next" value="https://ren-hyacinth27.github.io/Directors-Cut-Web-Novel/">
                 <input type="email" name="email" placeholder="Your email address" required>
@@ -403,9 +403,9 @@
         });
 
         // COUNTDOWN TIMER LOGIC
-        // Updated Target Date: Feb 10, 2026 (Tuesday)
+        // Updated Target Date: Feb 12, 2026 (Thursday)
         // Set to midnight (00:00:00).
-        const targetDate = new Date("Feb 10, 2026 00:00:00").getTime();
+        const targetDate = new Date("Feb 12, 2026 00:00:00").getTime();
 
         const timerInterval = setInterval(function() {
             const now = new Date().getTime();
